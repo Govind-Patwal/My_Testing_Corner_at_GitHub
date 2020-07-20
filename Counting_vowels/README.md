@@ -1,1 +1,1 @@
-# This script get an input string from the user and displays the number of vowels in it.
+# Get an input string from the user and displays the number of vowels in it.
