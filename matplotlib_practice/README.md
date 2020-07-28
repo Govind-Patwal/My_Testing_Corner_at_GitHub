@@ -1,1 +1,1 @@
-# Line graph with matplotlib
+# Various graphs with matplotlib
