@@ -1,4 +1,4 @@
-#Ignore Weather API Key
+#Ignore config file
 config.py
 
 # Byte-compiled / optimized / DLL files
