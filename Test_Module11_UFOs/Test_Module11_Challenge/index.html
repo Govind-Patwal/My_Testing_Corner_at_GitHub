@@ -27,7 +27,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">   
-                <h3>UFO Sightings: Fact of Fancy? <small>Ufologists Weigh In</small></h3>
+                <h3>UFO Sightings: Fact or Fancy? <br><small>Ufologists Weigh In</small></h3>
             </div>   
             <div class="col-md-8">
                 <p> 
@@ -39,20 +39,47 @@
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
-            <form class="bg-dark">
-                <p>Filter Search</p>
-                <ul class="list-group bg-dark"">
-                    <li class="list-group-item bg-dark"">
-                    <label for="date">Enter Date</label>   
-                    <input type="text" placeholder="1/10/2010" id="datetime" />    
+            <form class="bg-dark mt-5">
+                <div class="rounded-top border border-secondary bg-info">   
+                    <p class="ml-3 mt-3">
+                        <b>FILTER SEARCH </b> <br>Enter all lowercase, hit Enter
+                    </p>
+                </div>    
+                <ul class="list-group bg-dark">
+
+                    <!-- filter field 'date' -->
+                    <li class="list-group-item bg-dark border border-secondary rounded-0">
+                        <label for="date">Enter Date</label>   
+                        <input class ="form-control" type="text" placeholder="1/10/2010" id="datetime"/> 
                     </li>
-                    <li class="list-group-item bg-dark"">
-                    <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+
+                    <!-- filter field 'city' -->
+                    <li class="list-group-item bg-dark border border-secondary rounded-0">
+                        <label for="city">Enter City  </label>   
+                        <input class ="form-control" type="text" placeholder="benton" id="city"/> 
+                    </li>
+
+                    <!-- filter field 'state' -->
+                    <li class="list-group-item bg-dark border border-secondary rounded-0">
+                        <label for="state">Enter State </label>   
+                        <input class ="form-control" type="text" placeholder="ar " id="state"/> 
+                    </li>
+
+                    <!-- filter field 'country' -->
+                    <li class="list-group-item bg-dark border border-secondary rounded-0">
+                        <label for="country">Enter Country </label>   
+                        <input class ="form-control" type="text" placeholder="us " id="country"/> 
+                    </li>
+
+                    <!-- filter field 'shape' -->
+                    <li class="list-group-item bg-dark border border-secondary rounded-0">
+                        <label for="shape">Enter Shape</label>   
+                        <input class ="form-control" type="text" placeholder="circle " id="shape"/> 
                     </li>
                 </ul>
             </form>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 mt-5">
             <table class="table table-striped">
               <thead>
                 <tr>
