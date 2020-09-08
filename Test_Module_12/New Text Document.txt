@@ -1,2 +1,3 @@
 Sep 7 - started Moudule 12, ended 12.1.2
-Sep 8 - started 12.1.3,
+Sep 8 - started 12.1.3,ended 12.1.4
+Sep 9 - to start 12.2.1
