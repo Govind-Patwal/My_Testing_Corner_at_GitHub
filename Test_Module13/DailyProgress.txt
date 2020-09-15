@@ -6,4 +6,5 @@ Sep 11 started 12.3.1, ended 12.3.1 ---- to start next 12.3.2
 Sep 12 - started 12.3.2, to start challenge tomorrow
 Sep 13 - submitted Challenge 12
 Sep 14 - started Module 13
-Sep 15 - started Module 13.1.0
+Sep 15 - Morning session (started Module 13.1.0, completed 13.2.2)
+
