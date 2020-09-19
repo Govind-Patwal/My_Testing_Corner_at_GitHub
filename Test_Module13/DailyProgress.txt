@@ -10,4 +10,5 @@ Sep 15 - Morning session (started Module 13.1.0, completed 13.2.2), evening sess
 Sep 16 - started 13.3.3, finished 13.4.3
 Sep 17 - to start 13.4.4
 sep 18 - starting with GitHub branching
+sEP 19 - completed Github branching yesterday
 
