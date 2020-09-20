@@ -11,5 +11,5 @@ Sep 16 - started 13.3.3, finished 13.4.3
 Sep 17 - to start 13.5.1
 sep 18 - starting with GitHub branching
 sEP 19 - completed Github branching yesterday, completed 12.4.3
-Sep 20 - to start with 13.5.1, to complete challenge
+Sep 20 - to start with 13.5.1, to complete challenge // started 13.5.1
 
