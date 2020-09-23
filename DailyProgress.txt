@@ -40,4 +40,6 @@ Sep 20 - to start with 13.5.1, to complete challenge // started 13.5.1
 
 
 
-Sep 21 - Tableau class, added .csv to .gitignore
+Sep 21 - Tableau class, added .csv to .gitignore, installed Tableau
+
+Sep 22 - Started working on Tableau
