@@ -45,4 +45,4 @@ Sep 21 - Tableau class, added .csv to .gitignore, installed Tableau
 Sep 22 - worked on the Repo issue, Started working on Tableau, completed 14.2.2, completed 14.2.7, completed 14.3.1
 https://public.tableau.com/profile/govind6013#!/vizhome/Book1_16008269831380/TopStartingLocations
 
-Sep 23 - to start with 14.3.2, started 14.3.2, completed 14.3.2, completed 14.3.3, completed 14.3.5
+Sep 23 - to start with 14.3.2, started 14.3.2, completed 14.3.2, completed 14.3.3, completed 14.3.5, completed 14.3.6
