@@ -49,4 +49,4 @@ Sep 23 - to start with 14.3.2, started 14.3.2, completed 14.3.2, completed 14.3.
 https://public.tableau.com/profile/govind6013#!/vizhome/Book1_16008269831380/NYCCitiBike
 to start on 14.5.1
 
-Seo 24 - started 14.5.1, finished 14.5.1
+Seo 24 - started 14.5.1, finished 14.5.1, started Challenge
