@@ -61,4 +61,4 @@ Sep 26 - finished Deliverable 2, starting on Deliverable 3
 
 Sep 27 - finished Visualization Assessment, submitted Module 14 - Challenge, started Module 15 - R
 
-SEp 28 - Module 15 - Stats and R, 
+Sep 28 - Module 15 - Stats and R; Finished 15.0.3
