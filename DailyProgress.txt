@@ -63,4 +63,4 @@ Sep 27 - finished Visualization Assessment, submitted Module 14 - Challenge, sta
 
 Sep 28 - Module 15 - Stats and R; Finished 15.0.3, Started 15.1.1, installed R and R Studio
 
-Sep 29 - Started 15.1.2, finished 15.2.1
+Sep 29 - Started 15.1.2, finished 15.2.1, finished 15.2.3, to start 15.2.4
