@@ -65,4 +65,4 @@ Sep 28 - Module 15 - Stats and R; Finished 15.0.3, Started 15.1.1, installed R a
 
 Sep 29 - Started 15.1.2, finished 15.2.1, finished 15.2.3
 
-Sep 30 - started 15.2.4
+Sep 30 - started 15.2.4, finished 15.2.4
