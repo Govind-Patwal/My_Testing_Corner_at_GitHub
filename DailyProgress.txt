@@ -67,4 +67,4 @@ Sep 29 - Started 15.1.2, finished 15.2.1, finished 15.2.3
 
 Sep 30 - started 15.2.4, finished 15.2.4, started 15.2.5, working on 15.2.5 (@ For the following checkpoint download Vehicle_Data.xlsx)
 
-Oct 1 - started 15.2.5, finshed 15.2.5, started 15.3.1, started 15.3.2
+Oct 1 - started 15.2.5, finshed 15.2.5, started 15.3.1, started 15.3.2, 15.3.3
