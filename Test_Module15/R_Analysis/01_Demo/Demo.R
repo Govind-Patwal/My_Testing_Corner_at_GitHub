@@ -105,3 +105,14 @@ ggplot(mtcars,aes(x=wt)) + geom_density() #visualize distribution using density 
 
 # performing Shapiro test for checking normal distribution
 shapiro.test(mtcars$wt)
+
+
+# plotting the population
+population_table <- read.csv('used_car_data.csv',check.names = F,stringsAsFactors = F) #import used car dataset
+plt <- ggplot(population_table,aes(x=log10(Miles_Driven))) #import dataset into ggplot2
+plt + geom_density() #visualize distribution using density plot
+
+#using sample_n function
+sample_table <- population_table %>% sample_n(50) #randomly sample 50 data points
+plt <- ggplot(sample_table,aes(x=log10(Miles_Driven))) #import dataset into ggplot2
+plt + geom_density() #visualize distribution using density plot
