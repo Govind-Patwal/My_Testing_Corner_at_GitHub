@@ -2,8 +2,15 @@
 
 
 ## Purpose of this analysis
+In the past, Jeremy and I analysed some data and the management was happy.
+
+ Now, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
 
 ## Resources
+* Software: `Visual Studio Code` (v1.49.2), `RStudio` (v1.3.1093), `R` x64 3.6.3
+* Data
+* MechaCar Data: click Here
+* Suspension Coil Data: click Here
 
 ## Deliverable 1: Linear Regression to Predict MPG
 
@@ -11,8 +18,14 @@
 In your README, create a subheading, ## Linear Regression to Predict MPG, and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+***vehicle_length & ground_clearance***
+
+
 * Is the slope of the linear model considered to be zero? Why or why not?
+***No the slope is not Zero, since the R-squared value is around .7 which shows a strong co-relation.***
+
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+***Sicne the p value is < 0.05, this linear modeal predicts mpg of MechaCar prototypes effectively***
 
 ***Deliverable 1 Requirements***
 You will earn a perfect score for Deliverable 1 by completing all requirements below:
@@ -29,6 +42,10 @@ You will earn a perfect score for Deliverable 1 by completing all requirements b
 In your README, create a subheading ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
 * The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+***The current manufacturing data 
+1) does meet for all manufacturing lots in total - since the variance of all the lots combined is 76.23
+2) does not meet for all manufacturing lots individually - it meets for lot 1 and lot 2, but not for lot 3***
 
 ***Deliverable 2 Requirements***
 You will earn a perfect score for Deliverable 2 by completing all requirements below:
