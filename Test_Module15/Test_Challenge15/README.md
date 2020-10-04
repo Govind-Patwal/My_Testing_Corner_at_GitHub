@@ -9,34 +9,27 @@ In the past, Jeremy and I analysed some data and the management was happy.
 ## Resources
 * Software: `Visual Studio Code` (v1.49.2), `RStudio` (v1.3.1093), `R` x64 3.6.3
 * Data
-    * MechaCar Data: click ![](/)
-    * Suspension Coil Data: click Here
+    * MechaCar Data: click ![here](Resources/MechaCar_mpg.csv)
+    * Suspension Coil Data: click ![here](Resources/Suspension_Coil.csv)
 
 ## Deliverable 1: Linear Regression to Predict MPG
 
-### Result
+### Imgage 1: Output of Deliverable 1
 
-***Written Summary***
-In your README, create a subheading, ## Linear Regression to Predict MPG, and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
+![](Resources/Deliverable1.png)
+
+### Answers to the 3 questions
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-***vehicle_length & ground_clearance***
 
+    There were two variables/coefficients that provide a non-randon amount of varience to the mpg values in the dataset - `vehicle_length` & `ground_clearance`
 
 * Is the slope of the linear model considered to be zero? Why or why not?
-***No the slope is not Zero, since the R-squared value is around .7 which shows a strong co-relation.***
+
+    No the slope is not Zero, since the `R-squared value is around .7149` which shows a strong co-relation.
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-***Sicne the p value is < 0.05, this linear modeal predicts mpg of MechaCar prototypes effectively***
-
-***Deliverable 1 Requirements***
-You will earn a perfect score for Deliverable 1 by completing all requirements below:
-
-* The MechaCar_mpg.csv file is imported and read into a dataframe (5 pt)
-* An RScript is written for a linear regression model to be performed on all six variables (10 pt)
-* An RScript is written to create the statistical summary of the linear regression model with the intended p-values (10 pt)
-* There is a summary that addresses all three questions (5 pt)
-
+    Yes, the linear model predicts mpg of MechaCar Prototypes effectively because the `p-value is < 0.05`.
 
 ## Deliverable 2: Summary Statistics on Suspension Coils
 
