@@ -167,4 +167,27 @@ lm(qsec ~ hp,mtcars) #create linear model
 # the equation of the line for the linear regression model above
 y <- -0.01846x + 20.55635
 
-# finding the p-value and 
+# finding the p-value and r-squared value
+summary(lm(qsec ~ hp,mtcars))
+
+# moelling the data above
+model <- lm(qsec ~ hp,mtcars) #create linear model
+yvals <- model$coefficients['hp']*mtcars$hp +
+model$coefficients['(Intercept)'] #determine y-axis values from linear model
+
+# plotting 
+plt <- ggplot(mtcars,aes(x=hp,y=qsec)) #import dataset into ggplot2
+plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
+
+# multiple linear regression statement - find the y = m1x1 + m2x2 + ... mnxn + b
+lm(qsec ~ mpg + disp + drat + wt + hp,data=mtcars) #generate multiple linear regression model
+
+# generate summary stats for above
+summary(lm(qsec ~ mpg + disp + drat + wt + hp,data=mtcars)) #generate summary statistics
+
+# Chi squared test - making the contigency table
+table(mpg$class,mpg$year) #generate contingency table
+
+# passing the data above for chi squared test
+tbl <- table(mpg$class,mpg$year) #generate contingency table
+chisq.test(tbl) #compare categorical distributions
