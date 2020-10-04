@@ -9,8 +9,8 @@ In the past, Jeremy and I analysed some data and the management was happy.
 ## Resources
 * Software: `Visual Studio Code` (v1.49.2), `RStudio` (v1.3.1093), `R` x64 3.6.3
 * Data
-* MechaCar Data: click Here
-* Suspension Coil Data: click Here
+    * MechaCar Data: click Here
+    * Suspension Coil Data: click Here
 
 ## Deliverable 1: Linear Regression to Predict MPG
 
