@@ -29,6 +29,7 @@ In the past, Jeremy and I analysed some data and the management was happy.
     No the slope is not Zero, since the `R-squared value is around .7149` which shows a strong co-relation.
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+    
     Yes, the linear model predicts mpg of MechaCar Prototypes effectively because the `p-value is < 0.05`.
 
 ## Deliverable 2: Summary Statistics on Suspension Coils
