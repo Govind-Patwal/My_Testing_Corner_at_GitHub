@@ -71,4 +71,4 @@ Oct 1 - started 15.2.5, finshed 15.2.5, started 15.3.1, started 15.3.2, started 
 
 Oct 2 - started 15.4.4, started 15.4.5, 
 
-Oct 3: started 15.5.1, started 15.5.2, started 15.6.1, started 15.6.2, started 15.6.4, started 15.6.5, started 17.7.1
+Oct 3: started 15.5.1, started 15.5.2, started 15.6.1, started 15.6.2, started 15.6.4, started 15.6.5, started 17.7.1, started 17.7.2
