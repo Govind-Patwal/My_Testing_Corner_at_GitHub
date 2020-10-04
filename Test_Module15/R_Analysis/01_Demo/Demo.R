@@ -156,6 +156,15 @@ plt <- ggplot(used_cars,aes(x=Miles_Driven,y=Selling_Price)) #import dataset int
 plt + geom_point() #create a scatter plot
 cor(used_cars$Miles_Driven,used_cars$Selling_Price) #calculate correlation coefficient
 
-# correlation matrix
+# correlation matrix?lm()
 used_matrix <- as.matrix(used_cars[,c("Selling_Price","Present_Price","Miles_Driven")]) #convert data frame into numeric matrix
 cor(used_matrix)
+
+
+# creating a linear regression model
+lm(qsec ~ hp,mtcars) #create linear model
+
+# the equation of the line for the linear regression model above
+y <- -0.01846x + 20.55635
+
+# finding the p-value and 
