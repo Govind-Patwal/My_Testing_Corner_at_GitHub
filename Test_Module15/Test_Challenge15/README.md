@@ -9,10 +9,12 @@ In the past, Jeremy and I analysed some data and the management was happy.
 ## Resources
 * Software: `Visual Studio Code` (v1.49.2), `RStudio` (v1.3.1093), `R` x64 3.6.3
 * Data
-    * MechaCar Data: click Here
+    * MechaCar Data: click ![](/)
     * Suspension Coil Data: click Here
 
 ## Deliverable 1: Linear Regression to Predict MPG
+
+### Result
 
 ***Written Summary***
 In your README, create a subheading, ## Linear Regression to Predict MPG, and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
