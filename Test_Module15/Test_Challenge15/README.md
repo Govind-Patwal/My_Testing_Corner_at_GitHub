@@ -50,7 +50,7 @@ In the past, Jeremy and I analysed some data and the management was happy.
 ### Image 3: Output of Deliverable 3 - Part 1: t-test - all lots together
 ![](Resources/Deliverable3a.png)
 
-### Image 4: Output of Deliverable 3 - Part 2: t-test - all lots together
+### Image 4: Output of Deliverable 3 - Part 2: t-test - each lot individually
 ![](Resources/Deliverable3b.png)
 
 
