@@ -53,17 +53,12 @@ In the past, Jeremy and I analysed some data and the management was happy.
 ### Image 4: Output of Deliverable 3 (Part 2): t-test - each lot individually
 ![](Resources/Deliverable3b.png)
 
+### Summary
 
-Written Summary
-In your README, create a subheading ## T-Tests on Suspension Coils, then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
-
-***Deliverable 3 Requirements***
-You will earn a perfect score for Deliverable 3 by completing all requirements below:
-
-* An RScript is written for t-test that compares all manufacturing lots against mean PSI of the population (5 pt)
-* An RScript is written for three t-tests that compare each manufacturing lot against mean PSI of the population (10 pt)
-* There is a summary of the t-test results across all manufacturing lots and for each lot (5 pt)
-
+* All lots combined: We observe the `p-value = 0.5117`. We conclude that **we cannot reject the null hypothesis**, which implies that the mean PSI of all lots combined is similar to the population mean of 1,500 pounds per inch.
+* Lot 1: We observe the `p-value = 0.9048`. We conclude that **we cannot reject the null hypothesis**, which implies that the mean PSI of Lot 1 is similar to the population mean of 1,500 pounds per inch.
+* Lot 2: We observe the `p-value = 0.3451`. We conclude that **we cannot reject the null hypothesis**, which implies that the mean PSI of Lot 2 is similar to the population mean of 1,500 pounds per inch.
+* Lot 3: We observe the `p-value = 0.637`. We conclude that **we cannot reject the null hypothesis**, which implies that the mean PSI of Lot 3 is similar to the population mean of 1,500 pounds per inch.
 
 ## Deliverable 4: Study Design: MechaCar vs Competition
 
