@@ -34,23 +34,16 @@ In the past, Jeremy and I analysed some data and the management was happy.
 
 ## Deliverable 2: Summary Statistics on Suspension Coils
 
-***Written Summary***
-In your README, create a subheading ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+### Imgage 2: Output of Deliverable 2
+![](Resources/Deliverable2.png)
+
+### Answers to the question
 
 * The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-***The current manufacturing data 
-1) does meet for all manufacturing lots in total - since the variance of all the lots combined is 76.23
-2) does not meet for all manufacturing lots individually - it meets for lot 1 and lot 2, but not for lot 3***
-
-***Deliverable 2 Requirements***
-You will earn a perfect score for Deliverable 2 by completing all requirements below:
-
-* The Suspension_Coil.csv file is imported and read into a dataframe (5 pt)
-* An RScript is written to create a total summary dataframe that has the mean, median, variance, and standard deviation of the PSI for all manufacturing lots (10 pt)
-* An RScript is written to create a lot summary dataframe that has the mean, median, variance, and standard deviation for each manufacturing lot (10 pt)
-* There is a summary that addresses the design specification requirement for all the manufacturing lots and each lot individually (5 pt)
-
+    The current manufacturing data 
+    1) **Does meet** for all manufacturing lots in total - since the variance of all the lots combined is 76.23, which is less than 100
+    2) **Does not meet** for all manufacturing lots individually - it meets for lot 1 and lot 2, but not for lot 3, where the varience is 220 which is > 100.
 
 ## Deliverable 3: T-Tests on Suspension Coils
 
