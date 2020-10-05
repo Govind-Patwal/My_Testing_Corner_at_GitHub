@@ -7,10 +7,11 @@ In the past, Jeremy and I analysed some data and the management was happy.
  Now, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
 
 ## Resources
-* Software: `Visual Studio Code` (v1.49.2), `RStudio` (v1.3.1093), `R` x64 3.6.3
-* Data
-    * MechaCar Data: click ![here](Resources/MechaCar_mpg.csv)
-    * Suspension Coil Data: click ![here](Resources/Suspension_Coil.csv)
+* Software/Tools: `Visual Studio Code` (v1.49.2), `RStudio` (v1.3.1093), `R` x64 3.6.3
+* Language(s): R
+* Data Source(s):
+    * MechaCar Data: [Click Here](Resources/MechaCar_mpg.csv)
+    * Suspension Coil Data: [Click Here](Resources/Suspension_Coil.csv)
 
 ## Linear Regression to Predict MPG
 
