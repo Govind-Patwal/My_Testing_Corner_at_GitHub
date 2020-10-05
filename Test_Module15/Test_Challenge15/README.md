@@ -74,20 +74,6 @@ There are many metrices that a cunsumer thinks of at the time of buying a car, a
 ### TEST 1
 
 * What metric or metrics are you going to test?
-    * For the purpose of test 1, we are going to test **Safety Rating**
-* What is the null hypothesis or alternative hypothesis?    
-    * Null Hypothesis (Ho): There is no statistical difference between the Safety Ratings of MechaCar and the competition
-    * Alternate Hypothesis (Ha): There is a statistical difference between the Safety Ratings of MechaCar and the competition
-
-* What statistical test would you use to test the hypothesis? And why?
-    * We would use a two-sample t-test, as this will allow us to compare a random sample of MechaCar against a random sample of the competition
-
-* What data is needed to run the statistical test?
-    * We would need completely radom samples of 'Safety Ratings' of MechaCar and the competition. 
-
-### TEST 2
-
-* What metric or metrics are you going to test?
     * For the purpose of test 2, we are going to test **Maintenance Cost**
 * What is the null hypothesis or alternative hypothesis?    
     * Null Hypothesis (Ho): There is no statistical difference between the **Maintenance Cost** of MechaCar and the competition
@@ -98,4 +84,18 @@ There are many metrices that a cunsumer thinks of at the time of buying a car, a
 
 * What data is needed to run the statistical test?
     * We would need completely radom samples of **Maintenance Cost** of MechaCar and the competition. 
+
+### TEST 2
+
+* What metric or metrics are you going to test?
+    * For the purpose of test 1, we are going to test **City Fuel Efficiency**
+* What is the null hypothesis or alternative hypothesis?    
+    * Null Hypothesis (Ho): There is no statistical difference between the **City Fuel Efficiency** of MechaCar and the competition
+    * Alternate Hypothesis (Ha): There is a statistical difference between the **City Fuel Efficiency** of MechaCar and the competition
+
+* What statistical test would you use to test the hypothesis? And why?
+    * We would use a **two-sample t-test**, as this will allow us to compare a random sample of MechaCar's **City Fuel Efficiency** against a random sample of the competition's **City Fuel Efficiency**
+
+* What data is needed to run the statistical test?
+    * We would need completely radom samples of '**City Fuel Efficiency**' of MechaCar and the competition.     
 
