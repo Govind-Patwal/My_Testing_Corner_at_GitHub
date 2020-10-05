@@ -22,28 +22,28 @@ In the past, Jeremy and I analysed some data and the management was happy.
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-    There were two variables/coefficients that provide a non-randon amount of varience to the mpg values in the dataset - `vehicle_length` & `ground_clearance`
+    **Answer**: There were two variables/coefficients that provide a non-randon amount of varience to the mpg values in the dataset - `vehicle_length` & `ground_clearance`
 
 * Is the slope of the linear model considered to be zero? Why or why not?
 
-    No the slope is not Zero, since the `R-squared value is around .7149` which shows a strong co-relation.
+    **Answer**: No the slope is not Zero, since the `R-squared value is around .7149` which shows a strong co-relation.
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
     
-    Yes, the linear model predicts mpg of MechaCar Prototypes effectively because the `p-value is < 0.05`.
+    **Answer**: Yes, the linear model predicts mpg of MechaCar Prototypes effectively because the `p-value is < 0.05`.
 
 ## Deliverable 2: Summary Statistics on Suspension Coils
 
 ### Imgage 2: Output of Deliverable 2
 ![](Resources/Deliverable2.png)
 
-### Answers to the question
+### Answer to the question
 
 * The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-    The current manufacturing data 
-    1) **Does meet** for all manufacturing lots in total - since the variance of all the lots combined is 76.23, which is less than 100
-    2) **Does not meet** for all manufacturing lots individually - it meets for lot 1 and lot 2, but not for lot 3, where the varience is 220 which is > 100.
+    **Answer**: The current manufacturing data 
+    1) **Does meet** the design specification for all manufacturing lots in total - since the variance of all the lots combined is 76.23, which is less than 100
+    2) **Does not meet** the design specification for all manufacturing lots individually - it meets for lot 1 and lot 2, but not for lot 3, where the varience is 220 which is more than 100.
 
 ## Deliverable 3: T-Tests on Suspension Coils
 
