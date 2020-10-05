@@ -71,37 +71,31 @@ There are many metrices that a cunsumer thinks of at the time of buying a car, a
 6) Safety Rating
 7) Resale value
 
+### TEST 1
+
 * What metric or metrics are you going to test?
-    * For the purpose of this study, we are going to test 'Safety Rating'
+    * For the purpose of test 1, we are going to test **Safety Rating**
 * What is the null hypothesis or alternative hypothesis?    
-    * Null Hypothesis (Ho): There is no statistical difference between the Safety Ratings of MechaCar and the competitor's car
-    * Alternate Hypothesis (Ha): There is a statistical difference between the Safety Ratings
+    * Null Hypothesis (Ho): There is no statistical difference between the Safety Ratings of MechaCar and the competition
+    * Alternate Hypothesis (Ha): There is a statistical difference between the Safety Ratings of MechaCar and the competition
 
 * What statistical test would you use to test the hypothesis? And why?
-    * We would use a two-sample t-test, as this will allow us to compare a random sample of MechaCar against a random sample of a competitor.
+    * We would use a two-sample t-test, as this will allow us to compare a random sample of MechaCar against a random sample of the competition
 
 * What data is needed to run the statistical test?
-* We would need unbiased and radom samples of the values of 'Safety Rating' of MechaCar and the competitor.
+    * We would need completely radom samples of 'Safety Ratings' of MechaCar and the competition. 
 
-======================
-Using your knowledge of R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
+### TEST 2
 
-Follow the instructions below to complete Deliverable 4.
+* What metric or metrics are you going to test?
+    * For the purpose of test 2, we are going to test **Maintenance Cost**
+* What is the null hypothesis or alternative hypothesis?    
+    * Null Hypothesis (Ho): There is no statistical difference between the **Maintenance Cost** of MechaCar and the competition
+    * Alternate Hypothesis (Ha): There is a statistical difference between the **Maintenance Cost** of MechaCar and the competition
 
-* In your README, create a subheading ## Study Design: MechaCar vs Competition.
-* Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-* In your description, address the following questions:
-    * What metric or metrics are you going to test?
-    * What is the null hypothesis or alternative hypothesis?
-    * What statistical test would you use to test the hypothesis? And why?
-    * What data is needed to run the statistical test?*
+* What statistical test would you use to test the hypothesis? And why?
+    * We would use a **two-sample t-test**, as this will allow us to compare a random sample of MechaCar's **Maintenance Cost** against a random sample of the competition's **Maintenance Cost**
 
+* What data is needed to run the statistical test?
+    * We would need completely radom samples of **Maintenance Cost** of MechaCar and the competition. 
 
-***Deliverable 4 Requirements***
-You will earn a perfect score for Deliverable 4 by completing all requirements below:
-
-The statistical study design has the following:
-* A metric to be tested is mentioned (5 pt)
-* A null hypothesis or an alternative hypothesis is described (5 pt)
-* A statistical test is described to test the hypothesis (5 pt)
-* The data for the statistical test is described (5 pt)
