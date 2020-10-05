@@ -14,7 +14,7 @@ In the past, Jeremy and I analysed some data and the management was happy.
 
 ## Deliverable 1: Linear Regression to Predict MPG
 
-### Imgage 1: Output of Deliverable 1
+### Image 1: Output of Deliverable 1
 
 ![](Resources/Deliverable1.png)
 
@@ -34,7 +34,7 @@ In the past, Jeremy and I analysed some data and the management was happy.
 
 ## Deliverable 2: Summary Statistics on Suspension Coils
 
-### Imgage 2: Output of Deliverable 2
+### Image 2: Output of Deliverable 2
 ![](Resources/Deliverable2.png)
 
 ### Answer to the question
@@ -46,6 +46,13 @@ In the past, Jeremy and I analysed some data and the management was happy.
     2) **Does not meet** the design specification for all manufacturing lots individually - it meets for lot 1 and lot 2, but not for lot 3, where the varience is 220 which is more than 100.
 
 ## Deliverable 3: T-Tests on Suspension Coils
+
+### Image 3: Output of Deliverable 3 - Part 1: t-test - all lots together
+![](Resources/Deliverable3a.png)
+
+### Image 4: Output of Deliverable 3 - Part 2: t-test - all lots together
+![](Resources/Deliverable3b.png)
+
 
 Written Summary
 In your README, create a subheading ## T-Tests on Suspension Coils, then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
