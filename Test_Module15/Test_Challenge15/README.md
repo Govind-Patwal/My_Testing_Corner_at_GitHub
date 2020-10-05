@@ -12,7 +12,7 @@ In the past, Jeremy and I analysed some data and the management was happy.
     * MechaCar Data: click ![here](Resources/MechaCar_mpg.csv)
     * Suspension Coil Data: click ![here](Resources/Suspension_Coil.csv)
 
-## Deliverable 1: Linear Regression to Predict MPG
+## Linear Regression to Predict MPG
 
 ### Image 1: Output of Deliverable 1
 
@@ -32,7 +32,7 @@ In the past, Jeremy and I analysed some data and the management was happy.
     
     **Answer**: Yes, the linear model predicts mpg of MechaCar Prototypes effectively because the `p-value is < 0.05`.
 
-## Deliverable 2: Summary Statistics on Suspension Coils
+## Summary Statistics on Suspension Coils
 
 ### Image 2: Output of Deliverable 2
 ![](Resources/Deliverable2.png)
@@ -45,7 +45,7 @@ In the past, Jeremy and I analysed some data and the management was happy.
     1) **Does meet** the design specification for all manufacturing lots in total - since the variance of all the lots combined is 76.23, which is less than 100
     2) **Does not meet** the design specification for all manufacturing lots individually - it meets for lot 1 and lot 2, but not for lot 3, where the varience is 220 which is more than 100.
 
-## Deliverable 3: T-Tests on Suspension Coils
+## T-Tests on Suspension Coils
 
 ### Image 3: Output of Deliverable 3 (Part 1): t-test - all lots together
 ![](Resources/Deliverable3a.png)
@@ -60,7 +60,7 @@ In the past, Jeremy and I analysed some data and the management was happy.
 * Lot 2: We observe the `p-value = 0.3451`. We conclude that **we cannot reject the null hypothesis**, which implies that the mean PSI of Lot 2 is similar to the population mean of 1,500 pounds per inch.
 * Lot 3: We observe the `p-value = 0.637`. We conclude that **we cannot reject the null hypothesis**, which implies that the mean PSI of Lot 3 is similar to the population mean of 1,500 pounds per inch.
 
-## Deliverable 4: Study Design: MechaCar vs Competition
+## Study Design: MechaCar vs Competition
 
 Using your knowledge of R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
 
