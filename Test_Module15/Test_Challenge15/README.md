@@ -1,5 +1,6 @@
-# Mech Car
+# MechaCar Statistical Analysis
 
+## Project Overview
 
 ## Purpose of this analysis
 In the past, Jeremy and I analysed some data and the management was happy.
@@ -97,5 +98,4 @@ There are many metrices that a cunsumer thinks of at the time of buying a car, a
     * We would use a **two-sample t-test**, as this will allow us to compare a random sample of MechaCar's **City Fuel Efficiency** against a random sample of the competition's **City Fuel Efficiency**
 
 * What data is needed to run the statistical test?
-    * We would need completely radom samples of '**City Fuel Efficiency**' of MechaCar and the competition.     
-
+    * We would need completely radom samples of '**City Fuel Efficiency**' of MechaCar and the competition.    
