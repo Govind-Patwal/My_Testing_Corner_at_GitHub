@@ -62,7 +62,28 @@ In the past, Jeremy and I analysed some data and the management was happy.
 * Lot 3: We observe the `p-value = 0.637`. We conclude that **we cannot reject the null hypothesis**, which implies that the mean PSI of Lot 3 is similar to the population mean of 1,500 pounds per inch.
 
 ## Study Design: MechaCar vs Competition
+There are many metrices that a cunsumer thinks of at the time of buying a car, a few of these are:
+1) Cost of the car
+2) City and/or Highway Fuel efficiency
+3) Seating Capacity
+4) Horse Power
+5) Maintenance cost
+6) Safety Rating
+7) Resale value
 
+* What metric or metrics are you going to test?
+    * For the purpose of this study, we are going to test 'Safety Rating'
+* What is the null hypothesis or alternative hypothesis?    
+    * Null Hypothesis (Ho): There is no statistical difference between the Safety Ratings of MechaCar and the competitor's car
+    * Alternate Hypothesis (Ha): There is a statistical difference between the Safety Ratings
+
+* What statistical test would you use to test the hypothesis? And why?
+    * We would use a two-sample t-test, as this will allow us to compare a random sample of MechaCar against a random sample of a competitor.
+
+* What data is needed to run the statistical test?
+* We would need unbiased and radom samples of the values of 'Safety Rating' of MechaCar and the competitor.
+
+======================
 Using your knowledge of R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
 
 Follow the instructions below to complete Deliverable 4.
