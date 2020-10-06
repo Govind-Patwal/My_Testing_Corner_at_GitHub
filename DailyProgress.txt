@@ -84,7 +84,7 @@ For this project you'll be partnering with Jennifer, an account manager at BigMa
 
 Big Data - 4 Vs - Volume, Velocity, variety, Veracity
 
-Oct 6 - start 16.1.1, started 16.2.2
+Oct 6 - start 16.1.1, started 16.2.2, started 16.3.1
 
 
 
