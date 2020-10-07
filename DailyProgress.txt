@@ -82,7 +82,7 @@ You are the first data expert at BigMarket, a startup that helps businesses opti
 
 For this project you'll be partnering with Jennifer, an account manager at BigMarket. SellBy, your client, loves to talk about the power of big data, but Jennifer isn't a data expert. So you start off the project by giving her a quick overview of what big data actually is.
 
-Big Data - 4 Vs - Volume, Velocity, variety, Veracity
+Big Data features - 4 Vs - Volume, Velocity, variety, Veracity
 
 Oct 6 - start 16.1.1, started 16.2.2, started 16.3.1, started 16.4.1, startd 16.4.2, finished 16.4.2, to start 16.4.3 
 
