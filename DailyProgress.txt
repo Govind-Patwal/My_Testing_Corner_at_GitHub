@@ -92,7 +92,7 @@ Oct 8 - started 16.4.3, started 16.5.1, started 16.5.2, started 16.5.3, started 
 
 Oct 9 - started 16.6.1, still working on 16.6.1, to complete the module tomorrow
 
-Oct 10 - completed 16.6.1
+Oct 10 - completed 16.6.1, completed 16.6.2
 
 
 
