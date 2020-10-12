@@ -20,7 +20,7 @@ In this project, I will have to use PySpark to perform the ETL process to extrac
 
 ## Output on Google Colab
 
-1) Watches_reviews as a DataFrame
+1) DataFrame - amazon_reviews_us_Watches
 
     ![](resources/watches_data.png)
 
@@ -58,24 +58,28 @@ In this project, I will have to use PySpark to perform the ETL process to extrac
 
     ![](resources/vine_table_SQL.png)
 
-## Review Summary
+## Results
 
 ![](resources/review_summary.png)
 
-### Answers to the Challenge questions
+### Answers to the questions
 
-### Question 1: How many Vine reviews and non-Vine reviews were there?
+#### Question 1: How many Vine reviews and non-Vine reviews were there?
 * Total number of Vine reviews: 47
 * Total number of non-Vine reviews: 8362
 
-### Question 2: How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+#### Question 2: How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
 * Vine reviews that were 5 stars - 15
 * non-Vine reviews that were 5 stars - 4332
 
-### Question 3: What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
-* Percentage of Vine reviews that were 5 stars: 32%
-* Percentage of non-Vine reviews that were 5 stars: 52%
+#### Question 3: What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+* Percentage of Vine reviews that were 5 stars: 31.91%
+* Percentage of non-Vine reviews that were 5 stars: 51.81%
+
+## Summary
 
 
+Additional analysis
+* We could do a `one-sample t-test` with our dataset
 
 Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
