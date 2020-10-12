@@ -6,7 +6,7 @@ I am the first data expert at **BigMarket**, a startup that helps businesses opt
 For this project you'll be partnering with Jennifer, an account manager at BigMarket. SellBy, my client, loves to talk about the power of big data, but Jennifer isn't a data expert. So I start off the project by giving her a quick overview of what big data actually is.
 
 ## Purpose of this Analysis
-As a part of our first assignment, we did a NLP analysis of the review and when the model was tested, it gave a accuracy rate of almost 70%. Selly was impressed.
+As a part of our first assignment, we did a NLP analysis of the review and when the model was tested, it gave a accuracy rate of almost 70%. The client **$ellby** was impressed.
 
 I have now been tasked with another, larger project: analyzing Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
 
@@ -42,31 +42,40 @@ In this project, I will have to use PySpark to perform the ETL process to extrac
 
 ## PostgreSQL Query output
 
-1) SQL query - customers
+1) SQL query - customers_table
 
     ![](resources/customers_table_SQL.png)
 
-2) SQL query - customers
+2) SQL query - products_table
 
     ![](resources/products_table_SQL.png)
 
-3) SQL query - customers
+3) SQL query - review_id_table
 
     ![](resources/review_id_table_SQL.png)
 
-4) SQL query - customers
+4) SQL query - vine_table
 
     ![](resources/vine_table_SQL.png)
 
 ## Review Summary
 
-Results: Using bulleted lists and images of DataFrames as support, address the following questions:
-
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
-
 ![](resources/review_summary.png)
+
+### Answers to the Challenge questions
+
+### Question 1: How many Vine reviews and non-Vine reviews were there?
+* Total number of Vine reviews: 47
+* Total number of non-Vine reviews: 8362
+
+### Question 2: How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+* Vine reviews that were 5 stars - 15
+* non-Vine reviews that were 5 stars - 4332
+
+### Question 3: What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+* Percentage of Vine reviews that were 5 stars: 32%
+* Percentage of non-Vine reviews that were 5 stars: 52%
+
 
 
 Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
