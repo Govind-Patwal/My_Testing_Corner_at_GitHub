@@ -94,7 +94,9 @@ Oct 9 - started 16.6.1, still working on 16.6.1, to complete the module tomorrow
 
 Oct 10 - completed 16.6.1, completed 16.6.2, completed 16.6.3, completed 16.6.4, completed 16.6.5, started 16.7.1, started 16.7.2, started 16.7.4, started 16.8.1, started 16.8.3, finished Module 16, to start Challenge 16
 
-Oct 11 - started Challlenge 16
+Oct 11 - started Challlenge 16, finished Challenge 16
+
+Oct 12 - started Module 17
 
 
 
