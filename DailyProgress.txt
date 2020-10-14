@@ -105,3 +105,5 @@ Oct 13 - revised till end of 17.2, started 17.3.1
 
 training data = fitting data. It is usually >= 70%
 testing data = predicitn data. It is (100 - training data )
+
+Oct 14 - Started 17.3.1
