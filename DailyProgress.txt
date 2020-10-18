@@ -120,4 +120,12 @@ Oct 17 - continuining on the Challenge 17
 
 Q for TA / AskBCS
 Deliverable 1
-Check the balance of the target variable ????
+# Check the balance of our target values
+y['loan_status'].value_counts()
+
+====================
+
+
+
+
+
