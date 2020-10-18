@@ -114,3 +114,10 @@ Oct 16 - started 17.5.2, started 17.6.1, started 17.6.2, started 17.6.3, started
 
 
 Oct 17 - continuining on the Challenge 17
+
+
+
+
+Q for TA / AskBCS
+Deliverable 1
+Check the balance of the target variable ????
