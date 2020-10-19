@@ -113,18 +113,9 @@ Oct 15 - started 17.4.1, started 17.4.2, started 17.5.1
 Oct 16 - started 17.5.2, started 17.6.1, started 17.6.2, started 17.6.3, started 17.6.4, started 17.7.1, started 17.7.2, started 17.7.3, started 17.8.1, started 17.9.1, started 17.10.1, started 17.10.2, started 17.10.3, started Challenge 17
 
 
-Oct 17 - continuining on the Challenge 17
+Oct 17 - continuining on the Challenge 17, 
 
-
-
-
-Q for TA / AskBCS
-Deliverable 1
-# Check the balance of our target values
-y['loan_status'].value_counts()
-
-====================
-
+Oct 18 - Finished Challenge 17
 
 
 
