@@ -117,7 +117,7 @@ Oct 17 - continuining on the Challenge 17,
 
 Oct 18 - Finished Challenge 17
 
-Oct 19 - started Module 18
+Oct 19 - started Module 18, started 18.0.2
 
 
 
