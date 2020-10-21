@@ -123,7 +123,7 @@ Oct 20 - started 18.0.3
 
 I and my childhood friend Martha always dreamed about changing the world. so when she gets the chance to pitch an investment in cryptocurrencies to her firm 'Accountability Accounting', you jump at the chance to help out. After all, you both think that changing the world is what crytocurrency is all about. As you and Martha boh know, the popularity of Bitcoin has caused a price jump that makes it unaffordable for many new investors. However, there are many many more cryptocurrencies available at more affordable prices. Martha has a data set of crypto currencies and can analyze it in any way she wants. It's your job to help Martha discover trends that  will convince her firm to invest in these new currencies. Lucky for both of you and for Martha's firm, ths is the perfect job for unsupervised machine learning.
 
-started 18.0.4, started 18.1.1, started 18.1.2
+started 18.0.4, started 18.1.1, started 18.1.2, started 18.1.3
 
 
 
