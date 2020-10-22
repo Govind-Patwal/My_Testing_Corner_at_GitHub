@@ -125,11 +125,13 @@ I and my childhood friend Martha always dreamed about changing the world. so whe
 
 started 18.0.4, started 18.1.1, started 18.1.2, started 18.1.3
 
-Oct 21 - reinstalling Anaconda
+Oct 21 - reinstalling Anaconda, required class
 
 Jupyter Notebook Server
 Pythondata
 mlenv
+
+
 
 
 
