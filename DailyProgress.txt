@@ -131,7 +131,7 @@ Jupyter Notebook Server
 Pythondata
 mlenv
 
-Oct 22 - installed Anaconda
+Oct 22 - installed Python 3.7.6 // installed Anaconda 8 // 
 
 
 
