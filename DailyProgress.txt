@@ -131,7 +131,25 @@ Jupyter Notebook Server
 Pythondata
 mlenv
 
-Oct 22 - installed Python 3.7.6 // installed Anaconda 8 // 
+Oct 22 - 
+Step 1: Installed Python 3.7.6 
+Step 2: Installed Anaconda 8 
+Step 3: Open Anaconda Powershell
+(base)...> conda update conda
+(base)...> version
+(base)...> conda create -n PythonData python=3.7 anaconda
+(base)...> conda activate PythonData
+(PythonData)...> conda deactivate
+(base)...> conda create -n mlenv python=3.7 anaconda
+(base)...> conda activate mlenv
+(mlenv)...> conda install -c conda-forge imbalanced-learn
+(mlenv)...> python -m ipykernel install --user --name mlenv
+(mlenv)...> conda deactivate
+(base)...> conda activate PythonData
+(PythonData)...> conda install scikit-learn
+(PythonData)...> conda install plotly
+(PythonData)...> conda install -c pyviz hvplot
+
 
 
 
