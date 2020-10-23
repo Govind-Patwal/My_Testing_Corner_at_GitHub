@@ -131,6 +131,8 @@ Jupyter Notebook Server
 Pythondata
 mlenv
 
+Oct 22 - installed Anaconda
+
 
 
 
