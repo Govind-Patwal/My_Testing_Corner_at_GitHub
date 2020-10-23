@@ -132,8 +132,20 @@ Pythondata
 mlenv
 
 Oct 22 - 
-Step 1: Installed Python 3.7.6 
-Step 2: Installed Anaconda 8 
+
+==============================================
+Anaconda reinstallation
+Step 1) Uninstall Python (all versions)
+
+Step 2) Completely Uninstall Anaconda from the PC
+Control Panel -> Uninstall program -> Anaconda
+Go to C:\Users\<your_user_name> ...permanantly delete anything related to conda/anaconda/
+
+https://stackoverflow.com/questions/48236584/python-how-can-i-completely-uninstall-anaconda-on-windows-10
+https://docs.anaconda.com/anaconda/install/uninstall/
+
+Step 1: Install Python 3.7.6 
+Step 2: Install Anaconda 8 
 Step 3: Open Anaconda Powershell
 (base)...> conda update conda
 (base)...> version
@@ -149,6 +161,7 @@ Step 3: Open Anaconda Powershell
 (PythonData)...> conda install scikit-learn
 (PythonData)...> conda install plotly
 (PythonData)...> conda install -c pyviz hvplot
+========================================================
 
 
 
