@@ -163,7 +163,9 @@ Step 3: Open Anaconda Powershell
 (PythonData)...> conda install -c pyviz hvplot
 ========================================================
 
+Oct 23 - worked on Challenge 17
 
+Oct 24 - Resubmitted Challenge 17, ----- to finish Module 18 today, and start the Challenge today
 
 
 
