@@ -166,5 +166,5 @@ Step 3: Open Anaconda Powershell
 Oct 23 - worked on Challenge 17
 
 Oct 24 - Resubmitted Challenge 17, ----- to finish Module 18 today, and start the Challenge today
-Started 18.2.1, Started 18.2.2, started 18.2.3, started 18.2.4, started 18.2.5
+Started 18.2.1, Started 18.2.2, started 18.2.3, started 18.2.4, started 18.2.5, started 18.2.6
 
