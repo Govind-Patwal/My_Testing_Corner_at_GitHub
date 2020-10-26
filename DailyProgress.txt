@@ -170,3 +170,5 @@ Started 18.2.1, Started 18.2.2, started 18.2.3, started 18.2.4, started 18.2.5, 
 
 Oct 26 - completed Challemge 18
 
+Oct 27 - started 19.0.3
+
