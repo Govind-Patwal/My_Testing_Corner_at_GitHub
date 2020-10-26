@@ -176,5 +176,5 @@ Beks is a data scientist and programmer for the non-profit foundation Alphabet S
 
 In this module, you will help Beks learn about neural networks and how to design and train these models using the Python TensorFlow library. You will rely on your past experience with statistics and machine learning to help test and optimize your models. By the end of this module you will be able to create a robust deep learning neural network capable of interpreting large complex datasets. This model will help Becks and Alphabet Soup which organizations should receive donations.
 
-started 19.1.1, started 19.1.2
+started 19.1.1, started 19.1.2, started 19.1,3
 
