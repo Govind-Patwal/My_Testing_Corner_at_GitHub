@@ -1,20 +1,20 @@
 Step 1: Install VSCode
 Step 2: Install Git (choose the code editor as VSCode)
 
+###################################################################################
+Steps below to be performed on Git Terminal
+At the passphrase prompt, press enter
+command to be entered is after the $ sign
+###################################################################################
+
 16474@DESKTOP-1D8PFP4 MINGW64 ~
 $ ls -al ~/.ssh
+
 ls: cannot access '/c/Users/16474/.ssh': No such file or directory
 
 16474@DESKTOP-1D8PFP4 MINGW64 ~
-$ ssh-keygen -t^Vssh-keygen -t^V
-unknown key type ^V
-
-16474@DESKTOP-1D8PFP4 MINGW64 ~
-$ ssh-keygen -t^V
-unknown key type ^V
-
-16474@DESKTOP-1D8PFP4 MINGW64 ~
 $ ssh-keygen -t rsa -b 4069 -C "gspatwal81@gmail.com"
+
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/16474/.ssh/id_rsa):
 Created directory '/c/Users/16474/.ssh'.
@@ -39,10 +39,12 @@ The key's randomart image is:
 
 16474@DESKTOP-1D8PFP4 MINGW64 ~
 $ eval "$(ssh-agent -s)"
+
 Agent pid 1793
 
 16474@DESKTOP-1D8PFP4 MINGW64 ~
 $ ssh-add ~/.ssh/id_rsa
+
 Identity added: /c/Users/16474/.ssh/id_rsa (gspatwal81@gmail.com)
 
 16474@DESKTOP-1D8PFP4 MINGW64 ~
@@ -54,6 +56,7 @@ Got to github.com -> settings - > SSH and GPG key -> add SSH Key -> add title an
 
 16474@DESKTOP-1D8PFP4 MINGW64 ~
 $ ssh -T git@github.com
+
 The authenticity of host 'github.com (140.82.112.3)' can't be established.
 RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
