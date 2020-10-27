@@ -1,0 +1,62 @@
+Step 1: Install VSCode
+Step 2: Install Git (choose the code editor as VSCode)
+
+16474@DESKTOP-1D8PFP4 MINGW64 ~
+$ ls -al ~/.ssh
+ls: cannot access '/c/Users/16474/.ssh': No such file or directory
+
+16474@DESKTOP-1D8PFP4 MINGW64 ~
+$ ssh-keygen -t^Vssh-keygen -t^V
+unknown key type ^V
+
+16474@DESKTOP-1D8PFP4 MINGW64 ~
+$ ssh-keygen -t^V
+unknown key type ^V
+
+16474@DESKTOP-1D8PFP4 MINGW64 ~
+$ ssh-keygen -t rsa -b 4069 -C "gspatwal81@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/16474/.ssh/id_rsa):
+Created directory '/c/Users/16474/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/16474/.ssh/id_rsa
+Your public key has been saved in /c/Users/16474/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:xIgqC7q6HlSoRPSZeB+r6Etu+aMtXCmSCePtCLkPFho gspatwal81@gmail.com
+The key's randomart image is:
++---[RSA 4069]----+
+|.o               |
+|. + o. o         |
+| + *... o        |
+|= o.. o.         |
+|EBo .o  S        |
+|@*o+.            |
+|O**.             |
+|*Ooo             |
+|BO*o.            |
++----[SHA256]-----+
+
+16474@DESKTOP-1D8PFP4 MINGW64 ~
+$ eval "$(ssh-agent -s)"
+Agent pid 1793
+
+16474@DESKTOP-1D8PFP4 MINGW64 ~
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/16474/.ssh/id_rsa (gspatwal81@gmail.com)
+
+16474@DESKTOP-1D8PFP4 MINGW64 ~
+$ clip <~/.ssh/id_rsa.pub
+
+###################################################################################
+Got to github.com -> settings - > SSH and GPG key -> add SSH Key -> add title and paste
+###################################################################################
+
+16474@DESKTOP-1D8PFP4 MINGW64 ~
+$ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.112.3' (RSA) to the list of known hosts.
+Hi Govind-Patwal! You've successfully authenticated, but GitHub does not provide shell access.
+
