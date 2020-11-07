@@ -194,3 +194,5 @@ Oct 31 - 19.2.3, 19.2.4, 19.2.5, 19.3.1, 19.3.2,
 Nov 1 - 19.4.1, 19.4.2, 19.4.3, 19.5.1, 19.5.2, 19.6.1, starting Challenge 19
 
 Nov 5 - Working on the project
+
+Nov 6 - working on the ERDs
