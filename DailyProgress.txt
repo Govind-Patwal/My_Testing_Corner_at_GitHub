@@ -201,7 +201,7 @@ Nov 7 - worked on Project, team call at 7 PM
 
 Nov 8 - worked on data cleaning, creating a NLP model
 
-Nov 9 - discussed project further
+Nov 9 - discussed project further, next to convert lat.long to city/county
 
 
 
