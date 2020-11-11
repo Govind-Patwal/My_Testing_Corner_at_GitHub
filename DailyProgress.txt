@@ -205,6 +205,8 @@ Nov 9 - discussed project further, next to convert lat.long to city/county
 
 Nov 10 - trying to extract city/country from co-ordinates in Python
 
+Nov 11 - working on cleaning up data.
+
 
 Good link for reading/writing to RDS from Jupyter/Google Colab
 https://medium.com/@sjacks/using-rds-on-aws-with-jupyter-notebooks-c2703299fcc8
