@@ -80,6 +80,11 @@ hotel_reviews.loc[(hotel_reviews['Reviewer_Score'] > 4) & (hotel_reviews['Review
 hotel_reviews
 ```
 
+* Drop the column 'Reviewer_Score'
+``` 
+hotel_reviews = hotel_reviews.drop(columns ='Reviewer_Score')
+```
+
 * Format of data for NLP3
 
     ![Format_of_data_for_NLP3](images/Format_of_data_for_NLP3.png)
@@ -124,4 +129,4 @@ hotel_reviews = hotel_reviews.drop(columns = 'Reviewer_Score')
 
 The accurancy of the model now is 92.29% is is satisfactory, we will now run the model again (this time reading from a Database on AWS)
 
-### Finally Step - Running NLP and reading data from AWS RDS
+# Final Step - Running NLP and reading data from AWS RDS
