@@ -205,7 +205,11 @@ Nov 9 - discussed project further, next to convert lat.long to city/county
 
 Nov 10 - trying to extract city/country from co-ordinates in Python
 
-Nov 11 - working on cleaning up data, cleaned data to exract cities and countries, now working on a new NLP model with country as an input
+Nov 11 - working on cleaning up data, cleaned data to exract cities and countries, now working on a new NLP model with country as an 
+
+Nov 14 -created JSONs 
+
+
 
 
 Good link for reading/writing to RDS from Jupyter/Google Colab
