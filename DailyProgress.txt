@@ -207,7 +207,7 @@ Nov 10 - trying to extract city/country from co-ordinates in Python
 
 Nov 11 - working on cleaning up data, cleaned data to exract cities and countries, now working on a new NLP model with country as an 
 
-Nov 14 -created JSONs, tried reducing rows to 10k  
+Nov 14 -created JSONs, tried reducing rows to 10k, reduced JSON rows to 1000  
 
 
 
