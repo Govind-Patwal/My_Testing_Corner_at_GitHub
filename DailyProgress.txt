@@ -209,7 +209,7 @@ Nov 11 - working on cleaning up data, cleaned data to exract cities and countrie
 
 Nov 14 -created JSONs, tried reducing rows to 10k, reduced JSON rows to 1000  
 
-Nov 16 - working on the project
+Nov 16 - working on the project, uploading files
 
 
 Good link for reading/writing to RDS from Jupyter/Google Colab
