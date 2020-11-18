@@ -211,7 +211,7 @@ Nov 14 -created JSONs, tried reducing rows to 10k, reduced JSON rows to 1000
 
 Nov 16 - working on the project, uploading files
 
-Nov 17 - working on Project
+Nov 17 - working on Project, need to upload DataBase on RDS
 
 
 Good link for reading/writing to RDS from Jupyter/Google Colab
