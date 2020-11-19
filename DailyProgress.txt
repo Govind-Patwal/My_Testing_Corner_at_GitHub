@@ -213,7 +213,7 @@ Nov 16 - working on the project, uploading files
 
 Nov 17 - working on Project, need to upload DataBase on RDS, then need to change the Jupyter notebook code
 
-Nov 19 - working on NLP using DL, using RDS for calling data
+Nov 19 - working on NLP using DL, using RDS for calling data, will next use SQLAlchemy for talking to PostgresSQL
 
 
 Good link for reading/writing to RDS from Jupyter/Google Colab
