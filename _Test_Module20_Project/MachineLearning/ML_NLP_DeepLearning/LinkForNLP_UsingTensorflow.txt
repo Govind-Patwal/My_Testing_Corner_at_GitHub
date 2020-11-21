@@ -1,0 +1,4 @@
+https://www.tensorflow.org/hub/tutorials/tf2_text_classification
+
+---- GitHub TensorFlow datasets ----
+https://github.com/tensorflow/datasets
