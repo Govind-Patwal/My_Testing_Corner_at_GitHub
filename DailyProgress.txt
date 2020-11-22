@@ -220,3 +220,7 @@ Nov 20 - working on NLP using Deep Learning, not working on Jupyter Notebook, is
 
 Good link for reading/writing to RDS from Jupyter/Google Colab
 https://medium.com/@sjacks/using-rds-on-aws-with-jupyter-notebooks-c2703299fcc8
+
+got NLP working using Google
+
+
