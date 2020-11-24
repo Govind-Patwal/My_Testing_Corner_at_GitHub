@@ -1,3 +1,7 @@
+#Data file 
+Hotel_Reviews.csv
+MachineLearning/Machine_Learning_Ashok/hotel_combined.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -128,10 +132,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# data file (227 MB)
+# GSP data file (227 MB)
 Hotel_Reviews.csv
-Hotel_Location.csv
 hotel_location_for_project.csv
 hotel_reviews_for_project.csv
-hotel_combined.zip
-all_rows_JSON.zip
