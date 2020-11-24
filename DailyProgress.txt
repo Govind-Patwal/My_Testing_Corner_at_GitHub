@@ -221,7 +221,7 @@ Nov 20 - working on NLP using Deep Learning, not working on Jupyter Notebook, is
 Good link for reading/writing to RDS from Jupyter/Google Colab
 
 
-Nov 23 - working on Segment 3 of project, I will be working on K-means
+Nov 23 - working on Segment 3 of project, I will be working on K-means, Segment 3 will carry a 40% weightage of the project (which is 30% of the course score) - so effectively this segment has a weightage of 12 marks in the course grade outcome.
 https://medium.com/@sjacks/using-rds-on-aws-with-jupyter-notebooks-c2703299fcc8
 
 got NLP working using Google, got ipynb files for - decimal, integer, 3 cat, and post and negative outputs
