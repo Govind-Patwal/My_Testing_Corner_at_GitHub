@@ -229,3 +229,11 @@ https://medium.com/@sjacks/using-rds-on-aws-with-jupyter-notebooks-c2703299fcc8
 
 got NLP working using Google, got ipynb files for - decimal, integer, 3 cat, and post and negative outputs
 
+
+
+My GitHub pages website of this repo.
+https://govind-patwal.github.io/My_Testing_Corner_at_GitHub/
+
+created a new folder docs at the root of the repo and saved the index file at its root, along with other website files/folders
+
+
