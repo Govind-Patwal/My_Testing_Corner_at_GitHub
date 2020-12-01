@@ -242,3 +242,11 @@ Nov 26 - my task is to finish all ML algos by tomorrow, my team mates will work 
 Nov 27 - worked on 5-star rating code
 
 Nov 28 - working on joining tables in SQL. I do not have to use pandas but SQL for that.
+
+
+==============
+
+Objective of ML: Start with a ML, check its accurancy and then take steps to imporve its accuracy by using algorithms. Also workign with groups to see if we can improve the accurancy.
+
+
+Nov 30 - polishing the group project
