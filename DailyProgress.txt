@@ -252,3 +252,5 @@ Objective of ML: Start with a ML, check its accurancy and then take steps to imp
 Nov 30 - polishing the group project, adding a new page 'The Future..."
 
 Dec 1 - Finalizing the Group project
+
+Dec 2: Working on the final group presentation
