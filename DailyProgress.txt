@@ -254,3 +254,16 @@ Nov 30 - polishing the group project, adding a new page 'The Future..."
 Dec 1 - Finalizing the Group project
 
 Dec 2: Working on the final group presentation, my team members have done their part, my updates remaining
+
+Dec 3: Project presentation yesterday,learned a lot of good features that I will implement in the future - python running on AWS lambda function (where are the AWS credentials stored, where is the model savced, how are the results pushed to the page)
+
+===========================
+
+important links
+https://towardsdatascience.com/amazon-rds-step-by-step-guide-14f9f3087d28
+https://amazon-rds.totableau.com/
+https://www.youtube.com/watch?v=PHsApsvZKNI
+
+
+
+
