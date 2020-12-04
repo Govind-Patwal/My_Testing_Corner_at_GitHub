@@ -257,6 +257,8 @@ Dec 2: Working on the final group presentation, my team members have done their 
 
 Dec 3: Project presentation yesterday,learned a lot of good features that I will implement in the future - python running on AWS lambda function (where are the AWS credentials stored, where is the model savced, how are the results pushed to the page)
 
+Dec 4: found some good GitHub page websites, will work on them
+
 ===========================
 
 important links
