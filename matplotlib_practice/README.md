@@ -1,1 +1,0 @@
-# Various graphs with matplotlib
