@@ -144,7 +144,6 @@ Go to C:\Users\<your_user_name> ...permanantly delete anything related to conda/
 https://stackoverflow.com/questions/48236584/python-how-can-i-completely-uninstall-anaconda-on-windows-10
 https://docs.anaconda.com/anaconda/install/uninstall/
 
-================================================================
 Step 1: Install Python 3.7.6 
 Step 2: Install Anaconda 8 
 Step 3: Open Anaconda Powershell
@@ -164,7 +163,6 @@ Step 3: Open Anaconda Powershell
 (PythonData)...> conda install -c pyviz hvplot
 (PythonData)...> conda install tensorflow
 ========================================================
-
 
 Oct 23 - worked on Challenge 17
 
@@ -227,6 +225,8 @@ Nov 23 - working on Segment 3 of project, I will be working on K-means, Segment 
 
 Nov 24 - worrking on design part of the website, will choose a template today, HTML templates
 
+https://medium.com/@sjacks/using-rds-on-aws-with-jupyter-notebooks-c2703299fcc8
+
 got NLP working using Google, got ipynb files for - decimal, integer, 3 cat, and post and negative outputs
 
 
@@ -259,8 +259,10 @@ Dec 3: Project presentation yesterday,learned a lot of good features that I will
 
 Dec 4: found some good GitHub page websites, will work on them
 
-Dec 6: final Project submission
 
+Dec 13 - Started MissionDataJobStart - Day 1
+
+===========================
 
 
 
