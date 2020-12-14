@@ -1,0 +1,1 @@
+Dec13: Day1 - created foundation, started Google's Python Class 
