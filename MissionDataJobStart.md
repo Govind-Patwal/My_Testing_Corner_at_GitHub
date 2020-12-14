@@ -1,102 +1,81 @@
 # Mission Data Job Start
 
-## [Daily Activities](#DailyActivity) 
+## [POA](#POA)
+## [Daily Activities](#Daily_Activity) 
+In this section, I mention my daily activities, I try to be consistent. This allows me to plan and evaluate my execution of my plan
 
-## Useful Links
+## [Good Links](#Good_Links) 
 
-## Learnings
+## [Cheat Sheet](#Cheat_Sheet) 
 
+---
 
-
-### DailyActivity
-Week0: 2010/12/07 - 2020/12/13
-2020/12/13: Week0/Day0 - Built foundation, started Google's Python Class 
-
-Week1: 2020/12/14 - 2020/12/20
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-==============================================================
-=============================================================
-GOOD LINKS
-
-General
-Stackoverflow
+### POA
 
 1. Python
-Google Python Class - https://developers.google.com/edu/python
-UofT Bootcamp exercises
-UofT GitLab exercises
-YouTube
+    - Google Python Class - https://developers.google.com/edu/python
+    - UofT Bootcamp exercises
+    - UofT GitLab exercises
+    - YouTube
+2. Django / Flask
 
-2. SQL
+3. PostgreSQL standalone
+    - all read/write SQL functions from Python 
 
-3. Python + SQL
+4. AWS 
+    - all read/write AWS functions from Python, using PostgreSQL DB
 
-4. AWS
+5. HTML website - inputting a text, calling AWS, running Python on AWS...
 
-5. Python + SQL + AWS
-
-6. Django / Flask
+6. Machine Learning + Deep Learning
 
 7. Tableau 
+---
+### Daily_Activity
+Week starts on a Monday and ends on a Sunday
 
-8. Machine Learning + Deep Learning
+Week | Day | Date | Planned | Executed | Evaluation
+| --- | --- | --- | --- | --- | --- |
+Week 0 | 0 | 2020/12/13 | Build foundation, start Google's Python Class | Did as planned | 
+Week 1 | 1 | 2020/12/14 | Google's Python Class | |
+Week 1 | | | | |
+Week 1 | | | | |
+Week 1 | | | | |
+Week 1 | | | | |
+Week 1 | | | | |
+Week 1 | | | | |
 
--------
+---
+### Good_Links
 
-https://medium.com/@sjacks/using-rds-on-aws-with-jupyter-notebooks-c2703299fcc8
-https://towardsdatascience.com/amazon-rds-step-by-step-guide-14f9f3087d28
-https://amazon-rds.totableau.com/
-https://www.youtube.com/watch?v=PHsApsvZKNI
-some good GitHub page website - https://github.com/collections/github-pages-examples
-govind.github.io
-netflix.github.io
-https://github.com/Netflix/netflix.github.com
+- Stackoverflow
+- https://medium.com/@sjacks/using-rds-on-aws-with-jupyter-notebooks-c2703299fcc8
+- https://towardsdatascience.com/amazon-rds-step-by-step-guide-14f9f3087d28
+- https://amazon-rds.totableau.com/
+- https://www.youtube.com/watch?v=PHsApsvZKNI
+- some good GitHub page website - https://github.com/collections/github-pages-examples
+- govind.github.io
+- netflix.github.io
+- https://github.com/Netflix/netflix.github.com
 
-Word to HTML converter - https://wordtohtml.net/
-Screen Capture (on Windows Appstore) - https://getsharex.com/
-Tech Interview Practice - https://leetcode.com/
-Kaggle
-
-
-https://bierman.io/
-https://github.com/BiermanM/job_scraper
+- Word to HTML converter - https://wordtohtml.net/
+- Screen Capture (on Windows Appstore) - https://getsharex.com/
+- Tech Interview Practice - https://leetcode.com/
+- Kaggle
 
 
-https://www.youtube.com/watch?v=F5mRW0jo-U4
+- https://bierman.io/
+- https://github.com/BiermanM/job_scraper
 
-================================================================
-===============================================================
-CHEAT SHEET
+
+- https://www.youtube.com/watch?v=F5mRW0jo-U4
+
+
+- Python on AWS - Mount the EFS to your Lambda function, intall dependencies on the EFS - https://www.youtube.com/watch?v=4cquiuAQBco
+- Group Project - ML model on AWS - https://github.com/asadca4u/Final_Project_Group_Five 
+- Group Project - Good Tableau - https://public.tableau.com/profile/kassie.lu#!/vizhome/AmesHousingSalesPricesDashboard/Dashboard?publish=yes
+---
+### Cheat_Sheet
 
 Number | Action | Shortcut
 |---|---|---|
