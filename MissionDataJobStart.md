@@ -1,6 +1,6 @@
 # Mission Data Job Start
 
-## Daily Activities
+## [Daily Activities](#DailyActivity) 
 
 ## Useful Links
 
@@ -8,9 +8,12 @@
 
 
 
+### Daily Activity
+Week0: 2010/12/07 - 2020/12/13
+2020/12/13: Week0/Day0 - Built foundation, started Google's Python Class 
 
+Week1: 2020/12/14 - 2020/12/20
 
-Dec13: Day1 - created foundation, started Google's Python Class 
 
 
 
@@ -95,8 +98,7 @@ https://www.youtube.com/watch?v=F5mRW0jo-U4
 ===============================================================
 CHEAT SHEET
 
-1. Checking the version of Python in Windows
-cmd -> type 'python -V'
-
-2. Running a python file
-cmd -> cd to the root where file is placed -> python <filename>
+Number | Action | Shortcut
+|---|---|---|
+1 | Checking the version of Python in Windows | cmd -> type 'python -V'
+2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
