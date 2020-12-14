@@ -8,7 +8,7 @@
 
 
 
-### Daily Activity
+### DailyActivity
 Week0: 2010/12/07 - 2020/12/13
 2020/12/13: Week0/Day0 - Built foundation, started Google's Python Class 
 
