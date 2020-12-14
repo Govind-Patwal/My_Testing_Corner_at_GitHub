@@ -1,12 +1,11 @@
 # Mission Data Job Start
 
-## [POA](#POA)
-## [Daily Activities](#Daily_Activity) 
-In this section, I mention my daily activities, I try to be consistent. This allows me to plan and evaluate my execution of my plan
+### [POA](#POA) - My Plan of Action
+### [Daily Activities](#Daily_Activity) - WBS - breaking POA into daily activities
 
-## [Good Links](#Good_Links) 
+### [Cheat Sheet](#Cheat_Sheet) - Learning during this journey
 
-## [Cheat Sheet](#Cheat_Sheet) 
+### [Good Links](#Good_Links) - Good links for reference
 
 ---
 
@@ -46,6 +45,15 @@ Week 1 | | | | |
 Week 1 | | | | |
 
 ---
+
+### Cheat_Sheet
+
+Number | Action | Shortcut
+|---|---|---|
+1 | Checking the version of Python in Windows | cmd -> type 'python -V'
+2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
+
+---
 ### Good_Links
 
 - Stackoverflow
@@ -75,9 +83,3 @@ Week 1 | | | | |
 - Group Project - ML model on AWS - https://github.com/asadca4u/Final_Project_Group_Five 
 - Group Project - Good Tableau - https://public.tableau.com/profile/kassie.lu#!/vizhome/AmesHousingSalesPricesDashboard/Dashboard?publish=yes
 ---
-### Cheat_Sheet
-
-Number | Action | Shortcut
-|---|---|---|
-1 | Checking the version of Python in Windows | cmd -> type 'python -V'
-2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
