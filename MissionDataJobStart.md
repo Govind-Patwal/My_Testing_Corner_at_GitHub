@@ -36,8 +36,8 @@ Week starts on a Monday and ends on a Sunday
 Week | Day | Date | Planned | Executed | Evaluation
 | --- | --- | --- | --- | --- | --- |
 Week 0 | 0 | 2020/12/13 | Build foundation, start Google's Python Class | Did as planned | 
-Week 1 | 1 | 2020/12/14 | Google's Python Class | |
-Week 1 | | | | |
+Week 1 | 1 | 2020/12/14 | Google's Python Class | New Laptop - G7 delivered |
+Week 1 | 2 | 2020/12/15 | Setting up new Laptop | |
 Week 1 | | | | |
 Week 1 | | | | |
 Week 1 | | | | |
