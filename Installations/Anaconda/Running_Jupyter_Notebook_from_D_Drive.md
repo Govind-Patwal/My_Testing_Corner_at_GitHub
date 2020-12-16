@@ -2,7 +2,7 @@
 
 ### Why?
 - By default Jupyter Notebook opens the files on C drive and does not give the option to access files on any non-C drive drive
-- Many people want C for OS, and D for data, so that in case of OS failure and they need a reinstallation, data is not lost.
+- Many people (including I) want to reserve the C drive for OS, and D for data, so that in case of OS failure, they can reinstall the OS without losing data.
 
 ### How?
  - Press 'Windows' button -> Anaconda Prompt (Anaconda3)
