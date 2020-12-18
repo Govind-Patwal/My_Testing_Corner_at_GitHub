@@ -39,7 +39,7 @@ Week 0 | 0 | Sun | 2020/12/13 | Build foundation, start Google's Python Class | 
 Week 1 | 1 | Mon | 2020/12/14 | Google's Python Class + laptop setup | New Laptop - G7 delivered |
 Week 1 | 2 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
 Week 1 | 3 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
-Week 1 | 4 | Thu 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete | 
+Week 1 | 4 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete | 
 Week 1 | 5 | Fri | | | |
 Week 1 | 6 | Sat | | | |
 Week 1 | 7 | Sun | | | |
