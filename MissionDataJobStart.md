@@ -1,4 +1,7 @@
-# Mission Data Job Start
+# Mission Data Job Start 
+## First Target - Job in 24 weeks (by June 17, 2021)
+
+---
 
 ### [POA](#POA) - My Plan of Action
 ### [Daily Activities](#Daily_Activity) - WBS - breaking POA into daily activities
