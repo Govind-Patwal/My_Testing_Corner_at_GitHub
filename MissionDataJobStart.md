@@ -37,9 +37,9 @@ Week | Day | Date | Planned | Executed | Evaluation
 | --- | --- | --- | --- | --- | --- |
 Week 0 | 0 | 2020/12/13 | Build foundation, start Google's Python Class | Did as planned | 
 Week 1 | 1 | 2020/12/14 | Google's Python Class | New Laptop - G7 delivered |
-Week 1 | 2 | 2020/12/15 | Setting up new Laptop | |
-Week 1 | | | | |
-Week 1 | | | | |
+Week 1 | 2 | 2020/12/15 | Setting up new Laptop, partitioning | |
+Week 1 | 3 | 2020/12/16 | Setting up new Laptop, copying files from outside | |
+Week 1 | 4 | 2020/12/17 | copying files from outside, setup complete | |
 Week 1 | | | | |
 Week 1 | | | | |
 Week 1 | | | | |
