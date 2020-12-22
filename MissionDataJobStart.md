@@ -42,11 +42,20 @@ Week 0 | 0 | Sun | 2020/12/13 | Build foundation, start Google's Python Class | 
 Week 1 | 1 | Mon | 2020/12/14 | Google's Python Class + laptop setup | New Laptop - G7 delivered |
 Week 1 | 2 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
 Week 1 | 3 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
-Week 1 | 4 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete | 
-Week 1 | 5 | Fri | 2020/12/18| Google's Python Class + laptop setup | Tried to find the best Python course - Google, Python.org, W3 schools, UofT Bootcamp - dropped Google's as it is Python 2, started with UofT Python |
-Week 1 | 6 | Sat | 2020/12/19 | Google's Python Class + laptop setup | Spent time on ways to create Video with Green backgound - using Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify|
-Week 1 | 7 | Sun | 2020/12/20| Google's Python Class + laptop setup | Started working on Career Service tasks from UofT - finished the intro, now working on others parts|
-Week 2 | 8 | Mon | 2020/12/21| | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to acheive this , will focus on Employer-Ready and Employer-Competitive, after that will focus parallely on Hard Skills + Soft Skills|
+Week 1 | 4 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete, started Google Python class | 
+Week 1 | 5 | Fri | 2020/12/18| Google's Python Class + laptop setup | Started Google Python Class, found it was Python 2, so dropped this plan - found more courses on pyhon.org, and W3 schools, but decided to go through UofT Bootcamp modules again |
+Week 1 | 6 | Sat | 2020/12/19 | Google's Python Class + laptop setup | Spent time on ways to create Video with Green backgound so that I could create educational videos and put on GitHub - tried Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify | 
+Week 1 | 7 | Sun | 2020/12/20| Google's Python Class + laptop setup | Started with Bootcamp Python, moved to working on Career Service tasks - finished the intro, now working on others parts, decided to use the next 2 weeks to complete all tasks related to becoming Employee Ready and Employee Competitive and then revisit Hard/Soft Skills|
+Week 2 | 8 | Mon | 2020/12/21| Complete tasks related to becoming Employer-Ready and Competitive | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this |
+Week 2 | 9 | Tue | 2020/12/21| Complete tasks related to becoming Employer-Ready and Competitive |  |
+Week 2 | 10 | Wed | 2020/12/21| Complete tasks related to becoming Employer-Ready and Competitive |  |
+Week 2 | 11 | Thu | 2020/12/21| Complete tasks related to becoming Employer-Ready and Competitive |  |
+Week 2 | 12 | Fri | 2020/12/21| Complete tasks related to becoming Employer-Ready and Competitive |  |
+Week 2 | 13 | Sat | 2020/12/21| Complete tasks related to becoming Employer-Ready and Competitive |  |
+Week 2 | 14 | Sun | 2020/12/21| Complete tasks related to becoming Employer-Ready and Competitive |  |
+
+
+
 
 ---
 
