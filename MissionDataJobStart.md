@@ -1,5 +1,6 @@
 # Mission Data Job Start 
-### First Target - Job in 24 weeks (by June 17, 2021)
+### Target (Initial) - Job in 24 weeks (by June 17, 2021)
+### Target (Revision 1) - Job in 32 weeks (by Aug 17, 2021)
 
 ---
 

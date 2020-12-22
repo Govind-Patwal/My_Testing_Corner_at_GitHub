@@ -9,6 +9,7 @@ Credits: Univeristy of Toronto Bootcamp - Data Analytics and Visualization
 
 - Check the installation from the commamd prompt `python --version`
 - You can run your first Python code, from Python command, and Windows cmd
+
 drawback, can't save the code
 - Install VS code - can save the code and run in the integrted terminal
 ```
