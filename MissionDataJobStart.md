@@ -44,9 +44,9 @@ Week 1 | 2 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting 
 Week 1 | 3 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
 Week 1 | 4 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete | 
 Week 1 | 5 | Fri | | | |
-Week 1 | 6 | Sat | | | |
-Week 1 | 7 | Sun | | | |
-Week 2 | 8 | Mon | | | |
+Week 1 | 6 | Sat | | | Spent time on ways to create Video with Green backgound - using Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify|
+Week 1 | 7 | Sun | | | Started working on Career Service tasks from UofT - finished the intro, now working on others parts|
+Week 2 | 8 | Mon | | | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to acheive this , will focus on Employer-Ready and Employer-Competitive, after that will focus parallely on Hard Skills + Soft Skills|
 
 ---
 
@@ -75,6 +75,7 @@ Number | Action | Shortcut
 - Tech Interview Practice - https://leetcode.com/
 - Kaggle
 
+- https://bluink.ca/
 
 - https://bierman.io/
 - https://github.com/BiermanM/job_scraper

@@ -4,11 +4,12 @@ Credits: Univeristy of Toronto Bootcamp - Data Analytics and Visualization
 
 ## Python Installation
 - Installing Python 3.7.6 on Windows
-https://www.python.org/downloads/release/python-376/
-File to choose - Windows x86-64 executable installer
+    - https://www.python.org/downloads/release/python-376/
+    - File to choose - Windows x86-64 executable installer
 
-- Checking the installation from the commamd prompt (python --version)
-- Running you first Python code (Python command, and Windows cmd)...drawback, can't save the code
+- Check the installation from the commamd prompt `python --version`
+- You can run your first Python code, from Python command, and Windows cmd
+drawback, can't save the code
 - Install VS code - can save the code and run in the integrted terminal
 ```
 VS code - can be used to open files in explorer, can be used to compare files with additions and deltetions highlighted, can run a file in the integrated Windows PowerShell environment
