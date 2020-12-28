@@ -38,7 +38,7 @@
 Wk starts on a Monday and ends on a Sunday
 
 Wk | DOW | Date | Planned | Executed | Evaluation
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 0 | Sun | 2020/12/13 | 1st 4 days spent on Demo day on 12/10, Sat/Sun spent on relaxation | Demo on 12/10 | 
 1 | Mon | 2020/12/14 | Planning for this Wk | Google's Python Class + laptop setup. New Laptop delivered on 12/14 |
 1 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
