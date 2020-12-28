@@ -39,28 +39,28 @@ Wk starts on a Monday and ends on a Sunday
 
 Wk | Day | DOW | Date | Planned | Executed | Evaluation
 | --- | --- | --- | --- | --- | --- | --- |
-Wk 0 | 0 | Sun | 2020/12/13 | 1st 4 days spent on Demo day on 12/10, Sat/Sun spent on relaxation | Demo on 12/10 | 
-Wk 1 | 1 | Mon | 2020/12/14 | Planning for this Wk | Google's Python Class + laptop setup. New Laptop delivered on 12/14 |
-Wk 1 | 2 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
-Wk 1 | 3 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
-Wk 1 | 4 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete, started Google Python class | 
-Wk 1 | 5 | Fri | 2020/12/18| Google's Python Class + laptop setup | Started Google Python Class, found it was Python 2, so dropped this plan - found more courses on pyhon.org, and W3 schools, but decided to go through UofT Bootcamp modules again |
-Wk 1 | 6 | Sat | 2020/12/19 | Google's Python Class + laptop setup | Spent time on ways to create Video with Green backgound so that I could create educational videos and put on GitHub - tried Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify | 
-Wk 1 | 7 | Sun | 2020/12/20| Google's Python Class + laptop setup | Started with Bootcamp Python, moved to working on Career Service tasks - finished the intro, now working on others parts, decided to use the next 2 Wks to complete all tasks related to becoming Employee Ready and Employee Competitive and then revisit Hard/Soft Skills| Plan changed mid-wk
-Wk 2 | 8 | Mon | 2020/12/21| Planning for this Wk | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this |
-Wk 2 | 9 | Tue | 2020/12/22| Complete tasks to become Employer-Ready | WIP |
-Wk 2 | 10 | Wed | 2020/12/23| Complete tasks to become Employer-Ready | WIP  |
-Wk 2 | 11 | Thu | 2020/12/24| Complete tasks to become Employer-Ready | WIP  |
-Wk 2 | 12 | Fri | 2020/12/25| Complete tasks to become Employer-Ready | WIP  |
-Wk 2 | 13 | Sat | 2020/12/26| Complete tasks to become Employer-Ready | WIP  |
-Wk 2 | 14 | Sun | 2020/12/27| Complete tasks to become Employer-Ready | Completed on time | 100% completed 
-Wk 3 | 15 | Mon | 2020/12/28| Planning for this Wk |  |
-Wk 3 | 16 | Tue | 2020/12/28|  |  |
-Wk 3 | 17 | Wed | 2020/12/28|  |  |
-Wk 3 | 18 | Thu | 2020/12/28|  |  |
-Wk 3 | 19 | Fri | 2020/12/28|  |  |
-Wk 3 | 20 | Sat | 2020/12/28|  |  |
-Wk 3 | 21 | Sun | 2020/12/28|  |  |
+0 | 0 | Sun | 2020/12/13 | 1st 4 days spent on Demo day on 12/10, Sat/Sun spent on relaxation | Demo on 12/10 | 
+1 | 1 | Mon | 2020/12/14 | Planning for this Wk | Google's Python Class + laptop setup. New Laptop delivered on 12/14 |
+1 | 2 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
+1 | 3 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
+1 | 4 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete, started Google Python class | 
+1 | 5 | Fri | 2020/12/18| Google's Python Class + laptop setup | Started Google Python Class, found it was Python 2, so dropped this plan - found more courses on pyhon.org, and W3 schools, but decided to go through UofT Bootcamp modules again |
+1 | 6 | Sat | 2020/12/19 | Google's Python Class + laptop setup | Spent time on ways to create Video with Green backgound so that I could create educational videos and put on GitHub - tried Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify | 
+1 | 7 | Sun | 2020/12/20| Google's Python Class + laptop setup | Started with Bootcamp Python, moved to working on Career Service tasks - finished the intro, now working on others parts, decided to use the next 2 Wks to complete all tasks related to becoming Employee Ready and Employee Competitive and then revisit Hard/Soft Skills| Plan changed mid-wk
+2 | 8 | Mon | 2020/12/21| Planning for this Wk | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this |
+2 | 9 | Tue | 2020/12/22| Complete tasks to become Employer-Ready | WIP |
+2 | 10 | Wed | 2020/12/23| Complete tasks to become Employer-Ready | WIP  |
+2 | 11 | Thu | 2020/12/24| Complete tasks to become Employer-Ready | WIP  |
+2 | 12 | Fri | 2020/12/25| Complete tasks to become Employer-Ready | WIP  |
+2 | 13 | Sat | 2020/12/26| Complete tasks to become Employer-Ready | WIP  |
+2 | 14 | Sun | 2020/12/27| Complete tasks to become Employer-Ready | Completed on time | 100% completed 
+3 | 15 | Mon | 2020/12/28| Planning for this Wk |  |
+3 | 16 | Tue | 2020/12/28|  |  |
+3 | 17 | Wed | 2020/12/28|  |  |
+3 | 18 | Thu | 2020/12/28|  |  |
+3 | 19 | Fri | 2020/12/28|  |  |
+3 | 20 | Sat | 2020/12/28|  |  |
+3 | 21 | Sun | 2020/12/28|  |  |
 ---
 
 ### Cheat_Sheet
