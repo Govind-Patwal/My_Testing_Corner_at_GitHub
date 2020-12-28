@@ -47,13 +47,13 @@ Week 1 | 4 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying 
 Week 1 | 5 | Fri | 2020/12/18| Google's Python Class + laptop setup | Started Google Python Class, found it was Python 2, so dropped this plan - found more courses on pyhon.org, and W3 schools, but decided to go through UofT Bootcamp modules again |
 Week 1 | 6 | Sat | 2020/12/19 | Google's Python Class + laptop setup | Spent time on ways to create Video with Green backgound so that I could create educational videos and put on GitHub - tried Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify | 
 Week 1 | 7 | Sun | 2020/12/20| Google's Python Class + laptop setup | Started with Bootcamp Python, moved to working on Career Service tasks - finished the intro, now working on others parts, decided to use the next 2 weeks to complete all tasks related to becoming Employee Ready and Employee Competitive and then revisit Hard/Soft Skills|
-Week 2 | 8 | Mon | 2020/12/21| Complete tasks related to becoming Employer-Ready and Competitive | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this |
-Week 2 | 9 | Tue | 2020/12/22| Complete tasks related to becoming Employer-Ready and Competitive | WIP |
-Week 2 | 10 | Wed | 2020/12/23| Complete tasks related to becoming Employer-Ready and Competitive | WIP  |
-Week 2 | 11 | Thu | 2020/12/24| Complete tasks related to becoming Employer-Ready and Competitive | WIP  |
-Week 2 | 12 | Fri | 2020/12/25| Complete tasks related to becoming Employer-Ready and Competitive | WIP  |
-Week 2 | 13 | Sat | 2020/12/26| Complete tasks related to becoming Employer-Ready and Competitive | WIP  |
-Week 2 | 14 | Sun | 2020/12/27| Complete tasks related to becoming Employer-Ready and Competitive | Completed on time |
+Week 2 | 8 | Mon | 2020/12/21| Planning for this week | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this |
+Week 2 | 9 | Tue | 2020/12/22| Complete tasks to become Employer-Ready | WIP |
+Week 2 | 10 | Wed | 2020/12/23| Complete tasks to become Employer-Ready | WIP  |
+Week 2 | 11 | Thu | 2020/12/24| Complete tasks to become Employer-Ready | WIP  |
+Week 2 | 12 | Fri | 2020/12/25| Complete tasks to become Employer-Ready | WIP  |
+Week 2 | 13 | Sat | 2020/12/26| Complete tasks to become Employer-Ready | WIP  |
+Week 2 | 14 | Sun | 2020/12/27| Complete tasks to become Employer-Ready | Completed on time |
 
 
 
