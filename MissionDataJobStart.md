@@ -39,8 +39,8 @@ Week starts on a Monday and ends on a Sunday
 
 Week | Day | DOW | Date | Planned | Executed | Evaluation
 | --- | --- | --- | --- | --- | --- | --- |
-Week 0 | 0 | Sun | 2020/12/13 | Build foundation, start Google's Python Class | Did as planned | 
-Week 1 | 1 | Mon | 2020/12/14 | Google's Python Class + laptop setup | New Laptop - G7 delivered |
+Week 0 | 0 | Sun | 2020/12/13 | 1st 4 days spent on Demo day on 12/10, Sat/Sun spent on relaxation | Demo on 12/10 | 
+Week 1 | 1 | Mon | 2020/12/14 | Planning for this week | Google's Python Class + laptop setup. New Laptop delivered on 12/14 |
 Week 1 | 2 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
 Week 1 | 3 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
 Week 1 | 4 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete, started Google Python class | 
