@@ -39,7 +39,7 @@ Wk starts on a Monday and ends on a Sunday
 
 Wk | DOW | Date | Planned | Executed | Evaluation
 | --- | --- | --- | --- | --- | --- |
-0 | Sun | 2020/12/13 | 1st 4 days spent on Demo day on 12/10, Sat/Sun spent on relaxation | Demo on 12/10 | 
+0 | Sun | 2020/12/13 | This Wk: Demo day + Relaxation | Bootcamp last submission last Sunday (12/06). 1st 4 days of this week spent on Practicing for Demo day on 12/10; Sat/Sun spent relaxing | 
 1 | Mon | 2020/12/14 | Planning for this Wk | Google's Python Class + laptop setup. New Laptop delivered on 12/14 |
 1 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
 1 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
