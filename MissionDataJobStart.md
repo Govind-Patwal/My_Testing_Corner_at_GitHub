@@ -53,7 +53,7 @@ Week 2 | 10 | Wed | 2020/12/23| Complete tasks to become Employer-Ready | WIP  |
 Week 2 | 11 | Thu | 2020/12/24| Complete tasks to become Employer-Ready | WIP  |
 Week 2 | 12 | Fri | 2020/12/25| Complete tasks to become Employer-Ready | WIP  |
 Week 2 | 13 | Sat | 2020/12/26| Complete tasks to become Employer-Ready | WIP  |
-Week 2 | 14 | Sun | 2020/12/27| Complete tasks to become Employer-Ready | Completed on time |
+Week 2 | 14 | Sun | 2020/12/27| Complete tasks to become Employer-Ready | Completed on time | 100% completed 
 
 
 
