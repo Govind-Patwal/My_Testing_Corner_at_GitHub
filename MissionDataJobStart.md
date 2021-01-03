@@ -39,7 +39,7 @@ Wk starts on a Monday and ends on a Sunday
 
 Wk | DOW | Date | Planned | Executed | Evaluation
 | --- | --- | --- | --- | --- | --- |
-0 | Sun | 2020/12/13 | This Wk: Demo day + Relaxation | Bootcamp last submission last Sunday (12/06). 1st 4 days of this week spent on Practicing for Demo day on 12/10; Sat/Sun spent relaxing | 
+0 | Sun | 2020/12/13 | This Wk: Demo day + Relaxation | Bootcamp finished last Sunday (12/06). 1st 4 days of this week spent on Practicing for Demo day on 12/10; Sat/Sun spent relaxing | 
 1 | Mon | 2020/12/14 | Planning for this Wk | Google's Python Class + laptop setup. New Laptop delivered on 12/14 |
 1 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
 1 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
@@ -54,13 +54,13 @@ Wk | DOW | Date | Planned | Executed | Evaluation
 2 | Fri | 2020/12/25| Complete tasks to become Employer-Ready | WIP  |
 2 | Sat | 2020/12/26| Complete tasks to become Employer-Ready | WIP  |
 2 | Sun | 2020/12/27| Complete tasks to become Employer-Ready | Completed on time | 100% completed 
-3 | Mon | 2020/12/28| Planning for this Wk |  |
-3 | Tue | 2020/12/28|  |  |
-3 | Wed | 2020/12/28|  |  |
-3 | Thu | 2020/12/28|  |  |
-3 | Fri | 2020/12/28|  |  |
-3 | Sat | 2020/12/28|  |  |
-3 | Sun | 2020/12/28|  |  |
+3 | Mon | 2020/12/28| Planning for this Wk | to complete portfolio- GitHub Pages |
+3 | Tue | 2020/12/29| to complete portfolio- GitHub Pages |  |
+3 | Wed | 2020/12/30| to complete portfolio- GitHub Pages |  |
+3 | Thu | 2020/12/31| Relax |  |
+3 | Fri | 2021/1/1| Relax |  |
+3 | Sat | 2021/1/2| Relax |  |
+3 | Sun | 2021/1/3| Start Python |  |
 ---
 
 ### Cheat_Sheet
@@ -69,11 +69,25 @@ Number | Action | Shortcut
 |---|---|---|
 1 | Checking the version of Python in Windows | cmd -> type 'python -V'
 2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
-
+3 | Opening a .pynb file in D: | open Anaconda prompt -> d: -> jupyter notebook
+4 | check the data type in python | type(23) / type ('String')
 ---
 ### Good_Links
 
+#### Links to Courses
+- https://www.kaggle.com/learn/overview
+- https://www.kaggle.com/learn/python 
+
+#### Links to profiles
+- https://bluink.ca/
+- https://bierman.io/
+- https://github.com/BiermanM/job_scraper
+- https://brittanyfortner.com/ 
+
 - Stackoverflow
+
+- https://aws.amazon.com/developer/language/python/?nc1=f_dr
+
 - https://medium.com/@sjacks/using-rds-on-aws-with-jupyter-notebooks-c2703299fcc8
 - https://towardsdatascience.com/amazon-rds-step-by-step-guide-14f9f3087d28
 - https://amazon-rds.totableau.com/
@@ -83,18 +97,19 @@ Number | Action | Shortcut
 - netflix.github.io
 - https://github.com/Netflix/netflix.github.com
 
+- http://twitter.github.io
+- http://twitter.github.io/labella.js/
+
 - Word to HTML converter - https://wordtohtml.net/
 - Screen Capture (on Windows Appstore) - https://getsharex.com/
 - Tech Interview Practice - https://leetcode.com/
 - Kaggle
 
-- https://bluink.ca/
-
-- https://bierman.io/
-- https://github.com/BiermanM/job_scraper
 
 
 - https://www.youtube.com/watch?v=F5mRW0jo-U4
+
+
 
 
 - Python on AWS - Mount the EFS to your Lambda function, intall dependencies on the EFS - https://www.youtube.com/watch?v=4cquiuAQBco
