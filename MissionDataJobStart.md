@@ -9,6 +9,7 @@
 
 ### [Cheat Sheet](#Cheat_Sheet) - Learning during this journey
 
+### [Job Search Keywords](#Job_search_keywords) - Job Search Keywords
 ### [Good Links](#Good_Links) - Good links for reference
 
 ### [Project Ideas](#Project_Ideas) - Project Ideas
@@ -94,7 +95,7 @@ Number | Action | Shortcut
 22 | what about if 0: | python treats this as if False: similarly if '': is False and if 1: or if 'str': = True
 
 ---
-### Good_Job_search_keywords (for best result - use in combination)
+## Job_search_keywords (for best result - use in combination)
 intern, internship
 data analytics, data engineer
 python engineer, python programmer
@@ -104,13 +105,13 @@ Indeed
 LinkedIn
 Glassdooor
 
-### Good_Links
+## Good_Links
 
-#### Links to Courses
+### Links to Courses
 - https://www.kaggle.com/learn/overview
 - https://www.kaggle.com/learn/python 
 
-#### Links to profiles
+### Links to profiles
 - https://bluink.ca/
 - https://bierman.io/
 - https://github.com/BiermanM/job_scraper
