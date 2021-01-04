@@ -11,6 +11,8 @@
 
 ### [Good Links](#Good_Links) - Good links for reference
 
+### [Project Ideas](#Project_Ideas) - Project Ideas
+
 ---
 
 ### POA
@@ -145,4 +147,18 @@ Glassdooor
 - Python on AWS - Mount the EFS to your Lambda function, intall dependencies on the EFS - https://www.youtube.com/watch?v=4cquiuAQBco
 - Group Project - ML model on AWS - https://github.com/asadca4u/Final_Project_Group_Five 
 - Group Project - Good Tableau - https://public.tableau.com/profile/kassie.lu#!/vizhome/AmesHousingSalesPricesDashboard/Dashboard?publish=yes
+---
+
+## Project_Ideas
+
+***Banking*** - some very useful projects that are good for the resume and portfolio:
+- Credit Fraud Detection: https://www.kaggle.com/mlg-ulb/creditcardfraud
+- Customer Segmentation: https://www.kaggle.com/vjchoudhary7/customer-segmentation-tutorial-in-python
+- Two Sigma Financial Modeling: https://www.kaggle.com/c/two-sigma-financial-modeling
+- The Winton Stock Market Challenge: https://www.kaggle.com/c/the-winton-stock-market-challenge
+- New York Stock Exchange: https://www.kaggle.com/dgawlik/nyse
+- Lending Club Loan Data: https://www.kaggle.com/wendykan/lending-club-loan-data
+- Financial Machine Learning and Data Science: https://github.com/firmai/financial-machine-learning
+- https://www.kaggle.com/arjunjoshua/predicting-fraud-in-financial-payment-services
+
 ---
