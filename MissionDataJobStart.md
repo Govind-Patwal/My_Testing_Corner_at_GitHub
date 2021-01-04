@@ -89,10 +89,10 @@ Number | Action | Shortcut
 16 | having a default argument in a function | def function_name(x, y=3): ...
 17 | Boolean operators | True or False
 18 | Boolean operators | ==, !=, <=, >=, <, > 
-19 | Boolean expression precedence | 'and' is evaluated before 'or'
+19 | Boolean expression precedence | `and` is evaluated before `or`
 20 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True
 21 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else:
-22 | what about if 0: | python treats this as if False: similarly if '': is False and if 1: or if 'str': = True
+22 | what about `if 0:` | python treats this as `if False:` similarly `if '':` is False and `if 1:` or `if 'str':` = True
 
 ---
 ## Job_search_keywords (for best result - use in combination)
