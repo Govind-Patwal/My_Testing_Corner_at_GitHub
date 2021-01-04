@@ -60,7 +60,7 @@ Wk | DOW | Date | Planned | Executed | Evaluation
 3 | Thu | 2020/12/31| Relax |  |
 3 | Fri | 2021/1/1| Relax |  |
 3 | Sat | 2021/1/2| Relax |  |
-3 | Sun | 2021/1/3| Start Python |  |
+3 | Sun | 2021/1/3| Start Python | working on Kaggle Python course - https://www.kaggle.com/govindpatwal/exercise-booleans-and-conditionals/edit |
 ---
 
 ### Cheat_Sheet
@@ -74,20 +74,34 @@ Number | Action | Shortcut
 5 | operators | [+ - * /],   11 % 3 = 3, 11 // 3 = 2, 2**3 = 8, -3
 6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction
 7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34)
-8 | Convert to int, float, str | x = int('223') OR float(10) OR str(10) ... type(x)
+8 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x)
 9 | help with a function | help(function_name), eg help(print)
 10 | defining a function | def <functiion_name>(parameters): code_text return <value_to_be_returned>
+10a | : and indentation | very important in python
 11 | commenting a line | #
 12 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  """ This is a description of the function above >>> """
 13 | Higher order functions | functions that operate on other functions
 14 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass
 15 | rounding a float | round (number, ndigits) ... default ndigits = 0, it can be negative, it will round to hundreds, tens, thousands
-16 | having a default argument in a function | def funchion_name(x,y=3): ...
-
-
-
+16 | having a default argument in a function | def function_name(x, y=3): ...
+17 | Boolean operators | True or False
+18 | Boolean operators | ==, !=, <=, >=, <, > 
+19 | Boolean expression precedence | 'and' is evaluated before 'or'
+20 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True
+21 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else:
+22 | what about if 0: | python treats this as if False: similarly if '': is False and if 1: or if 'str': = True
 
 ---
+### Good_Job_search_keywords (for best result - use in combination)
+intern, internship
+data analytics, data engineer
+python engineer, python programmer
+
+Google.com
+Indeed
+LinkedIn
+Glassdooor
+
 ### Good_Links
 
 #### Links to Courses
