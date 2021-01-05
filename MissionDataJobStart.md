@@ -70,29 +70,34 @@ Wk | DOW | Date | Planned | Executed | Evaluation
 
 Number | Action | Shortcut
 |---|---|---|
-1 | Checking the version of Python in Windows | cmd -> type 'python -V'
+1 | Checking the version of Python in Windows | cmd -> type `python --version`
 2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
 3 | Opening a .pynb file in D: | open Anaconda prompt -> d: -> jupyter notebook
+3a | help in python | help()
 4 | check the data type in python | type(23) / type ('String')
 5 | operators | [+ - * /],   11 % 3 = 3, 11 // 3 = 2, 2**3 = 8, -3
 6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction
 7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34)
 8 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x)
-9 | help with a function | help(function_name), eg help(print)
+9 | help with a function | help(function_name), eg `help(print)`
 10 | defining a function | def <functiion_name>(parameters): code_text return <value_to_be_returned>
 10a | : and indentation | very important in python
 11 | commenting a line | #
-12 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  """ This is a description of the function above >>> """
+12 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  `""" This is a description of the function above >>> """`
 13 | Higher order functions | functions that operate on other functions
 14 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass
 15 | rounding a float | round (number, ndigits) ... default ndigits = 0, it can be negative, it will round to hundreds, tens, thousands
-16 | having a default argument in a function | def function_name(x, y=3): ...
+16 | having a default argument in a function | `def function_name(x, y=3):` ...
 17 | Boolean operators | True or False
 18 | Boolean operators | ==, !=, <=, >=, <, > 
-19 | Boolean expression precedence | `and` is evaluated before `or`
+19 | Boolean expression | `and`, `or`, `not`
+19a | Boolean operator precedence | in the absence of a parenthesis,`and` is evaluated before `or`
 20 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True
 21 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else:
 22 | what about `if 0:` | python treats this as `if False:` similarly `if '':` is False and `if 1:` or `if 'str':` = True
+23 | Lists | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, and a combination, when no elements are mentioned, it is a empty list
+24 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1]
+25 | Slicing an Index | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1), so list[4:7] will show elements at index 4 to index 6 = 3 elements
 
 ---
 ## Job_search_keywords (for best result - use in combination)
