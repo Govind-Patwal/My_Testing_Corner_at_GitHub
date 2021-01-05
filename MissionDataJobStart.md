@@ -98,6 +98,7 @@ Number | Action | Shortcut
 23 | Lists | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, and a combination, when no elements are mentioned, it is a empty list
 24 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1]
 25 | Slicing an Index | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1), so list[4:7] will show elements at index 4 to index 6 = 3 elements
+26 | Changing lists | 
 
 ---
 ## Job_search_keywords (for best result - use in combination)
