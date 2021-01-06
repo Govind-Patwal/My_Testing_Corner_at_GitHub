@@ -102,7 +102,10 @@ Number | Action | Shortcut
 27 | Lenght of a list | len(list_name)
 28 | Sorting a list in ascending order | sorted(list_name)
 29 | Sum, Min, Max of elements in a list | sum(list), min(list), max(list)
-
+. | Making a complex number | c = 12 + 3j   (the key is j, nothing else will work), printing the imaginary part of c, print(c.imag)
+31 | List methods - adding 1 element to the end of the list | `list.append('')` appends ONLY 1 element to the end of the list, the 1 element could be number, string, or a list
+32 | List - remove the last element of the list | `list.pop()`, this will remove the last element and return the last element
+33 | Searching lists | `<list_name>.index('<element>')`
 
 
 
