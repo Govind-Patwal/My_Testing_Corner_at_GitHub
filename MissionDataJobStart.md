@@ -95,9 +95,9 @@ Number | Action | Shortcut
 20 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True
 21 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else:
 22 | what about `if 0:` | python treats this as `if False:` similarly `if '':` is False and `if 1:` or `if 'str':` = True
-23 | Lists | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, and a combination, when no elements are mentioned, it is a empty list
+23 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list
 24 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1]
-25 | Slicing an Index (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1), so list[4:7] will show elements at index 4 to index 6 = 3 elements
+25 | Slicing a list (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1), so list[4:7] will show elements at index 4 to index 6 = 3 elements
 26 | Changing lists | simple reassignment, list[n][m] = []
 27 | Lenght of a list | len(list_name)
 28 | Sorting a list in ascending order | sorted(list_name)
@@ -105,7 +105,10 @@ Number | Action | Shortcut
 . | Making a complex number | c = 12 + 3j   (the key is j, nothing else will work), printing the imaginary part of c, print(c.imag)
 31 | List methods - adding 1 element to the end of the list | `list.append('')` appends ONLY 1 element to the end of the list, the 1 element could be number, string, or a list
 32 | List - remove the last element of the list | `list.pop()`, this will remove the last element and return the last element
-33 | Searching lists | `<list_name>.index('<element>')`
+33 | Returing index of an element in list | `<list_name>.index(<element>)`
+34 | checking element in a list | `<element> in <list_name>`
+35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. The lists inside the tuples are mutable.
+36 | Tuples are often used for functions that have multiple return values | 
 
 
 
@@ -125,7 +128,7 @@ Glassdooor
 
 ## Good_Links
 
-### Links to Courses
+### Links to Courses / Credits
 - https://www.kaggle.com/learn/overview
 - https://www.kaggle.com/learn/python 
 
