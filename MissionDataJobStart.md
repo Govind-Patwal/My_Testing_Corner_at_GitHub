@@ -108,7 +108,9 @@ Number | Action | Shortcut
 33 | Returing index of an element in list | `<list_name>.index(<element>)`
 34 | checking element in a list | `<element> in <list_name>`
 35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. The lists inside the tuples are mutable.
-36 | Tuples are often used for functions that have multiple return values | 
+36 | Tuples are often used for functions that have multiple return values | .... For example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple:
+
+
 
 
 
