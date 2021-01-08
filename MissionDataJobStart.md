@@ -74,6 +74,7 @@ Number | Action | Shortcut
 2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
 3 | Opening a .pynb file in D: | open Anaconda prompt -> d: -> jupyter notebook
 3a | help in python | help()
+3b | print in python | print(x), help(print), print(x, end =' ' )
 4 | check the data type in python | type(23) / type ('String')
 5 | operators | [+ - * /],   11 % 3 = 3, 11 // 3 = 2, 2**3 = 8, -3
 6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction
@@ -109,6 +110,10 @@ Number | Action | Shortcut
 34 | checking element in a list | `<element> in <list_name>`
 35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable.
 36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)`
+37 | Loops | to repeteatedly execute some code
+38 | for loop | can be used to loop over list, tuple, strings (a string characters can be referenced like elements of a list)
+31 | misc | to check if a char is upper/lower case `'P'.isupper()`
+31 | range () | 
 
 
 
