@@ -107,8 +107,8 @@ Number | Action | Shortcut
 32 | List - remove the last element of the list | `list.pop()`, this will remove the last element and return the last element
 33 | Returing index of an element in list | `<list_name>.index(<element>)`
 34 | checking element in a list | `<element> in <list_name>`
-35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. The lists inside the tuples are mutable.
-36 | Tuples are often used for functions that have multiple return values | .... For example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple:
+35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable.
+36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)`
 
 
 
