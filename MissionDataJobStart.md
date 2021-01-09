@@ -76,13 +76,14 @@ Number | Action | Shortcut
 3a | help in python | help()
 3b | print in python | print(x), help(print), print(x, end =' ' )
 4 | check the data type in python | type(23) / type ('String')
-5 | operators | [+ - * /],   11 % 3 = 3, 11 // 3 = 2, 2**3 = 8, -3
+5 | operators | [+ - * /],   11 % 3 = 3 (% is Modulus or reminder of division), 11 // 3 = 2 (// Floor division), 2**3 = 8, -3
 6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction
 7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34)
 8 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x)
 9 | help with a function | help(function_name), eg `help(print)`
 10 | defining a function | def <functiion_name>(parameters): code_text return <value_to_be_returned>
-10a | : and indentation | very important in python
+10a | return | it will break out of the current function, can be used to return if all other options have been exausted wihtout any outcome
+10b | : and indentation | very important in python
 11 | commenting a line | #
 12 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  `""" This is a description of the function above >>> """`
 13 | Higher order functions | functions that operate on other functions
@@ -106,16 +107,19 @@ Number | Action | Shortcut
 . | Making a complex number | c = 12 + 3j   (the key is j, nothing else will work), printing the imaginary part of c, print(c.imag)
 31 | List methods - adding 1 element to the end of the list | `list.append('')` appends ONLY 1 element to the end of the list, the 1 element could be number, string, or a list
 32 | List - remove the last element of the list | `list.pop()`, this will remove the last element and return the last element
-33 | Returing index of an element in list | `<list_name>.index(<element>)`
+33 | Returing index of the first occurane of an element in list | `<list_name>.index(<element>)`
 34 | checking element in a list | `<element> in <list_name>`
 35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable.
 36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)`
 37 | Loops | to repeteatedly execute some code
 38 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple)
 39 | misc | to check if a char is upper/lower case `'P'.isupper()`
-40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):`
+40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list
 41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter 
-42 | List comprehensions | works only for `for` and `range` loops...NOT with the `while` loop
+42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`
+43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . **BEST: use the escape character `\` >>> `print('He said \"Canada\'s capital is Ottawa\"')`**
+
+
 
 
 
