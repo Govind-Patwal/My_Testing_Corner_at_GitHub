@@ -116,8 +116,16 @@ Number | Action | Shortcut
 39 | misc | to check if a char is upper/lower case `'P'.isupper()`
 40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list
 41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter 
-42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`
-43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . **BEST: use the escape character `\` >>> `print('He said \"Canada\'s capital is Ottawa\"')`**
+42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`, after it is run, it returns the list as well
+43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . 
+44 The escape character `\` | >>> `print('He said \"Canada\'s capital is Ottawa\"')`
+45 | Escape characher usage | `\' `single quote. `\"` double quote, `\\` backslash, `\n` newline
+46 | \n newline | added by default in print statement, can be changed >>> `print(<example>, end=' ')` - this will leave just one whitespace at the end of the <example> unlike the default newline
+47 | triple quotes | `'''...'''` or  `""" ... """  ` ... allows to write a string of any length without worrying about lines
+48 String act as tuples | They can be indexed `'Example'[0]`, sliced `'Example'[:3]`, checked for length `len('Example')`, looped over like a tuple `for alphabet in 'Example':`, can be used for list comprehension `[alphabet for alphabet in 'Example']`...like tuples (and unlike lists) they are immutable, PROOF `'Example' == ('Example')`
+49 String methods | Change to all upper case >>>`'Example'.upper()` | Change to all lowercase`'Example.lower()`| check the length >>> `len('Example')` , | checking the index of the first occurance of a character >>>`'Example'.index('m')` also check the 1st occurance of a string`'Example'.index('mple')` | check if the string starts with something `'Example'.startswith('Exa')` | check if the string ends with something `'Example'.endswith('Exa')`
+50 | Going between strings and lists: .split() and .join() | 
+
 
 
 
