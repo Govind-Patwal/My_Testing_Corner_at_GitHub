@@ -127,7 +127,7 @@ Number | Action | Shortcut
 50 | Going between strings and lists: .split() and .join() | ***Split()*** is used to split a string into a list, the default point of splittin is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. ***Join()*** is used to join a list of strings into a string, the splitting point has to be mentioned
 51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()` 
 52 | f'string {} ..... ' | can be used to create/ print a string with a varible
-53 | **Dictionaries** | starts and ends in {}, keys and values
+53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair)
 54 | accessing values | creating dict `dict1 = {'key1':1,'key2':2, 'key3':3, 'key4':4, 'key5':5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44`
 55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}`
 56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False
