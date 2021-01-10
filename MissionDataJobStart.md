@@ -118,14 +118,21 @@ Number | Action | Shortcut
 41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter 
 42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`, after it is run, it returns the list as well
 43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . 
-44 The escape character `\` | >>> `print('He said \"Canada\'s capital is Ottawa\"')`
+44 | The escape character `\` | >>> `print('He said \"Canada\'s capital is Ottawa\"')`
 45 | Escape characher usage | `\' `single quote. `\"` double quote, `\\` backslash, `\n` newline
 46 | \n newline | added by default in print statement, can be changed >>> `print(<example>, end=' ')` - this will leave just one whitespace at the end of the <example> unlike the default newline
 47 | triple quotes | `'''...'''` or  `""" ... """  ` ... allows to write a string of any length without worrying about lines
-48 String act as tuples | They can be indexed `'Example'[0]`, sliced `'Example'[:3]`, checked for length `len('Example')`, looped over like a tuple `for alphabet in 'Example':`, can be used for list comprehension `[alphabet for alphabet in 'Example']`...like tuples (and unlike lists) they are immutable, PROOF `'Example' == ('Example')`
-49 String methods | Change to all upper case >>>`'Example'.upper()` | Change to all lowercase`'Example.lower()`| check the length >>> `len('Example')` , | checking the index of the first occurance of a character >>>`'Example'.index('m')` also check the 1st occurance of a string`'Example'.index('mple')` | check if the string starts with something `'Example'.startswith('Exa')` | check if the string ends with something `'Example'.endswith('Exa')`
-50 | Going between strings and lists: .split() and .join() | 
-
+48 | String act as tuples | They can be indexed `'Example'[0]`, sliced `'Example'[:3]`, checked for length `len('Example')`, looped over like a tuple `for alphabet in 'Example':`, can be used for list comprehension `[alphabet for alphabet in 'Example']`...like tuples (and unlike lists) they are immutable, PROOF `'Example' == ('Example')`
+49 | String methods | Change to all upper case >>>`'Example'.upper()` | Change to all lowercase`'Example.lower()`| check the length >>> `len('Example')` , | checking the index of the first occurance of a character >>>`'Example'.index('m')` also check the 1st occurance of a string`'Example'.index('mple')` | check if the string starts with something `'Example'.startswith('Exa')` | check if the string ends with something `'Example'.endswith('Exa')`
+50 | Going between strings and lists: .split() and .join() | ***Split()*** is used to split a string into a list, the default point of splittin is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. ***Join()*** is used to join a list of strings into a string, the splitting point has to be mentioned
+51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()` 
+52 | f'string {} ..... ' | can be used to create/ print a string with a varible
+53 | **Dictionaries** | starts and ends in {}, keys and values
+54 | accessing values | creating dict `dict1 = {'key1':1,'key2':2, 'key3':3, 'key4':4, 'key5':5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44`
+55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}`
+56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False
+57 | for loop in dictionaries | will loop over all its keys, printing all keys >>> `for i in <dict>: print(i)`, printing all values >>> `for i in <dict>: print(dict[i]) `
+58 | returning all keys and values of the dictionary | `<dictionary>.keys() `and `<dictionary>.values()`
 
 
 
