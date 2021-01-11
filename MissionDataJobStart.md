@@ -67,13 +67,15 @@ Wk | DOW | Date | Planned | Executed | Evaluation
 ---
 
 ### Cheat_Sheet
+**Credits**
+- https://www.kaggle.com/learn/overview
 
 Number | Action | Shortcut
 |---|---|---|
 1 | Checking the version of Python in Windows | cmd -> type `python --version`
 2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
 3 | Opening a .pynb file in D: | open Anaconda prompt -> d: -> jupyter notebook
-3a | help in python | help()
+3a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it)
 3b | print in python | print(x), help(print), print(x, end =' ' )
 4 | check the data type in python | type(23) / type ('String')
 5 | operators | [+ - * /],   11 % 3 = 3 (% is Modulus or reminder of division), 11 // 3 = 2 (// Floor division), 2**3 = 8, -3
@@ -127,12 +129,21 @@ Number | Action | Shortcut
 50 | Going between strings and lists: .split() and .join() | ***Split()*** is used to split a string into a list, the default point of splittin is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. ***Join()*** is used to join a list of strings into a string, the splitting point has to be mentioned
 51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()` 
 52 | f'string {} ..... ' | can be used to create/ print a string with a varible
-53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair)
-54 | accessing values | creating dict `dict1 = {'key1':1,'key2':2, 'key3':3, 'key4':4, 'key5':5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44`
+53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict)
+54 | accessing values using a key | creating dict `dict1 = {'key1':1,'key2':2, 'key3':3, 'key4':4, 'key5':5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44`
 55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}`
 56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False
-57 | for loop in dictionaries | will loop over all its keys, printing all keys >>> `for i in <dict>: print(i)`, printing all values >>> `for i in <dict>: print(dict[i]) `
+57 | for loop in dictionaries | will loop over all its keys, >>> `for i in <dict>: print(i)`, looping over all values >>> `for i in <dict>: print(dict[i]) `, looping over all keys/values pairs >>> `for i,j in <dict>.items:` (i will be the key and j will be the value)():
 58 | returning all keys and values of the dictionary | `<dictionary>.keys() `and `<dictionary>.values()`
+59 | removing an iem | `<dictionary>.pop(<key>)`
+60 | ***Working w/ external libraries*** | way to access them >>> `import pandas`, get help on the libraries: >>> `help(pandas)` , checking all the directories >>> `dir(pandas)`,type >>> `type(dir)`
+61 | shorten form of an external library | >>> `import pandas as pd`, >>> `import numpy as np` >>> `import tensorflor as tf`
+62 | Calling variables in a library by it name only | this CAN make life easier >>> `from math import *` >>> `pi` >>> `3.141592653589793`  (this is easier than writing >>> `math.pi` >>> `3.141592653589793`) ... this can ALSO cause bugs which are difficult to detect and fix (especially if you are calling all variables from multiple libraries and they have the same function doing different things), solution (1) call only the methods that you want from a library >>> `from math import log, pi` >>> `from numpy import asarray` (2) use full forms, this will make the code easier to understand and debug
+63 | accessing submodules | to be accessed by multiple dots, eg. >>> `numpy.random.randint()`
+64 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()`
+65 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading.
+
+
 
 
 
