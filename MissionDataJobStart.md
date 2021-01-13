@@ -75,9 +75,9 @@ Number | Action | Shortcut
 1 | Checking the version of Python in Windows | cmd -> type `python --version`
 2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
 3 | Opening a .pynb file in D: | open Anaconda prompt -> d: -> jupyter notebook
-3a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it)
-3b | print in python | print(x), help(print), print(x, end =' ' )
-4 | check the data type in python | type(23) / type ('String')
+4 | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python**
+4a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it)
+4b | print in python | print(x), help(print), print(x, end =' ' )
 5 | operators | [+ - * /],   11 % 3 = 3 (% is Modulus or reminder of division), 11 // 3 = 2 (// Floor division), 2**3 = 8, -3
 6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction
 7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34)
@@ -142,6 +142,11 @@ Number | Action | Shortcut
 63 | accessing submodules | to be accessed by multiple dots, eg. >>> `numpy.random.randint()`
 64 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()`
 65 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading.
+66 | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas**
+67 | Pandas | the most polular Python library for Data Analysis
+68 | Importing Pandas | `import pandas as pd`
+69 | 2 Core Objects | DataFrame and Series
+70 | 
 
 
 
