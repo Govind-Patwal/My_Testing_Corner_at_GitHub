@@ -146,7 +146,7 @@ Number | Action | Shortcut
 67 | Pandas | the most polular Python library for Data Analysis
 68 | Importing Pandas | `import pandas as pd`
 69 | 2 Core Objects | DataFrame and Series
-70 | 
+70 | DataFrame | is a table in pandas with column and rows; >>> `test_data = {'col1:[number/string], 'col2':[number/string]}` >>> `df = pd.DataFrame(data=test_data)`, the default index will be 0,1,2..., to customize it >>> `df = pd.DataFrame(data=test_data, index=['index1','index2])`
 
 
 
