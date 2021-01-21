@@ -233,3 +233,8 @@ Glassdooor
 - https://www.kaggle.com/arjunjoshua/predicting-fraud-in-financial-payment-services
 
 ---
+Misc
+- https://cloud.google.com/blog/topics/training-certifications/kick-off-2021-with-skill-badges-and-free-training
+
+
+---
