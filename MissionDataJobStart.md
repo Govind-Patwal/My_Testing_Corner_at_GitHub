@@ -161,12 +161,14 @@ Number | Action | Shortcut
 70a | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)
 71 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column...***input is mostly a dictionar***y >>> `dict = {'Name':['GSP', 2 ,'DSP'], 'Favorite Color':['Red', 0 ,'Blue']}` >>> `df = pd.DataFrame(<dict>) `
 71a | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) `
-71b | naming the index column | `df.index.name = '<index_name>'`
-71c | checking the shape of a df | `df.shape`
+71b | naming the default index column | `df.index.name = '<index_name>'`
 72 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset
 72 | reading a CSV file into a df | `pd.read_csv('file path')`
 73 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb
-74 | 
+74 | checking the shape of a df | `df.shape`
+75 | checking the first and last 10 rows | >>>`df.head()` >>> `df.tail()`
+76 | choosing a column from the CSV as the index | `pd.read_csv('file path', index_col=<column_number>)`
+77 | saving to a CSV file | `<df>.to_csv('<file_path>)`
 
 
 
