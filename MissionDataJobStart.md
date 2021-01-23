@@ -18,6 +18,17 @@
 
 ### POA
 
+Part 1 | Part 2
+| --- | --- |
+Hard Skills: Product improvment | Soft Skills: Marketing and Sales
+After inital setup: ONLY on Weekends | After inital setup: ONLY on Weekdays
+Python (Kaggle) + Django + Flask + Canvas (in class + GitLab) + KaggleCourseAgain + Kaggle Competitions + own projects + resources section (on my portfolio website) + videos  | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn
+
+---
+
+
+
+
 1. Python
     - Google Python Class - https://developers.google.com/edu/python
     - UofT Bootcamp exercises
