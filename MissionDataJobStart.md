@@ -22,7 +22,7 @@ Part 1 | Part 2
 | --- | --- |
 Hard Skills: Product improvment | Soft Skills: Marketing and Sales
 After inital setup: ONLY on Weekends | After inital setup: ONLY on Weekdays
-Python (Kaggle) + Django + Flask + Canvas (in class + GitLab) + KaggleCourseAgain + Kaggle Competitions + own projects + resources section (on my portfolio website) + videos  | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn
+Kaggle(python_pandas) + Django + Kaggle(remaining modules) + Canvas (in class + GitLab) + KaggleCourseAgain + Kaggle Competitions + own projects + resources section (on my portfolio website) + videos  | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn
 
 ---
 
@@ -156,15 +156,17 @@ Number | Action | Shortcut
 66 | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas**
 67 | Pandas | the most polular Python library for Data Analysis
 68 | Importing Pandas | `import pandas as pd`
-69 | 2 Core Objects | DataFrame and Series
-70 | Series | is a list of data values
-71 | Creating a series | >>> `data1 = [num/str, num/str, ...]` >>> `Series1 = pd.Series(data=data1, index=[num/str, num/str, ...])`
-72 | DataFrame | is a table in pandas with column and rows; 
-73 | Creating df - input is a dictionary | >>> `data_as_dict = {'col1':[number/string,number/string,...], 'col2':[number/string, number/string,...]}` >>> `df = pd.DataFrame(data=data_as_dict, index=['index1','index2',...])`
-74 | Crearing df - input is a list | >>> `data_as_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]` >>> `df2 = pd.DataFrame(data=data_as_list, columns=['a', 'b', 'c'], index = ['a', 'b', 'c'])`
-75 | Creating df - input is a Series | 
-
-
+69 | Creating Data | Two core objects in Pandas - the **DataFrame** and the **Series**
+70 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)`
+70a | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)
+71 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column...***input is mostly a dictionar***y >>> `dict = {'Name':['GSP', 2 ,'DSP'], 'Favorite Color':['Red', 0 ,'Blue']}` >>> `df = pd.DataFrame(<dict>) `
+71a | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) `
+71b | naming the index column | `df.index.name = '<index_name>'`
+71c | checking the shape of a df | `df.shape`
+72 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset
+72 | reading a CSV file into a df | `pd.read_csv('file path')`
+73 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb
+74 | 
 
 
 
@@ -246,6 +248,9 @@ Glassdooor
 ---
 Misc
 - https://cloud.google.com/blog/topics/training-certifications/kick-off-2021-with-skill-badges-and-free-training
+
+
+- https://towardsdatascience.com/6-data-science-certificates-to-level-up-your-career-275daed7e5df 
 
 
 ---
