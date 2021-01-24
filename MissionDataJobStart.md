@@ -187,6 +187,11 @@ Number | Action | Shortcut
  88 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000`
 89 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000`
 90 | setting the max number of rows to be displayes in a jupyter notebook | >>> `pd.set_option("display.max_rows", 5)`
+91 | **Summary function and maps** | involves operations that we can apply to the data to get the 'desired input'
+92 | some summary functions | >>>`df['column label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].avg()` >>>`df['column label'].min() `>>>`df['column label'].max() `>>>`df['column label'].count() `>>>`df['column label'].unique()`
+93 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) | extremely useful for transforming data into new one...map() used for a single column /Series >>> `df['column label'].map()`...apply() used for entire dataframes >>> `df.apply(, axis='columns' OR 'index')` ... axis = 'columns' means the function will transform each row (with the column as the axis), axis = 'index' means the funtion will transform each column (with the index/rows as the index)
+
+
 
 
 
