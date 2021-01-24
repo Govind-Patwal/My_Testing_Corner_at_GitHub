@@ -158,10 +158,11 @@ Number | Action | Shortcut
 68 | Importing Pandas | `import pandas as pd`
 69 | Creating Data | Two core objects in Pandas - the **DataFrame** and the **Series**
 70 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)`
-70a | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)
+70a | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)...the series name can act as the column if the series is used to create a df
 71 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column...***input is mostly a dictionar***y >>> `dict = {'Name':['GSP', 2 ,'DSP'], 'Favorite Color':['Red', 0 ,'Blue']}` >>> `df = pd.DataFrame(<dict>) `
 71a | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) `
 71b | naming the default index column | `df.index.name = '<index_name>'`
+71c | checking the shape of a df | `df.shape`
 72 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset
 72 | reading a CSV file into a df | `pd.read_csv('file path')`
 73 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb
@@ -169,6 +170,25 @@ Number | Action | Shortcut
 75 | checking the first and last 10 rows | >>>`df.head()` >>> `df.tail()`
 76 | choosing a column from the CSV as the index | `pd.read_csv('file path', index_col=<column_number>)`
 77 | saving to a CSV file | `<df>.to_csv('<file_path>)`
+77a| w/o the index | `<df>.to_csv('<file_path>, index = False)`
+78 | ***Accessing Data*** | 
+78a | Accessing using Columns | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]`
+ 78b | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],:]`
+ 79 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`
+ 80 | choosing between iloc and loc | since iloc is purely index based, 0:10 will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so 0:10 will return 11 values (0,1,2...11)...it is specifically good for situations when you want all values returned according to label names...eg df.loc[:,'GradeA':'GradeD']
+ 81 | naming the default index column | `df.index.name = '<index_name>'`
+ 82 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df.set_index('<column_name_with_unique_values_in_rows>')`
+ 83 | Conditional selection | >>> `df['column_label'] == 'Str'/num` ...this produces a series of True/False, which can be used inside a `loc` to select the relevant data
+ 84 | Using loc for selecting data based on conditional | >>> `df.loc[df['Column_label'] <conditinal operation>]`
+ 85 | using and and or | use the signs `&` and `|`
+ 86 | Pandas built in conditional selector - 1/3 | .isin([Value1, Value2, Value3,...]) , it checks if a value is in the list given, for example >>> `df.loc[df['City'].isin(['New Delhi', 'Bangkok', 'Toronto'])]`, it is short form of writing >>> `df.loc[df['City'] == 'New Delhi' | df['City'] == 'Bangkok' | df['City'] == 'Toronto']`
+ 87 | Pandas built in conditional selector - 2/3 | .between(Value1,Value2)...it checks if a value is between the given range (as in loc, both end points are included), for example >>> `df.loc[df['Salary'].between(50000,80000)]`
+ 87 | isnull() and isnotnull() | to check if the value in a column is null or not, for example >> `df['Salary'].notnull()`
+ 88 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000`
+89 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000`
+
+
+
 
 
 
