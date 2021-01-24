@@ -173,8 +173,8 @@ Number | Action | Shortcut
 77a| w/o the index | `<df>.to_csv('<file_path>, index = False)`
 78 | ***Accessing Data*** | 
 78a | Accessing using Columns | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]`
- 78b | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],:]`
- 79 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`
+ 78b | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],:]`...can also be used like >>> `df['column_label'].iloc[0]`
+ 79 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`...can also be used like >>> `df['column_label'].loc[0]`
  80 | choosing between iloc and loc | since iloc is purely index based, 0:10 will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so 0:10 will return 11 values (0,1,2...11)...it is specifically good for situations when you want all values returned according to label names...eg df.loc[:,'GradeA':'GradeD']
  81 | naming the default index column | `df.index.name = '<index_name>'`
  82 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df.set_index('<column_name_with_unique_values_in_rows>')`
@@ -186,6 +186,7 @@ Number | Action | Shortcut
  87 | isnull() and isnotnull() | to check if the value in a column is null or not, for example >> `df['Salary'].notnull()`
  88 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000`
 89 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000`
+90 | setting the max number of rows to be displayes in a jupyter notebook | >>> `pd.set_option("display.max_rows", 5)`
 
 
 
