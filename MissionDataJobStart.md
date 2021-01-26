@@ -20,9 +20,9 @@
 
 Part 1 | Part 2
 | --- | --- |
-Hard Skills: Product improvment | Soft Skills: Marketing and Sales
-After inital setup: ONLY on Weekends | After inital setup: ONLY on Weekdays
-Kaggle(python_pandas) + Django + Kaggle(remaining modules) + Canvas (in class + GitLab) + KaggleCourseAgain + Kaggle Competitions + own projects + resources section (on my portfolio website) + videos  | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn
+Hard Skills: Product (I am the Product) improvment | Soft Skills: Marketing and Sales
+After inital setup: Weekends + try to find time on weekdays | After inital setup: ONLY on Weekdays
+Kaggle(python + pandas) + Django + Canvas (in class + GitLab) + Django + KaggleCourseAgain + Kaggle Competitions + own projects/product + resources section (on my portfolio website) + videos  | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn
 
 ---
 
