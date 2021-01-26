@@ -165,6 +165,7 @@ Number | Action | Shortcut
 71c | checking the shape of a df | `df.shape`
 72 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset
 72 | reading a CSV file into a df | `pd.read_csv('file path')`
+72a | reading a CSV and using one of its columns as index | >>> `pd.read_csv('file path', index_col=0)`...this is not a very good way as one could end up using a column that has duplicate values(s), thus the index will not be unique
 73 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb
 74 | checking the shape of a df | `df.shape`
 75 | checking the first and last 10 rows | >>>`df.head()` >>> `df.tail()`
@@ -176,7 +177,7 @@ Number | Action | Shortcut
  78b | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],[2,3,4,5]]`...can also be used like >>> `df['column_label'].iloc[0]`
  79 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`...can also be used like >>> `df['column_label'].loc[0]`
  80 | choosing between iloc and loc | since iloc is purely index based, 0:10 will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so 0:10 will return 11 values (0,1,2...11)...it is specifically good for situations when you want all values returned according to label names...eg df.loc[:,'GradeA':'GradeD']
- 81 | naming the default index column | `df.index.name = '<index_name>'`
+ 81 | naming the default index column that has no name | `df.index.name = '<index_name>'`
  82 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df.set_index('<column_name_with_unique_values_in_rows>')`
  83 | Conditional selection | >>> `df['column_label'] == 'Str'/num` ...this produces a series of True/False, which can be used inside a `loc` to select the relevant data
  84 | Using loc for selecting data based on conditional | >>> `df.loc[df['Column_label'] <conditinal operation>]`
@@ -188,9 +189,11 @@ Number | Action | Shortcut
 89 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000`
 90 | setting the max number of rows to be displayes in a jupyter notebook | >>> `pd.set_option("display.max_rows", 5)`
 91 | **Summary function and maps** | involves operations that we can apply to the data to get the 'desired input'
-92 | some summary functions | >>>`df['column label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].avg()` >>>`df['column label'].min() `>>>`df['column label'].max() `>>>`df['column label'].count() `>>>`df['column label'].unique()`
+92 | some summary functions | >>>`df['column label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].avg()` >>>`df['column label'].min() `>>>`df['column label'].max()` >>>`df['column label'].median()` >>>`df['column label'].count() `>>>`df['column label'].unique()`....to find the name and frequency of unique values >>> `df['column_name'].value_counts()`, returning of the index of the max value in a column >>> `df['column_name'].idxmax()`
 93 | Pandas (operations to create new columns in a jiffy)  | >>> `df['<new_column>'] = df['<column_1>'] + df['<column_2>']` + ' ' ...all mathimatical operations can be done, some more examples >>> `df['<new_column>'] = df['<column_1>'] - df['<column_1>'].mean()
 94 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) - ways to to more advanced things likes applying conditional logic, anything needing a function | extremely useful for transforming data into new one...map() used for a single column /Series >>> `df['column label'].map()`...apply() used for entire dataframes >>> `df.apply(, axis='columns' OR 'index')` ... axis = 'columns' means the function will transform each row (with the column as the axis), axis = 'index' means the funtion will transform each column (with the index/rows as the axis)
+95 | [**Grouping and Sorting**](https://www.kaggle.com/residentmario/grouping-and-sorting) | using groupby()
+96 | Groupwise analysis | df.groupby('column_label')
 
 
 
