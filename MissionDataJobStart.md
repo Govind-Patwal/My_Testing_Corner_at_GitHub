@@ -1,4 +1,8 @@
-# Mission Data Job Start 
+# North Star
+- Don't take anything for granted
+- A small plan, executed strongly (0% Stress, and 100% focus on inputs) is better than A Grand plan, executed weakly
+---
+## Mission Data Job Start 
 ### Target (Initial) - Job in 24 Wks (by June 17, 2021)
 ### Target (Revision 1) - Job in 32 Wks (by Aug 17, 2021)
 
@@ -58,7 +62,7 @@ Wk | Dates | Planned | Executed | Evaluation
 2 | 2020/12/21 - 2020/12/27  | Complete tasks to become Employer-Ready | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this. ##talked to career director (1st time) ## Completed first draft of brand statement, resume and LinkedIn | 100% completed 
 3 | 2020/12/28 - 2021/01/03 | Work on GitHub profile and portfolio | ## Worked on GitHub profile (cleaned repos, descriptions, profile Readme ) ## Completed Portfolio on GitHub Pages (finalized template, tweaked it, worked on HTML, added pics, gif, embedded youtube) ## Started Kaggle Python course - https://www.kaggle.com/learn/python ## Year End and New Year Celebrations ## found the impressive profile of Aishwarya Srinivasan's on LinkedIn, liked her website as well  **the peculiar unicorn**
 4 | 2020/01/04 - 2021/01/10 |  | ## RBC internship assessment ## Jan 10 - received Kaggle certificate of completion - Python
-5 | 2020/01/11 - 2021/01/17 |  | ## got 1st feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue
+5 | 2020/01/11 - 2021/01/17 |  | ## got 1st feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue ##Cleaned all pipeline and sent New Year emails
 6 | 2020/01/18 - 2021/01/24 |  | ## got 2nd feedback from CareerService Team, implemented and became Employer-ready ##talked to career director (2nd time) ## CALC Can-Ex writing, speaking, infosession ## career services event ## submitted Ontario Internship form ## Kaggle Pandas: 1-3
 7 | 2020/01/25 - 2021/01/31 |  | 
 8 | 2020/02/01 - 2021/01/07 |  |  
