@@ -51,30 +51,17 @@ Kaggle(python_pandas) + Django + Kaggle(remaining modules) + Canvas (in class + 
 ### Daily_Activity
 Wk starts on a Monday and ends on a Sunday
 
-Wk | DOW | Date | Planned | Executed | Evaluation
-| --- | --- | --- | --- | --- | --- |
-0 | Sun | 2020/12/13 | This Wk: Demo day + Relaxation | Bootcamp finished last Sunday (12/06). 1st 4 days of this week spent on Practicing for Demo day on 12/10; Sat/Sun spent relaxing | 
-1 | Mon | 2020/12/14 | Planning for this Wk | Google's Python Class + laptop setup. New Laptop delivered on 12/14 |
-1 | Tue | 2020/12/15 | Google's Python Class + laptop setup  | Setting up new Laptop, partitioning (created D: for non-OS)|
-1 | Wed | 2020/12/16 | Google's Python Class + laptop setup  | Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside | 
-1 | Thu | 2020/12/17 | Google's Python Class + laptop setup  | Copying files from outside, setup complete, started Google Python class | 
-1 | Fri | 2020/12/18| Google's Python Class + laptop setup | Started Google Python Class, found it was Python 2, so dropped this plan - found more courses on pyhon.org, and W3 schools, but decided to go through UofT Bootcamp modules again |
-1 | Sat | 2020/12/19 | Google's Python Class + laptop setup | Spent time on ways to create Video with Green backgound so that I could create educational videos and put on GitHub - tried Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify | 
-1 | Sun | 2020/12/20| Google's Python Class + laptop setup | Started with Bootcamp Python, moved to working on Career Service tasks - finished the intro, now working on others parts, decided to use the next 2 Wks to complete all tasks related to becoming Employee Ready and Employee Competitive and then revisit Hard/Soft Skills| Plan changed mid-wk
-2 | Mon | 2020/12/21| Planning for this Wk | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this |
-2 | Tue | 2020/12/22| Complete tasks to become Employer-Ready | WIP |
-2 | Wed | 2020/12/23| Complete tasks to become Employer-Ready | WIP  |
-2 | Thu | 2020/12/24| Complete tasks to become Employer-Ready | WIP  |
-2 | Fri | 2020/12/25| Complete tasks to become Employer-Ready | WIP  |
-2 | Sat | 2020/12/26| Complete tasks to become Employer-Ready | WIP  |
-2 | Sun | 2020/12/27| Complete tasks to become Employer-Ready | Completed on time | 100% completed 
-3 | Mon | 2020/12/28| Planning for this Wk | to complete portfolio- GitHub Pages |
-3 | Tue | 2020/12/29| to complete portfolio- GitHub Pages |  |
-3 | Wed | 2020/12/30| to complete portfolio- GitHub Pages |  |
-3 | Thu | 2020/12/31| Relax |  |
-3 | Fri | 2021/1/1| Relax |  |
-3 | Sat | 2021/1/2| Relax |  |
-3 | Sun | 2021/1/3| Start Python | working on Kaggle Python course - https://www.kaggle.com/govindpatwal/exercise-booleans-and-conditionals/edit |
+Wk | Dates | Planned | Executed | Evaluation
+| --- | --- | --- | --- | --- |
+0 | 2020/12/07 - 2020/12/13 | This Wk: Demo day + Relaxation | Bootcamp finished last Sunday (12/06) ## 1st 4 days of this week spent on Practicing for Demo day on Dec/10/2020. ## Sat/Sun spent relaxing | 
+1 | 2020/12/14 - 2020/12/20  | Google's Python Class + laptop setup | New Laptop delivered on 12/14, Setting up new Laptop, partitioning (created D: for non-OS), Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside. ## Started Google Python class, found it was Python 2, so dropped this plan - found more courses on python.org, and W3 schools, but decided to go through UofT Bootcamp modules again ## Spent time on ways to create Video with Green backgound so that I could create educational videos and put on GitHub - tried Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify. ## Started with Bootcamp Python, moved to working on Career Service tasks - finished the intro, now working on others parts, decided to use the next 2 Wks to complete all tasks related to becoming Employee Ready and Employee Competitive and then revisit Hard/Soft Skills| Plan changed mid-wk
+2 | 2020/12/21 - 2020/12/27  | Complete tasks to become Employer-Ready | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this. Completed first draft of brand statement, resume and LinkedIn on time | 100% completed ##talked to career director (1st time)
+3 | 2020/12/28 - 2021/01/03 | Complete portfolio - GitHub Pages | Completed Portfolio on GitHub Pages ## Started Kaggle Python course - https://www.kaggle.com/learn/python ## Year End and New Year Celebrations
+4 | 2020/01/04 - 2021/01/10 |  | ## RBC internship assessment ## Jan 10 - received Kaggle certificate of completion - Python
+5 | 2020/01/11 - 2021/01/17 |  | ## got feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue
+6 | 2020/01/18 - 2021/01/24 |  | ## 2nd feedback from CareerService Team, implemented and became Employer-ready ##talked to career director (2nd time) ## CALC Can-Ex writing, speaking, infosession ## career services event ## submitted Ontario Internship form ## Kaggle Pandas: 1-3
+7 | 2020/01/25 - 2021/01/31 |  | 
+8 | 2020/02/01 - 2021/01/07 |  |  
 ---
 
 ### Cheat_Sheet
