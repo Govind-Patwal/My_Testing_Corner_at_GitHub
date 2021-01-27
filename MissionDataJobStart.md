@@ -62,7 +62,7 @@ Wk | Dates | Planned | Executed | Evaluation
 2 | 2020/12/21 - 2020/12/27  | Complete tasks to become Employer-Ready | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this. ##talked to career director (1st time) ## Completed first draft of brand statement, resume and LinkedIn | 100% completed 
 3 | 2020/12/28 - 2021/01/03 | Work on GitHub profile and portfolio | ## Worked on GitHub profile (cleaned repos, descriptions, profile Readme ) ## Completed Portfolio on GitHub Pages (finalized template, tweaked it, worked on HTML, added pics, gif, embedded youtube) ## Started Kaggle Python course - https://www.kaggle.com/learn/python ## Year End and New Year Celebrations ## found the impressive profile of Aishwarya Srinivasan's on LinkedIn, liked her website as well  **the peculiar unicorn**
 4 | 2020/01/04 - 2021/01/10 |  | ## RBC internship assessment ## Jan 10 - Received ***Kaggle certificate of completion - Python***
-5 | 2020/01/11 - 2021/01/17 |  | ##Cleaned all pipeline and sent New Year emails ## got 1st feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue 
+5 | 2020/01/11 - 2021/01/17 |  | ##Cleaned all pipeline @ office, and sent New Year emails ## got 1st feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue 
 6 | 2020/01/18 - 2021/01/24 |  | ## got 2nd feedback from CareerService Team, implemented and became Employer-ready ##talked to career director (2nd time) ## CALC Can-Ex writing, speaking, infosession ## career services event ## submitted Ontario Internship form ## Kaggle Pandas: 1-3
 7 | 2020/01/25 - 2021/01/31 |  | 
 8 | 2020/02/01 - 2021/01/07 |  |  
@@ -144,6 +144,7 @@ Number | Action | Shortcut
 63 | accessing submodules | to be accessed by multiple dots, eg. >>> `numpy.random.randint()`
 64 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()`
 65 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading.
+Misc | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))`
 66 | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas**
 67 | Pandas | the most polular Python library for Data Analysis
 68 | Importing Pandas | `import pandas as pd`
