@@ -121,7 +121,7 @@ Number | Action | Shortcut
 40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list
 41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter 
 42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`, after it is run, it returns the list as well
-43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . 
+43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . converting a string to a list >>> `list(<string>)`
 44 | The escape character `\` | >>> `print('He said \"Canada\'s capital is Ottawa\"')`
 45 | Escape characher usage | `\' `single quote. `\"` double quote, `\\` backslash, `\n` newline
 46 | \n newline | added by default in print statement, can be changed >>> `print(<example>, end=' ')` - this will leave just one whitespace at the end of the <example> unlike the default newline
@@ -183,14 +183,25 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 91 | **Summary function and maps** | involves operations that we can apply to the data to get the 'desired input'
 92 | some summary functions | >>>`df['column_label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].min() `>>>`df['column label'].max()` >>>`df['column label'].median()` >>>`df['column label'].count() `>>>`df['column label'].unique()`....to find the name and frequency of unique values >>> `df['column_name'].value_counts()`, returning of the index of the max value in a column >>> `df['column_name'].idxmax()`
 93 | Pandas (operations to create new columns in a jiffy)  | >>> `df['<new_column>'] = df['<column_1>'] + df['<column_2>']` + ' ' ...all mathimatical operations can be done, some more examples >>> `df['<new_column>'] = df['<column_1>'] - df['<column_1>'].mean()
-94 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) - ways to to more advanced things likes applying conditional logic, anything needing a function | extremely useful for transforming data into new one...map() used for a single column /Series >>> `df['column label'].map()`...apply() used for entire dataframes >>> `df.apply(, axis='columns' OR 'index')` ... axis = 'columns' means the function will transform each row (with the column as the axis), axis = 'index' means the funtion will transform each column (with the index/rows as the axis)
+94 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) - ways to to more advanced things likes applying conditional logic, anything needing a function | extremely useful for transforming data into new one
+94a | map() used for a single column /Series | syntax >>> `map(function, iterables)`...IMP-by default it points to the location where the output is saved, in order to see the actual output use `list(map())` or `pd.Series(map())` eg, >>> `pd.Series(map((function, iterable))`...another way of using the map function >>> `<Series>.map(function) `, for example, >>> `df['<column_label>'].map(function)`
+94b | apply() used to transform rows/columns in a df |  >>> `df['column_label'].apply(function)`
 95 | [**Grouping and Sorting**](https://www.kaggle.com/residentmario/grouping-and-sorting) | using groupby()
-96 | Groupwise analysis | df.groupby('column_label')
+96 | Groupwise analysis - groupby([]) | very handly funciton to group and work with dataframes
+96a | df.groupby(['column_label_1','column_label_2',... ]) | creates a group of similar valued entries from the column in a df, there can be 1 or multiple columns
+96b | groupby() is used with another function that applies some operation to the same or any other column | syntax >>> `df.groupby(['Column1', 'Column2', ...])['Column_to_be_operator_on'].<operation()>`...eg, `df.groupby(['country','state']['population'].max())`...functions could be min(), max(), count()...the pandas function `apply()` can be used with groupby(), [example from kaggle pandas course](https://www.kaggle.com/residentmario/grouping-and-sorting) or example, here's one way of selecting the name of the first wine reviewed from each winery in the dataset: >>> `reviews.group(['winery']).apply(lambda df: df['title'].iloc[0])`
+96c | agg()...good function to have many funtion run together | `df.groupby(['Column_to_be_used_for_grouping])['Column_to_be_operated_on'].agg[('len','min','max')]`
+96d | more than one columns can be grouped | `df.groupby(['column1','column2',...])['<column_to_be_operated_on>'].<sum/count/min/max()>` OR `df.groupby(['Column1'],['Column2'],...).apply(<function>)`
+97 | Resetting index after multi-group groupby() | `df.groupby(['Column1', 'Column2']).reset_index()`
+98 | Sorting by  values | `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)`
+98a | Soring by index
 
 
 
 
+---
 
+Video tutorials can also break things down when I am stuck - https://www.youtube.com/watch?v=7HN-4Df8ZpA
 
 
 
