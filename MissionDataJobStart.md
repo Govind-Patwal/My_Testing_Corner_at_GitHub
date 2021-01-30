@@ -197,8 +197,15 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 98a | Soring by index |  `df.groupby(['Column1'],['Column2'],...).sort_index()`
 98b| Sorting by single value | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)`
 98c| Sorting by multiple values | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len', <a column used for grouping>])`...eg `df.groupby(['country', 'state']).sort_values(by=['len', 'state'])` ...if we want all descending then use, ascending =False, eg >>> `df.groupby(['country', 'state']).sort_values(by=['len', 'state'], ascending=False)`...can also use size() and sort_values, eg. >>> `df.groupby(['country', 'state']).size().sort_values()`
-99 | Data Types and Missing Values | 
-
+99 | **Data Types and Missing Values**| Credit - https://www.kaggle.com/residentmario/data-types-and-missing-values
+100 | dtype and dtypes | dtype is for a column, and a dtypes is for df...>>> `df.dtypes ` >>> `df['column_label'].dtype`....strings will show was 'O' meaning object...NOTE: to access the values/types of the index column, use >>> `df.index.dtype` and NOT df['index'].dtype (index is not a column)
+100a | converting datatype of column | >>> `df['column label'].astype('str')`...other formats could be 'float64' 'int64'
+101 | Missing Data | checking the null in all columns of df >>>`df.isnull().sum()`, checking the null in a specific column >>> `df['column_label'].isnull().sum()` ...creting a df based on null in a column >>> `df[pd.isnull(df[<column you want check the null values>])]`...checking for data that is not null >>> `df['column_name'].notnull().sum()` and >>> `df['column_name'].notna().sum()`
+101a | replacing na with something | >>> `df['column_label].fillna('Unknown')`...you can also replace using the mean of the column, or use the backfill strategy (filling each missing with the next non-null) ...replacing non-null with something else >>> `df['column_label'].replace('value_to_replace', 'new_value')`...replace() is also handy when column has data like 'unknown', 'no known', etc, that need to be replaced
+102 | **Renaming and Combining** | Credit - https://www.kaggle.com/residentmario/renaming-and-combining
+103 | Renaming columns | renaming column names >>> `df.rename(columns={'existing_name':'new_name'})`
+104 | naming the default index column that has no name |  >>> `df.index.name = '<new_index_name>'`
+105 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df.set_index('<column_name_with_unique_values_in_rows>')`
 
 
 
