@@ -189,12 +189,15 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 95 | [**Grouping and Sorting**](https://www.kaggle.com/residentmario/grouping-and-sorting) | using groupby()
 96 | Groupwise analysis - groupby([]) | very handly funciton to group and work with dataframes
 96a | df.groupby(['column_label_1','column_label_2',... ]) | creates a group of similar valued entries from the column in a df, there can be 1 or multiple columns
-96b | groupby() is used with another function that applies some operation to the same or any other column | syntax >>> `df.groupby(['Column1', 'Column2', ...])['Column_to_be_operator_on'].<operation()>`...eg, `df.groupby(['country','state']['population'].max())`...functions could be min(), max(), count()...the pandas function `apply()` can be used with groupby(), [example from kaggle pandas course](https://www.kaggle.com/residentmario/grouping-and-sorting) or example, here's one way of selecting the name of the first wine reviewed from each winery in the dataset: >>> `reviews.group(['winery']).apply(lambda df: df['title'].iloc[0])`
-96c | agg()...good function to have many funtion run together | `df.groupby(['Column_to_be_used_for_grouping])['Column_to_be_operated_on'].agg[('len','min','max')]`
+96b | groupby() is used with another function that applies some operation to the same or any other column | syntax >>> `df.groupby(['Column(s) to be used for grouping'])['Column_to_be_operator_on'].<operation()>`...eg, `df.groupby(['country','state']['population'].max())`...functions could be min(), max(), count()...the pandas function `apply()` can be used with groupby(), [example from kaggle pandas course](https://www.kaggle.com/residentmario/grouping-and-sorting) or example, here's one way of selecting the name of the first wine reviewed from each winery in the dataset: >>> `reviews.group(['winery']).apply(lambda df: df['title'].iloc[0])`
+96c | agg()...good function to have many funtion run together | `df.groupby(['Column_to_be_used_for_grouping])['Column_to_be_operated_on'].agg[('len','min','max')]`....this returns a dataframe
 96d | more than one columns can be grouped | `df.groupby(['column1','column2',...])['<column_to_be_operated_on>'].<sum/count/min/max()>` OR `df.groupby(['Column1'],['Column2'],...).apply(<function>)`
 97 | Resetting index after multi-group groupby() | `df.groupby(['Column1', 'Column2']).reset_index()`
-98 | Sorting by  values | `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)`
-98a | Soring by index
+98 | Sorting |
+98a | Soring by index |  `df.groupby(['Column1'],['Column2'],...).sort_index()`
+98b| Sorting by single value | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)`
+98c| Sorting by multiple values | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len', <a column used for grouping>])`...eg `df.groupby(['country', 'state']).sort_values(by=['len', 'state'])`
+
 
 
 
