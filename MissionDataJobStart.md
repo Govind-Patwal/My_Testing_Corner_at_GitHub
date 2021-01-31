@@ -203,15 +203,17 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 101 | Missing Data | checking the null in all columns of df >>>`df.isnull().sum()`, checking the null in a specific column >>> `df['column_label'].isnull().sum()` ...creting a df based on null in a column >>> `df[pd.isnull(df[<column you want check the null values>])]`...checking for data that is not null >>> `df['column_name'].notnull().sum()` and >>> `df['column_name'].notna().sum()`
 101a | replacing na with something | >>> `df['column_label].fillna('Unknown')`...you can also replace using the mean of the column, or use the backfill strategy (filling each missing with the next non-null) ...replacing non-null with something else >>> `df['column_label'].replace('value_to_replace', 'new_value')`...replace() is also handy when column has data like 'unknown', 'no known', etc, that need to be replaced
 102 | **Renaming and Combining** | Credit - https://www.kaggle.com/residentmario/renaming-and-combining
-103 | Renaming columns | renaming column names >>> `df.rename(columns={'existing_name':'new_name'})`
+103 | Renaming columns | renaming column names >>> `df.rename(columns={'column_1_existing_name':'column_1_new_name', 'column_2_existing_name':'column_2_new_name'})`
 104 | naming or renaming the default index column |  >>> `df.index.name = '<new_index_name>'`
-105 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df = df.set_index('<column_name_with_unique_values_in_rows>')`
+105 | Removing the default index and replacing with a column in the df | >>> `df = df.set_index('<column_name_with_unique_values_in_rows>')`
 106 | resetting the index from 0...-1 | >>> `df.reset_index()`
 107 | renaming index values | changing the first and second index names, ie. index[0] and index[1] >>> `df.rename(index={0:'FirstEntry', 1:'SecondEntry'})`
 108 | renaming both x and y axis | >>> `df.rename_axis('row_axis_name', axis ='rows').rename_axis('column_axis_name', axis='columns')`
 109 | Combining dataframes | used to combine 2 or more dataframes into 1
 109a | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])`
-109b | join ()...used when columns are not the same but their is one common index | >>> `left.join(right, lsuffix=')`
+109b | join() | >>>`left_df.set_index('common_column').join(right_df.set_index('common_column'))`
+109c | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1
+110| **Django** | https://www.youtube.com/watch?v=OTmQOjsl0eg
 
  
 
