@@ -218,7 +218,7 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 111 | MVC in other back-end languages to build good web-dev application| Model View Controller | Model for data, View for HTML format, and Controller to control the entire operation
 112 | In Django we have MVT | Model, View, Template | 
 113 | Why Django | Fast, many available components, Security, Scalability
-114| Creating a Django project | (Step1) Win command prompt... (Step2) C:\Users\user_name>`D:` ...(Step3) `D:\>cd folder_location` ...(Step4) D:\folder_location>`pip install virtualenvwrapper-win` .... (Step5) D:\folder_location>`mkvirtualenv <virtual_environment_name>`... (Step6(virtual_environment_name)D:\folder_location>`pip install django`... (Step7) (virtual_environment_name)D:\folder_location>`django-admin startproject <new_project_name>` ... (Step8) (virtual_environment_name)D:\folder_location>`cd new_project_name` ... (Step9)(virtual_environment_name)D:\folder_location\new_project_name>`python manage.py runserver`
+114| Creating a Django project | (Step1) Win command prompt... (Step2) C:\Users\user_name>`D:`... (Step3) `D:\>cd folder_location`... (Step4) D:\folder_location>`pip install virtualenvwrapper-win`... (Step5) D:\folder_location>`mkvirtualenv <virtual_environment_name>`... (Step6(virtual_environment_name)D:\folder_location>`pip install django`... (Step7) (virtual_environment_name)D:\folder_location>`django-admin startproject <new_project_name>`... (Step8) (virtual_environment_name)D:\folder_location>`cd new_project_name`... (Step9)(virtual_environment_name)D:\folder_location\new_project_name>`python manage.py runserver`
 
  
 
