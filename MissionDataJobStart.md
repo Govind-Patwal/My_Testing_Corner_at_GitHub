@@ -72,148 +72,148 @@ Wk | Dates | Planned | Executed | Evaluation
 **Credits**
 - https://www.kaggle.com/learn/overview
 
-Number | Action | Shortcut
-|---|---|---|
-1 | Checking the version of Python in Windows | cmd -> type `python --version`
-2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename>
-3 | Opening a .pynb file in D: | open Anaconda prompt -> d: -> jupyter notebook
-4 | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python**
-4a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it)
-4b | print in python | print(x), help(print), print(x, end =' ' )
-5 | operators | [+ - * /],   11 % 3 = 3 (% is Modulus or reminder of division), 11 // 3 = 2 (// Floor division), 2**3 = 8, -3
-6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction
-7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34)
-8 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x)
-9 | help with a function | help(function_name), eg `help(print)`
-10 | defining a function | def <functiion_name>(parameters): code_text return <value_to_be_returned>
-10a | return | it will break out of the current function, can be used to return if all other options have been exausted wihtout any outcome
-10b | : and indentation | very important in python
-11 | commenting a line | #
-12 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  `""" This is a description of the function above >>> """`
-13 | Higher order functions | functions that operate on other functions
-14 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass
-15 | rounding a float | round (number, ndigits) ... default ndigits = 0, it can be negative, it will round to hundreds, tens, thousands
-16 | having a default argument in a function | `def function_name(x, y=3):` ...
-17 | Boolean operators | True or False
-18 | Boolean operators | ==, !=, <=, >=, <, > 
-19 | Boolean expression | `and`, `or`, `not`
-19a | Boolean operator precedence | in the absence of a parenthesis,`and` is evaluated before `or`
-20 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True
-21 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else:
-22 | what about `if 0:` | python treats this as `if False:` similarly `if '':` is False and `if 1:` or `if 'str':` = True
-23 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list
-24 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1]
-25 | Slicing a list (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1), so list[4:7] will show elements at index 4 to index 6 = 3 elements
-26 | Changing lists | simple reassignment, list[n][m] = []
-27 | Lenght of a list | len(list_name)
-28 | Sorting a list in ascending order | sorted(list_name)
+Number | Topic | Comments | Misc
+|---|---|---|--- |
+1 | Checking the version of Python in Windows | cmd -> type `python --version` |
+2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename> |
+3 | Opening a .pynb file in D: | open Anaconda prompt -> d: -> jupyter notebook |
+4 | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
+4a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
+4b | print in python | print(x), help(print), print(x, end =' ' ) |
+5 | operators | [+ - * /],   11 % 3 = 3 (% is Modulus or reminder of division), 11 // 3 = 2 (// Floor division), 2**3 = 8, -3 |
+6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
+7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
+8 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x) |
+9 | help with a function | help(function_name), eg `help(print)` |
+10 | defining a function | def <functiion_name>(parameters): code_text return <value_to_be_returned> |
+10a | return | it will break out of the current function, can be used to return if all other options have been exausted wihtout any outcome |
+10b | : and indentation | very important in python |
+11 | commenting a line | # |
+12 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  `""" This is a description of the function above >>> """` |
+13 | Higher order functions | functions that operate on other functions |
+14 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass |
+15 | rounding a float | round (number, ndigits) ... default ndigits = 0, it can be negative, it will round to hundreds, tens, thousands |
+16 | having a default argument in a function | `def function_name(x, y=3):` ...  |
+17 | Boolean operators | True or False |
+18 | Boolean operators | ==, !=, <=, >=, <, >  |
+19 | Boolean expression | `and`, `or`, `not` |
+19a | Boolean operator precedence | in the absence of a parenthesis,`and` is evaluated before `or` |
+20 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True |
+21 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else: |
+22 | what about `if 0:` | python treats this as `if False:` similarly `if '':` is False and `if 1:` or `if 'str':` = True |
+23 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list |
+24 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1] |
+25 | Slicing a list (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
+26 | Changing lists | simple reassignment, list[n][m] = [] |
+27 | Lenght of a list | len(list_name) |
+28 | Sorting a list in ascending order | sorted(list_name) |
 29 | Sum, Min, Max of elements in a list | sum(list), min(list), max(list)
-. | Making a complex number | c = 12 + 3j   (the key is j, nothing else will work), printing the imaginary part of c, print(c.imag)
-31 | List methods - adding 1 element to the end of the list | `list.append('')` appends ONLY 1 element to the end of the list, the 1 element could be number, string, or a list
-32 | List - remove the last element of the list | `list.pop()`, this will remove the last element and return the last element
-33 | Returing index of the first occurane of an element in list | `<list_name>.index(<element>)`
-34 | checking element in a list | `<element> in <list_name>`
-35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable.
-36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)`
-37 | Loops | to repeteatedly execute some code
-38 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple)
-39 | misc | to check if a char is upper/lower case `'P'.isupper()`
-40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list
-41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter 
-42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`, after it is run, it returns the list as well
-43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . converting a string to a list >>> `list(<string>)`
-44 | The escape character `\` | >>> `print('He said \"Canada\'s capital is Ottawa\"')`
+. | Making a complex number | c = 12 + 3j   (the key is j, nothing else will work), printing the imaginary part of c, print(c.imag) |
+31 | List methods - adding 1 element to the end of the list | `list.append('')` appends ONLY 1 element to the end of the list, the 1 element could be number, string, or a list |
+32 | List - remove the last element of the list | `list.pop()`, this will remove the last element and return the last element |
+33 | Returing index of the first occurane of an element in list | `<list_name>.index(<element>)` |
+34 | checking element in a list | `<element> in <list_name>` |
+35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable. |
+36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)` |
+37 | Loops | to repeteatedly execute some code |
+38 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple) |
+39 | misc | to check if a char is upper/lower case `'P'.isupper()` |
+40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list |
+41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter  |
+42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`, after it is run, it returns the list as well |
+43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . converting a string to a list >>> `list(<string>)` |
+44 | The escape character `\` | >>> `print('He said \"Canada\'s capital is Ottawa\"')` |
 45 | Escape characher usage | `\' `single quote. `\"` double quote, `\\` backslash, `\n` newline
-46 | \n newline | added by default in print statement, can be changed >>> `print(<example>, end=' ')` - this will leave just one whitespace at the end of the <example> unlike the default newline
-47 | triple quotes | `'''...'''` or  `""" ... """  ` ... allows to write a string of any length without worrying about lines
-48 | String act as tuples | They can be indexed `'Example'[0]`, sliced `'Example'[:3]`, checked for length `len('Example')`, looped over like a tuple `for alphabet in 'Example':`, can be used for list comprehension `[alphabet for alphabet in 'Example']`...like tuples (and unlike lists) they are immutable, PROOF `'Example' == ('Example')`
-49 | String methods | Change to all upper case >>>`'Example'.upper()` | Change to all lowercase`'Example.lower()`| check the length >>> `len('Example')` , | checking the index of the first occurance of a character >>>`'Example'.index('m')` also check the 1st occurance of a string`'Example'.index('mple')` | check if the string starts with something `'Example'.startswith('Exa')` | check if the string ends with something `'Example'.endswith('Exa')`
-50 | Going between strings and lists: .split() and .join() | ***Split()*** is used to split a string into a list, the default point of splittin is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. ***Join()*** is used to join a list of strings into a string, the splitting point has to be mentioned
-51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()` 
-52 | f'string {} ..... ' | can be used to create/ print a string with a varible
-53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict)
-54 | accessing values using a key | creating dict `dict1 = {'key1':1,'key2':2, 'key3':3, 'key4':4, 'key5':5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44`
-55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}`
-56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False
-57 | for loop in dictionaries | will loop over all its keys, >>> `for i in <dict>: print(i)`, looping over all values >>> `for i in <dict>: print(dict[i]) `, looping over all keys/values pairs >>> `for i,j in <dict>.items:` (i will be the key and j will be the value)():
-58 | returning all keys and values of the dictionary | `<dictionary>.keys() `and `<dictionary>.values()`
-59 | removing an iem | `<dictionary>.pop(<key>)`
-60 | ***Working w/ external libraries*** | way to access them >>> `import pandas`, get help on the libraries: >>> `help(pandas)` , checking all the directories >>> `dir(pandas)`,type >>> `type(dir)`
-61 | shorten form of an external library | >>> `import pandas as pd`, >>> `import numpy as np` >>> `import tensorflor as tf`
-62 | Calling variables in a library by it name only | this CAN make life easier >>> `from math import *` >>> `pi` >>> `3.141592653589793`  (this is easier than writing >>> `math.pi` >>> `3.141592653589793`) ... this can ALSO cause bugs which are difficult to detect and fix (especially if you are calling all variables from multiple libraries and they have the same function doing different things), solution (1) call only the methods that you want from a library >>> `from math import log, pi` >>> `from numpy import asarray` (2) use full forms, this will make the code easier to understand and debug
-63 | accessing submodules | to be accessed by multiple dots, eg. >>> `numpy.random.randint()`
-64 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()`
-65 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading.
-Misc | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))`
-66 | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas**
-67 | Pandas | the most polular Python library for Data Analysis
-68 | Importing Pandas | `import pandas as pd`
-69 | Creating Data | Two core objects in Pandas - the **DataFrame** and the **Series**
-70 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)`
-70a | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)...the series name can act as the column if the series is used to create a df
-71 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column...***input is mostly a dictionar***y >>> `dict = {'Name':['GSP', 2 ,'DSP'], 'Favorite Color':['Red', 0 ,'Blue']}` >>> `df = pd.DataFrame(<dict>) `
-71a | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) `
-71b | naming the default index column | `df.index.name = '<index_name>'`
-71c | checking the shape of a df | `df.shape`
-72 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset
-72 | reading a CSV file into a df | `pd.read_csv('file path')`
-72a | reading a CSV and using one of its columns as index | >>> `pd.read_csv('file path', index_col=0)`...this is not a very good way as one could end up using a column that has duplicate values(s), thus the index will not be unique
-73 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb
-74 | checking the shape of a df | `df.shape`
-75 | checking the first and last 10 rows | >>>`df.head()` >>> `df.tail()`
-76 | choosing a column from the CSV as the index | `pd.read_csv('file path', index_col=<column_number>)`
-77 | saving to a CSV file | `<df>.to_csv('<file_path>)`
-77a| w/o the index | `<df>.to_csv('<file_path>, index = False)`
-78 | ***Accessing Data*** | 
-78a | Accessing using Columns | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]`
- 78b | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],[2,3,4,5]]`...can also be used like >>> `df['column_label'].iloc[0]`
- 79 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`...can also be used like >>> `df['column_label'].loc[0]`
- 80 | choosing between iloc and loc | since iloc is purely index based, 0:10 will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so 0:10 will return 11 values (0,1,2...11)...it is specifically good for situations when you want all values returned according to label names...eg df.loc[:,'GradeA':'GradeD']
- 81 | naming the default index column that has no name | `df.index.name = '<index_name>'`
- 82 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df.set_index('<column_name_with_unique_values_in_rows>')`
- 83 | Conditional selection | >>> `df['column_label'] == 'Str'/num` ...this produces a series of True/False, which can be used inside a `loc` to select the relevant data
- 84 | Using loc for selecting data based on conditional | >>> `df.loc[df['Column_label'] <conditinal operation>]`
- 85 | using and and or | use the signs `&` and `|`
- 86 | Pandas built in conditional selector - 1/3 | .isin([Value1, Value2, Value3,...]) , it checks if a value is in the list given, for example >>> `df.loc[df['City'].isin(['New Delhi', 'Bangkok', 'Toronto'])]`, it is short form of writing >>> `df.loc[df['City'] == 'New Delhi' | df['City'] == 'Bangkok' | df['City'] == 'Toronto']`
- 87 | Pandas built in conditional selector - 2/3 | .between(Value1,Value2)...it checks if a value is between the given range (as in loc, both end points are included), for example >>> `df.loc[df['Salary'].between(50000,80000)]`
- 87 | isnull() and isnotnull() | to check if the value in a column is null or not, for example >> `df['Salary'].notnull()`
- 88 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000`
-89 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000`
-90 | setting the max number of rows to be displayes in a jupyter notebook | >>> `pd.set_option("display.max_rows", 5)`
-91 | **Summary function and maps** | involves operations that we can apply to the data to get the 'desired input'
-92 | some summary functions | >>>`df['column_label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].min() `>>>`df['column label'].max()` >>>`df['column label'].median()` >>>`df['column label'].count() `>>>`df['column label'].unique()`....to find the name and frequency of unique values >>> `df['column_name'].value_counts()`, returning of the index of the max value in a column >>> `df['column_name'].idxmax()`
-93 | Pandas (operations to create new columns in a jiffy)  | >>> `df['<new_column>'] = df['<column_1>'] + df['<column_2>']` + ' ' ...all mathimatical operations can be done, some more examples >>> `df['<new_column>'] = df['<column_1>'] - df['<column_1>'].mean()
-94 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) - ways to to more advanced things likes applying conditional logic, anything needing a function | extremely useful for transforming data into new one
-94a | map() used for a single column /Series | syntax >>> `map(function, iterables)`...IMP-by default it points to the location where the output is saved, in order to see the actual output use `list(map())` or `pd.Series(map())` eg, >>> `pd.Series(map((function, iterable))`...another way of using the map function >>> `<Series>.map(function) `, for example, >>> `df['<column_label>'].map(function)`
-94b | apply() used to transform rows/columns in a df |  >>> `df['column_label'].apply(function)`
-95 | [**Grouping and Sorting**](https://www.kaggle.com/residentmario/grouping-and-sorting) | using groupby()
-96 | Groupwise analysis - groupby([]) | very handly funciton to group and work with dataframes
-96a | df.groupby(['column_label_1','column_label_2',... ]) | creates a group of similar valued entries from the column in a df, there can be 1 or multiple columns
-96b | groupby() is used with another function that applies some operation to the same or any other column | syntax >>> `df.groupby(['Column(s) to be used for grouping'])['Column_to_be_operator_on'].<operation()>`...eg, `df.groupby(['country','state'])['population'].max())`...functions could be min(), max(), count()...we can also use the pandas function `apply()` can be used with groupby(), [example from kaggle pandas course](https://www.kaggle.com/residentmario/grouping-and-sorting) or example, here's one way of selecting the name of the first wine reviewed from each winery in the dataset: >>> `reviews.group(['winery']).apply(lambda df: df['title'].iloc[0])`
-96c | agg()...good function to have many funtion run together | `df.groupby(['Column_to_be_used_for_grouping])['Column_to_be_operated_on'].agg[('len','min','max')]`....this returns a dataframe
-96d | more than one columns can be grouped | `df.groupby(['column1','column2',...])['<column_to_be_operated_on>'].<sum/count/min/max()>` OR `df.groupby(['Column1'],['Column2'],...).apply(<function>)`
-97 | Resetting index after multi-group groupby() | `df.groupby(['Column1', 'Column2']).reset_index()`
-98 | Sorting |
-98a | Soring by index |  `df.groupby(['Column1'],['Column2'],...).sort_index()`
-98b| Sorting by single value | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)`
-98c| Sorting by multiple values | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len', <a column used for grouping>])`...eg `df.groupby(['country', 'state']).sort_values(by=['len', 'state'])` ...if we want all descending then use, ascending =False, eg >>> `df.groupby(['country', 'state']).sort_values(by=['len', 'state'], ascending=False)`...can also use size() and sort_values, eg. >>> `df.groupby(['country', 'state']).size().sort_values()`
-99 | **Data Types and Missing Values**| Credit - https://www.kaggle.com/residentmario/data-types-and-missing-values
-100 | dtype and dtypes | dtype is for a column, and a dtypes is for df...>>> `df.dtypes ` >>> `df['column_label'].dtype`....strings will show was 'O' meaning object...NOTE: to access the values/types of the index column, use >>> `df.index.dtype` and NOT df['index'].dtype (index is not a column)
-100a | converting datatype of column | >>> `df['column label'].astype('str')`...other formats could be 'float64' 'int64'
-101 | Missing Data | checking the null in all columns of df >>>`df.isnull().sum()`, checking the null in a specific column >>> `df['column_label'].isnull().sum()` ...creting a df based on null in a column >>> `df[pd.isnull(df[<column you want check the null values>])]`...checking for data that is not null >>> `df['column_name'].notnull().sum()` and >>> `df['column_name'].notna().sum()`
-101a | replacing na with something | >>> `df['column_label].fillna('Unknown')`...you can also replace using the mean of the column, or use the backfill strategy (filling each missing with the next non-null) ...replacing non-null with something else >>> `df['column_label'].replace('value_to_replace', 'new_value')`...replace() is also handy when column has data like 'unknown', 'no known', etc, that need to be replaced
-102 | **Renaming and Combining** | Credit - https://www.kaggle.com/residentmario/renaming-and-combining
-103 | Renaming columns | renaming column names >>> `df.rename(columns={'column_1_existing_name':'column_1_new_name', 'column_2_existing_name':'column_2_new_name'})`
-104 | naming or renaming the default index column |  >>> `df.index.name = '<new_index_name>'`
-105 | Removing the default index and replacing with a column in the df | >>> `df = df.set_index('<column_name_with_unique_values_in_rows>')`
-106 | resetting the index from 0...-1 | >>> `df.reset_index()`
-107 | renaming index values | changing the first and second index names, ie. index[0] and index[1] >>> `df.rename(index={0:'FirstEntry', 1:'SecondEntry'})`
-108 | renaming both x and y axis | >>> `df.rename_axis('row_axis_name', axis ='rows').rename_axis('column_axis_name', axis='columns')`
-109 | Combining dataframes | used to combine 2 or more dataframes into 1
-109a | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])`
-109b | join() | >>>`left_df.set_index('common_column').join(right_df.set_index('common_column'))`
-109c | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1
-110| **Django** | https://www.youtube.com/watch?v=OTmQOjsl0eg
+46 | \n newline | added by default in print statement, can be changed >>> `print(<example>, end=' ')` - this will leave just one whitespace at the end of the <example> unlike the default newline |
+47 | triple quotes | `'''...'''` or  `""" ... """  ` ... allows to write a string of any length without worrying about lines |
+48 | String act as tuples | They can be indexed `'Example'[0]`, sliced `'Example'[:3]`, checked for length `len('Example')`, looped over like a tuple `for alphabet in 'Example':`, can be used for list comprehension `[alphabet for alphabet in 'Example']`...like tuples (and unlike lists) they are immutable, PROOF `'Example' == ('Example')` |
+49 | String methods | Change to all upper case >>>`'Example'.upper()` | Change to all lowercase`'Example.lower()`| check the length >>> `len('Example')` , | checking the index of the first occurance of a character >>>`'Example'.index('m')` also check the 1st occurance of a string`'Example'.index('mple')` | check if the string starts with something `'Example'.startswith('Exa')` | check if the string ends with something `'Example'.endswith('Exa')` |
+50 | Going between strings and lists: .split() and .join() | ***Split()*** is used to split a string into a list, the default point of splittin is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. ***Join()*** is used to join a list of strings into a string, the splitting point has to be mentioned |
+51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()`  |
+52 | f'string {} ..... ' | can be used to create/ print a string with a varible |
+53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) |
+54 | accessing values using a key | creating dict `dict1 = {'key1':1,'key2':2, 'key3':3, 'key4':4, 'key5':5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44` |
+55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}` |
+56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False |
+57 | for loop in dictionaries | will loop over all its keys, >>> `for i in <dict>: print(i)`, looping over all values >>> `for i in <dict>: print(dict[i]) `, looping over all keys/values pairs >>> `for i,j in <dict>.items:` (i will be the key and j will be the value)(): |
+58 | returning all keys and values of the dictionary | `<dictionary>.keys() `and `<dictionary>.values()` |
+59 | removing an iem | `<dictionary>.pop(<key>)` |
+60 | ***Working w/ external libraries*** | way to access them >>> `import pandas`, get help on the libraries: >>> `help(pandas)` , checking all the directories >>> `dir(pandas)`,type >>> `type(dir)` |
+61 | shorten form of an external library | >>> `import pandas as pd`, >>> `import numpy as np` >>> `import tensorflor as tf` |
+62 | Calling variables in a library by it name only | this CAN make life easier >>> `from math import *` >>> `pi` >>> `3.141592653589793`  (this is easier than writing >>> `math.pi` >>> `3.141592653589793`) ... this can ALSO cause bugs which are difficult to detect and fix (especially if you are calling all variables from multiple libraries and they have the same function doing different things), solution (1) call only the methods that you want from a library >>> `from math import log, pi` >>> `from numpy import asarray` (2) use full forms, this will make the code easier to understand and debug |
+63 | accessing submodules | to be accessed by multiple dots, eg. >>> `numpy.random.randint()` |
+64 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()` |
+65 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading. |
+Misc | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))` |
+66 | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
+67 | Pandas | the most polular Python library for Data Analysis |
+68 | Importing Pandas | `import pandas as pd` |
+69 | Creating Data | Two core objects in Pandas - the **DataFrame** and the **Series** |
+70 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)` |
+70a | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)...the series name can act as the column if the series is used to create a df |
+71 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column...***input is mostly a dictionar***y >>> `dict = {'Name':['GSP', 2 ,'DSP'], 'Favorite Color':['Red', 0 ,'Blue']}` >>> `df = pd.DataFrame(<dict>) ` |
+71a | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) ` |
+71b | naming the default index column | `df.index.name = '<index_name>'` |
+71c | checking the shape of a df | `df.shape` |
+72 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset |
+72 | reading a CSV file into a df | `pd.read_csv('file path')` |
+72a | reading a CSV and using one of its columns as index | >>> `pd.read_csv('file path', index_col=0)`...this is not a very good way as one could end up using a column that has duplicate values(s), thus the index will not be unique |
+73 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb |
+74 | checking the shape of a df | `df.shape` |
+75 | checking the first and last 10 rows | >>>`df.head()` >>> `df.tail()` |
+76 | choosing a column from the CSV as the index | `pd.read_csv('file path', index_col=<column_number>)` |
+77 | saving to a CSV file | `<df>.to_csv('<file_path>)` |
+77a| w/o the index | `<df>.to_csv('<file_path>, index = False)` |
+78 | ***Accessing Data*** |  |
+78a | Accessing using Columns | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]` |
+ 78b | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],[2,3,4,5]]`...can also be used like >>> `df['column_label'].iloc[0]` |
+ 79 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`...can also be used like >>> `df['column_label'].loc[0]` |
+ 80 | choosing between iloc and loc | since iloc is purely index based, 0:10 will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so 0:10 will return 11 values (0,1,2...11)...it is specifically good for situations when you want all values returned according to label names...eg df.loc[:,'GradeA':'GradeD'] |
+ 81 | naming the default index column that has no name | `df.index.name = '<index_name>'` |
+ 82 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df.set_index |('<column_name_with_unique_values_in_rows>')`
+ 83 | Conditional selection | >>> `df['column_label'] == 'Str'/num` ...this produces a series of True/False, which can be used inside a `loc` to select the relevant data |
+ 84 | Using loc for selecting data based on conditional | >>> `df.loc[df['Column_label'] <conditinal operation>]` |
+ 85 | using and and or | use the signs `&` and `|` |
+ 86 | Pandas built in conditional selector - 1/3 | .isin([Value1, Value2, Value3,...]) , it checks if a value is in the list given, for example >>> `df.loc[df['City'].isin(['New Delhi', 'Bangkok', 'Toronto'])]`, it is short form of writing >>> `df.loc[df['City'] == 'New Delhi' | df['City'] == 'Bangkok' | df['City'] == 'Toronto']` |
+ 87 | Pandas built in conditional selector - 2/3 | .between(Value1,Value2)...it checks if a value is between the given range (as in loc, both end points are included), for example >>> `df.loc[df['Salary'].between(50000,80000)]` |
+ 87 | isnull() and isnotnull() | to check if the value in a column is null or not, for example >> `df['Salary'].notnull()` |
+ 88 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000` |
+89 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000` |
+90 | setting the max number of rows to be displayes in a jupyter notebook | >>> `pd.set_option("display.max_rows", 5)` |
+91 | **Summary function and maps** | involves operations that we can apply to the data to get the 'desired input' |
+92 | some summary functions | >>>`df['column_label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].min() `>>>`df['column label'].max()` >>>`df['column label'].median()` >>>`df['column label'].count() `>>>`df['column label'].unique()`....to find the name and frequency of unique values >>> `df['column_name'].value_counts()`, returning of the index of the max value in a column >>> `df['column_name'].idxmax()` |
+93 | Pandas (operations to create new columns in a jiffy)  | >>> `df['<new_column>'] = df['<column_1>'] + df['<column_2>']` + ' ' ...all mathimatical operations can be done, some more examples >>> `df['<new_column>'] = df['<column_1>'] - df['<column_1>'].mean() |
+94 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) - ways to to more advanced things likes applying conditional logic, anything needing a function | extremely useful for transforming data into new one |
+94a | map() used for a single column /Series | syntax >>> `map(function, iterables)`...IMP-by default it points to the location where the output is saved, in order to see the actual output use `list(map())` or `pd.Series(map())` eg, >>> `pd.Series(map((function, iterable))`...another way of using the map function >>> `<Series>.map(function) `, for example, >>> `df['<column_label>'].map(function)` |
+94b | apply() used to transform rows/columns in a df |  >>> `df['column_label'].apply(function)` |
+95 | [**Grouping and Sorting**](https://www.kaggle.com/residentmario/grouping-and-sorting) | using groupby() |
+96 | Groupwise analysis - groupby([]) | very handly funciton to group and work with dataframes |
+96a | df.groupby(['column_label_1','column_label_2',... ]) | creates a group of similar valued entries from the column in a df, there can be 1 or multiple columns |
+96b | groupby() is used with another function that applies some operation to the same or any other column | syntax >>> `df.groupby(['Column(s) to be used for grouping'])['Column_to_be_operator_on'].<operation()>`...eg, `df.groupby(['country','state'])['population'].max())`...functions could be min(), max(), count()...we can also use the pandas function `apply()` can be used with groupby(), [example from kaggle pandas course](https://www.kaggle.com/residentmario/grouping-and-sorting) or example, here's one way of selecting the name of the first wine reviewed from each winery in the dataset: >>> `reviews.group(['winery']).apply(lambda df: df['title'].iloc[0])` |
+96c | agg()...good function to have many funtion run together | `df.groupby(['Column_to_be_used_for_grouping])['Column_to_be_operated_on'].agg[('len','min','max')]`....this returns a dataframe |
+96d | more than one columns can be grouped | `df.groupby(['column1','column2',...])['<column_to_be_operated_on>'].<sum/count/min/max()>` OR `df.groupby(['Column1'],['Column2'],...).apply(<function>)` |
+97 | Resetting index after multi-group groupby() | `df.groupby(['Column1', 'Column2']).reset_index()` |
+98 | Sorting | |
+98a | Soring by index |  `df.groupby(['Column1'],['Column2'],...).sort_index()` |
+98b| Sorting by single value | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)` |
+98c| Sorting by multiple values | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len', <a column used for grouping>])`...eg `df.groupby(['country', 'state']).sort_values(by=['len', 'state'])` ...if we want all descending then use, ascending =False, eg >>> `df.groupby(['country', 'state']).sort_values(by=['len', 'state'], ascending=False)`...can also use size() and sort_values, eg. >>> `df.groupby(['country', 'state']).size().sort_values()` |
+99 | **Data Types and Missing Values**| Credit - https://www.kaggle.com/residentmario/data-types-and-missing-values |
+100 | dtype and dtypes | dtype is for a column, and a dtypes is for df...>>> `df.dtypes ` >>> `df['column_label'].dtype`....strings will show was 'O' meaning object...NOTE: to access the values/types of the index column, use >>> `df.index.dtype` and NOT df['index'].dtype (index is not a column) |
+100a | converting datatype of column | >>> `df['column label'].astype('str')`...other formats could be 'float64' 'int64' |
+101 | Missing Data | checking the null in all columns of df >>>`df.isnull().sum()`, checking the null in a specific column >>> `df['column_label'].isnull().sum()` ...creting a df based on null in a column >>> `df[pd.isnull(df[<column you want check the null values>])]`...checking for data that is not null >>> `df['column_name'].notnull().sum()` and >>> `df['column_name'].notna().sum()` |
+101a | replacing na with something | >>> `df['column_label].fillna('Unknown')`...you can also replace using the mean of the column, or use the backfill strategy (filling each missing with the next non-null) ...replacing non-null with something else >>> `df['column_label'].replace('value_to_replace', 'new_value')`...replace() is also handy when column has data like 'unknown', 'no known', etc, that need to be replaced |
+102 | **Renaming and Combining** | Credit - https://www.kaggle.com/residentmario/renaming-and-combining |
+103 | Renaming columns | renaming column names >>> `df.rename(columns={'column_1_existing_name':'column_1_new_name', 'column_2_existing_name':'column_2_new_name'})` |
+104 | naming or renaming the default index column |  >>> `df.index.name = '<new_index_name>'` |
+105 | Removing the default index and replacing with a column in the df | >>> `df = df.set_index('<column_name_with_unique_values_in_rows>')` |
+106 | resetting the index from 0...-1 | >>> `df.reset_index()` |
+107 | renaming index values | changing the first and second index names, ie. index[0] and index[1] >>> `df.rename(index={0:'FirstEntry', 1:'SecondEntry'})` |
+108 | renaming both x and y axis | >>> `df.rename_axis('row_axis_name', axis ='rows').rename_axis('column_axis_name', axis='columns')` |
+109 | Combining dataframes | used to combine 2 or more dataframes into 1 |
+109a | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])` |
+109b | join() | >>>`left_df.set_index('common_column').join(right_df.set_index('common_column'))` |
+109c | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1 |
+110| **Django** | https://www.youtube.com/watch?v=OTmQOjsl0eg ..  |installing Django virtual environment
 
  
 
