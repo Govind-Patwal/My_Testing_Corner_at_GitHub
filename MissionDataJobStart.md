@@ -25,8 +25,8 @@
 Part 1 | Part 2
 | --- | --- |
 Hard Skills: Product (I am the Product) improvment | Soft Skills: Marketing and Sales
-After inital setup: Weekends + try to find time on weekdays | After inital setup: ONLY on Weekdays
-Kaggle(python + pandas) + Django + Canvas (in class + GitLab) + Django + KaggleCourseAgain + Kaggle Competitions + own projects/product + resources section (on my portfolio website) + videos  | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn
+After inital setup: Full Weekends + try to find time on weekdays | After inital setup: ONLY on Weekdays
+Kaggle(python + pandas) + Django + Canvas (in class + GitLab...while doing this course also go through Mongo https://www.youtube.com/watch?v=E-1xI85Zog8 and Flask https://www.youtube.com/watch?v=Z1RJmh_OqeA + Tablaue https://www.youtube.com/watch?v=TPMlZxRRaBQ) + Django again + AllKaggleCourses + AWS + (Kaggle Competitions...will also give you project ideas) + resources (text+video on my portfolio website) | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn + LeetCode/other platforms
 
 ---
 
@@ -74,9 +74,9 @@ Wk | Dates | Planned | Executed | Evaluation
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
-1 | Checking the version of Python in Windows | cmd -> type `python --version` |
-2 | Running a python file | cmd -> cd to the root where file is placed -> python <filename> |
-3 | Opening a .pynb file in D: | open Anaconda prompt -> d: -> jupyter notebook |
+1 | Checking the version of Python in Windows | cmd -> type >>> `python --version` |
+2 | Running a python file | cmd -> cd to the root where file is placed >>> `python <filename>` |
+3 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
 4 | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
 4a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
 4b | print in python | print(x), help(print), print(x, end =' ' ) |
@@ -214,7 +214,11 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 109a | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])` |
 109b | join() | >>>`left_df.set_index('common_column').join(right_df.set_index('common_column'))` |
 109c | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1 |
-110| **Django** | https://www.youtube.com/watch?v=OTmQOjsl0eg ..  |installing Django virtual environment
+110| **Django** | source: https://www.youtube.com/watch?v=OTmQOjsl0eg  | A web-dev framework for Python
+111 | MVC in other back-end languages to build good web-dev application| Model View Controller | Model for data, View for HTML format, and Controller to control the entire operation
+112 | In Django we have MVT | Model, View, Template | 
+113 | Why Django | Fast, many available components, Security, Scalability
+114| Creating a Django project | (step1) Win command prompt (step2) C:\Users\user_name>`D:` (step3) `D:\>cd folder_location` (step4) D:\folder_location>`pip install virtualenvwrapper-win` (step5) D:\folder_location>`mkvirtualenv <virtual_environment_name>` (step6(virtual_environment_name) D:\folder_location>`pip install django`(step7) (virtual_environment_name) D:\folder_location>`django-admin startproject <new_project_name>` (step8) (virtual_environment_name) D:\folder_location>`cd new_project_name` (step9)(virtual_environment_name) D:\folder_location\new_project_name>`python manage.py runserver`
 
  
 
