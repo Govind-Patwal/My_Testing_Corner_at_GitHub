@@ -175,7 +175,7 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
  83 | Conditional selection | >>> `df['column_label'] == 'Str'/num` ...this produces a series of True/False, which can be used inside a `loc` to select the relevant data |
  84 | Using loc for selecting data based on conditional | >>> `df.loc[df['Column_label'] <conditinal operation>]` |
  85 | using and and or | use the signs `&` and `|` |
- 86 | Pandas built in conditional selector - 1/3 | .isin([Value1, Value2, Value3,...]) , it checks if a value is in the list given, for example >>> `df.loc[df['City'].isin(['New Delhi', 'Bangkok', 'Toronto'])]`, it is short form of writing >>> `df.loc[df['City'] == 'New Delhi' | df['City'] == 'Bangkok' | df['City'] == 'Toronto']` |
+ 86 | Pandas built in conditional selector - 1/3 | .isin([Value1, Value2, Value3,...]) , it checks if a value is in the list given, for example >>> `df.loc[df['City'].isin(['New Delhi', 'Bangkok', 'Toronto'])]`, it is short form of writing city is in New Delhi or Bangkok or Toronto |
  87 | Pandas built in conditional selector - 2/3 | .between(Value1,Value2)...it checks if a value is between the given range (as in loc, both end points are included), for example >>> `df.loc[df['Salary'].between(50000,80000)]` |
  87 | isnull() and isnotnull() | to check if the value in a column is null or not, for example >> `df['Salary'].notnull()` |
  88 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000` |
