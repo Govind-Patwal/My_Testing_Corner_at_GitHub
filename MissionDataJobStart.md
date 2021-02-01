@@ -223,7 +223,7 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 115 | settings.py | ALWAYS turn `Debug = False` before making the project live | 
 116 | VS Code - Integrated terminal - setting default (cmd vs powershell) | 1) Open VS code... 2)Press Ctrl + Shift + P... 3)Type 'shell' in the searcher... 4)Select 'Terminal: Select Default Shell'... 5)Select 'Command Prompt' or 'Windows Powershell'  | 
 117 | all Django main commands| >>> `django-admin` |
-117a | efachelp while working on Django | >>>`python manage.py help` |
+117a | help while working on Django | >>>`python manage.py help` |
 
 
  
