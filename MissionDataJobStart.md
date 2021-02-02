@@ -64,7 +64,7 @@ Wk | Dates | Planned | Executed | Evaluation
 4 | 2020/01/04 - 2021/01/10 |  | ## RBC internship assessment ## Jan 10 - Received ***Kaggle certificate of completion - Python***
 5 | 2020/01/11 - 2021/01/17 |  | ##Cleaned all pipeline @ office, and sent New Year emails ## got 1st feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue 
 6 | 2020/01/18 - 2021/01/24 |  | ## got 2nd feedback from CareerService Team, implemented and became Employer-ready ##talked to career director (2nd time) ## CALC Can-Ex writing, speaking, infosession ## career services event ## submitted Ontario Internship form ## Kaggle Pandas: 1-3
-7 | 2020/01/25 - 2021/01/31 |  | 
+7 | 2020/01/25 - 2021/01/31 | ## signed up for Can-Ex ### Completed Pandas ## started Django video  | 
 8 | 2020/02/01 - 2021/01/07 |  |  
 ---
 
@@ -74,10 +74,10 @@ Wk | Dates | Planned | Executed | Evaluation
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
-1 | Checking the version of Python in Windows | cmd -> type >>> `python --version` |
-2 | Running a python file | cmd -> cd to the root where file is placed >>> `python <filename>` |
-3 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
-4 | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
+1.0 | Checking the version of Python in Windows | cmd -> type >>> `python --version` |
+1.1 | Running a python file | cmd -> cd to the root where file is placed >>> `python <filename>` |
+1.2 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
+**2.0** | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
 4a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
 4b | print in python | print(x), help(print), print(x, end =' ' ) |
 5 | operators | [+ - * /],   11 % 3 = 3 (% is Modulus or reminder of division), 11 // 3 = 2 (// Floor division), 2**3 = 8, -3 |
@@ -146,7 +146,7 @@ Number | Topic | Comments | Misc
 64 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()` |
 65 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading. |
 Misc | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))` |
-66 | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
+**3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
 68 | Importing Pandas | `import pandas as pd` |
 69 | Creating Data | Two core objects in Pandas - the **DataFrame** and the **Series** |
@@ -214,17 +214,17 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 109a | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])` |
 109b | join() | >>>`left_df.set_index('common_column').join(right_df.set_index('common_column'))` |
 109c | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1 |
-110| **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
-111 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
-112 | In Django we have MVT | Model, View, Template | 
-113 | Why Django | Fast, many available components, Security, Scalability
-114| Creating and Running a new Django project | (Step1) Win command prompt... (Step2) C:\Users\user_name>`D:`... (Step3) `D:\>cd folder_location`... (Step4) D:\folder_location>`pip install virtualenvwrapper-win`... (Step5) D:\folder_location>`mkvirtualenv <virtual_environment_name>`... (Step6(virtual_environment_name)D:\folder_location>`pip install django`... (Step7) (virtual_environment_name)D:\folder_location>`django-admin startproject <new_project_name>`... (Step8) (virtual_environment_name)D:\folder_location>`cd new_project_name`... (Step9)(virtual_environment_name)D:\folder_location\new_project_name>`python manage.py runserver`
+**4.0** | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
+4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
+4.2 | In Django we have MVT | Model, View, Template | 
+4.3 | Why Django | Fast, many available components, Security, Scalability
+4.4| Creating and Running a new Django project | (Step1) Win command prompt... (Step2) C:\Users\user_name>`D:`... (Step3) `D:\>cd folder_location`... (Step4) D:\folder_location>`pip install virtualenvwrapper-win`... (Step5) D:\folder_location>`mkvirtualenv <virtual_environment_name>`... (Step6(virtual_environment_name)D:\folder_location>`pip install django`... (Step7) (virtual_environment_name)D:\folder_location>`django-admin startproject <new_project_name>`... (Step8) (virtual_environment_name)D:\folder_location>`cd new_project_name`... (Step9)(virtual_environment_name)D:\folder_location\new_project_name>`python manage.py runserver`
 114a | initiating a virtual environment | 1) file_path>`workon 'virtual_environment_name'`... 2) (virtual_environment_name)file_path>
-115 | settings.py | ALWAYS turn `Debug = False` before making the project live | 
-116 | VS Code - Integrated terminal - setting default (cmd vs powershell) | 1) Open VS code... 2)Press Ctrl + Shift + P... 3)Type 'shell' in the searcher... 4)Select 'Terminal: Select Default Shell'... 5)Select 'Command Prompt' or 'Windows Powershell'  | 
-117 | all Django main commands| >>> `django-admin` |
-117a | help while working on Django | >>>`python manage.py help` | ...to return after the Canvas course
-118
+4.5 | settings.py | ALWAYS turn `Debug = False` before making the project live | 
+4.6 | VS Code - Integrated terminal - setting default (cmd vs powershell) | 1) Open VS code... 2)Press Ctrl + Shift + P... 3)Type 'shell' in the searcher... 4)Select 'Terminal: Select Default Shell'... 5)Select 'Command Prompt' or 'Windows Powershell'  | 
+4.7 | all Django main commands| >>> `django-admin` |
+4.8 | help while working on Django | >>>`python manage.py help` | ...to return after the Canvas course
+**5.0**| 
 
 
  
