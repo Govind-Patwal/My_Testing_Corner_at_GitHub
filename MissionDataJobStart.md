@@ -214,8 +214,8 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 109a | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])` |
 109b | join() | >>>`left_df.set_index('common_column').join(right_df.set_index('common_column'))` |
 109c | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1 |
-110| **Django** | source: https://www.youtube.com/watch?v=OTmQOjsl0eg  | The most popular web-dev framework for Python
-111 | MVC in other back-end languages to build good web-dev application| Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation
+110| **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
+111 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 112 | In Django we have MVT | Model, View, Template | 
 113 | Why Django | Fast, many available components, Security, Scalability
 114| Creating and Running a new Django project | (Step1) Win command prompt... (Step2) C:\Users\user_name>`D:`... (Step3) `D:\>cd folder_location`... (Step4) D:\folder_location>`pip install virtualenvwrapper-win`... (Step5) D:\folder_location>`mkvirtualenv <virtual_environment_name>`... (Step6(virtual_environment_name)D:\folder_location>`pip install django`... (Step7) (virtual_environment_name)D:\folder_location>`django-admin startproject <new_project_name>`... (Step8) (virtual_environment_name)D:\folder_location>`cd new_project_name`... (Step9)(virtual_environment_name)D:\folder_location\new_project_name>`python manage.py runserver`
@@ -223,7 +223,8 @@ Misc | ***lambda function*** | is short anonymous functon, saves time and effort
 115 | settings.py | ALWAYS turn `Debug = False` before making the project live | 
 116 | VS Code - Integrated terminal - setting default (cmd vs powershell) | 1) Open VS code... 2)Press Ctrl + Shift + P... 3)Type 'shell' in the searcher... 4)Select 'Terminal: Select Default Shell'... 5)Select 'Command Prompt' or 'Windows Powershell'  | 
 117 | all Django main commands| >>> `django-admin` |
-117a | help while working on Django | >>>`python manage.py help` |
+117a | help while working on Django | >>>`python manage.py help` | ...to return after the Canvas course
+118
 
 
  
