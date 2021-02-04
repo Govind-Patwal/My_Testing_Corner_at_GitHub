@@ -64,7 +64,7 @@ Wk | Dates | Planned | Executed | Evaluation
 4 | 2020/01/04 - 2021/01/10 |  | ## RBC internship assessment ## Jan 10 - Received ***Kaggle certificate of completion - Python***
 5 | 2020/01/11 - 2021/01/17 |  | ##Cleaned all pipeline @ office, and sent New Year emails ## got 1st feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue 
 6 | 2020/01/18 - 2021/01/24 |  | ## got 2nd feedback from CareerService Team, implemented and became Employer-ready ##talked to career director (2nd time) ## CALC Can-Ex writing, speaking, infosession ## career services event ## submitted Ontario Internship form ## Kaggle Pandas: 1-3
-7 | 2020/01/25 - 2021/01/31 |  | ## signed up for Can-Ex ### Completed Pandas ## started Django video  
+7 | 2020/01/25 - 2021/01/31 |  | ## signed up for Can-Ex ### Completed Pandas ## started Django video  ## Started Python consulting, and Upwork
 8 | 2020/02/01 - 2021/01/07 |  |  
 ---
 
@@ -74,18 +74,19 @@ Wk | Dates | Planned | Executed | Evaluation
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
-1.0 | Checking the version of Python in Windows | cmd -> type >>> `python --version` |
-1.1 | Running a python file | cmd -> cd to the root where file is placed >>> `python <filename>` |
+1.0 | Checking the version of Python in Windows | windows cmd -> `python --version` |
+1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
 1.2 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
+1.3 | naming convention of variables | can consist of uppercase, lowercase, digits and underscore - lower case is preferred. Must be in snake case, sample_variable...no keywords to be used, list of keywords >>> `help('keywords')`|
 **2.0** | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
 4a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
 4b | print in python | print(x), help(print), print(x, end =' ' ) |
-5 | operators | [+ - * /],   11 % 3 = 3 (% is Modulus or reminder of division), 11 // 3 = 2 (// Floor division), 2**3 = 8, -3 |
+5 | operators | [+ - * /], MODULUS/REMINDER, e.g. 11 % 3 = 2, FLOOR DIVISION/QUOTIENT, e.g. 11 // 3 = 3, EXPONENT, e.g 2**3 = 8 |
 6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
 7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
 8 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x) |
 9 | help with a function | help(function_name), eg `help(print)` |
-10 | defining a function | def <functiion_name>(parameters): code_text return <value_to_be_returned> |
+10 | defining a function | def <function_name>(parameters): code_text return <value_to_be_returned> |
 10a | return | it will break out of the current function, can be used to return if all other options have been exausted wihtout any outcome |
 10b | : and indentation | very important in python |
 11 | commenting a line | # |
@@ -109,12 +110,14 @@ Number | Topic | Comments | Misc
 28 | Sorting a list in ascending order | sorted(list_name) |
 29 | Sum, Min, Max of elements in a list | sum(list), min(list), max(list)
 . | Making a complex number | c = 12 + 3j   (the key is j, nothing else will work), printing the imaginary part of c, print(c.imag) |
-31 | List methods - adding 1 element to the end of the list | `list.append('')` appends ONLY 1 element to the end of the list, the 1 element could be number, string, or a list |
-32 | List - remove the last element of the list | `list.pop()`, this will remove the last element and return the last element |
+31 | List methods - adding 1 element to the end of the list and removing 1 element from the end of the list | to add ....`list.append(<value>)`, to remove...`list.pop()` |
+32 | List - add or remove elements at a specific index | `list.insert(index, value)` and 'list.pop(3)`|
+32a | List removing the first instance of a value | `list.remove(value)` |
 33 | Returing index of the first occurane of an element in list | `<list_name>.index(<element>)` |
 34 | checking element in a list | `<element> in <list_name>` |
 35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable. |
 36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)` |
+36a | more about tuples | initiation >>> `new_tuple =( )`...finding the length >>> len(<tuple_name>)...applying indexing operator >>> `tuple[1]`...applying slicing >>> `tuple[:4]`
 37 | Loops | to repeteatedly execute some code |
 38 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple) |
 39 | misc | to check if a char is upper/lower case `'P'.isupper()` |
@@ -132,7 +135,7 @@ Number | Topic | Comments | Misc
 50 | Going between strings and lists: .split() and .join() | ***Split()*** is used to split a string into a list, the default point of splittin is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. ***Join()*** is used to join a list of strings into a string, the splitting point has to be mentioned |
 51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()`  |
 52 | f'string {} ..... ' | can be used to create/ print a string with a varible |
-53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) |
+53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) ...2 rules (1) values can be objects of any type - int/float/str/list/dict/tuple (2) keys can ONLY be immutable objects - int/str/float/tuple, but cannot be list/dict |
 54 | accessing values using a key | creating dict `dict1 = {'key1':1,'key2':2, 'key3':3, 'key4':4, 'key5':5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44` |
 55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}` |
 56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False |
