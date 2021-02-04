@@ -13,6 +13,17 @@
 # print(list)
 
 
-my_dict = {}
-my_dict = {(1,23):{'ER', 4,5,6,}, 'Emergency Room': 'Room 2'}
-print(my_dict)
+# my_dict = {}
+# my_dict['Big_Bro'] = 'GSP'
+# my_dict['Mid_Bro'] = 'PSP'
+# my_dict['Small_Bro'] = 'DSP'
+# print(my_dict)
+
+new_list = {'Big_Bro': 'GSP', 'Mid_Bro': 'PSP', 'Small_Bro': 'DSP'}
+print(new_list)
+print(new_list.keys())
+print(new_list.values())
+print(new_list.items())
+
+
+

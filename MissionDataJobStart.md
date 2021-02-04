@@ -136,12 +136,15 @@ Number | Topic | Comments | Misc
 51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()`  |
 52 | f'string {} ..... ' | can be used to create/ print a string with a varible |
 53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) ...2 rules (1) values can be objects of any type - int/float/str/list/dict/tuple (2) keys can ONLY be immutable objects - int/str/float/tuple, but cannot be list/dict |
-54 | accessing values using a key | creating dict `dict1 = {'key1':1,'key2':2, 'key3':3, 'key4':4, 'key5':5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44` |
+53a | adding values to a dictionary | >>> `<dict_name>[<key>] = value` | 
+54 | accessing values using a key | creating dict `dict1 = {'key1':value1,'key2':value2, 'key3':value3, 'key4':value4, 'key5':value5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44` |
+54a | other methods | getting the length >>> `len(<dict_name>)`
 55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}` |
 56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False |
 57 | for loop in dictionaries | will loop over all its keys, >>> `for i in <dict>: print(i)`, looping over all values >>> `for i in <dict>: print(dict[i]) `, looping over all keys/values pairs >>> `for i,j in <dict>.items:` (i will be the key and j will be the value)(): |
-58 | returning all keys and values of the dictionary | `<dictionary>.keys() `and `<dictionary>.values()` |
+58 | returning all keys, values and itesms of the dictionary | >>>`<dictionary>.keys() ` >>> `<dictionary>.values()` >>> `<dictionary>.items()`  |
 59 | removing an iem | `<dictionary>.pop(<key>)` |
+59a | List of Dictionaries | ... | 
 60 | ***Working w/ external libraries*** | way to access them >>> `import pandas`, get help on the libraries: >>> `help(pandas)` , checking all the directories >>> `dir(pandas)`,type >>> `type(dir)` |
 61 | shorten form of an external library | >>> `import pandas as pd`, >>> `import numpy as np` >>> `import tensorflor as tf` |
 62 | Calling variables in a library by it name only | this CAN make life easier >>> `from math import *` >>> `pi` >>> `3.141592653589793`  (this is easier than writing >>> `math.pi` >>> `3.141592653589793`) ... this can ALSO cause bugs which are difficult to detect and fix (especially if you are calling all variables from multiple libraries and they have the same function doing different things), solution (1) call only the methods that you want from a library >>> `from math import log, pi` >>> `from numpy import asarray` (2) use full forms, this will make the code easier to understand and debug |
