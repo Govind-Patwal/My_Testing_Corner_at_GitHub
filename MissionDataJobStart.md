@@ -64,8 +64,8 @@ Wk | Dates | Planned | Executed | Evaluation
 4 | 2020/01/04 - 2021/01/10 |  | ## RBC internship assessment ## Jan 10 - Received ***Kaggle certificate of completion - Python***
 5 | 2020/01/11 - 2021/01/17 |  | ##Cleaned all pipeline @ office, and sent New Year emails ## got 1st feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue 
 6 | 2020/01/18 - 2021/01/24 |  | ## got 2nd feedback from CareerService Team, implemented and became Employer-ready ##talked to career director (2nd time) ## CALC Can-Ex writing, speaking, infosession ## career services event ## submitted Ontario Internship form ## Kaggle Pandas: 1-3
-7 | 2020/01/25 - 2021/01/31 |  | ## signed up for Can-Ex ### Completed Pandas ## started Django video  ## Started Python consulting, and Upwork
-8 | 2020/02/01 - 2021/01/07 |  |  
+7 | 2020/01/25 - 2021/01/31 |  | ## Signed up for Can-Ex ### Completed Pandas ## started Django video  ## Started Python consulting, and Upwork 
+8 | 2020/02/01 - 2021/01/07 |  |  ## went through all the jobs on the CareerServices JobBoard and applied to the ones which were applicable ## Joined day 1 and 2 of the Can-Ex (Feb 4 and 5) ## PythonConsulting meeting
 ---
 
 ### Cheat_Sheet
@@ -115,11 +115,13 @@ Number | Topic | Comments | Misc
 32a | List removing the first instance of a value | `list.remove(value)` |
 33 | Returing index of the first occurane of an element in list | `<list_name>.index(<element>)` |
 34 | checking element in a list | `<element> in <list_name>` |
+34a | List of Dictionaries - is like a 2D table with the keys as the columns and the values as the rows| >>> `list_of_dict = [{'Country': 'Canada', 'Capital': 'Ottawa'}, {'Country': 'India', 'Capital': 'New Delhi'}, {'Country': 'USA', 'Capital': 'Washington'}]`... all list methods (len, indexing, slicing, append(), insert(), remove()) can be used to access data...various dictionary methods can also be used in combination with the list methods |
 35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable. |
 36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)` |
 36a | more about tuples | initiation >>> `new_tuple =( )`...finding the length >>> len(<tuple_name>)...applying indexing operator >>> `tuple[1]`...applying slicing >>> `tuple[:4]`
 37 | Loops | to repeteatedly execute some code |
 38 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple) |
+38a | Looping to return keys and values in a dictionaty | >>> `for dict_item in dict.keys(): print(dict_item)` ... >>> `for dict_item in dict.values(): print(dict_item)` | 
 39 | misc | to check if a char is upper/lower case `'P'.isupper()` |
 40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list |
 41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter  |
@@ -135,13 +137,13 @@ Number | Topic | Comments | Misc
 50 | Going between strings and lists: .split() and .join() | ***Split()*** is used to split a string into a list, the default point of splittin is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. ***Join()*** is used to join a list of strings into a string, the splitting point has to be mentioned |
 51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()`  |
 52 | f'string {} ..... ' | can be used to create/ print a string with a varible |
-53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) ...2 rules (1) values can be objects of any type - int/float/str/list/dict/tuple (2) keys can ONLY be immutable objects - int/str/float/tuple, but cannot be list/dict |
+53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) ...3 rules (1) values can be objects of any type - int/float/str/list/dict/tuple (2) keys can ONLY be immutable objects - int/str/float/tuple, but cannot be list/dict (3) keys have to be unique |
 53a | adding values to a dictionary | >>> `<dict_name>[<key>] = value` | 
 54 | accessing values using a key | creating dict `dict1 = {'key1':value1,'key2':value2, 'key3':value3, 'key4':value4, 'key5':value5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44` |
 54a | other methods | getting the length >>> `len(<dict_name>)`
 55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}` |
 56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False |
-57 | for loop in dictionaries | will loop over all its keys, >>> `for i in <dict>: print(i)`, looping over all values >>> `for i in <dict>: print(dict[i]) `, looping over all keys/values pairs >>> `for i,j in <dict>.items:` (i will be the key and j will be the value)(): |
+57 | for loop in dictionaries | will loop over all its keys, >>> `for i in <dict>: print(i)` OR >>> `for i in <dict>.keys(): print(i)`, looping over all values >>> `for i in <dict>.values(): print(i)` OR >>>`for i in <dict>: print(dict[i]) ` OR >>>`for i in <dict>: print(dict.get(i)) `... looping over all keys/values pairs >>> `for i,j in <dict>.items(): print(i,j)`...(i will be the key and j will be the value) ....printing keys, values and items >>> `for i in dict1: print(i['key1])` |
 58 | returning all keys, values and itesms of the dictionary | >>>`<dictionary>.keys() ` >>> `<dictionary>.values()` >>> `<dictionary>.items()`  |
 59 | removing an iem | `<dictionary>.pop(<key>)` |
 59a | List of Dictionaries | ... | 
