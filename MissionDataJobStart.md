@@ -78,9 +78,12 @@ Number | Topic | Comments | Misc
 1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
 1.2 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
 1.3 | naming convention of variables | can consist of uppercase, lowercase, digits and underscore - lower case is preferred. Must be in snake case, sample_variable...no keywords to be used, list of keywords >>> `help('keywords')`|
+1.4 | file types | text file (can be open in a text editor like notepad, excel)...binary files are written in binary code (power of 2) thus cannot be read with a text editor.
 **2.0** | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
-4a | 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
-4b | print in python | print(x), help(print), print(x, end =' ' ).....>>> `f' {variable/value} to '` ... f'' in various lines >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` ...formatting numbers >>> `f'{value:,.<n>f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
+4a | reading a file | >>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `print(data_file)`  |
+4b | writing to a file | >>> `import csv` (newline) >>> `with open(path_of_file_to_save, 'w') as text_file` (newline) >>> `txt_file.write("Hello World")` |
+4b| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
+4c | print in python | print(x), help(print), print(x, end =' ' ).....>>> `f' {variable/value} to '` ... f'' in various lines >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` ...formatting numbers >>> `f'{value:,.<n>f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
 5 | operators | [+ - * /], MODULUS/REMINDER, e.g. 11 % 3 = 2, FLOOR DIVISION/QUOTIENT, e.g. 11 // 3 = 3, EXPONENT, e.g 2**3 = 8 |
 6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
 7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
