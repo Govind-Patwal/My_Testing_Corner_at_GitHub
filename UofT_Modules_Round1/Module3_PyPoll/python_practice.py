@@ -1,7 +1,1 @@
-voting_data = [{"county":"Arapahoe", "registered_voters": 422829},
-                {"county":"Denver", "registered_voters": 463353},
-                {"county":"Jefferson", "registered_voters": 432438}]
-
-
-for data in voting_data:
-    print(f"{data['county']} = {data['registered_voters']}")
+https://bootcampspot.instructure.com/courses/193/pages/3-dot-3-1-import-and-inspect-the-data?module_item_id=56598
