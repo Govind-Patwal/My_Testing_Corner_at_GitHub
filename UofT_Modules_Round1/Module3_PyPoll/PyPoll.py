@@ -27,15 +27,30 @@ with open('Resources/election_results.csv') as election_data:
         else:
             candidate_vote[candidate] += 1
 
-        # else:
-        #     candidate_vote[rows[2]] +=1     
 
-print(candidate_list)
-print(candidate_vote)
-#2 the number of  candidates
+for candidate, votes in candidate_vote.items():
+    print(f"{candidate}: {votes/total_votes*100:.1f} ({votes:,})\n")
 
-#3 the number of votes received by each candidate
 
-#4 the percentage of votes each candidate received
+# displaying the winning candidate and the % votes
+# creating empty variable
+winning_votes = 0
+winning_candidate = ''
+winning_percentage = 0
 
-#5 the winner of the election
+for candidate, votes in candidate_vote.items():
+    if votes > 0 and votes > winning_votes:
+        winning_candidate = candidate
+        winning_votes = votes
+
+winning_candidate_summary = (
+    f"-------------------------------------------\n"
+    f"Winner: {winning_candidate}\n"
+    f"Votes: {winning_votes:,}\n"
+    f"Percentage: {winning_votes/total_votes*100:.2f}%\n"
+    f"-------------------------------------------"
+)
+print(winning_candidate_summary)
+
+with open('election_result2.txt', 'w') as text_file:
+    text_file.write(winning_candidate_summary)
