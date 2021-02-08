@@ -34,3 +34,7 @@ print(county_votes)
 # Use the step-by-step instructions below to add code where indicated by the numbered comments in the starter code file.
         
 
+# Step 1:
+
+# Initialize a county list, like the candidate_options list, that will hold the names of the counties.
+# Initialize a dictionary, like the candidate_votes dictionary, that will hold the county as the key and the votes cast for each county as the values.
