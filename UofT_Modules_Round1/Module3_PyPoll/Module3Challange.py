@@ -30,6 +30,7 @@ print(voter_count)
 print(county)
 print(county_votes)
 
-        
+#         Download the PyPoll_Challenge_starter_code.py file and rename it PyPoll_Challenge.py.
+# Use the step-by-step instructions below to add code where indicated by the numbered comments in the starter code file.
         
 
