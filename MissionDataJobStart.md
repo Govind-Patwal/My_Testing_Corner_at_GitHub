@@ -66,7 +66,7 @@ Wk | Dates | Planned | Executed | Evaluation
 6 | 2020/01/18 - 2021/01/24 |  | ## got 2nd feedback from CareerService Team, implemented and became Employer-ready ##talked to career director (2nd time) ## CALC Can-Ex writing, speaking, infosession ## career services event ## submitted Ontario Internship form ## Kaggle Pandas: 1-3
 7 | 2020/01/25 - 2021/01/31 |  | ## Signed up for Can-Ex ### Completed Pandas ## started Django video  ## Started Python consulting, and Upwork 
 8 | 2020/02/01 - 2021/01/07 |  |  ## went through all the jobs on the CareerServices JobBoard and applied to the ones which were applicable ## Joined day 1 and 2 of the Can-Ex (Feb 4 and 5) ## PythonConsulting meeting
-9 | 2020/02/08 - 2021/01/14 |  |  ## CanEx
+9 | 2020/02/08 - 2021/01/14 |  |  ## CanEx classes + assignments ## 
 ---
 
 ### Cheat_Sheet
