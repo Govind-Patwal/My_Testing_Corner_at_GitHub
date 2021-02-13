@@ -1,20 +1,36 @@
+# Input the number for entries N such that 2<= N <= 5
+N = int(input())
 
-# print('Enter the number of integers to enter')
-# var1 = int(input())
-# list1 = []
-# print("=========================================")
-# print(f"Start entering the {var1} integers now:")
-# for i in range(var1):
-#     list1.append((int(input())))
+# Enter the name and scores of the students 1 by 1 in a individual list, create 
+# a master list of N elements, Master_List
+master_list = []
+for i in range(N):
+    sub_list = []
+    sub_list.append(str(input()))
+    sub_list.append(float(input()))
+    master_list.append(sub_list)
 
-# list2 = sorted(list1)
+# Create a new list 'Temp' with only unique scores, 
+# and sort it using >>> sorted(list)
+unique_score = []
+for j in range(N):
+    if master_list[j][1] not in unique_score:    
+        unique_score.append(master_list[j][1])
 
-# print("--------------------")
-# print(list2[-2])
+unique_score_sorted = sorted(unique_score)
 
+# find the second lowest grade using >>> list[1] 
+# and assign it to a variable 'second_lowest_score'
+second_lowest_score = unique_score_sorted[1] 
 
-n = int(input())
-A = []
-B = list(A)
-list2 = sorted(B)
-print(list2[-2])
+# compare the 'second_lowest_score' with the scores in the Master list and 
+# score matching names in a 'Unsorted_final_list'
+unsorted_student_final_list = []
+
+for k in range(len(master_list)):
+    if master_list[k][1] == second_lowest_score:
+        unsorted_student_final_list.append(master_list[k][0])
+
+# Sort the list using >>> sorted(list_name)
+sorted_student_list = sorted(unsorted_student_final_list)
+print(sorted_student_list)
