@@ -159,6 +159,8 @@ Number | Topic | Comments | Misc
 64 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()` |
 65 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading. |
 Misc | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))` |
+Misc | all permutations of x,y,z using list comprehension | >>> `list2 = [[x,y,z] for x in range(5) for y in range(6) for z in range(8) ]` | 
+Misc | converting single line array inout into a list | >>> `A = [int(x) for x in input().split()]` | 
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
 68 | Importing Pandas | `import pandas as pd` |
