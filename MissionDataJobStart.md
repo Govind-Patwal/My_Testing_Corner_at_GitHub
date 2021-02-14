@@ -128,7 +128,7 @@ Number | Topic | Comments | Misc
 38 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple) |
 38a | Looping to return keys and values in a dictionaty | >>> `for dict_item in dict.keys(): print(dict_item)` ... >>> `for dict_item in dict.values(): print(dict_item)` | 
 39 | misc | to check if a char is upper/lower case `'P'.isupper()` |
-40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list |
+40 | range () | A very important function similar to for (i, i<10, i++) in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list.. you can start a loop using range with index different than 0 >>> `range(iteration_start, iteration_end)` |
 41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter  |
 42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`, after it is run, it returns the list as well |
 43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . converting a string to a list >>> `list(<string>)` |
