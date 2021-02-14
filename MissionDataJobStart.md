@@ -162,6 +162,7 @@ Number | Topic | Comments | Misc
 Misc | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))` |
 Misc | all permutations of x,y,z using list comprehension | >>> `list2 = [[x,y,z] for x in range(5) for y in range(6) for z in range(8) ]` | 
 Misc | converting single line array inout into a list | >>> `A = [int(x) for x in input().split()]` | 
+Misc | converting a string to a list of words | >>> `new_string = <string>.split(" ")` ... joining strings into 1 string >>> `final_string = '-'.join(<old list of string>)` |
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
 68 | Importing Pandas | `import pandas as pd` |
