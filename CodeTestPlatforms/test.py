@@ -2,7 +2,7 @@
 
 # create a list of planets
 
-# list1 = [i for i in range(10, 21)]
+list1 = [i for i in range(10, 21)]
 # print(list1)
 
 # # print('first and last six elements', list1[:6], list1[-6:])
@@ -19,9 +19,9 @@
 # print(f'all elements - method 2 {list1}')
 # print(f'all elements except the first and last {list1[1:-1]}')
 
-list1 = [i for i in range(10,21)]
-print(list1.append)
+list1.pop()
 
+print(help(list1.pop()))
 
 
 

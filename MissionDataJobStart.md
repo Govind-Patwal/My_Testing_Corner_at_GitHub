@@ -118,11 +118,13 @@ Number | Topic | Comments | Misc
 . | Objects in Python | Everything in python is an object, objects carry some things aroud with them, this 'thing' can be accessed using the dot syntax
 .. | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
 ... | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
-31 | List methods - adding 1 element to the end of the list and removing 1 element from the end of the list | to add ....`list.append(<value>)`, to remove...`list.pop()` |
-32 | List - add or remove elements at a specific index | `list.insert(index, value)` and 'list.pop(3)`|
-32a | List removing the first instance of a value | `list.remove(value)` |
-33 | Returing index of the first occurane of an element in list | `<list_name>.index(<element>)` |
-34 | checking element in a list | `<element> in <list_name>` |
+31 | List - adding 1 element to the end of the list | >>> `list.append(<value>)` |
+32 | List - removing the last element of the list | >>> `list.pop()`  |
+32 | List - add item at a specific index | >>> `list.insert(index, value)` | 
+32 | List - Deleting an item from a specific index | >>> `list.pop(index)` | 
+32 | List - Checking if an item is present in a list | returns True or False >>> `element in <list>`
+32a | List - removing the first instance of a value | `list.remove(value)` |
+33 | List - returing index of the first occurane of an element in list | `<list_name>.index(<element>)` |
 34a | List of Dictionaries - is like a 2D table with the keys as the columns and the values as the rows| >>> `list_of_dict = [{'Country': 'Canada', 'Capital': 'Ottawa'}, {'Country': 'India', 'Capital': 'New Delhi'}, {'Country': 'USA', 'Capital': 'Washington'}]`... all list methods (len, indexing, slicing, append(), insert(), remove()) can be used to access data...various dictionary methods can also be used in combination with the list methods |
 35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable. |
 36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)` |
