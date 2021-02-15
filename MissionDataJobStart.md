@@ -86,10 +86,10 @@ Number | Topic | Comments | Misc
 2.0.1 | Objects in Python | Everything in python is an object, objects carry some things aroud with them, this 'thing' can be accessed using the dot syntax
 2.0.2 | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
 2.0.3 | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
-2.1 | opening and reading a file in python (w/o Pandas)| opening the location of a file ...>>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `print(data_file)` |
-2.1.1 | reading file in python (w/o pandas) | opening the data in a csv file >>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) >>>`data_file_name = csv.reader(data_file)` (nextline) .....iterating over all the rows >>> `for row in data_file_name: (nextline) print(row)` |
-2.2 | writing the header of a csv file (w/o Pandas) | >>> `headers = next(data_file_name)` (nextline) >>> `print(headers)` ...this also skips the header, we can iterate through the rows using >>> `for row in data_file_name:` | 
-2.3 | writing to a file in python (without Pandas) | >>> `import csv` (newline) >>> `with open(path_of_file_to_save, 'w') as text_file` (newline) >>> `text_file.write("Hello World")` |
+2.1 | loading the file in python (w/o Pandas)| opening the location of a file ...>>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `print(data_file)` |
+2.1.1 | reading a file in python (w/o pandas) | opening the data in a csv file >>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) >>>`data_file_name = csv.reader(data_file)` (nextline) .....iterating over all the rows >>> `for row in data_file_name: (nextline) print(row)` |
+2.2 | writing the header of a csv file (w/o Pandas) | >>>`data_file_name = csv.reader(data_file)` (nextline) >>> `headers = next(data_file_name)` (nextline) >>> `print(headers)` ...this also skips the header, we can then iterate through the rows using >>> `for row in data_file_name:` (nextline) 'do something | 
+2.3 | writing to a file in python (without Pandas) | >>> `import csv` (newline) >>> `with open('path_of_file_to_save', 'w') as text_file:` (newline) >>> `text_file.write("Hello World")` |
 2.4| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
 2.4.1 | print in python | print(x), help(print), print(x, end =' ' ).....>>> `f' {variable/value} to '` ... f'' in various lines >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` ...formatting numbers >>> `f'{value:,.<n>f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
 2.5 | operators | +, -, *, /, % (Modulus/Reminder, e.g. 11 % 3 = 2), // (Floor Division/Quotient, e.g. 11 // 3 = 3, same result as int(11/3)), ** (Exponent, e.g 2**3 = 8) |
@@ -181,6 +181,8 @@ Number | Topic | Comments | Misc
 2.41.5 | converting single line array input into a list | >>> `A = [int(x) for x in input().split()]` | 
 2.41.6 | converting a string to a list of words | >>> `new_string = <string>.split(" ")` ... joining strings into 1 string >>> `final_string = '-'.join(<old list of string>)` |
 2.41.7 | checking if a string is numeric | >>> `<string>.isnumeric()`
+2.41.8 | max can be used with a key | >>> max(iterable, key=) ...it will return the element with the max value after the calculation | 
+2.41.8.1 | checking for maximum in a dictionary | finding the maximum key >>> `max(dictionary_name)` ... finding the key with the max value >>> `max(dictionary_name, key=dictionary_name.get)`
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
 68 | Importing Pandas | `import pandas as pd` |
