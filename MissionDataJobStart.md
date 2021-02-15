@@ -76,6 +76,7 @@ Wk | Dates | Planned | Executed | Evaluation
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
+0.0 | Debugging | when faced with an error, make sure you also check the line above the line w/ error, many times a missed `)` might show up as an error on the next line
 1 | Checking the version of Python in Windows | windows cmd -> `python --version` |
 1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
 1.2 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
