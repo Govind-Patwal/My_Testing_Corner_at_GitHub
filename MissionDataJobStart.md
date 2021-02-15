@@ -129,28 +129,32 @@ Number | Topic | Comments | Misc
 2.23.1 | Tuples - often used for functions that have multiple return values | many functions that return multiple values return the results in the form of tuples...for example, the >>>`<float>.as_integer_ratio()` returns 2 values as tuples; the returned values (a numerator and a denominator) can be assigned to a tuple, eg >>> `numerator, denominator  = <float_number>.as_integer_ratio()` ... same principal is used for swapping 2 variables  >>> `a = 1` (newline) `b= 0` (newline) `a,b = b,a` (newline) `print(a,b)` |
 2.23.2 | Tuples - more | initiation >>> `new_tuple =( )`...finding the length >>> `len(<tuple_name>)`...applying indexing operator >>> `tuple[1]`...applying slicing >>> `tuple[:4]`
 2.33 | **Loops** | to repeteatedly execute some code |
-38 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple) |
-40 | range () | A very important function similar to `for (i, i<10, i++)` in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list >>> range(len(list/tuple/dictionary)).. the default start index is 0, but it can by anything else >>> `range(index_start, index_end_plus_one)` |
-41 | while loop | be very careful about (1) increasng the counter at the end of the code, else it will be a indefinite loop (2) initiating the counter  |
-42 | List comprehensions | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`, after it is run, it returns the list as well |
-43 | Strings | Strings are tuples and behave like them - can be reference using index, can be looped....can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` . converting a string to a list >>> `list(<string>)` |
-44 | The escape character `\` | >>> `print('He said \"Canada\'s capital is Ottawa\"')` |
-45 | Escape characher usage | `\' `single quote. `\"` double quote, `\\` backslash, `\n` newline
-46 | \n newline | added by default in print statement, can be changed >>> `print(<example>, end=' ')` - this will leave just one whitespace at the end of the <example> unlike the default newline |
-47 | triple quotes | `'''...'''` or  `""" ... """  ` ... allows to write a string of any length without worrying about lines |
-48 | String act as tuples | They can be indexed `'Example'[0]`, sliced `'Example'[:3]`, checked for length `len('Example')`, looped over like a tuple `for alphabet in 'Example':`, can be used for list comprehension `[alphabet for alphabet in 'Example']`...like tuples (and unlike lists) they are immutable, PROOF `'Example' == ('Example')` |
-49 | String methods | Change to all upper case >>>`'Example'.upper()` | 
-49a | Other string methods | Change to all lowercase`'Example.lower()`, check the length >>> `len('Example')` , checking the index of the first occurance of a character >>>`'sentence_to_find_the_character_in'.index('the_character')` also check the 1st occurance of a string`'Example'.index('mple')`, check if the string starts with something `'sentence_to_find_the_character_in'.startswith('string')`, check if the string ends with something `'Example'.endswith('Exa')` | misc
-39 | misc | to check if a char is upper/lower case `'P'.isupper()` |
-49b | swap the case of a string | >>> `<string>.swapcase() ` | 
-50 | Going between strings and lists: .split() and .join() | ***Split()*** is used to split a string into a list, the default point of splittin is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. ***Join()*** is used to join a list of strings into a string, the splitting point has to be mentioned |
-51 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()`  |
-52 | f'string {} ..... ' | can be used to create/ print a string with a varible |
-53 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) ...3 rules (1) values can be objects of any type - int/float/str/list/dict/tuple (2) keys can ONLY be immutable objects - int/str/float/tuple, but cannot be list/dict (3) keys have to be unique |
-53a | adding values to a dictionary | >>> `<dict_name>[<key>] = value` | 
-54 | accessing values using a key | creating dict `dict1 = {'key1':value1,'key2':value2, 'key3':value3, 'key4':value4, 'key5':value5}`   , accesssing a value using key `dict1['key3']`, changing value using key >>> `dict1['key4'] = 44` |
-54a | other methods | getting the length >>> `len(<dict_name>)`
-55 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {f'key{i+1}':f'value{i+1}' for i in [i for i in range(20)]}` |
+2.33.1 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple) |
+2.33.2 | range () | A very important function similar to `for (i, i<10, i++)` in C++. This allows for the code to run for a required number of times. `for i in range(10):` ... also comes in handy as you can have the range equal to the length of a list >>> range(len(list/tuple/dictionary)).. the default start index is 0, but it can by anything else >>> `range(index_start, index_end_plus_one)` |
+2.33.3 | while loop | you have to (1) initiate the iterator b4 the loop (2) increase the iterator in the loop...e.g.>>> `i = 0 (newline) while i <20: (newline) do_something (newline) i += 1`  |
+2.33.4 | List comprehensions - special loops for lists | works only for `for` loops...NOT with the `while` loop..can use `if` conditionals after for: `list = [<do_this> for <this> if <this>]`, after it is run, it returns the list as well |
+2.34 | **Strings** | ...can be used with single or double quotes...if you are using one of the 2 in the string, use the other to encapsulate the string. >>> `print("Canada's capital is Ottawa")` >>> `print('He said "I am excited !"')` |
+2.34.1 | String - methods | They can be indexed `'Example'[0]`, sliced `'Example'[:3]`, checked for length `len('Example')`, looped over >>>`for alphabet in 'Example':`, can be used for list comprehension `[alphabet for alphabet in 'Example' if alphabet in ['a','e','i','o','u']]`...like tuples (and unlike lists) they are immutable, PROOF `'Example' == ('Example')` |
+2.34.2 | The escape character `\` | >>> `print('He said \"Canada\'s capital is Ottawa\"')` |
+2.34.2.1 | Escape character usage | `\' `single quote. `\"` double quote, `\\` backslash, `\n` newline
+2.35 | \n newline | added by default in print statement, can be changed >>> `print(<example>, end=' ')` - this will leave just one whitespace between the printed values, unlike the default newline |
+2.36 | triple quotes | `'''...'''` or  `""" ... """  ` ... allows to write a string of any length without worrying about lines |
+2.37 | String methods | Change to all upper case >>>`<string>.upper()` ...Change to all lowercase >>>`'<string>.lower()` | 
+2.37.1 | Other string methods | check the length >>> `len(<string>)` , checking the index of the first occurance of a character >>>`'sentence_to_find_the_character_in'.index('the_character')` also check the 1st occurance of a string`'Example'.index('mple')`, check if the string starts with something `'sentence_to_find_the_character_in'.startswith('string')`, check if the string ends with something `'Example'.endswith('Exa')` | misc
+2.37.2 | misc | to check if a char is upper/lower case >>>`'P'.isupper()` |
+2.37.3 | swap the case of a string | >>> `<string>.swapcase() ` |
+2.34.1 String - converting a string to a list of independent characters | >>> `list(<string>)` |
+2.35 | Going between strings and smaller sub strings: **split()** and **join()** | `Split()` is used to split a string into a list, the default point of splitting is a whitespace, other points can be specified - it returns a list of strings (which can be assigned to variables) >>>`e1, e2, e3 = 'Example is here'.split()` or `mm, dd, yy = '1/10/2021'.split('/')`. `join() `is used to join a list of strings into a string, the splitting point has to be mentioned ... >>> `'<new_seperator>.join([string1, string2, string3])` |
+2.36 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()`  |
+2.37 | f'string {} ..... ' | can be used to create/ print a string with a varible |
+2.38 | formattting inside strings | `{<value>:,}` will add a comma seperator... >>>`{<value>:2f}` will give the output rounded to 2 decimals... >>> `{<value>:-2f}` will round to tens/thousands
+2.39 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) ...3 rules (1) values can be objects of any type - int/float/str/list/dict/tuple (2) keys can ONLY be immutable objects - int/str/float/tuple, but cannot be list/dict (3) keys have to be unique |
+2.40 | creating dict | >>> `dict1 = {}` or >>> `dict1 = {'key1':value1,'key2':value2, 'key3':value3, 'key4':value4, 'key5':value5}`  |
+2.41 | accesssing a value using key | >>> `dict1['key3']` |  
+2.42 | changing value using key >>> `dict1['key4'] = 44` |
+2.40 | adding new itesms to a dictionary | >>> `<dict_name>[<new_key>] = value` | 
+2.41 | other methods | getting the length >>> `len(<dict_name>)`
+2.42 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {i:i**3 for i in range(20)}` |
 56 | using `in` to check for a key in a dict | `<key> in <dictionary>`, this will return True or False |
 57 | for loop in dictionaries | will loop over all its keys, >>> `for i in <dict>: print(i)` OR >>> `for i in <dict>.keys(): print(i)`, looping over all values >>> `for i in <dict>.values(): print(i)` OR >>>`for i in <dict>: print(dict[i]) ` OR >>>`for i in <dict>: print(dict.get(i)) `... looping over all keys/values pairs >>> `for i,j in <dict>.items(): print(i,j)`...(i will be the key and j will be the value) ....printing keys, values and items >>> `for i in dict1: print(i['key1])` |
 38a | Looping to return keys and values in a dictionaty | >>> `for dict_item in dict.keys(): print(dict_item)` ... >>> `for dict_item in dict.values(): print(dict_item)` | 
