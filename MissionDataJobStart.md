@@ -76,16 +76,19 @@ Wk | Dates | Planned | Executed | Evaluation
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
-1.0 | Checking the version of Python in Windows | windows cmd -> `python --version` |
+1 | Checking the version of Python in Windows | windows cmd -> `python --version` |
 1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
 1.2 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
 1.3 | naming convention of variables | can consist of uppercase, lowercase, digits and underscore - lower case is preferred. Must be in snake case, sample_variable...no keywords to be used, list of keywords >>> `help('keywords')`|
 1.4 | file types | text file (can be open in a text editor like notepad, excel)...binary files are written in binary code (power of 2) thus cannot be read with a text editor.
-**2.0** | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
+**2** | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
+2.0.1 | Objects in Python | Everything in python is an object, objects carry some things aroud with them, this 'thing' can be accessed using the dot syntax
+2.0.2 | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
+2.0.3 | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
 2.1 | opening and reading a file in python (without Pandas)| opening the location of a file ...>>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `print(data_file)`... opening the data in a csv file >>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `data_file_name = csv.reader(data_file)` (nextline) .....iterating over all the rows >>> `for row in data_file_name: (nextline) print(row)` |
 2.2 | writing the header of a csv file | >>> `headers = next(data_file_name)` (nextline) >>> `print(headers)` ...this also skips the header, we can iterate through the rows using >>> `for row in data_file_name:` | 
 2.3 | writing to a file in python (without Pandas) | >>> `import csv` (newline) >>> `with open(path_of_file_to_save, 'w') as text_file` (newline) >>> `text_file.write("Hello World")` |
-2.4.0| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
+2.4| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
 2.4.1 | print in python | print(x), help(print), print(x, end =' ' ).....>>> `f' {variable/value} to '` ... f'' in various lines >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` ...formatting numbers >>> `f'{value:,.<n>f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
 2.5 | operators | [+ - * /], MODULUS/REMINDER, e.g. 11 % 3 = 2, FLOOR DIVISION/QUOTIENT, e.g. 11 // 3 = 3, EXPONENT, e.g 2**3 = 8 |
 2.6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
@@ -101,31 +104,28 @@ Number | Topic | Comments | Misc
 2.16 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass |
 2.17 | rounding a float | round (number, ndigits) ... default digits = 0, if it is postitive it will round number after the decimal >>> `round(1222123.123345, 2)` -> 1222123.12 ... if it is negative, it will round to 10, 100, 1000 >>> `round(1222123.123345, -2)` -> 1222100 |
 2.18 | having a default argument in a function | `def function_name(x, y=3):` ...  |
-17 | Boolean operators | True or False |
-18 | Boolean operators | ==, !=, <=, >=, <, >  |
-19 | Boolean expression | `and`, `or`, `not` |
-19a | Boolean operator precedence | in the absence of a parenthesis,`and` is evaluated before `or` |
-20 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True |
-21 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else: |
-22 | Treatment of numbers and strings as Booleans | only 0 or 0.0 are treated as False, everything else is True....only '' is treated as False, everything else is treated as True |
-23 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list |
-24 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1] |
-25 | Slicing a list (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1)...just like in range(2,20), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
-26 | Changing lists / adding /changing values | simple reassignment, >>> `list[n] = <value>` ... multiple values at one time >>> `list[:5] = [a,b,c,d,e]` |
-27 | Lenght of a list | len(list_name) |
-28 | Sorting a list in ascending order | sorted(list_name) |
-29 | Sum, Min, Max of elements in a list | sum(list), min(list), max(list)
-. | Objects in Python | Everything in python is an object, objects carry some things aroud with them, this 'thing' can be accessed using the dot syntax
-.. | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
-... | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
-31 | List - adding 1 element to the end of the list | >>> `list.append(<value>)` |
-32 | List - removing the last element of the list | >>> `list.pop()`  |
-32 | List - add item at a specific index | >>> `list.insert(index, value)` | 
-32 | List - Deleting an item from a specific index | >>> `list.pop(index)` | 
-32 | List - Checking if an item is present in a list | returns True or False >>> `element in <list>`
-32a | List - removing the first instance of a value | `list.remove(value)` |
-33 | List - returing index of the first occurane of an element in list | `<list_name>.index(<element>)` |
-34a | List of Dictionaries - is like a 2D table with the keys as the columns and the values as the rows| >>> `list_of_dict = [{'Country': 'Canada', 'Capital': 'Ottawa'}, {'Country': 'India', 'Capital': 'New Delhi'}, {'Country': 'USA', 'Capital': 'Washington'}]`... all list methods (len, indexing, slicing, append(), insert(), remove()) can be used to access data...various dictionary methods can also be used in combination with the list methods |
+2.19.0 | Boolean operators | True or False |
+2.19.1 | Boolean operators | ==, !=, <=, >=, <, >  |
+2.19.2 | Boolean expression | `and`, `or`, `not` |
+2.19.3 | Boolean operator precedence | in the absence of a parenthesis,`and` is evaluated before `or` |
+2.19.4 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True |
+2.20 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else: |
+2.21 | Treatment of numbers and strings as Booleans | only 0 or 0.0 are treated as False, everything else is True....only '' is treated as False, everything else is treated as True |
+2.22 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list |
+2.22.1 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1] |
+2.22.2 | Slicing a list (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1)...just like in range(2,20), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
+2.22.3 | Changing lists / adding /changing values | simple reassignment, >>> `list[n] = <value>` ... multiple values at one time >>> `list[:5] = [a,b,c,d,e]` |
+2.22.4 | Lenght of a list | len(list_name) |
+2.22.5 | Sorting a list in ascending order | sorted(list_name) |
+2.22.6 | Sum, Min, Max of elements in a list | sum(list), min(list), max(list)
+2.22.7 | List - adding 1 element to the end of the list | >>> `list.append(<value>)` |
+2.22.7.1 | List - removing the last element of the list | >>> `list.pop()`  |
+2.22.7.2 | List - add item at a specific index | >>> `list.insert(index, value)` | 
+2.22.7.3 | List - Deleting an item from a specific index | >>> `list.pop(index)` | 
+2.22.7.4 | List - Checking if an item is present in a list | returns True or False >>> `element in <list>`
+2.22.7.5 | List - removing the first instance of a value | `list.remove(value)` |
+2.22.7.6 | List - returing index of the first occurane of an element in list | `<list_name>.index(<element>)` |
+ | List of Dictionaries - is like a 2D table with the keys as the columns and the values as the rows| >>> `list_of_dict = [{'Country': 'Canada', 'Capital': 'Ottawa'}, {'Country': 'India', 'Capital': 'New Delhi'}, {'Country': 'USA', 'Capital': 'Washington'}]`... all list methods (len, indexing, slicing, append(), insert(), remove()) can be used to access data...various dictionary methods can also be used in combination with the list methods |
 35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable. |
 36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)` |
 36a | more about tuples | initiation >>> `new_tuple =( )`...finding the length >>> len(<tuple_name>)...applying indexing operator >>> `tuple[1]`...applying slicing >>> `tuple[:4]`

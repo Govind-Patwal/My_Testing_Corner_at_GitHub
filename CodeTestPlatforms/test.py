@@ -21,7 +21,7 @@ list1 = [i for i in range(10, 21)]
 
 list1.pop()
 
-print(help(list1.pop()))
+print(help(list1))
 
 
 
