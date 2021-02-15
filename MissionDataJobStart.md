@@ -110,8 +110,8 @@ Number | Topic | Comments | Misc
 22 | Treatment of numbers and strings as Booleans | only 0 or 0.0 are treated as False, everything else is True....only '' is treated as False, everything else is treated as True |
 23 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list |
 24 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1] |
-25 | Slicing a list (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
-26 | Changing lists | simple reassignment, list[n][m] = [] |
+25 | Slicing a list (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1)...just like in range(2,20), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
+26 | Changing lists / adding /changing values | simple reassignment, >>> `list[n] = <value>` ... multiple values at one time >>> `list[:5] = [a,b,c,d,e]` |
 27 | Lenght of a list | len(list_name) |
 28 | Sorting a list in ascending order | sorted(list_name) |
 29 | Sum, Min, Max of elements in a list | sum(list), min(list), max(list)
