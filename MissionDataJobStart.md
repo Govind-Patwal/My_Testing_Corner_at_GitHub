@@ -82,25 +82,25 @@ Number | Topic | Comments | Misc
 1.3 | naming convention of variables | can consist of uppercase, lowercase, digits and underscore - lower case is preferred. Must be in snake case, sample_variable...no keywords to be used, list of keywords >>> `help('keywords')`|
 1.4 | file types | text file (can be open in a text editor like notepad, excel)...binary files are written in binary code (power of 2) thus cannot be read with a text editor.
 **2.0** | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
-4a | opening and reading a file in python (without Pandas)| opening the location of a file ...>>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `print(data_file)`... opening the data in a csv file >>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `data_file_name = csv.reader(data_file)` (nextline) .....iterating over all the rows >>> `for row in data_file_name: (nextline) print(row)` |
-4b | writing the header of a csv file | >>> `headers = next(data_file_name)` (nextline) >>> `print(headers)` ...this also skips the header, we can iterate through the rows using >>> `for row in data_file_name:` | 
-4c | writing to a file in python (without Pandas) | >>> `import csv` (newline) >>> `with open(path_of_file_to_save, 'w') as text_file` (newline) >>> `text_file.write("Hello World")` |
-4b| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
-4c | print in python | print(x), help(print), print(x, end =' ' ).....>>> `f' {variable/value} to '` ... f'' in various lines >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` ...formatting numbers >>> `f'{value:,.<n>f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
-5 | operators | [+ - * /], MODULUS/REMINDER, e.g. 11 % 3 = 2, FLOOR DIVISION/QUOTIENT, e.g. 11 // 3 = 3, EXPONENT, e.g 2**3 = 8 |
-6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
-7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
-8 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x) |
-9 | help with a function | help(function_name), eg `help(print)` |
-10 | defining a function | def <function_name>(parameters): code_text return <value_to_be_returned> |
-10a | return | it will break out of the current function, can be used to return if all other options have been exausted wihtout any outcome |
-10b | : and indentation | very important in python |
-11 | commenting a line | # |
-12 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  `""" This is a description of the function above >>> """` |
-13 | Higher order functions | functions that operate on other functions |
-14 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass |
-15 | rounding a float | round (number, ndigits) ... default ndigits = 0, it can be negative, it will round to hundreds, tens, thousands |
-16 | having a default argument in a function | `def function_name(x, y=3):` ...  |
+2.1 | opening and reading a file in python (without Pandas)| opening the location of a file ...>>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `print(data_file)`... opening the data in a csv file >>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `data_file_name = csv.reader(data_file)` (nextline) .....iterating over all the rows >>> `for row in data_file_name: (nextline) print(row)` |
+2.2 | writing the header of a csv file | >>> `headers = next(data_file_name)` (nextline) >>> `print(headers)` ...this also skips the header, we can iterate through the rows using >>> `for row in data_file_name:` | 
+2.3 | writing to a file in python (without Pandas) | >>> `import csv` (newline) >>> `with open(path_of_file_to_save, 'w') as text_file` (newline) >>> `text_file.write("Hello World")` |
+2.4.0| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
+2.4.1 | print in python | print(x), help(print), print(x, end =' ' ).....>>> `f' {variable/value} to '` ... f'' in various lines >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` ...formatting numbers >>> `f'{value:,.<n>f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
+2.5 | operators | [+ - * /], MODULUS/REMINDER, e.g. 11 % 3 = 2, FLOOR DIVISION/QUOTIENT, e.g. 11 // 3 = 3, EXPONENT, e.g 2**3 = 8 |
+2.6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
+2.7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
+2.9 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x) |
+2.10 | help with a function | help(function_name), eg `help(print)` |
+2.11.0 | defining a function | def <function_name>(parameters): code_text return <value_to_be_returned> |
+2.11.1 | return | it will break out of the current function, can be used to return if all other options have been exausted wihtout any outcome |
+2.12 | : and indentation | very important in python |
+2.13 | commenting a line | # |
+2.14 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  `""" This is a description of the function above >>> """` |
+2.15 | Higher order functions | functions that operate inside other functions |
+2.16 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass |
+2.17 | rounding a float | round (number, ndigits) ... default digits = 0, if it is postitive it will round number after the decimal >>> `round(1222123.123345, 2)` -> 1222123.12 ... if it is negative, it will round to 10, 100, 1000 >>> `round(1222123.123345, -2)` -> 1222100 |
+2.18 | having a default argument in a function | `def function_name(x, y=3):` ...  |
 17 | Boolean operators | True or False |
 18 | Boolean operators | ==, !=, <=, >=, <, >  |
 19 | Boolean expression | `and`, `or`, `not` |
