@@ -112,22 +112,22 @@ Number | Topic | Comments | Misc
 2.20 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else: |
 2.21 | Treatment of numbers and strings as Booleans | only 0 or 0.0 are treated as False, everything else is True....only '' is treated as False, everything else is treated as True |
 2.22 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list |
-2.22.1 | Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1] |
-2.22.2 | Slicing a list (it is treated as a list) | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1)...just like in range(2,20), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
-2.22.3 | Changing lists / adding /changing values | simple reassignment, >>> `list[n] = <value>` ... multiple values at one time >>> `list[:5] = [a,b,c,d,e]` |
-2.22.4 | Lenght of a list | len(list_name) |
-2.22.5 | Sorting a list in ascending order | sorted(list_name) |
-2.22.6 | Sum, Min, Max of elements in a list | sum(list), min(list), max(list)
+2.22.1 | List - Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1] |
+2.22.2 | List - Slicing, the sliced list is treated as a list | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1)...just like in range(2,20), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
+2.22.3 | List - adding /changing values | simple reassignment, >>> `list[n] = <value>` ... multiple values at one time >>> `list[:5] = [a,b,c,d,e]` |
+2.22.4 | List - Finding Lenght | len(list_name) |
+2.22.5 | List - Sorting a list in ascending order | sorted(list_name) |
+2.22.6 | List - Sum, Min, Max | sum(list), min(list), max(list)
 2.22.7 | List - adding 1 element to the end of the list | >>> `list.append(<value>)` |
 2.22.7.1 | List - removing the last element of the list | >>> `list.pop()`  |
-2.22.7.2 | List - add item at a specific index | >>> `list.insert(index, value)` | 
+2.22.7.2 | List - adding item at a specific index | >>> `list.insert(index, value)` | 
 2.22.7.3 | List - Deleting an item from a specific index | >>> `list.pop(index)` | 
 2.22.7.4 | List - Checking if an item is present in a list | returns True or False >>> `element in <list>`
 2.22.7.5 | List - removing the first instance of a value | `list.remove(value)` |
 2.22.7.6 | List - returing index of the first occurane of an element in list | `<list_name>.index(<element>)` |
-35 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable. |
-36 | Tuples are often used for functions that have multiple return values | for example, the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple, which can be assigned to a tuple/list ....finally it can also be used for swapping two variables  `a = 1` `b= 0` `a,b = b,a` `print(a,b)` |
-36a | more about tuples | initiation >>> `new_tuple =( )`...finding the length >>> len(<tuple_name>)...applying indexing operator >>> `tuple[1]`...applying slicing >>> `tuple[:4]`
+2.23 | Tuples - help(tuple) | Tuples are just like lists. Difference - created using () OR without any opening/clsing brackets AND at least 2 elements - e.g. `<tuple> = <element1>, <element2>` , and are immutable. HOWEVER - The lists inside the tuples are mutable. |
+2.23.1 | Tuples - often used for functions that have multiple return values | many functions that return multiple values return the results in the form of tuples...for example, the >>>`<float>.as_integer_ratio()` returns 2 values as tuples; the returned values (a numerator and a denominator) can be assigned to a tuple, eg >>> `numerator, denominator  = <float_number>.as_integer_ratio()` ... same principal is used for swapping 2 variables  >>> `a = 1` (newline) `b= 0` (newline) `a,b = b,a` (newline) `print(a,b)` |
+2.23.2 | Tuples - more | initiation >>> `new_tuple =( )`...finding the length >>> `len(<tuple_name>)`...applying indexing operator >>> `tuple[1]`...applying slicing >>> `tuple[:4]`
 37 | Loops | to repeteatedly execute some code |
 38 | for loop | can be used to loop over list, tuple, strings (a string is treated as a tuple) |
 38a | Looping to return keys and values in a dictionaty | >>> `for dict_item in dict.keys(): print(dict_item)` ... >>> `for dict_item in dict.values(): print(dict_item)` | 
