@@ -162,18 +162,20 @@ Number | Topic | Comments | Misc
 2.39.2 | other ways of returning values | >>>`for i in <dict>: print(dict[i]) ` OR >>>`for i in <dict>: print(dict.get(i)) `  |
 2.39.3 | looping over keys and values | >>> `for i,j in dict.items():` ... it will return keys, and j will return corresponding values|
 2.39.4 | removing an iem | `<dictionary>.pop(<key>)` |
-59a | **List of Dictionaries** | is like a 2D table with the keys as the columns and the values as the rows >>> `list_of_dict = [{'Country': 'Canada', 'Capital': 'Ottawa'}, {'Country': 'India', 'Capital': 'New Delhi'}, {'Country': 'USA', 'Capital': 'Washington'}]`... all list methods (len, indexing, slicing, append(), insert(), remove()) can be used to access data...various dictionary methods can also be used in combination with the list methods |
-60 | ***Working w/ external libraries*** | way to access them >>> `import pandas`, get help on the libraries: >>> `help(pandas)` , checking all the directories >>> `dir(pandas)`,type >>> `type(dir)` |
-61 | shorten form of an external library | >>> `import pandas as pd`, >>> `import numpy as np` >>> `import tensorflor as tf` |
-62 | Calling variables in a library by it name only | this CAN make life easier >>> `from math import *` >>> `pi` >>> `3.141592653589793`  (this is easier than writing >>> `math.pi` >>> `3.141592653589793`) ... this can ALSO cause bugs which are difficult to detect and fix (especially if you are calling all variables from multiple libraries and they have the same function doing different things), solution (1) call only the methods that you want from a library >>> `from math import log, pi` >>> `from numpy import asarray` (2) use full forms, this will make the code easier to understand and debug |
-63 | accessing submodules | to be accessed by multiple dots, eg. >>> `numpy.random.randint()` |
-64 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()` |
-65 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading. |
-Misc | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))` |
-Misc | all permutations of x,y,z using list comprehension | >>> `list2 = [[x,y,z] for x in range(5) for y in range(6) for z in range(8) ]` | 
-Misc | converting single line array inout into a list | >>> `A = [int(x) for x in input().split()]` | 
-Misc | converting a string to a list of words | >>> `new_string = <string>.split(" ")` ... joining strings into 1 string >>> `final_string = '-'.join(<old list of string>)` |
-Misc | checking if a string is numeric | >>> `<string>.isnumeric()`
+2.40 | ***Working w/ external libraries*** | way to access them >>> `import pandas`, get help on the libraries: >>> `help(pandas)` , checking all the directories >>> `dir(pandas)`,type >>> `type(dir)` |
+2.40.1 | shorten form of an external library | >>> `import pandas as pd`, >>> `import numpy as np` >>> `import tensorflor as tf` |
+2.40.2 | Calling variables in a library by it name only | this CAN make life easier >>> `from math import *` >>> `pi` >>> `3.141592653589793`  (this is easier than writing >>> `math.pi` >>> `3.141592653589793`) ... this can ALSO cause bugs which are difficult to detect and fix (especially if you are calling all variables from multiple libraries and they have the same function doing different things), solution (1) call only the methods that you want from a library >>> `from math import log, pi` >>> `from numpy import asarray` (2) use full forms, this will make the code easier to understand and debug |
+2.40.3 | accessing submodules | to be accessed by multiple dots, eg. >>> `numpy.random.randint()` |
+2.40.4 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()` |
+2.40.5 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading. |
+2.41 | Miscellanous | Miscellanous | 
+2.41.1 | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))` |
+2.41.2 | **List of Dictionaries** | is like a 2D table with the keys as the columns and the values as the rows >>> `list_of_dict = [{'Country': 'Canada', 'Capital': 'Ottawa'}, {'Country': 'India', 'Capital': 'New Delhi'}, {'Country': 'USA', 'Capital': 'Washington'}]` |
+2.41.3 | List of dictionary - methods | All list methods (len, indexing, slicing, append(), insert(), remove()) can be used to access data...various dictionary methods can also be used in combination with the list methods |
+2.41.4 | all permutations of x,y,z using list comprehension | >>> `list2 = [[x,y,z] for x in range(5) for y in range(6) for z in range(8) ]` | 
+2.41.5 | converting single line array input into a list | >>> `A = [int(x) for x in input().split()]` | 
+2.41.6 | converting a string to a list of words | >>> `new_string = <string>.split(" ")` ... joining strings into 1 string >>> `final_string = '-'.join(<old list of string>)` |
+2.41.7 | checking if a string is numeric | >>> `<string>.isnumeric()`
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
 68 | Importing Pandas | `import pandas as pd` |
