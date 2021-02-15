@@ -115,7 +115,7 @@ Number | Topic | Comments | Misc
 27 | Lenght of a list | len(list_name) |
 28 | Sorting a list in ascending order | sorted(list_name) |
 29 | Sum, Min, Max of elements in a list | sum(list), min(list), max(list)
-. | Making a complex number | c = 12 + 3j   (the key is j, nothing else will work), printing the imaginary part of c, print(c.imag) |
+. | Objects in Python | Everything in python is an object, objects carry some things aroud with them, this 'thing' can be accessed using the dot syntax....eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
 31 | List methods - adding 1 element to the end of the list and removing 1 element from the end of the list | to add ....`list.append(<value>)`, to remove...`list.pop()` |
 32 | List - add or remove elements at a specific index | `list.insert(index, value)` and 'list.pop(3)`|
 32a | List removing the first instance of a value | `list.remove(value)` |
