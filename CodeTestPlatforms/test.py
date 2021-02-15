@@ -1,1 +1,2 @@
-print('1111'.isnumeric())
+# pseudocode
+

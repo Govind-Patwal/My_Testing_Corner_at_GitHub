@@ -79,6 +79,7 @@ Number | Topic | Comments | Misc
 1 | Checking the version of Python in Windows | windows cmd -> `python --version` |
 1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
 1.2 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
+1.2.1 | Data types | integers, floats, strings, booleans ....checking the data types >>> type(2) >>>type(12.23)  >>> type('Star') >>> type(True) | 
 1.3 | naming convention of variables | can consist of uppercase, lowercase, digits and underscore - lower case is preferred. Must be in snake case, sample_variable...no keywords to be used, list of keywords >>> `help('keywords')`|
 1.4 | file types | text file (can be open in a text editor like notepad, excel)...binary files are written in binary code (power of 2) thus cannot be read with a text editor.
 **2** | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
@@ -90,7 +91,7 @@ Number | Topic | Comments | Misc
 2.3 | writing to a file in python (without Pandas) | >>> `import csv` (newline) >>> `with open(path_of_file_to_save, 'w') as text_file` (newline) >>> `text_file.write("Hello World")` |
 2.4| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
 2.4.1 | print in python | print(x), help(print), print(x, end =' ' ).....>>> `f' {variable/value} to '` ... f'' in various lines >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` ...formatting numbers >>> `f'{value:,.<n>f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
-2.5 | operators | [+ - * /], MODULUS/REMINDER, e.g. 11 % 3 = 2, FLOOR DIVISION/QUOTIENT, e.g. 11 // 3 = 3, EXPONENT, e.g 2**3 = 8 |
+2.5 | operators | +, -, *, /, % (Modulus/Reminder, e.g. 11 % 3 = 2), // (Floor Division/Quotient, e.g. 11 // 3 = 3, same result as int(11/3)), ** (Exponent, e.g 2**3 = 8) |
 2.6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
 2.7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
 2.9 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x) |
@@ -104,13 +105,14 @@ Number | Topic | Comments | Misc
 2.16 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass |
 2.17 | rounding a float | round (number, ndigits) ... default digits = 0, if it is postitive it will round number after the decimal >>> `round(1222123.123345, 2)` -> 1222123.12 ... if it is negative, it will round to 10, 100, 1000 >>> `round(1222123.123345, -2)` -> 1222100 |
 2.18 | having a default argument in a function | `def function_name(x, y=3):` ...  |
-2.19.0 | Boolean operators | True or False |
+2.19.0 | Boolean types | True or False |
 2.19.1 | Boolean operators | ==, !=, <=, >=, <, >  |
 2.19.2 | Boolean expression | `and`, `or`, `not` |
-2.19.3 | Boolean operator precedence | in the absence of a parenthesis,`and` is evaluated before `or` |
-2.19.4 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True |
-2.20 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else: |
-2.21 | Treatment of numbers and strings as Booleans | only 0 or 0.0 are treated as False, everything else is True....only '' is treated as False, everything else is treated as True |
+2.19.3 | Membership operators | `in` and `not in`  | 
+2.19.3.1 | Treatment of numbers and strings as Booleans | only 0 or 0.0 are treated as False, everything else is True....only '' is treated as False, everything else is treated as True |
+2.19.4 | Boolean operator precedence | in the absence of a parenthesis,`and` is evaluated before `or` |
+2.19.5 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True |
+2.20 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else: ...used with Boolean operators/expression/membership operators|
 2.22 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list |
 2.22.1 | List - Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1] |
 2.22.2 | List - Slicing, the sliced list is treated as a list | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1)...just like in range(2,20), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
@@ -148,20 +150,22 @@ Number | Topic | Comments | Misc
 2.37.6 | concatenate strings using + | you can add multiple strings into 1 string using >>> `Test1 = 'Example' + ' 23232'`. NOTE - any non string object has to be changed to a string using `str()`  |
 2.37.7 | f'string {} ..... ' | can be used to create/ print a string with a varible |
 2.37.8 | formattting inside strings | `{<value>:,}` will add a comma seperator... >>>`{<value>:2f}` will give the output rounded to 2 decimals... >>> `{<value>:-2f}` will round to tens/thousands
-2.38 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) ...3 rules (1) values can be objects of any type - int/float/str/list/dict/tuple (2) keys can ONLY be immutable objects - int/str/float/tuple, but cannot be list/dict (3) keys have to be unique |
+2.38 | **Dictionaries** | starts and ends in {}, keys and values....and items (key/value pair) ... help(dict) |
+2.38.0.1 | 3 rules - 1/3 | (1) keys have to be unique |
+2.38.0.2 | 2/3 | (2) keys can ONLY be immutable objects - int/str/float/tuple, but cannot be list/dict |
+2.38.0.3 | 3/3 | (3) values can be objects of any type - int/float/str/list/dict/tuple |
 2.38.1 | creating dict | >>> `dict1 = {}` or >>> `dict1 = {'key1':value1,'key2':value2, 'key3':value3, 'key4':value4, 'key5':value5}`  |
-2.38.1.1 | returning all keys, values and itesms of the dictionary | >>>`<dictionary>.keys() ` >>> `<dictionary>.values()` >>> `<dictionary>.items()`  |
-2.38.2 | accesssing a value using key | >>> `dict1['key3']` |  
-2.38.3 | changing value using key >>> `dict1['key4'] = 44` |
-2.38.4 | adding new items to a dictionary | >>> `<dict_name>[<new_key>] = value` | 
+2.38.1.1 | returning all keys, values and itesms of the dictionary | >>>`<dictionary>.keys() ` >>> `<dictionary>.values()` >>> `<dictionary>.items()` ...output as `dict_keys(['AA', 'BB', 'CC'])`  |
+2.38.2 | accesssing a value using key | >>> `dict1['key1']` ... OR >>> `dict1.get('key1')`  |  
+2.38.3 | changing value using key >>> `dict1['key1'] = 44` |
+2.38.4 | adding new items to a dictionary | >>> `<dict_name>[<new_unique_key>] = value` ... if the key is already present, it will overwrite it| 
 2.38.5 | other methods | getting the length >>> `len(<dict_name>)`
 2.38.6 | Dictionary comprehension | similar to list comprehension, >>> `new_dict = {i:i**3 for i in range(20)}` |
 2.38.7 | using `in` to check for a key in a dict, cannot check for values | `<key> in <dictionary>`, this will return True or False |
-2.39 | looping over keys | for loop by default loops over only the keys >>> `for i in dict:` ...explicait looping >>> `for i in dict.keys()` |
+2.39 | looping over keys | for loop (by default) loops over only the keys >>> `for i in dict:` ...explicit looping >>> `for i in dict.keys()` |
 2.39.1 | looping over values | >>> `for i in dict.values():` |
-2.39.2 | other ways of returning values | >>>`for i in <dict>: print(dict[i]) ` OR >>>`for i in <dict>: print(dict.get(i)) `  |
-2.39.3 | looping over keys and values | >>> `for i,j in dict.items():` ... it will return keys, and j will return corresponding values|
-2.39.4 | removing an iem | `<dictionary>.pop(<key>)` |
+2.39.2 | looping over keys and values | >>> `for i,j in dict.items():` ... it will return keys, and j will return corresponding values|
+2.39.3 | removing an iem | `<dictionary>.pop(<key>)`....eg >>> `dictionary.pop('Name')` |
 2.40 | ***Working w/ external libraries*** | way to access them >>> `import pandas`, get help on the libraries: >>> `help(pandas)` , checking all the directories >>> `dir(pandas)`,type >>> `type(dir)` |
 2.40.1 | shorten form of an external library | >>> `import pandas as pd`, >>> `import numpy as np` >>> `import tensorflor as tf` |
 2.40.2 | Calling variables in a library by it name only | this CAN make life easier >>> `from math import *` >>> `pi` >>> `3.141592653589793`  (this is easier than writing >>> `math.pi` >>> `3.141592653589793`) ... this can ALSO cause bugs which are difficult to detect and fix (especially if you are calling all variables from multiple libraries and they have the same function doing different things), solution (1) call only the methods that you want from a library >>> `from math import log, pi` >>> `from numpy import asarray` (2) use full forms, this will make the code easier to understand and debug |
