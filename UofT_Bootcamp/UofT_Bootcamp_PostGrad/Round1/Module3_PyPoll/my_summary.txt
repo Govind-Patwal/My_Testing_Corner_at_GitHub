@@ -1,0 +1,15 @@
+The total number of votes cast were: 369,711
+===============================================
+===========Candidate summary =====================
+===============================================
+The candidate list is : ['Charles Casper Stockham', 'Diana DeGette', 'Raymon Anthony Doane']
+===============================================
+Vote count per candidate is {'Charles Casper Stockham': 85213, 'Diana DeGette': 272892, 'Raymon Anthony Doane': 11606}
+The candidate winner of the election was Diana DeGette with 272,892 votes
+===============================================
+===========County summary =====================
+===============================================
+The county list is : ['Jefferson', 'Denver', 'Arapahoe']
+===============================================
+Vote count per county is {'Jefferson': 38855, 'Denver': 306055, 'Arapahoe': 24801}
+The county winner of the election was Denver with 306,055 votes
