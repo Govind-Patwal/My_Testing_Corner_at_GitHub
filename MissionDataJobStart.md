@@ -187,6 +187,7 @@ Number | Topic | Comments | Misc
 2.41.8 | max can be used with a key | >>> max(iterable, key=) ...it will return the element with the max value after the calculation | 
 2.41.8.1 | checking for maximum in a dictionary | finding the maximum key >>> `max(dictionary_name)` ... finding the key with the max value >>> `max(dictionary_name, key=dictionary_name.get)`
 2.42 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
+2.43 | Sorting algos in Python | https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889 https://stackabuse.com/sorting-algorithms-in-python/ https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm |
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
 68 | Importing Pandas | `import pandas as pd` |
