@@ -175,7 +175,9 @@ Number | Topic | Comments | Misc
 2.40.4 | While working with external libraries, the 3 most important functions in Python | >>> `type()` >>> `dir() `>>> `help()` |
 2.40.5 | Operator overloading | Each library can define its own working with objects. When we do `dir(pandas)`, the methods that have 2 underscores at the start and at the end, e.g. `__getattr__`  are related to operator overloading. |
 2.41 | Miscellanous | Miscellanous | 
-2.41.1 | ***lambda function*** | is short anonymous functon, saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` (this funciton will take the argument as x and return x*9/5+32 ... like other functions, it has to be called, it can be given a name and then called or called directly inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))` |
+2.41.1 | ***lambda function*** | is short anonymous functon that can any number of arguments - saves time and effort, syntax >>> `lambda argument_list : expression` ...eg, >>> `lambda x: x*9/5+32` ...this funciton will take `x` as the argument and return x*9/5+32 |
+2.41.1.1 | Lambda - w/ a name | like other functions, it has to be called, it can be given a name >>> `my_fn = lambda x:x**3` (newline) >>> `variable = my_fn(5)` | 
+2.41.1.2 | Lambda - w/o a name| can be called w/o a name inside another function like map, eg >>> `list(map((lambda x: x**3), [i for i in range(20)]))` |  
 2.41.2 | **List of Dictionaries** | is like a 2D table with the keys as the columns and the values as the rows >>> `list_of_dict = [{'Country': 'Canada', 'Capital': 'Ottawa'}, {'Country': 'India', 'Capital': 'New Delhi'}, {'Country': 'USA', 'Capital': 'Washington'}]` |
 2.41.3 | List of dictionary - methods | All list methods (len, indexing, slicing, append(), insert(), remove()) can be used to access data...various dictionary methods can also be used in combination with the list methods |
 2.41.4 | all permutations of x,y,z using list comprehension | >>> `list2 = [[x,y,z] for x in range(5) for y in range(6) for z in range(8) ]` | 
@@ -184,6 +186,7 @@ Number | Topic | Comments | Misc
 2.41.7 | checking if a string is numeric | >>> `<string>.isnumeric()`
 2.41.8 | max can be used with a key | >>> max(iterable, key=) ...it will return the element with the max value after the calculation | 
 2.41.8.1 | checking for maximum in a dictionary | finding the maximum key >>> `max(dictionary_name)` ... finding the key with the max value >>> `max(dictionary_name, key=dictionary_name.get)`
+2.42 | **Classes** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
 68 | Importing Pandas | `import pandas as pd` |
