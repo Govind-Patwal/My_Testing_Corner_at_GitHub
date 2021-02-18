@@ -1,14 +1,12 @@
-# pseudocode
+list1 = [i for i in range (10,30)]
 
-# get the input from STDIN and store in str
-my_string = input()
+print(list1)
 
-# convert str into a list using list(str)
-str_as_list = list(my_string)
+list2 = [i for i in list1 if i%2 == 1]
 
-# iterate through the list and compare each alphabet with a list of vowels, accomplish this using list comprehension
-vowel_in_string_list = [i for i in str_as_list if i in 'aeiouAEIOU']
+print(list2)
 
-# print the lenght of the list
-no_of_vowels = len(vowel_in_string_list)
-print(f'Number of vowel(s) in the string \"{my_string}\": {no_of_vowels}')
+x = lambda x,y,z:x+y**4+z
+
+print(x(12,1,0))
+# print(x)

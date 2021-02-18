@@ -84,9 +84,6 @@ Number | Topic | Comments | Misc
 1.3 | naming convention of variables | can consist of uppercase, lowercase, digits and underscore - lower case is preferred. Must be in snake case, sample_variable...no keywords to be used, list of keywords >>> `help('keywords')`|
 1.4 | file types | text file (can be open in a text editor like notepad, excel)...binary files are written in binary code (power of 2) thus cannot be read with a text editor.
 **2** | **Kaggle Course - 1/18** | **Python - https://www.kaggle.com/learn/python** |
-2.0.1 | Objects in Python | Everything in python is an object, objects carry some things aroud with them, this 'thing' can be accessed using the dot syntax
-2.0.2 | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
-2.0.3 | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
 2.1 | loading the file in python (w/o Pandas)| opening the location of a file ...>>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) `print(data_file)` |
 2.1.1 | reading a file in python (w/o pandas) | opening the data in a csv file >>> `import csv` (nextline) >>> `with open(file_path) as data_file:` (nextline) >>>`data_file_name = csv.reader(data_file)` (nextline) .....iterating over all the rows >>> `for row in data_file_name: (nextline) print(row)` |
 2.2 | writing the header of a csv file (w/o Pandas) | >>>`data_file_name = csv.reader(data_file)` (nextline) >>> `headers = next(data_file_name)` (nextline) >>> `print(headers)` ...this also skips the header, we can then iterate through the rows using >>> `for row in data_file_name:` (nextline) 'do something | 
@@ -186,7 +183,13 @@ Number | Topic | Comments | Misc
 2.41.7 | checking if a string is numeric | >>> `<string>.isnumeric()`
 2.41.8 | max can be used with a key | >>> max(iterable, key=) ...it will return the element with the max value after the calculation | 
 2.41.8.1 | checking for maximum in a dictionary | finding the maximum key >>> `max(dictionary_name)` ... finding the key with the max value >>> `max(dictionary_name, key=dictionary_name.get)`
-2.42 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
+2.42 | **Python and Object Oriented Programming** | Everything in python is an object, objects carry some things aroud with them, this 'thing' can be accessed using the dot syntax
+2.42.1 | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
+2.42.2 | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
+2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
+2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' to created further objects |
+2.43.2 | data and functions in a Class | are called attributes and methods | 
+
 2.43 | Sorting algos in Python | https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889 https://stackabuse.com/sorting-algorithms-in-python/ https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm |
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
