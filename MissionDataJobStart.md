@@ -187,10 +187,14 @@ Number | Topic | Comments | Misc
 2.42.1 | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
 2.42.2 | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
 2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
-2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' to created further objects |
+2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
+2.43.2 | Instances | The class (blueprint) is used to create an instance of the class...each unique employee/student record that we create is an instance of the class  |
+2.43.3 | Class variables and Instance variables |  | 
+misc | Decorators | https://www.youtube.com/watch?v=FsAPt_9Bf3U | 
+misc | Generators | https://www.youtube.com/watch?v=bD05uGo_sVI | 
+misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY | 
 2.43.2 | data and functions in a Class | are called attributes and methods | 
-
-2.43 | Sorting algos in Python | https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889 https://stackabuse.com/sorting-algorithms-in-python/ https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm |
+2.44 | Sorting algos in Python | https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889 https://stackabuse.com/sorting-algorithms-in-python/ https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm |
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
 67 | Pandas | the most polular Python library for Data Analysis |
 68 | Importing Pandas | `import pandas as pd` |

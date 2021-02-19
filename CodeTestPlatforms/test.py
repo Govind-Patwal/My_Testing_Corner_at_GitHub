@@ -1,12 +1,18 @@
-list1 = [i for i in range (10,30)]
+# class Employee:
+#     pass
 
-print(list1)
+# emp1 = Employee()    
+# emp2 = Employee()
 
-list2 = [i for i in list1 if i%2 == 1]
+# print(emp1)
+# print(emp2)
 
-print(list2)
+# # instance variables
 
-x = lambda x,y,z:x+y**4+z
+# emp1.first = 'Govind'
+# emp1.last = 'Patwal'
+# emp1.email = 'gsp@gmail.com'
+# emp1.salary = 50000
 
-print(x(12,1,0))
-# print(x)
+n = Sunday.weekday()
+print(n)
