@@ -65,9 +65,9 @@ Wk | Dates | Planned | Executed | Evaluation
 5 | 2020/01/11 - 2021/01/17 |  | ##Cleaned all pipeline @ office, and sent New Year emails ## got 1st feedback from CareerServices Team, implemented feedback ##submitted application for 'data analytics specialist' on gojobs.gov.on.ca form ##started Ontario Internship form ## applied TDSB Can-Ex ## edX University of Texas query ## wrote to UofT MScAC team ##resolved medicine issue 
 6 | 2020/01/18 - 2021/01/24 |  | ## got 2nd feedback from CareerService Team, implemented and became Employer-ready ##talked to career director (2nd time) ## CALC Can-Ex writing, speaking, infosession ## career services event ## submitted Ontario Internship form ## Kaggle Pandas: 1-3
 7 | 2020/01/25 - 2021/01/31 |  | ## Signed up for Can-Ex ### Completed Kaggle Pandas ##  started Django video  ## Started Python consulting, and Upwork 
-8 | 2020/02/01 - 2021/01/07 |  |  ## went through all the jobs on the CareerServices JobBoard and applied to the ones which were applicable ## Joined day 1 and 2 of the Can-Ex (Feb 4 and 5) ## PythonConsulting meeting ## Bootcamp - Python 
-9 | 2020/02/08 - 2021/02/14 |  |  ## CanEx classes + assignments ## HackerRank python exercises ## started Kaggle - python again (finished lessons 1 and 2)
-10 | 2020/02/15 - 2021/02/21 | | ## Feb 15 - Python(kaggle) + Python(Bootcamp) ## February 16th - CareerService - Resume/GitHub/LinkedIn/Brand-Statement, all became employer-competitive ### Feb 16th - xCS call - 8 PM, Feb 17th - TCS call @ 5 PM ## 
+8 | 2020/02/01 - 2021/01/07 |  | ## went through all the jobs on the CareerServices JobBoard and applied to the ones which were applicable ## Joined day 1 and 2 of the Can-Ex (Feb 4 and 5) ## PythonConsulting meeting ## Finished Bootcamp - Python 
+9 | 2020/02/08 - 2021/02/14 |  | ## CanEx classes + assignments ## HackerRank python exercises ## started Kaggle - python again (finished lessons 1 and 2)
+10 | 2020/02/15 - 2021/02/21 | | ## Feb 15 - Python(kaggle) + Python(Bootcamp) ## February 16th - CareerService - Resume/GitHub/LinkedIn/Brand-Statement, all became employer-competitive ### Feb 16th - xCS call - 8 PM, Feb 17th - xCS call @ 5 PM ## 
 ---
 
 ### Cheat_Sheet
