@@ -1,18 +1,33 @@
-# class Employee:
-#     pass
+#creating a class
+class Employee:
+    pass
 
-# emp1 = Employee()    
-# emp2 = Employee()
+# creating instances  
+emp_1 = Employee()  
+emp_2 = Employee()  
 
-# print(emp1)
-# print(emp2)
+# print the instances
+print(emp_1)
+print(emp_2)
 
-# # instance variables
+# # instance variavles are variables that are unique to instances of the classes
+# # manually creating instance variables ---- ineffective
+# emp_1.first = 'Corey'
+# emp_1.last = 'Schafer'
+# emp_1.email = f"{emp_1.first}.{emp_1.last}@example.com"
+# emp_1.pay = 50000
 
-# emp1.first = 'Govind'
-# emp1.last = 'Patwal'
-# emp1.email = 'gsp@gmail.com'
-# emp1.salary = 50000
+# emp_2.first = 'Govind'
+# emp_2.last = 'Patwal'
+# emp_2.email = f"{emp_2.first}.{emp_2.last}@example.com"
+# emp_2.pay = 50000
 
-n = Sunday.weekday()
-print(n)
+# print(emp_1.first)
+# print(emp_1.last)
+# print(emp_1.email)
+# print(emp_1.pay)
+
+# print(emp_2.first)
+# print(emp_2.last)
+# print(emp_2.email)
+# print(emp_2.pay)

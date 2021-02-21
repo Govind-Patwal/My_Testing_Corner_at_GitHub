@@ -189,7 +189,7 @@ Number | Topic | Comments | Misc
 2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
 2.43.2 | Instances | The class (blueprint) is used to create an instance of the class...each unique employee/student record that we create is an instance of the class  |
-2.43.3 | Class variables and Instance variables |  | 
+2.43.3 | Class variables and Instance variables | one way is to create an empty class and then instantiate an instance and create individual instance variable and give them values >>>`class Employee:` (nextline) `pass`  ... instantiating - >>>> `emp_1 = Employee()` ...giving values >>> `emp_1.first = 'Govind'` | 
 misc | Decorators | https://www.youtube.com/watch?v=FsAPt_9Bf3U | 
 misc | Generators | https://www.youtube.com/watch?v=bD05uGo_sVI | 
 misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY | 
