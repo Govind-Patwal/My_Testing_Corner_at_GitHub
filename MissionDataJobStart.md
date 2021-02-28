@@ -81,7 +81,7 @@ Number | Topic | Comments | Misc
 0.0.1 | Debugging | when faced with an error, make sure you also check the line above the line w/ error, many times a missed `)` might show up as an error on the next line |
 1 | Checking the version of Python in Windows | windows cmd -> `python --version` |
 1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
-1.2 | Opening a .pynb file in D: | open Anaconda prompt, on the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
+1.2 | Opening a .pynb file in D: | open ***Anaconda Prompt (PythonData)*** or ***Anaconda Prompt (mlenv)***. On the default c prompt, press d: >>> `C:\Users\user_name>D: ` then >>> `D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
 1.2.1 | Data types | integers, floats, strings, booleans ....checking the data types >>> type(2) >>>type(12.23)  >>> type('Star') >>> type(True) | 
 1.3 | naming convention of variables | can consist of uppercase, lowercase, digits and underscore - lower case is preferred. Must be in snake case, sample_variable...no keywords to be used, list of keywords >>> `help('keywords')`|
 1.4 | file types | text file (can be open in a text editor like notepad, excel)...binary files are written in binary code (power of 2) thus cannot be read with a text editor.
