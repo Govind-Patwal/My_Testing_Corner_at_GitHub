@@ -198,79 +198,79 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 2.43.2 | data and functions in a Class | are called attributes and methods | 
 2.44 | Sorting algos in Python | https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889 https://stackabuse.com/sorting-algorithms-in-python/ https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm |
 **3.0** | **Kaggle Course - 2/18** | **Pandas - https://www.kaggle.com/learn/pandas** |
-67 | Pandas | the most polular Python library for Data Analysis |
-68 | Importing Pandas | `import pandas as pd` |
-69 | Creating Data | Two core objects in Pandas - the **DataFrame** and the **Series** |
-70 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)` |
-70a | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)...the series name can act as the column if the series is used to create a df |
-71 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column...***input is mostly a dictionar***y >>> `dict = {'Name':['GSP', 2 ,'DSP'], 'Favorite Color':['Red', 0 ,'Blue']}` >>> `df = pd.DataFrame(<dict>) ` |
-71a | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) ` |
-71b | naming the default index column | `df.index.name = '<index_name>'` |
-71c | checking the shape of a df | `df.shape` |
-72 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset |
-72 | reading a CSV file into a df | `pd.read_csv('file path')` |
-72a | reading a CSV and using one of its columns as index | >>> `pd.read_csv('file path', index_col=0)`...this is not a very good way as one could end up using a column that has duplicate values(s), thus the index will not be unique |
-73 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb |
-74 | checking the shape of a df | `df.shape` |
-75 | checking the first and last 10 rows | >>>`df.head()` >>> `df.tail()` |
-76 | choosing a column from the CSV as the index | `pd.read_csv('file path', index_col=<column_number>)` |
-77 | saving to a CSV file | `<df>.to_csv('<file_path>)` |
-77a| w/o the index | `<df>.to_csv('<file_path>, index = False)` |
-78 | ***Accessing Data*** |  |
-78a | Accessing using Columns | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]` |
-78b | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],[2,3,4,5]]`...can also be used like >>> `df['column_label'].iloc[0]` |
-79 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`...can also be used like >>> `df['column_label'].loc[0]` |
-80 | choosing between iloc and loc | since iloc is purely index based, 0:10 will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so 0:10 will return 11 values (0,1,2...11)...it is specifically good for situations when you want all values returned according to label names...eg df.loc[:,'GradeA':'GradeD'] |
-81 | naming the default index column that has no name | `df.index.name = '<index_name>'` |
-82 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df.set_index('<column_name_with_unique_values_in_rows>')` | misc
- 83 | Conditional selection | >>> `df['column_label'] == 'Str'/num` ...this produces a series of True/False, which can be used inside a `loc` to select the relevant data |
- 84 | Using loc for selecting data based on conditional | >>> `df.loc[df['Column_label'] <conditinal operation>]` |
- 85 | using and and or | use the signs `&` and `|` |
- 86 | Pandas built in conditional selector - 1/3 | .isin([Value1, Value2, Value3,...]) , it checks if a value is in the list given, for example >>> `df.loc[df['City'].isin(['New Delhi', 'Bangkok', 'Toronto'])]`, it is short form of writing city is in New Delhi or Bangkok or Toronto |
- 87 | Pandas built in conditional selector - 2/3 | .between(Value1,Value2)...it checks if a value is between the given range (as in loc, both end points are included), for example >>> `df.loc[df['Salary'].between(50000,80000)]` |
- 87 | isnull() and isnotnull() | to check if the value in a column is null or not, for example >> `df['Salary'].notnull()` |
- 88 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000` |
-89 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000` |
-90 | setting the max number of rows to be displayes in a jupyter notebook | >>> `pd.set_option("display.max_rows", 5)` |
-91 | **Summary function and maps** | involves operations that we can apply to the data to get the 'desired input' |
-92 | some summary functions | >>>`df['column_label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].min() `>>>`df['column label'].max()` >>>`df['column label'].median()` >>>`df['column label'].count() `>>>`df['column label'].unique()`....to find the name and frequency of unique values >>> `df['column_name'].value_counts()`, returning of the index of the max value in a column >>> `df['column_name'].idxmax()` |
-93 | Pandas (operations to create new columns in a jiffy)  | >>> `df['<new_column>'] = df['<column_1>'] + df['<column_2>']` + ' ' ...all mathimatical operations can be done, some more examples >>> `df['<new_column>'] = df['<column_1>'] - df['<column_1>'].mean() |
-94 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) - ways to to more advanced things likes applying conditional logic, anything needing a function | extremely useful for transforming data into new one |
-94a | map() used for a single column /Series | syntax >>> `map(function, iterables)`...IMP-by default it points to the location where the output is saved, in order to see the actual output use `list(map())` or `pd.Series(map())` eg, >>> `pd.Series(map((function, iterable))`...another way of using the map function >>> `<Series>.map(function) `, for example, >>> `df['<column_label>'].map(function)` |
-94b | apply() used to transform rows/columns in a df |  >>> `df['column_label'].apply(function)` |
-95 | [**Grouping and Sorting**](https://www.kaggle.com/residentmario/grouping-and-sorting) | using groupby() |
-96 | Groupwise analysis - groupby([]) | very handly funciton to group and work with dataframes |
-96a | df.groupby(['column_label_1','column_label_2',... ]) | creates a group of similar valued entries from the column in a df, there can be 1 or multiple columns |
-96b | groupby() is used with another function that applies some operation to the same or any other column | syntax >>> `df.groupby(['Column(s) to be used for grouping'])['Column_to_be_operator_on'].<operation()>`...eg, `df.groupby(['country','state'])['population'].max())`...functions could be min(), max(), count()...we can also use the pandas function `apply()` can be used with groupby(), [example from kaggle pandas course](https://www.kaggle.com/residentmario/grouping-and-sorting) or example, here's one way of selecting the name of the first wine reviewed from each winery in the dataset: >>> `reviews.group(['winery']).apply(lambda df: df['title'].iloc[0])` |
-96c | agg()...good function to have many funtion run together | `df.groupby(['Column_to_be_used_for_grouping])['Column_to_be_operated_on'].agg[('len','min','max')]`....this returns a dataframe |
-96d | more than one columns can be grouped | `df.groupby(['column1','column2',...])['<column_to_be_operated_on>'].<sum/count/min/max()>` OR `df.groupby(['Column1'],['Column2'],...).apply(<function>)` |
-97 | Resetting index after multi-group groupby() | `df.groupby(['Column1', 'Column2']).reset_index()` |
-98 | Sorting | |
-98a | Soring by index |  `df.groupby(['Column1'],['Column2'],...).sort_index()` |
-98b| Sorting by single value | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)` |
-98c| Sorting by multiple values | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len', <a column used for grouping>])`...eg `df.groupby(['country', 'state']).sort_values(by=['len', 'state'])` ...if we want all descending then use, ascending =False, eg >>> `df.groupby(['country', 'state']).sort_values(by=['len', 'state'], ascending=False)`...can also use size() and sort_values, eg. >>> `df.groupby(['country', 'state']).size().sort_values()` |
-99 | **Data Types and Missing Values**| Credit - https://www.kaggle.com/residentmario/data-types-and-missing-values |
-100 | dtype and dtypes | dtype is for a column, and a dtypes is for df...>>> `df.dtypes ` >>> `df['column_label'].dtype`....strings will show was 'O' meaning object...NOTE: to access the values/types of the index column, use >>> `df.index.dtype` and NOT df['index'].dtype (index is not a column) |
-100a | converting datatype of column | >>> `df['column label'].astype('str')`...other formats could be 'float64' 'int64' |
-101 | Missing Data | checking the null in all columns of df >>>`df.isnull().sum()`, checking the null in a specific column >>> `df['column_label'].isnull().sum()` ...creting a df based on null in a column >>> `df[pd.isnull(df[<column you want check the null values>])]`...checking for data that is not null >>> `df['column_name'].notnull().sum()` and >>> `df['column_name'].notna().sum()` |
-101a | replacing na with something | >>> `df['column_label].fillna('Unknown')`...you can also replace using the mean of the column, or use the backfill strategy (filling each missing with the next non-null) ...replacing non-null with something else >>> `df['column_label'].replace('value_to_replace', 'new_value')`...replace() is also handy when column has data like 'unknown', 'no known', etc, that need to be replaced |
-102 | **Renaming and Combining** | Credit - https://www.kaggle.com/residentmario/renaming-and-combining |
-103 | Renaming columns | renaming column names >>> `df.rename(columns={'column_1_existing_name':'column_1_new_name', 'column_2_existing_name':'column_2_new_name'})` |
-104 | naming or renaming the default index column |  >>> `df.index.name = '<new_index_name>'` |
-105 | Removing the default index and replacing with a column in the df | >>> `df = df.set_index('<column_name_with_unique_values_in_rows>')` |
-106 | resetting the index from 0...-1 | >>> `df.reset_index()` |
-107 | renaming index values | changing the first and second index names, ie. index[0] and index[1] >>> `df.rename(index={0:'FirstEntry', 1:'SecondEntry'})` |
-108 | renaming both x and y axis | >>> `df.rename_axis('row_axis_name', axis ='rows').rename_axis('column_axis_name', axis='columns')` |
-109 | Combining dataframes | used to combine 2 or more dataframes into 1 |
-109a | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])` |
-109b | join() | >>>`left_df.set_index('common_column').join(right_df.set_index('common_column'))` |
-109c | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1 |
+3.1 | Pandas | the most polular Python library for Data Analysis |
+3.2 | Importing Pandas | `import pandas as pd` |
+3.3 | Creating Data | Two core objects in Pandas - the **DataFrame** and the **Series** |
+3.4 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)` |
+3.4.1 | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)...the series name can act as the column if the series is used to create a df |
+3.5 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column...***input is mostly a dictionar***y >>> `dict = {'Name':['GSP', 2 ,'DSP'], 'Favorite Color':['Red', 0 ,'Blue']}` >>> `df = pd.DataFrame(<dict>) ` |
+3.5.1 | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) ` |
+3.5.2 | naming the default index column | `df.index.name = '<index_name>'` |
+3.5.3 | checking the shape of a df | `df.shape` |
+3.6 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset |
+3.7 | reading a CSV file into a df | `pd.read_csv('file path')` |
+3.7.1 | reading a CSV and using one of its columns as index | >>> `pd.read_csv('file path', index_col=0)`...this is not a very good way as one could end up using a column that has duplicate values(s), thus the index will not be unique |
+3.8 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb |
+3.9 | checking the shape of a df | `df.shape` |
+3.10 | checking the first and last 10 rows | >>>`df.head()` >>> `df.tail()` |
+3.12 | choosing a column from the CSV as the index | `pd.read_csv('file path', index_col=<column_number>)` |
+3.13 | saving to a CSV file | `<df>.to_csv('<file_path>)` |
+3.13.1| w/o the index | `<df>.to_csv('<file_path>, index = False)` |
+3.14 | ***Accessing Data*** |  |
+3.14.1 | Accessing using Columns | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]` |
+3.14.2 | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],[2,3,4,5]]`...can also be used like >>> `df['column_label'].iloc[0]` |
+3.15 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`...can also be used like >>> `df['column_label'].loc[0]` |
+3.16 | choosing between iloc and loc | since iloc is purely index based, 0:10 will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so 0:10 will return 11 values (0,1,2...11)...it is specifically good for situations when you want all values returned according to label names...eg df.loc[:,'GradeA':'GradeD'] |
+3.17 | naming the default index column that has no name | `df.index.name = '<index_name>'` |
+3.18 | Removing the default index and replacing with a column in the df (the values in column should be unique) | >>> `df.set_index('<column_name_with_unique_values_in_rows>')` | misc
+3.19 | Conditional selection | >>> `df['column_label'] == 'Str'/num` ...this produces a series of True/False, which can be used inside a `loc` to select the relevant data |
+3.20 | Using loc for selecting data based on conditional | >>> `df.loc[df['Column_label'] <conditinal operation>]` |
+3.21 | using and and or | use the signs `&` and `|` |
+3.22 | Pandas built in conditional selector - 1/3 | .isin([Value1, Value2, Value3,...]) , it checks if a value is in the list given, for example >>> `df.loc[df['City'].isin(['New Delhi', 'Bangkok', 'Toronto'])]`, it is short form of writing city is in New Delhi or Bangkok or Toronto |
+3.23 | Pandas built in conditional selector - 2/3 | .between(Value1,Value2)...it checks if a value is between the given range (as in loc, both end points are included), for example >>> `df.loc[df['Salary'].between(50000,80000)]` |
+3.24 | isnull() and isnotnull() | to check if the value in a column is null or not, for example >> `df['Salary'].notnull()` |
+3.25 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000` |
+3.26 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000` |
+3.27 | setting the max number of rows to be displayes in a jupyter notebook | >>> `pd.set_option("display.max_rows", 5)` |
+3.28 | **Summary function and maps** | involves operations that we can apply to the data to get the 'desired input' |
+3.29 | some summary functions | >>>`df['column_label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].min() `>>>`df['column label'].max()` >>>`df['column label'].median()` >>>`df['column label'].count() `>>>`df['column label'].unique()`....to find the name and frequency of unique values >>> `df['column_name'].value_counts()`, returning of the index of the max value in a column >>> `df['column_name'].idxmax()` |
+3.30 | Pandas (operations to create new columns in a jiffy)  | >>> `df['<new_column>'] = df['<column_1>'] + df['<column_2>']` + ' ' ...all mathimatical operations can be done, some more examples >>> `df['<new_column>'] = df['<column_1>'] - df['<column_1>'].mean() |
+3.31 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) - ways to to more advanced things likes applying conditional logic, anything needing a function | extremely useful for transforming data into new one |
+3.31.1 | map() used for a single column /Series | syntax >>> `map(function, iterables)`...IMP-by default it points to the location where the output is saved, in order to see the actual output use `list(map())` or `pd.Series(map())` eg, >>> `pd.Series(map((function, iterable))`...another way of using the map function >>> `<Series>.map(function) `, for example, >>> `df['<column_label>'].map(function)` |
+3.31.2 | apply() used to transform rows/columns in a df |  >>> `df['column_label'].apply(function)` |
+3.32 | [**Grouping and Sorting**](https://www.kaggle.com/residentmario/grouping-and-sorting) | using groupby() |
+3.33 | Groupwise analysis - groupby([]) | very handly funciton to group and work with dataframes |
+3.33.1 | df.groupby(['column_label_1','column_label_2',... ]) | creates a group of similar valued entries from the column in a df, there can be 1 or multiple columns |
+3.33.2 | groupby() is used with another function that applies some operation to the same or any other column | syntax >>> `df.groupby(['Column(s) to be used for grouping'])['Column_to_be_operator_on'].<operation()>`...eg, `df.groupby(['country','state'])['population'].max())`...functions could be min(), max(), count()...we can also use the pandas function `apply()` can be used with groupby(), [example from kaggle pandas course](https://www.kaggle.com/residentmario/grouping-and-sorting) or example, here's one way of selecting the name of the first wine reviewed from each winery in the dataset: >>> `reviews.group(['winery']).apply(lambda df: df['title'].iloc[0])` |
+3.33.3 | agg()...good function to have many funtion run together | `df.groupby(['Column_to_be_used_for_grouping])['Column_to_be_operated_on'].agg[('len','min','max')]`....this returns a dataframe |
+3.33.4 | more than one columns can be grouped | `df.groupby(['column1','column2',...])['<column_to_be_operated_on>'].<sum/count/min/max()>` OR `df.groupby(['Column1'],['Column2'],...).apply(<function>)` |
+3.34 | Resetting index after multi-group groupby() | `df.groupby(['Column1', 'Column2']).reset_index()` |
+3.35 | Sorting | |
+3.35.1 | Soring by index |  `df.groupby(['Column1'],['Column2'],...).sort_index()` |
+3.35.2 | Sorting by single value | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)` |
+3.35.3| Sorting by multiple values | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len', <a column used for grouping>])`...eg `df.groupby(['country', 'state']).sort_values(by=['len', 'state'])` ...if we want all descending then use, ascending =False, eg >>> `df.groupby(['country', 'state']).sort_values(by=['len', 'state'], ascending=False)`...can also use size() and sort_values, eg. >>> `df.groupby(['country', 'state']).size().sort_values()` |
+3.36 | **Data Types and Missing Values**| Credit - https://www.kaggle.com/residentmario/data-types-and-missing-values |
+3.37 | dtype and dtypes | dtype is for a column, and a dtypes is for df...>>> `df.dtypes ` >>> `df['column_label'].dtype`....strings will show was 'O' meaning object...NOTE: to access the values/types of the index column, use >>> `df.index.dtype` and NOT df['index'].dtype (index is not a column) |
+3.37.1 | converting datatype of column | >>> `df['column label'].astype('str')`...other formats could be 'float64' 'int64' |
+3.38 | Missing Data | checking the null in all columns of df >>>`df.isnull().sum()`, checking the null in a specific column >>> `df['column_label'].isnull().sum()` ...creting a df based on null in a column >>> `df[pd.isnull(df[<column you want check the null values>])]`...checking for data that is not null >>> `df['column_name'].notnull().sum()` and >>> `df['column_name'].notna().sum()` |
+3.38.1 | replacing na with something | >>> `df['column_label].fillna('Unknown')`...you can also replace using the mean of the column, or use the backfill strategy (filling each missing with the next non-null) ...replacing non-null with something else >>> `df['column_label'].replace('value_to_replace', 'new_value')`...replace() is also handy when column has data like 'unknown', 'no known', etc, that need to be replaced |
+3.39 | **Renaming and Combining** | Credit - https://www.kaggle.com/residentmario/renaming-and-combining |
+3.40 | Renaming columns | renaming column names >>> `df.rename(columns={'column_1_existing_name':'column_1_new_name', 'column_2_existing_name':'column_2_new_name'})` |
+3.41 | naming or renaming the default index column |  >>> `df.index.name = '<new_index_name>'` |
+3.42 | Removing the default index and replacing with a column in the df | >>> `df = df.set_index('<column_name_with_unique_values_in_rows>')` |
+3.43 | resetting the index from 0...-1 | >>> `df.reset_index()` |
+3.44 | renaming index values | changing the first and second index names, ie. index[0] and index[1] >>> `df.rename(index={0:'FirstEntry', 1:'SecondEntry'})` |
+3.45 | renaming both x and y axis | >>> `df.rename_axis('row_axis_name', axis ='rows').rename_axis('column_axis_name', axis='columns')` |
+3.46 | Combining dataframes | used to combine 2 or more dataframes into 1 |
+3.46.1 | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])` |
+3.46.2 | join() | >>>`left_df.set_index('common_column').join(right_df.set_index('common_column'))` |
+3.46.3 | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1 |
 **4.0** | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
 4.3 | Why Django | Fast, many available components, Security, Scalability
 4.4| Creating and Running a new Django project | (Step1) Win command prompt... (Step2) C:\Users\user_name>`D:`... (Step3) `D:\>cd folder_location`... (Step4) D:\folder_location>`pip install virtualenvwrapper-win`... (Step5) D:\folder_location>`mkvirtualenv <virtual_environment_name>`... (Step6(virtual_environment_name)D:\folder_location>`pip install django`... (Step7) (virtual_environment_name)D:\folder_location>`django-admin startproject <new_project_name>`... (Step8) (virtual_environment_name)D:\folder_location>`cd new_project_name`... (Step9)(virtual_environment_name)D:\folder_location\new_project_name>`python manage.py runserver`
-114a | initiating a virtual environment | 1) file_path>`workon 'virtual_environment_name'`... 2) (virtual_environment_name)file_path>
+4.4.1 | initiating a virtual environment | 1) file_path>`workon 'virtual_environment_name'`... 2) (virtual_environment_name)file_path>
 4.5 | settings.py | ALWAYS turn `Debug = False` before making the project live | 
 4.6 | VS Code - Integrated terminal - setting default (cmd vs powershell) | 1) Open VS code... 2)Press Ctrl + Shift + P... 3)Type 'shell' in the searcher... 4)Select 'Terminal: Select Default Shell'... 5)Select 'Command Prompt' or 'Windows Powershell'  | 
 4.7 | all Django main commands| >>> `django-admin` |
