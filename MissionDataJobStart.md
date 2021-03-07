@@ -261,9 +261,11 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.37.1 | converting datatype of column | >>> `df['column label'].astype('str')`...other formats could be 'float64' 'int64' |
 3.38 | Missing Data | checking the null in all columns of df >>>`df.isnull().sum()`, checking the null in a specific column >>> `df['column_label'].isnull().sum()` ...creting a df based on null in a column >>> `df[pd.isnull(df[<column you want check the null values>])]`...checking for data that is not null >>> `df['column_name'].notnull().sum()` and >>> `df['column_name'].notna().sum()` |
 3.38.1 | replacing na with something | >>> `df['column_label].fillna('Unknown')`...you can also replace using the mean of the column, or use the backfill strategy (filling each missing with the next non-null) ...replacing non-null with something else >>> `df['column_label'].replace('value_to_replace', 'new_value')`...replace() is also handy when column has data like 'unknown', 'no known', etc, that need to be replaced |
+3.38.2 | replacing soemthing with something else | >>> `df['Column name'].replace('old_text', 'new_text')`
 3.39 | **Renaming and Combining** | Credit - https://www.kaggle.com/residentmario/renaming-and-combining |
 3.40 | Renaming columns | renaming column names >>> `df.rename(columns={'column_1_existing_name':'column_1_new_name', 'column_2_existing_name':'column_2_new_name'})` |
 3.41 | naming or renaming the default index column |  >>> `df.index.name = '<new_index_name>'` |
+3.41.1 | Renaming index rows | renaming default index rows  >>> `df.rename(index={0:'row_1_name', 1:'row_2_new_name'})` |
 3.42 | Removing the default index and replacing with a column in the df | >>> `df = df.set_index('<column_name_with_unique_values_in_rows>')` |
 3.43 | resetting the index from 0...-1 | >>> `df.reset_index()` |
 3.44 | renaming index values | changing the first and second index names, ie. index[0] and index[1] >>> `df.rename(index={0:'FirstEntry', 1:'SecondEntry'})` |
