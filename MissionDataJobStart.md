@@ -207,7 +207,9 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.3 | Creating Data | Two core objects in Pandas - the **DataFrame** and the **Series** |
 3.4 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)` |
 3.4.1 | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)...the series name can act as the column if the series is used to create a df |
-3.5 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column...***input is mostly a dictionar***y >>> `dict = {'Name':['GSP', 2 ,'DSP'], 'Favorite Color':['Red', 0 ,'Blue']}` >>> `df = pd.DataFrame(<dict>) ` |
+3.5 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column |
+3.5.1 | Creating df ...entering entire table in 1 go ***input as a dictionary*** |  >>> `df = pd.DataFrame({'Name':['GSP', 'PSP ,'DSP'], 'Favorite Color':['Red', 'Blue ,'Green']}) ` |
+3.5.2 | Creating df ...entering 1 row at a time ***input as a list*** | >>> `df = pd.DataFrame([{'Name':'GSP', 'Favorite Color':'Red'},{'Name':'PSP', 'Favorite Color':'Blue'},{'Name':'DSP', 'Favorite Color':'Green'} ]) ` |
 3.5.1 | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) ` |
 3.5.2 | naming the default index column | `df.index.name = '<index_name>'` |
 3.5.3 | checking the shape of a df | `df.shape` |
