@@ -208,23 +208,23 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.4 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)` |
 3.4.1 | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)...the series name can act as the column if the series is used to create a df |
 3.5 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column |
-3.5.1 | Creating df ...entering complete columns ***input as 1 dictionary with keys=column names, values=entire columns as lists*** |  >>> `df = pd.DataFrame({'Name':['GSP', 'PSP ,'DSP'], 'Favorite Color':['Red', 'Blue ,'Green']}) ` |
-3.5.2 | Creating df ...entering 1 row at a time ***input as a list of dictionaries (each dictionary is 1 row)*** | >>> `df = pd.DataFrame([{'Name':'GSP', 'Favorite Color':'Red'},{'Name':'PSP', 'Favorite Color':'Blue'},{'Name':'DSP', 'Favorite Color':'Green'} ]) ` |
+3.5.1 | Creating df ...entering complete columns ***enter 1 dictionary with each key-value pair representing 1 entire column*** |  >>> `df = pd.DataFrame({'Name':['GSP', 'PSP ,'DSP'], 'Favorite Color':['Red', 'Blue ,'Green']}) ` |
+3.5.2 | Creating df ...entering 1 row at a time ***enter 1 list of dictionaries with each dictionay representing 1 row*** | >>> `df = pd.DataFrame([{'Name':'GSP', 'Favorite Color':'Red'},{'Name':'PSP', 'Favorite Color':'Blue'},{'Name':'DSP', 'Favorite Color':'Green'} ]) ` |
 3.5.1 | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) ` |
 3.5.2 | naming the default index column | `df.index.name = '<index_name>'` |
 3.5.3 | checking the shape of a df | `df.shape` |
 3.6 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset |
-3.7 | reading a CSV file into a df | `pd.read_csv('file path')` |
+3.7 | reading a CSV file into a df | `df = pd.read_csv('file path')` |
 3.7.1 | reading a CSV and using one of its columns as index | >>> `pd.read_csv('file path', index_col=0)`...this is not a very good way as one could end up using a column that has duplicate values(s), thus the index will not be unique |
 3.8 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb |
 3.9 | checking the shape of a df | `df.shape` |
 3.10 | checking the first and last 10 rows | >>>`df.head()` >>> `df.tail()` |
 3.12 | choosing a column from the CSV as the index | `pd.read_csv('file path', index_col=<column_number>)` |
-3.13 | saving to a CSV file | `<df>.to_csv('<file_path>)` |
+3.13 | saving to a CSV file | `df.to_csv('<file_path>)` |
 3.13.1| w/o the index | `<df>.to_csv('<file_path>, index = False)` |
 3.14 | ***Accessing Data*** |  |
-3.14.1 | Accessing using Columns | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]` |
-3.14.2 | ***Accessing using Rows index first, followed by column index...iloc*** | >>>`df.iloc[<row_index_number>]` >>> `df.iloc[<row_index_number>,<column_index_number>]`...first 10 rows of a column and 4 columns >>> `df.iloc[:10, :4]`....can also pass any type of list for indexing >>> `df.iloc[[2,4,5,67,8,10],[2,3,4,5]]`...can also be used like >>> `df['column_label'].iloc[0]` |
+3.14.1 | Accessing data using Columns name first...output is a series | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]` |
+3.14.2 | Accessing using Rows index first, followed by column index...iloc | >>> `df.iloc[<row_index_number>,<column_index_number>]`eg >>> `df.iloc[:10, :4]` >>> `df.iloc[:4, :]` >>> `df.iloc[:, :3]` ...can also be used like >>> `df['column_label'].iloc[0]` |
 3.15 | ***Accessing using Rows index first, followed by column label(s)...loc*** | >>>`df.loc[<row_index_number>, 'column_name']` ...once can also pass a list of column names >>> `df.loc[:, ['column1_name', 'column2_name', 'column3_name']`...can also be used like >>> `df['column_label'].loc[0]` |
 3.16 | choosing between iloc and loc | since iloc is purely index based, 0:10 will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so 0:10 will return 11 values (0,1,2...11)...it is specifically good for situations when you want all values returned according to label names...eg df.loc[:,'GradeA':'GradeD'] |
 3.17 | naming the default index column that has no name | `df.index.name = '<index_name>'` |
