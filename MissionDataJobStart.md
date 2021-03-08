@@ -97,8 +97,8 @@ Number | Topic | Comments | Misc
 2.4| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
 2.4.1 | print in python | print(x), help(print), print(x, end =' ' ) |
 2.4.2 | writing in multiple lines | >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` | 
-2.4.3 | formatting numbers using f'' | >>> `f'{value:,.2f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
-2.4.4 | formatting numbers using .format() | >>> `'{:,.2f} text {:,.2f}  text {:,.2f} ...{:,.2f} '.format(value1, value2, value3,...value_n)` | 
+2.4.3 | formatting numbers using f-string f'' | >>> `f'{value:,.2f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
+2.4.4 | formatting numbers using .format() | >>> `'{:,.2f} text {:,.2f}  text {:,.2f} ...{:,.2f} '.format(value1, value2, value3,...value_n)` ...advantage over f-string, it can be chained with functions like , >>> `map('{:,.2f}'.format)` | 
 2.5 | operators | +, -, *, /, % (Modulus/Reminder, e.g. 11 % 3 = 2), // (Floor Division/Quotient, e.g. 11 // 3 = 3, same result as int(11/3)), ** (Exponent, e.g 2**3 = 8) |
 2.6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
 2.7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
@@ -247,7 +247,8 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.29 | some summary functions | >>>`df['column_label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].min() `>>>`df['column label'].max()` >>>`df['column label'].median()` >>>`df['column label'].count() `>>>`df['column label'].unique()`....to find the name and frequency of unique values >>> `df['column_name'].value_counts()`, returning of the index of the max value in a column >>> `df['column_name'].idxmax()` |
 3.30 | Pandas (operations to create new columns in a jiffy)  | >>> `df['<new_column>'] = df['<column_1>'] + df['<column_2>']` + ' ' ...all mathimatical operations can be done, some more examples >>> `df['<new_column>'] = df['<column_1>'] - df['<column_1>'].mean() |
 3.31 | [Maps and apply](https://www.kaggle.com/residentmario/summary-functions-and-maps) - ways to to more advanced things likes applying conditional logic, anything needing a function | extremely useful for transforming data into new one |
-3.31.1 | map() used for a single column /Series | syntax >>> `map(function, iterables)`...IMP-by default it points to the location where the output is saved, in order to see the actual output use `list(map())` or `pd.Series(map())` eg, >>> `pd.Series(map((function, iterable))`...another way of using the map function >>> `<Series>.map(function) `, for example, >>> `df['<column_label>'].map(function)` |
+3.31.1 | map() used to transform a single column | syntax >>> `map(function, iterables)`...IMP-by default it points to the location where the output is saved, in order to see the actual output use `list(map())` or `pd.Series(map())` eg, >>> `pd.Series(map((function, iterable))`...another way of using the map function >>> `<Series>.map(function) `, for example, >>> `df['<column_label>'].map(function)` |
+3.31.1.1 | a use of map() function for formatting columns | `df['column_name'] = df['column_name'].map('{:,.2f}'.format)` | 
 3.31.2 | apply() used to transform rows/columns in a df |  >>> `df['column_label'].apply(function)` |
 3.32 | [**Grouping and Sorting**](https://www.kaggle.com/residentmario/grouping-and-sorting) | using groupby() |
 3.33 | Groupwise analysis - groupby([]) | very handly funciton to group and work with dataframes |
@@ -291,6 +292,7 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.52 | returning unique elements from a list, and arranged in ascending order | >>> `set(list)` |
 3.53 | string.strip() and string.replace(x,y) | ..replacing with an empty string >>> `new_string = string.replace(x, '')` ...IMP-for it to work, it has to be assigned to a new variable | 
 3.54 | always better to change entire column INSTEAD of looping through individual values of the column | >>> `df['column_name'] = df['Column_name']*transformation_steps` is BETTER than >>> `for item in column: do_something` | 
+3.55 | reordering columns | >>> `new_order_of_columns = ['column 1', 'column 2', 'column 3']` (nextline) >>> `df = df[new_order_of_columns]` | 
 **4.0** | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
