@@ -283,7 +283,8 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.50 | converting a df column to a list | >>> `df['column_name'].tolist()` |
 3.51 | splitting a string | >>> `string.split()`  |
 3.52 | returning unique elements from a list, and arranged in ascending order | >>> `set(list)` |
-3.53 | string.strip() and string.replace(x,y) | ..replacing with an empty string >>> string.replace(x, '') | 
+3.53 | string.strip() and string.replace(x,y) | ..replacing with an empty string >>> `new_string = string.replace(x, '')` ...IMP-for it to work, it has to be assigned to a new variable | 
+3.54 | always better to change entire column INSTEAD of looping through individual values of the column | >>> `df['column_name'] = df['Column_name']*transformation_steps` is BETTER than >>> `for item in column: do_something` | 
 **4.0** | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
