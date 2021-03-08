@@ -241,7 +241,7 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.24 | Pandas built in conditional selector - 3/3 `.isnull()` `. isnotnull()` | .isnull() and isnotnull() ...to check if the value in a column is null or not, for example >> `df['Salary'].notnull()` |
 3.25 | Assigning data to column(s) | `df['Cities'] = 'New City'` or `df['Salary of Employee'] = 50000` |
 3.26 | Assigning data based on conditions | `df.loc[df['column_label'] <conditional expression>, 'column_name'] = value`, for example >>> `df.loc[df['Income'].between(40367.0,93669.0), 'Income'] = 50000` |
-3.26.1 Assigning reverse index | >>> `df['index_backwards'] = range(len(df), 0, -1)` |
+3.26.1 | Assigning reverse index | >>> `df['index_backwards'] = range(len(df), 0, -1)` |
 3.27 | setting the max number of rows to be displayes in a jupyter notebook | >>> `pd.set_option("display.max_rows", 5)` |
 3.28 | **Summary function and maps** | involves operations that we can apply to the data to get the 'desired input' |
 3.29 | some summary functions | >>>`df['column_label'].describe()` >>>`df['column label'].mean()` >>>`df['column label'].min() `>>>`df['column label'].max()` >>>`df['column label'].median()` >>>`df['column label'].count() `>>>`df['column label'].unique()`....to find the name and frequency of unique values >>> `df['column_name'].value_counts()`, returning of the index of the max value in a column >>> `df['column_name'].idxmax()` |
@@ -292,7 +292,7 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.52 | returning unique elements from a list, and arranged in ascending order | >>> `set(list)` |
 3.53 | string.strip() and string.replace(x,y) | ..replacing with an empty string >>> `new_string = string.replace(x, '')` ...IMP-for it to work, it has to be assigned to a new variable | 
 3.54 | always better to change entire column INSTEAD of looping through individual values of the column | >>> `df['column_name'] = df['Column_name']*transformation_steps` is BETTER than >>> `for item in column: do_something` | 
-3.55 | reordering columns | >>> `new_order_of_columns = ['column 1', 'column 2', 'column 3']` (nextline) >>> `df = df[new_order_of_columns]` | 
+3.55 | reordering columns, can also drop columns | >>> `new_order_of_columns = ['column 1', 'column 2', 'column 3']` (nextline) >>> `df = df[new_order_of_columns]` | 
 **4.0** | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
