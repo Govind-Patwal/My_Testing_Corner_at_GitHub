@@ -275,9 +275,11 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.46.2 | join()...have 1 or more common columns | >>>`left_df.set_index(['common_column(s)']).join(right_df.set_index(['same_common_column(s)']))` |
 3.46.2.1 | join() ...where the dfs has the same column names but both are required | >>> `df1.set_index([column_name(s)].join(df2.set_index([same_column_name(s)])), lsuffix='_left_DF', rsuffix='_right_DF')` 
 3.46.3 | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1 |
-3.47 | Pandas - UofT Data Bootcamp | | 
+3.47 | ***Pandas - UofT Data Bootcamp*** | | 
 3.48 | checking for missing data (na and null)| >>>`df.count()` >>>`df.isna().sum()` >>>`df.notna().sum()` >>>`df.isnull().sum()`  >>>`df.notnull().sum()` | 
 3.48.1 | handling missing data (na and null)| (1) drop all rows with na >>> df.dropna() ...(2) fill na with some value >>> `df.fillna(number)`  ...(3) replacing values >>> `df.replace('present_value', 'new_value')` | 
+3.49 | 6 data types | `bool`, `int32`, `int64`, `float64`, `O, object`, `datetime64`   
+3.49.1 | checking data types | checking data types of a df >>> `df.dtypes ` ...chekcing data types of a column >>> `df['column_name'].dtype` | 
 **4.0** | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
