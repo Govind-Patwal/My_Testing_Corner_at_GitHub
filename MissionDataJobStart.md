@@ -95,7 +95,10 @@ Number | Topic | Comments | Misc
 2.2 | writing the header of a csv file (w/o Pandas) | >>>`data_file_name = csv.reader(data_file)` (nextline) >>> `headers = next(data_file_name)` (nextline) >>> `print(headers)` ...this also skips the header, we can then iterate through the rows using >>> `for row in data_file_name:` (nextline) 'do something | 
 2.3 | writing to a file in python (without Pandas) | >>> `import csv` (newline) >>> `with open('path_of_file_to_save', 'w') as text_file:` (newline) >>> `text_file.write("Hello World")` |
 2.4| 3 VERY important functions in python | >>> `type()` (what's type is this object?), >>> `dir()` (what can I do with it) >>> `help()` (tell me more about it) |
-2.4.1 | print in python | print(x), help(print), print(x, end =' ' ).....>>> `f' {variable/value} to '` ... f'' in various lines >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` ...formatting numbers >>> `f'{value:,.<n>f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
+2.4.1 | print in python | print(x), help(print), print(x, end =' ' ) |
+2.4.2 | writing in multiple lines | >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` | 
+2.4.3 | formatting numbers using f'' | >>> `f'{value:,.2f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
+2.4.4 | formatting numbers using .format() | >>> `'{:,.2f} text {:,.2f}  text {:,.2f} ...{:,.2f} '.format(value1, value2, value3,...value_n)` | 
 2.5 | operators | +, -, *, /, % (Modulus/Reminder, e.g. 11 % 3 = 2), // (Floor Division/Quotient, e.g. 11 // 3 = 3, same result as int(11/3)), ** (Exponent, e.g 2**3 = 8) |
 2.6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
 2.7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
@@ -208,12 +211,13 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.4 | ***Series*** | A sequence of data values or a list >>> `<Series1> = pd.Series(<list>)` |
 3.4.1 | Optional index and Series name | `Series1 = pd.Series(<list>, index = [...], name ='list_name`)...the series name can act as the column if the series is used to create a df |
 3.5 | DataFrame | it is a Table, contains a 2x2 array of individual entries, each has a certain value. Each enty corresponds to a row (or a record) and a column |
-3.5.1 | Creating df ...entering complete columns ***enter 1 dictionary with each key-value pair representing 1 entire column*** |  >>> `df = pd.DataFrame({'Name':['GSP', 'PSP ,'DSP'], 'Favorite Color':['Red', 'Blue ,'Green']}) ` |
-3.5.2 | Creating df ...entering 1 row at a time ***enter 1 list of dictionaries with each dictionay representing 1 row*** | >>> `df = pd.DataFrame([{'Name':'GSP', 'Favorite Color':'Red'},{'Name':'PSP', 'Favorite Color':'Blue'},{'Name':'DSP', 'Favorite Color':'Green'} ]) ` |
-3.5.1 | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) ` |
-3.5.2 | naming the default index column | `df.index.name = '<index_name>'` |
-3.5.3 | checking the shape of a df | `df.shape` |
-3.6 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset |
+3.5.1 | Creating df - 1/3 ...creating an empty df and then adding columns | >>> `df = pd.DataFrame()` -> `df['Column 1] = [<list>]` | 
+3.5.2 | Creating df - 2/3 ...entering complete columns (dictionay of lists) ***enter 1 outer dictionary with each key-value pair representing 1 entire columns, column values enclused in []*** |  >>> `df = pd.DataFrame({'Name':['GSP', 'PSP ,'DSP'], 'Favorite Color':['Red', 'Blue ,'Green']}) ` |
+3.5.3 | Creating df - 3/3 ...entering 1 row at a time (list of dictionaries) ***enter 1 outer list with each dictionary inside representing 1 entire row*** | >>> `df = pd.DataFrame([{'Name':'GSP', 'Favorite Color':'Red'},{'Name':'PSP', 'Favorite Color':'Blue'},{'Name':'DSP', 'Favorite Color':'Green'} ]) ` |
+3.6 | Optional index | >>> `pd.DataFrame(<dict>, index = ['index1','index2',...]) ` |
+3.6.1 | naming the default index column | `df.index.name = '<index_name>'` |
+3.6.2 | checking the shape of a df | `df.shape` |
+3.6.3 | **Sample dataset** | https://www.kaggle.com/carlolepelaars/toy-dataset |
 3.7 | reading a CSV file into a df | `df = pd.read_csv('file path')` |
 3.7.1 | reading a CSV and using one of its columns as index | >>> `pd.read_csv('file path', index_col=0)`...this is not a very good way as one could end up using a column that has duplicate values(s), thus the index will not be unique |
 3.8 | reading a CSV file in a ZIP file into a df | https://github.com/Govind-Patwal/European_Hotel_Analysis/blob/main/Data_Preprocessing/Step1_Deleting_Null_Values_and_dividing_into_2_tables.ipynb |
@@ -279,7 +283,8 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.48 | checking for number of values  | in all the columns of the df >>>`df.count()` ...in specific columns of df >>> `df['Column_name'].count()`  | 
 3.48.1 | checking for missing data (na and null)| >>>`df.count()` >>>`df.isna().sum()` >>>`df.notna().sum()` >>>`df.isnull().sum()`  >>>`df.notnull().sum()` | 
 3.48.2 | handling missing data (na and null)| (1) drop all rows with na >>> df.dropna() ...(2) fill na with some value >>> `df.fillna(number)`  ...(3) replacing values >>> `df.replace('present_value', 'new_value')` | 
-3.49 | 6 data types | `bool`, `int32`, `int64`, `float64`, `O, object`, `datetime64`   
+3.48.3 | finding unique elements in a column | >>> `df['column name'].unique()` ...can find its length >>> len(df['column name'].unique()) |
+3.49 | 6 data types | `bool`, `int32`, `int64`, `float64`, `O, object`, `datetime64`   |
 3.49.1 | checking data types | checking data types of a df >>> `df.dtypes ` ...chekcing data types of a column >>> `df['column_name'].dtype` | 
 3.50 | converting a df column to a list | >>> `df['column_name'].tolist()` |
 3.51 | splitting a string | >>> `string.split()`  |
