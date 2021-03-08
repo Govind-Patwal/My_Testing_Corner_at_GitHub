@@ -277,7 +277,7 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.46.3 | merge ()...used when columns are not the same but their is one common column | >>> `new_df = df1_bigger_df.merge(df2_smaller_df, on='common_column')`...NOTE: use the bigger table as df1 |
 3.47 | Pandas - UofT Data Bootcamp | | 
 3.48 | checking for missing data (na and null)| >>>`df.count()` >>>`df.isna().sum()` >>>`df.notna().sum()` >>>`df.isnull().sum()`  >>>`df.notnull().sum()` | 
-3.48.1 | handling missing data (na and null)|  | 
+3.48.1 | handling missing data (na and null)| (1) drop all rows with na >>> df.dropna() ...(2) fill na with some value >>> `df.fillna(number)`  ...(3) replacing values >>> `df.replace('present_value', 'new_value')` | 
 **4.0** | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
