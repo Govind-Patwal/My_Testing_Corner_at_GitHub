@@ -70,7 +70,7 @@ Wk | Dates | Planned | Executed | Evaluation
 10 | 2021/02/15 - 2021/02/21 | | ## CanEx Week 3: classes + assignments  ## Mon, Feb 15 (Family Day) - Python(kaggle) + Python(Bootcamp) ## February 16th - CareerService - Resume/GitHub/LinkedIn/Brand-Statement, all became employer-competitive ### Feb 16th - xCS call - 8 PM, Feb 17th - xCS call @ 5 PM ## Wkend - a little Python classes 'Corey Schafer' + misc(RRSP + transfers + online shopping) + relaxation (snow mountain on Feb/20/2021) |
 11 | 2021/02/22 - 2021/02/28 | | ## CanEx Week 4: classes + assignments  ## Feb 24, Careeer Services session ## Feb 25 - talked to Career Director ## Wkend - started Pandas (Bootcamp)  |     
 12 | 2021/03/01 - 2021/03/07 | | ## CanEx Week 5: classes + assignments ## Finished kaggle Pandas |
-13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments ## Placement Week 1: ## to finish Bootcamp - Module 4-Pandas - https://bootcampspot.instructure.com/courses/193/pages/4-dot-5-1-find-missing-values?module_item_id=56647      |
+13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1: ## to finish Bootcamp - Module 4-Pandas - https://bootcampspot.instructure.com/courses/193/pages/4-dot-5-1-find-missing-values?module_item_id=56647      |
 14 | 2021/03/15 - 2021/03/21 | |    |
 15 | 2021/03/22 - 2021/03/28 | |    |
 ---
