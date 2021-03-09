@@ -258,10 +258,11 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.33.3 | agg()...good function to have many funtion run together | `df.groupby(['Column_to_be_used_for_grouping])['Column_to_be_operated_on'].agg[('len','min','max')]`....this returns a dataframe |
 3.33.4 | more than one columns can be grouped | `df.groupby(['column1','column2',...])['<column_to_be_operated_on>'].<sum/count/min/max()>` OR `df.groupby(['Column1'],['Column2'],...).apply(<function>)` |
 3.34 | Resetting index after multi-group groupby() | `df.groupby(['Column1', 'Column2']).reset_index()` |
-3.35 | Sorting | |
+3.35 | **Sorting** | |
 3.35.1 | Soring by index |  `df.groupby(['Column1'],['Column2'],...).sort_index()` |
-3.35.2 | Sorting by single value | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)` |
-3.35.3| Sorting by multiple values | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len', <a column used for grouping>])`...eg `df.groupby(['country', 'state']).sort_values(by=['len', 'state'])` ...if we want all descending then use, ascending =False, eg >>> `df.groupby(['country', 'state']).sort_values(by=['len', 'state'], ascending=False)`...can also use size() and sort_values, eg. >>> `df.groupby(['country', 'state']).size().sort_values()` |
+3.35.2 | Sorting by single value (while using groupby) | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len'])` OR `df.groupby(['Column1'],['Column2'],...).sort_values(by=['len'], ascending=False)` |
+3.35.3| Sorting by multiple values (while using groupby) | `df.groupby([<column(s) to be used for grouping rows],...).sort_values(by=['len', <a column used for grouping>])`...eg `df.groupby(['country', 'state']).sort_values(by=['len', 'state'])` ...if we want all descending then use, ascending =False, eg >>> `df.groupby(['country', 'state']).sort_values(by=['len', 'state'], ascending=False)`...can also use size() and sort_values, eg. >>> `df.groupby(['country', 'state']).size().sort_values()` |
+3.35.4 | General sorting a df by a column | >>> `df.sort_values(by=['Column1'], ascending= False)` |
 3.36 | **Data Types and Missing Values**| Credit - https://www.kaggle.com/residentmario/data-types-and-missing-values |
 3.37 | dtype and dtypes | dtype is for a column, and a dtypes is for df...>>> `df.dtypes ` >>> `df['column_label'].dtype`....strings will show was 'O' meaning object...NOTE: to access the values/types of the index column, use >>> `df.index.dtype` and NOT df['index'].dtype (index is not a column) |
 3.37.1 | converting datatype of column | >>> `df['column label'].astype('str')`...other formats could be 'float64' 'int64' |
