@@ -82,7 +82,7 @@ Wk | Dates | Planned | Executed | Evaluation
 Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.0 | Python Interview | https://www.youtube.com/watch?v=DEwgZNC-KyE&t=67s | 
-0.0.1 | Debugging | when faced with an error, make sure you also check the line above the line w/ error, many times a missed `)` might show up as an error on the next line |
+0.0.1 | Debugging | when faced with an error in python, make sure you also check the line above the line w/ error, many times a missed `)` might show up as an error on the next line ... second if it is related to a missed bracket, if you miss the first one, the next one will be highlighted, if you  miss you the second one, then the one right after it will be highlighted|
 1 | Checking the version of Python in Windows | windows cmd -> `python --version` |
 1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
 1.2 | Opening a .pynb file in D: | open ***Anaconda Prompt (PythonData)*** or ***Anaconda Prompt (mlenv)***. On the default c prompt, press d: >>> `(PythonData) C:\Users\user_name>D: ` then >>> `(PythonData) D:\> jupyter notebook` ...this will open the files in D:, open the desired file |
@@ -98,7 +98,7 @@ Number | Topic | Comments | Misc
 2.4.1 | print in python | print(x), help(print), print(x, end =' ' ) |
 2.4.2 | writing in multiple lines | >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` | 
 2.4.3 | formatting numbers using f-string f'' | >>> `f'{value:,.2f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
-2.4.4 | formatting numbers using .format() | >>> `'{:,.2f} text {:,.2f}  text {:,.2f} ...{:,.2f} '.format(value1, value2, value3,...value_n)` ...advantage over f-string, it can be chained with functions like , >>> `map('{:,.2f}'.format)` | 
+2.4.4 | formatting numbers using .format(), can also be used to format complete columns using .map | >>> `'{:,.2f} text {:,.2f}  text {:,.2f} ...{:,.2f} '.format(value1, value2, value3,...value_n)` ...advantage over f-string, it can be chained with functions like , >>> `map('{:,.2f}'.format)` | 
 2.5 | operators | +, -, *, /, % (Modulus/Reminder, e.g. 11 % 3 = 2), // (Floor Division/Quotient, e.g. 11 // 3 = 3, same result as int(11/3)), ** (Exponent, e.g 2**3 = 8) |
 2.6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
 2.7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
@@ -228,6 +228,7 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.13.1| w/o the index | `<df>.to_csv('<file_path>, index = False)` |
 3.14 | ***Accessing Data*** |  |
 3.14.1 | Accessing data using Columns name first...output is a series | >>>`df['column_name']`, accessing a value (column -> row)  >>>`df['column_name'][<row_index>]`....or first 10 rows of a column >>> `df['column_name'][:10]` |
+3.14.1.1 | Choosing only some columns of a df, can also used to reorder columns | >>> `new_df = df[['column1', 'column2', 'column3']]` |
 3.14.2 | index based selection - Accessing using Rows index first, followed by column index...iloc | >>> `df.iloc[<row_index_number>,<column_index_number>]`...eg >>> `df.iloc[:10, :4]` >>> `df.iloc[:4, :]` >>> `df.iloc[:, :3]` ...can also be used like >>> `df['column_label'].iloc[0]` |
 3.15 | label-based selection - Accessing using Rows index first, followed by column label(s)...loc | >>> `df.loc[<row_index_number>, 'column_name']`        ...eg >>> `df.loc[:10, ['column1_name', 'column2_name', 'column3_name']]`...can also be used like >>> `df['column_label'].loc[0]` ...conditional >>> `df.loc[df['column_name'] == 'Italy']` |
 3.16 | choosing between iloc and loc | `df.iloc[:10]` will return 10 values while `df.loc[:10]` will return 11 values...reason: iloc is purely index based, [0:10] will return 10 values (0,1....9)....on the other hand loc is label based so both the start and end points are included, so [0:10] will return 11 values (0,1,2...11)...it is specifically good for situations when you want both the labels/end_points incldued...eg `df.loc[,'GradeA':'GradeD']` |
@@ -271,10 +272,12 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.40 | Renaming columns | renaming column names >>> `df.rename(columns={'column_1_existing_name':'column_1_new_name', 'column_2_existing_name':'column_2_new_name'})` |
 3.41 | naming or renaming the default index column |  >>> `df.index.name = '<new_index_name>'` |
 3.41.1 | Renaming index rows | renaming default index rows  >>> `df.rename(index={0:'row_1_name', 1:'row_2_new_name'})` |
-3.42 | Removing the default index and replacing with a column in the df | >>> `df = df.set_index('<column_name_with_unique_values_in_rows>')` |
+3.42 | Removing the default index and replacing with a column in the df | >>> `df = df.set_index('[<column_name_with_unique_values_in_rows>'])` |
 3.43 | resetting the index from 0...-1 | >>> `df.reset_index()` |
 3.44 | renaming index values | changing the first and second index names, ie. index[0] and index[1] >>> `df.rename(index={0:'FirstEntry', 1:'SecondEntry'})` |
 3.45 | renaming both x and y axis | >>> `df.rename_axis('row_axis_name', axis ='rows').rename_axis('column_axis_name', axis='columns')` |
+3.45.1 | Dropping columns | >>> `df.drop('column name', axis=0, inplace = True)` OR >>> `df.drop(columns = 'column name', inplace=True) ` | 
+3.45.2 | Dropping rows | >>> `df.drop('row index', axis=1, inplace = True)`  | 
 3.46 | Combining dataframes | used to combine 2 or more dataframes into 1 |
 3.46.1 | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])` |
 3.46.2 | join()...have 1 or more common columns | >>>`left_df.set_index(['common_column(s)']).join(right_df.set_index(['same_common_column(s)']))` |
