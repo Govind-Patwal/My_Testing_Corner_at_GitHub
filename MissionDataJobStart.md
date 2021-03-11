@@ -302,7 +302,11 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.55.3 | changing the position of columns in a df | >> 'df = df[['Column in 1st position', 'Column in 2nd position', 'Column in 3rd position']] |
 **4.0** | ***Matplotlib*** | Source - https://bootcamp.learn.utoronto.ca/data/  | 
 4.1 | importing the library | >>> `import matplotlib.pyplot as plt` (nextline) >>> `%matplotlib inline` | 
-4.2 | | | 
+4.2 | showing the plot...at the end of the code| >>> `plt.show()` | 
+4.3 | line charts commands | | 
+4.3.1 | changing the size of graph in pixels...this goes as the first line while plotting the graph | >>> plt.figure(figsize=(w, h)) | 
+4.3.2 | plotting the graph | >>> `plt.plot(x_axis, y_axis, label='name_of_legend', marker = '*', color = 'green', linewidth = 2)` | 
+>>> `plt.plot(x_axis, y_axis, label='', color ='', market ='', linewidth = 4)`  | 
 z.0 | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
