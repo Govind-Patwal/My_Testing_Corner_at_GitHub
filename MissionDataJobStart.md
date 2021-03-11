@@ -300,7 +300,10 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.55.1 | selecting columns from a df | >>> `df = df[['Column1', 'Column2', 'Column3']]` | 
 3.55.2 | dropping columns from a df | >>> 'df = df.drop('column1, axis=1, inplace=True) | 
 3.55.3 | changing the position of columns in a df | >> 'df = df[['Column in 1st position', 'Column in 2nd position', 'Column in 3rd position']] |
-**4.0** | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
+**4.0** | ***Matplotlib*** | Source - https://bootcamp.learn.utoronto.ca/data/  | 
+4.1 | importing the library | >>> `import matplotlib.pyplot as plt` (nextline) >>> `%matplotlib inline` | 
+4.2 | | | 
+z.0 | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
 4.3 | Why Django | Fast, many available components, Security, Scalability
