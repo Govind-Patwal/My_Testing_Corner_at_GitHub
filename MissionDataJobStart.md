@@ -330,7 +330,7 @@ z.0 | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and http
 Video tutorials can also break things down when I am stuck - https://www.youtube.com/watch?v=7HN-4Df8ZpA
 
 
-
+- Clone of good apps - https://www.sparkouttech.com/grubhub-clone/
 
 
 
