@@ -305,8 +305,15 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 4.2 | showing the plot...at the end of the code| >>> `plt.show()` | 
 4.3 | line charts commands | | 
 4.3.1 | changing the size of graph in pixels...this goes as the first line while plotting the graph | >>> plt.figure(figsize=(w, h)) | 
-4.3.2 | plotting the graph | >>> `plt.plot(x_axis, y_axis, label='name_of_legend', marker = '*', color = 'green', linewidth = 2)` | 
->>> `plt.plot(x_axis, y_axis, label='', color ='', market ='', linewidth = 4)`  | 
+4.3.2 | basic plotting of the graph | >>> `plt.plot(x_axis, y_axis)` | 
+4.3.2.1 | adding to the basic plot | >>> `plt.plot(x_axis, y_axis, label='name_of_legend', marker = '*', color = 'green', linewidth = 2)` ...label has to be followed on the next line by >>> `plt.legend()` | 
+4.3.3 | >>> `plt.xlim(min, max)` | setting the minimum and maximum limit of x-axis | 
+4.3.4 | >>> `plt.ylim(min, max)` | setting the minimum and maximum limit of y-axis | 
+4.3.5 | >>> `plt.xlabel('X-label')` | x-axis label | 
+4.3.6 | >>> `plt.ylabel('Y-label')` | y-axis label | 
+4.3.7 | >>> `plt.title('Title')` | Title of the graph | 
+4.3.8 | >>> `plt.grid()` | addign grid to the chart | 
+4.3.9 | >>> `plt.savefig('add the path with the extension)` | ... at the end of the code, save the chart with the extension | 
 z.0 | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and https://www.youtube.com/watch?v=F5mRW0jo-U4 and https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p | The most popular web-dev framework for Python
 4.1 | MVC in other back-end languages to build good web-dev application - Model View Controller - Model for data, View for HTML format, and Controller to control the entire operation | 
 4.2 | In Django we have MVT | Model, View, Template | 
