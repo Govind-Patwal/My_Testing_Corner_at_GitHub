@@ -70,7 +70,7 @@ Wk | Dates | Planned | Executed | Evaluation
 10 | 2021/02/15 - 2021/02/21 | | ## CanEx Week 3: classes + assignments  ## Mon, Feb 15 (Family Day) - Python(kaggle) + Python(Bootcamp) ## February 16th - CareerService - Resume/GitHub/LinkedIn/Brand-Statement, all became employer-competitive ### Feb 16th - xCS call - 8 PM, Feb 17th - xCS call @ 5 PM ## Wkend - a little Python classes 'Corey Schafer' + misc(RRSP + transfers + online shopping) + relaxation (snow mountain on Feb/20/2021) |
 11 | 2021/02/22 - 2021/02/28 | | ## CanEx Week 4: classes + assignments  ## Feb 24, Careeer Services session ## Feb 25 - talked to Career Director ## Wkend - started Pandas (Bootcamp)  |     
 12 | 2021/03/01 - 2021/03/07 | | ## CanEx Week 5: classes + assignments ## Finished kaggle Pandas |
-13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1: ## to finish Bootcamp - Module 4-Pandas - https://bootcampspot.instructure.com/courses/193/pages/4-dot-5-1-find-missing-values?module_item_id=56647      |
+13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1:  ## Finished CheprEats assignment ## Finished Bootcamp's - Module 4-Pandas, started Module 5 - Matplotlib |
 14 | 2021/03/15 - 2021/03/21 | |    |
 15 | 2021/03/22 - 2021/03/28 | |    |
 ---
@@ -305,7 +305,7 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 4.2 | showing the plot...at the end of the code| >>> `plt.show()` | 
 4.3 | line charts commands | | 
 4.3.1 | changing the size of graph in pixels...this goes as the first line while plotting the graph | >>> plt.figure(figsize=(w, h)) | 
-4.3.2 | basic plotting of the graph | >>> `plt.plot(x_axis, y_axis)` | 
+4.3.2 | basic plotting of the graph | >>> `plt.plot(x_axis, y_axis)` ...x_axis and y_axis are lists of equal length ...x_axis = [], y_axis = [] | 
 4.3.2.1 | adding to the basic plot | >>> `plt.plot(x_axis, y_axis, label='name_of_legend', marker = '*', color = 'green', linewidth = 2)` ...label has to be followed on the next line by >>> `plt.legend()` | 
 4.3.3 | >>> `plt.xlim(min, max)` | setting the minimum and maximum limit of x-axis | 
 4.3.4 | >>> `plt.ylim(min, max)` | setting the minimum and maximum limit of y-axis | 
