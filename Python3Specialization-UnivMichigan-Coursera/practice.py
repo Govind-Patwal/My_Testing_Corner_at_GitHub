@@ -19,11 +19,19 @@
 
 # While can be used if you want to stop something when the user is going to stop something
 
-list1 = []
-item = ''
-while item != 'done':
-    print('Choose an item:' )
-    item = input()
-    if item != 'done':
-        list.append(item)
-print(list1)
+# list1 = []
+# item = ''
+# while item != 'done':
+#     print('Choose an item:' )
+#     item = input()
+#     if item != 'done':
+#         list.append(item)
+# print(list1)
+
+
+######################################################
+####                                              ####    
+####          commenting can be fun               ####
+######################################################
+
+print('I love commenting')  # it is real fun

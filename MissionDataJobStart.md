@@ -196,7 +196,10 @@ Number | Topic | Comments | Misc
 2.42.1 | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
 2.42.2 | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
 2.43 | ***Python 3 specializaion - Coursera*** | https://www.coursera.org/specializations/python-3-programming | 
-2.44 | error types | Syntax errors, runtime errors, symantic errors | 
+2.44 | 3 types of programming types | Syntax errors, runtime errors/exception, symantic errors | 
+2.44.1 | runtime error or exception | An error that does not occur until the program has started to execute but that prevents the program from continuing. | 
+2.44.2 | semantic error | An error in a program that makes it do something other than what the programmer intended. |
+2.44.3 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
 Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
 2.43.2 | Instances | The class (blueprint) is used to create an instance of the class...each unique employee/student record that we create is an instance of the class  |
