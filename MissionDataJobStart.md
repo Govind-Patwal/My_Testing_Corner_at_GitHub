@@ -70,8 +70,8 @@ Wk | Dates | Planned | Executed | Evaluation
 10 | 2021/02/15 - 2021/02/21 | | ## CanEx Week 3: classes + assignments  ## Mon, Feb 15 (Family Day) - Python(kaggle) + Python(Bootcamp) ## February 16th - CareerService - Resume/GitHub/LinkedIn/Brand-Statement, all became employer-competitive ### Feb 16th - xCS call - 8 PM, Feb 17th - xCS call @ 5 PM ## Wkend - a little Python classes 'Corey Schafer' + misc(RRSP + transfers + online shopping) + relaxation (snow mountain on Feb/20/2021) |
 11 | 2021/02/22 - 2021/02/28 | | ## CanEx Week 4: classes + assignments  ## Feb 24, Careeer Services session ## Feb 25 - talked to Career Director ## Wkend - started Pandas (Bootcamp)  |     
 12 | 2021/03/01 - 2021/03/07 | | ## CanEx Week 5: classes + assignments ## Finished kaggle Pandas |
-13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1:  ## Finished CheprEats assignment ## Finished Bootcamp's - Module 4-Pandas, started Module 5 - Matplotlib |
-14 | 2021/03/15 - 2021/03/21 | |    |
+13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1:  ## Finished CheaprEats assignment ## Finished Bootcamp's - Module 4-Pandas, started Module 5 - Matplotlib |
+14 | 2021/03/15 - 2021/03/21 | | ## CanEx Week 7: No classes + No assignments ## Realized that CheaprEats is a waste of time and efforts ## stressed out on Friday during CanEx class ## Weekend - Took time out to plan the direction of life - have to finish a Python course from Univeristy of Michigan https://www.coursera.org/specializations/python-3-programming , work on projects and then apply for Python projects -> Current Job (become the top ISR) ## wrote email to CALC ## First day out w/ family in Spring 2021 |
 15 | 2021/03/22 - 2021/03/28 | |    |
 ---
 
@@ -195,7 +195,8 @@ Number | Topic | Comments | Misc
 2.42 | **Python and Object Oriented Programming** | Everything in python is an object, objects carry some things aroud with them, this 'thing' can be accessed using the dot syntax
 2.42.1 | Attributes - non-function things attached to an object | eg, numbers in python have a imaginary part, which can be accessed using `print(<number>.imag)` e.g. >>> `print(4.imag)`, the imaginary part of real numbers is 0. Creating an imaginary number >>> `c = 12 + 3j`   (the key is j, nothing else will work), printing the imaginary part of c, >>> `print(c.imag)` |
 2.42.2 | Methods - Functions attached to an Object are called  | if you want to access a function, use `<object>.<method>`, eg >>> `4.bit_length`...in order to call the function, use the paranthesis, eg >>> `4.bit_length()` |
-2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
+2.43 | Python 3 specializaion - Coursera | https://www.coursera.org/specializations/python-3-programming | 
+Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
 2.43.2 | Instances | The class (blueprint) is used to create an instance of the class...each unique employee/student record that we create is an instance of the class  |
 2.43.3 | Class variables and Instance variables | one way is to create an empty class and then instantiate an instance and create individual instance variable and give them values >>>`class Employee:` (nextline) `pass`  ... instantiating - >>>> `emp_1 = Employee()` ...giving values >>> `emp_1.first = 'Govind'` | 
