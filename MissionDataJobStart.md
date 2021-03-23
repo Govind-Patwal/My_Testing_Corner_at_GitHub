@@ -208,6 +208,7 @@ Number | Topic | Comments | Misc
 2.45.1 | % (mod/moudulus) operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
 2.46 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
 2.47 | reassignment | python variables can be reassigned | data1 = 12, data1 = 13 |
+2.48 | updating a variable | x = x+1, x += 1, incremening/decrementing...bumping is increasing by 1 | 
 
 
 2.47 | Function Calls | function_name, one or multiple arguments, code, ONLY 1 return value | 
