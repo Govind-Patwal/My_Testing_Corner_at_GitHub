@@ -200,6 +200,12 @@ Number | Topic | Comments | Misc
 2.44.1 | runtime error or exception | An error that does not occur until the program has started to execute but that prevents the program from continuing. | 
 2.44.2 | semantic error | An error in a program that makes it do something other than what the programmer intended. |
 2.44.3 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
+2.44.4 | values and value types | int = integer, float = floating point number, strings |
+2.45 | operators and operands | + - * / (division) % (reminder) // (truncated) ** (exponentiation) |
+2.46 | order of operands | Parenthesis, Exponentiation, Multication and Division, Addiiton and Subtraction |
+2.47 | Function Calls | function_name, one or multiple arguments, code, ONLY 1 return value | 
+2.47.1 | ONLY print(function_name) | this will not return the result, but will let us know the type of object function_name is ... it is a `<function>` | 
+2.47.2 | to return the value of a fn | we need to have the argument inside the function...print (function_name(arguments)) | 
 Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
 2.43.2 | Instances | The class (blueprint) is used to create an instance of the class...each unique employee/student record that we create is an instance of the class  |
