@@ -200,11 +200,15 @@ Number | Topic | Comments | Misc
 2.44.1 | runtime error or exception | An error that does not occur until the program has started to execute but that prevents the program from continuing. | 
 2.44.2 | semantic error | An error in a program that makes it do something other than what the programmer intended. |
 2.44.3 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
-2.44.4 | values and value types | int = integer, float = floating point number, strings |
-2.45 | operators and operands | + - * / (division) % (reminder) // (truncated) ** (exponentiation) |
+2.44.4 | values and value types | int = integer, float = floating point number, strings ...to find the type >>> type(23) >>> type('Hello World) >>> type(3.14) |
+2.44.5 | strings can be enclosed in | single quotes OR double quotes OR three single/double quotes ...triple quotes strings can span multiple lines | 
+2.44.6 | Type conversion functions | str(), float(), int() | 
+2.44.6.1 | common usage of str conversion str() | in print statement to print integers >>>`print('this is the result' + str(10) + 'and then ..')`
+2.45 | operators and operands | + - * / (division) % (modulus/reminder/integer reminder) // (truncated div operator does not round) ** (exponentiation) ...// also works for floats, it returns a float |
+2.45.1 | reminder operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
 2.46 | order of operands | Parenthesis, Exponentiation, Multication and Division, Addiiton and Subtraction |
 2.47 | Function Calls | function_name, one or multiple arguments, code, ONLY 1 return value | 
-2.47.1 | ONLY print(function_name) | this will not return the result, but will let us know the type of object function_name is ... it is a `<function>` | 
+2.47.1 | Functions are objects; parentheses invoke functions | print(function_name) will not return anything, but will let us know the type of object function_name is ... it is a `<function>` | 
 2.47.2 | to return the value of a fn | we need to have the argument inside the function...print (function_name(arguments)) | 
 Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
