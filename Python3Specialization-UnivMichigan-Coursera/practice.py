@@ -1,4 +1,2 @@
-print(100)
-print(3.14)
-print('Hello World')
-print(  (100 + 200) /2  )
+n = 16 - 2 * 5 // 3 + 1
+print(n)

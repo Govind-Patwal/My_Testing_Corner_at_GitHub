@@ -204,9 +204,12 @@ Number | Topic | Comments | Misc
 2.44.5 | strings can be enclosed in | single quotes OR double quotes OR three single/double quotes ...triple quotes strings can span multiple lines | 
 2.44.6 | Type conversion functions | str(), float(), int() | 
 2.44.6.1 | common usage of str conversion str() | in print statement to print integers >>>`print('this is the result' + str(10) + 'and then ..')`
-2.45 | operators and operands | + - * / (division) % (modulus/reminder/integer reminder) // (truncated div operator does not round) ** (exponentiation) ...// also works for floats, it returns a float |
-2.45.1 | reminder operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
-2.46 | order of operands | Parenthesis, Exponentiation, Multication and Division, Addiiton and Subtraction |
+2.45 | operators and operands | Operators are + - * / (division) % (modulus/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
+2.45.1 | % (mod/moudulus) operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
+2.46 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
+2.47 | reassignment | python variables can be reassigned | data1 = 12, data1 = 13 |
+
+
 2.47 | Function Calls | function_name, one or multiple arguments, code, ONLY 1 return value | 
 2.47.1 | Functions are objects; parentheses invoke functions | print(function_name) will not return anything, but will let us know the type of object function_name is ... it is a `<function>` | 
 2.47.2 | to return the value of a fn | we need to have the argument inside the function...print (function_name(arguments)) | 
