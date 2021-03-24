@@ -9,8 +9,8 @@
 # print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
 
 import turtle
-wn = turtle.Screen()
-wn.bgcolor('Blue')          # set the screen color as Blue
+window = turtle.Screen()
+window.bgcolor('Blue')          # set the screen color as Blue
 
 dia = turtle.Turtle()       # create an instance of the class Turtle and name it dia
 dia.color('white')          # color dia white
@@ -46,3 +46,4 @@ aryan.forward(50)
 ayaansh.left(120)
 ayaansh.forward(50)
 
+window.exitonclick()
