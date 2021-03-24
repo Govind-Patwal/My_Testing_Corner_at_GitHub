@@ -1,20 +1,20 @@
-# total_secs = int(input("Please enter the number of seconds you wish to convert"))
+''' program to create a graphic on screen using python module turtle, 
+    the program asks the user to choose the color of the screen, 
+    the color of the pen, and the width of the pen
+'''    
 
+import turtle                   # import the module/library turtle
+user_screen_color = input('Enter the screen color: ') # enter te screen color
+turtle_pen_color = input('Enter pen color: ') # enter the color of the pen
+turtle_pen_size = int(input('Enter size: ')) # enter the size of the pen
 
-# hours = total_secs // 3600
-# secs_still_remaining = total_secs % 3600
-# minutes =  secs_still_remaining // 60
-# secs_finally_remaining = secs_still_remaining  % 60
+window = turtle.Screen()    # create an instance of the class Screen
+window.bgcolor(user_screen_color)  # set the attribute of the instance
 
-# print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
-
-import turtle
-window = turtle.Screen()
-window.bgcolor('Blue')          # set the screen color as Blue
-
-dia = turtle.Turtle()       # create an instance of the class Turtle and name it dia
-dia.color('white')          # color dia white
-dia.pensize(4)            # set the width to 4
+dia = turtle.Turtle()       # create an instance of the class Turtle 
+dia.color(turtle_pen_color)          # set the user inputted color
+dia.pensize(turtle_pen_size)            # set the user inputted size
+dia.shape('turtle')
 
 aryan = turtle.Turtle()     # second instance of class Turtle
 aryan.color('pink')         # set the color to pink
@@ -45,5 +45,31 @@ aryan.left(120)
 aryan.forward(50)
 ayaansh.left(120)
 ayaansh.forward(50)
+
+
+
+dia.up()
+dia.forward(150)
+dia.down()
+
+distance = 1
+for _ in range(360):
+    dia.forward(distance)
+    dia.right(1)
+    # distance = distance + 10
+
+
+dia.left(100)
+
+dia.up()
+dia.forward(150)
+dia.down()
+
+distance = 1
+for _ in range(360):
+    dia.forward(distance)
+    dia.right(1)
+    # distance = distance + 10
+
 
 window.exitonclick()
