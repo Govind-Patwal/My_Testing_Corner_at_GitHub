@@ -209,9 +209,10 @@ Number | Topic | Comments | Misc
 2.46 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
 2.47 | reassignment | python variables can be reassigned | data1 = 12, data1 = 13 |
 2.48 | updating a variable | x = x+1, x += 1, incremening/decrementing...bumping is increasing by 1 | 
-2.49 | working with lists | concatenating using + >>> `biglist = list1 + list 2` ...repetition using * >>> `big_list = list*5`
-2.50 | .count() with string and list | counts the number of occurance in a string or list... >>> `string.count('alphabet(s)')` ... >>> `list.count(element)` |
-2.50 | .index() with string and list | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.count(element)` |  
+2.49 | concatenating and repeating - strings, lists, tuples | concatenating using + >>> `new_string/list/tuple = string1/list1/tuple1 + string2/list2/tuple2` ...repetition using * >>> `new_string/list/tuple = string/list/tuple*5`
+2.50 | .count() with string, list, tuple | counts the number of occurance in a string or list... >>> `string.count('alphabet(s)')` ... >>> `list.count(element)` ... >>> `tuple.count(element)`|
+2.50 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` |  
+2.51 | using .split() to split a string into a list | >>> `string.split('split at')`...the default split is a whitespace, but it can be any character or combination of characters, like / - a ab in , : | 
 
 Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |

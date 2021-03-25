@@ -1,7 +1,6 @@
-import random
+test1 = 'this is a good day. '
+test2 = 'this is a Thursday'
+test3 = test1 * 3
+print(test3)
 
 
-
-for i in range(10):
-    num = random.randrange(26,35)
-    print(num
