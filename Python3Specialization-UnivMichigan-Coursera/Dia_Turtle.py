@@ -14,7 +14,6 @@ window.bgcolor(user_screen_color)  # set the attribute of the instance
 dia = turtle.Turtle()       # create an instance of the class Turtle 
 dia.color(turtle_pen_color)          # set the user inputted color
 dia.pensize(turtle_pen_size)            # set the user inputted size
-dia.shape('turtle')
 
 aryan = turtle.Turtle()     # second instance of class Turtle
 aryan.color('pink')         # set the color to pink
@@ -51,6 +50,8 @@ ayaansh.forward(50)
 dia.up()
 dia.forward(150)
 dia.down()
+dia.shape('circle')
+dia.speed(0)
 
 distance = 1
 for _ in range(360):
@@ -59,16 +60,22 @@ for _ in range(360):
     # distance = distance + 10
 
 
-dia.left(100)
+dia.left(180)
 
 dia.up()
 dia.forward(150)
-dia.down()
+# dia.down()
 
-distance = 1
-for _ in range(360):
+dia.shape('turtle')
+dia.color('black')
+
+
+distance += 4
+for _ in range(30):
     dia.forward(distance)
-    dia.right(1)
+    dia.stamp()
+    dia.right(24)
+    distance +=2
     # distance = distance + 10
 
 
