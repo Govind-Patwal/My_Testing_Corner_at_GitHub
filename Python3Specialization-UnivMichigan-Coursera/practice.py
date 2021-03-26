@@ -28,4 +28,5 @@
 #     val = val + "!"
 #     print(
 
-print('' in 'apple')
+ ====== conditional execution ==============
+ finished - https://www.coursera.org/learn/python-basics/lecture/8Kach/conditional-execution
