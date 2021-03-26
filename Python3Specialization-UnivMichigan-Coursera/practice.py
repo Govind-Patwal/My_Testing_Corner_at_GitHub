@@ -1,6 +1,27 @@
-test1 = 'this is a good day. '
-test2 = 'this is a Thursday'
-test3 = test1 * 3
-print(test3)
+# x = range(5)
+# print(x)
+# print(type(x))
+# print(' ==== y ==========')
+# y = list(x)
+# print(y)
+# print(type(y))
+# # print(y)
+# # # print(z)
+# # print(type(x))
 
+# # print(type(z))
 
+# x = 'my name is govind'
+# print(type(x))
+
+# y = list(x)
+# print(type(y))
+# print(y)
+
+# z=x.split('m')
+# print(type(z))
+# print(z)
+
+s = "python"
+for idx in range(len(s)):
+   print(s[idx % 2])

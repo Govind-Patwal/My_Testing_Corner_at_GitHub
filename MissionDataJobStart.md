@@ -202,7 +202,7 @@ Number | Topic | Comments | Misc
 2.44.3 | semantic error | An error in a program that makes it do something other than what the programmer intended. |
 2.44.4 | values and value types | int = integer, float = floating point number, strings ...to find the type >>> type(23) >>> type('Hello World) >>> type(3.14) |
 2.44.5 | strings can be enclosed in | single quotes OR double quotes OR three single/double quotes ...triple quotes strings can span multiple lines | 
-2.44.6 | Type conversion functions | str(), float(), int() | 
+2.44.6 | Type conversion functions | str(), float(), int(), list() | 
 2.44.6.1 | common usage of str conversion str() | in print statement to print integers >>>`print('this is the result' + str(10) + 'and then ..')`
 2.45 | operators and operands | Operators are + - * / (division) % (modulus/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
 2.45.1 | % (mod/moudulus) operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
@@ -213,6 +213,7 @@ Number | Topic | Comments | Misc
 2.50 | .count() with string, list, tuple | counts the number of occurance in a string or list... >>> `string.count('alphabet(s)')` ... >>> `list.count(element)` ... >>> `tuple.count(element)`|
 2.50 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` |  
 2.51 | using .split() to split a string into a list | >>> `string.split('split at')`...the default split is a whitespace, but it can be any character or combination of characters, like / - a ab in , : | 
+2.51.1 | using .join() to join a list into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') | 
 
 Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
