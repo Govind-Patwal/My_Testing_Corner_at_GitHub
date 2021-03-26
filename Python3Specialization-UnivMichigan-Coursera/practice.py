@@ -22,9 +22,10 @@
 # print(type(z))
 # print(z)
 
-item = ["M", "I", "S", "S", "O", "U", "R", "I"]
-for val in item:
-    print(val)
-    val = val + "!"
-    print(val)
+# item = ["M", "I", "S", "S", "O", "U", "R", "I"]
+# for val in item:
+#     print(val)
+#     val = val + "!"
+#     print(
 
+print([] in [1,2,3, []])
