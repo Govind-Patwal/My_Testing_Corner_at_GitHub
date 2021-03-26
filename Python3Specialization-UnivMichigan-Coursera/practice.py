@@ -28,4 +28,4 @@
 #     val = val + "!"
 #     print(
 
-print([] in [1,2,3, []])
+print('' in 'apple')
