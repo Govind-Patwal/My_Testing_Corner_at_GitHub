@@ -22,6 +22,9 @@
 # print(type(z))
 # print(z)
 
-s = "python"
-for idx in range(len(s)):
-   print(s[idx % 2])
+item = ["M", "I", "S", "S", "O", "U", "R", "I"]
+for val in item:
+    print(val)
+    val = val + "!"
+    print(val)
+
