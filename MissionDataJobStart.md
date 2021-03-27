@@ -99,7 +99,7 @@ Number | Topic | Comments | Misc
 2.4.2 | writing in multiple lines | >>> `print(f'{value}' <new_line> f'{value}' <new_line> f'{value}')` | 
 2.4.3 | formatting numbers using f-string f'' | >>> `f'{value:,.2f}'` e.g. >>> `f'{23232232.2323232:,.2f}' ....this will have a thousand comma seperator and 2 digits after decimals |
 2.4.4 | formatting numbers using .format(), can also be used to format complete columns using .map | >>> `'{:,.2f} text {:,.2f}  text {:,.2f} ...{:,.2f} '.format(value1, value2, value3,...value_n)` ...advantage over f-string, it can be chained with functions like , >>> `map('{:,.2f}'.format)` | 
-2.5 | operators | +, -, *, /, % (Modulus/Reminder, e.g. 11 % 3 = 2), // (Floor Division/Quotient, e.g. 11 // 3 = 3, same result as int(11/3)), ** (Exponent, e.g 2**3 = 8) |
+2.5 | operators | +, -, *, /, % (Mod/Modulus/Reminder, e.g. 11 % 3 = 2), // (Floor Division/Quotient, e.g. 11 // 3 = 3, same result as int(11/3)), ** (Exponent, e.g 2**3 = 8) |
 2.6 | PEMDAS | Parentheses, Exponent, Multiplication, Division, Addition, Subtraction |
 2.7 | Python built-in function | min(1,5,6,7,8) , max(1,2,4,65), abs(-34) |
 2.9 | Convert to int, float, str, bool | x = int('223') OR float(10) OR str(10) OR bool(10)...for bool, only the number 0 is False, for strings only empty string is False (even a whitespace is TRUE)...check the outpur using type(x) |
@@ -121,7 +121,7 @@ Number | Topic | Comments | Misc
 2.19.4 | Boolean operator precedence | in the absence of a parenthesis,`and` is evaluated before `or` |
 2.19.5 | Combining Boolean operators | True and True = True, True and False = False, True or True = True, True or False = True |
 2.20 | Conditionals | if <boolean_conditional>:, elif <boolean_conditional>:, else: ...used with Boolean operators/expression/membership operators|
-2.22 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list |
+2.22 | Lists - help(list) | Lists are ordered sequences of values, they are mutable (length and values can be changed). Items in the list can be numbers, strings, lists, variables, or a combination, when no elements are mentioned, it is a empty list ... list[0] is also called list[sub 0] |
 2.22.1 | List - Indexing | indexing starts at zero, so the first element is [0]...indexing ends at -1 so the last element is [-1] ... the list can be accessed in many ways from [0, ..., -1] |
 2.22.2 | List - Slicing, the sliced list is treated as a list | First n elements = list_name[:n], last n elements = list_name[-n:], all elements = list_name[:] Or list_name....when calling list[m:n], it starts from the element at index m...to the element at index (n-1)...just like in range(2,20), so list[4:7] will show elements at index 4 to index 6 = 3 elements |
 2.22.3 | List - adding /changing values | simple reassignment, >>> `list[n] = <value>` ... multiple values at one time >>> `list[:5] = [a,b,c,d,e]` |
@@ -214,11 +214,12 @@ Number | Topic | Comments | Misc
 2.50 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` |  
 2.51 | using .split() to split a string into a list | >>> `string.split('split at')`...the default split is a whitespace, but it can be any character or combination of characters, like / - a ab in , : | 
 2.51.1 | using .join() to join a list into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') | 
-2.52 | list - deleting elements | ...deleting 1 element >>> `del list1[5]` ... deleting multiple elements >>> `del list1[0:3]` |
+2.52 | list - deleting elements using index | ...deleting 1 element >>> `del list1[5]` ... deleting multiple elements >>> `del list1[0:3]` |
+2.52.1 | list - deleting elements using value | ...deleting 1 element >>> `list1.remove['item value']`  |
 2.52.1 | list - deleting using slicing | ....deleting multiple items >>>> `list1[1:5] = []` | 
 2.53.2 | list - adding multiple items at an index | ... `list1[0:0] = [element1, elment2, elementn]` ... | 
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
-2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`, this will create a clone with a new address and independent of the original list |
+2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
 
 Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
