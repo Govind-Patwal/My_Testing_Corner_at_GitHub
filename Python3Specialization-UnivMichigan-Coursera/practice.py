@@ -64,14 +64,11 @@
 # given list
 
 # adding and deleting elements in a list
-
-mylist = []
-mylist.append(5)
-mylist.append(27)
-mylist.append(3)
-mylist.append(12)
-print(mylist)
-
+s = "ball"
+r = ""
+for item in s:
+   r = item.upper() + r
+print(r)
 
 
 
