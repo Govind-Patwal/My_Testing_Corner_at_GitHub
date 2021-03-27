@@ -35,9 +35,42 @@
 # not
 # and or
 
-list1 = [0]
-list2 = list1*5
-print(list2)
+# # usage of enumerate
+
+# # assign values to varable
+# text = 'the quick brown fox jumped over the lazy dog.'
+
+# # GOAL - count the number of vowels in the sentence
+# counter = 0
+# for char in text:
+#     if char in 'a' + 'eiou':
+#         counter += 1
+
+# # print the result
+# print(counter)
+
+# GOAL = finding the max value in a list
+
+
+## loop over sequence/iterables
+
+# to loop over its indexes == use 
+
+
+# GOAL - find the number of words that have either a or e
+
+# GOAL - find the number of words that have either a or e
+
+# given list
+
+# adding and deleting elements in a list
+
+list1 = [1,2,3,3,4,5,56,6,5,6]
+
+del list1[0:3]
+print(list1)
+
+
 
 
 
