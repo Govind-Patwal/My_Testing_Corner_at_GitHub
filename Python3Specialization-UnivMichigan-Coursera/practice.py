@@ -1,70 +1,43 @@
-# x = range(5)
-# print(x)
-# print(type(x))
-# print(' ==== y ==========')
-# y = list(x)
-# print(y)
-# print(type(y))
-# # print(y)
-# # # print(z)
-# # print(type(x))
+# # week 2
 
-# # print(type(z))
+# # sequences - can be iterated, can be referenced using index, can be sliced
+# # strings, lists, tuples
 
-# x = 'my name is govind'
-# print(type(x))
-
-# y = list(x)
-# print(type(y))
-# print(y)
-
-# z=x.split('m')
-# print(type(z))
-# print(z)
-
-# item = ["M", "I", "S", "S", "O", "U", "R", "I"]
-# for val in item:
-#     print(val)
-#     val = val + "!"
-#     print(
-
-# ====== conditional execution ==============
- # finished - https://www.coursera.org/learn/python-basics/lecture/8Kach/conditional-execution
+# print((3.12,) == 3.12)
+# # b = (3,)
+# # c = a + b
+# # print(c)
 
 
- # REvision of yesterday
 
-values and data types
-int, float, str
-int(). float(), str()
+# # b = a + ' but I am happy'
+# # # c = str(b)
+# # # d = ''.join(b)
+# # print(b)
 
-type(1), type(1.1), type('1')
+# week 3
 
-operators
-() *** x /  //(integer division/mod/modulus)  % (reminder)  +  -   
+# for _ in something # use _ when you are not using in the loop
 
-variables can start a....z, A....Z, no special except _, cannot start with a number  _ used in loops __ special
+# for can be used for sequences, lists, tuples, strings # called sequences, iterables
 
-reassignmentuusing = , the RHS is assigned to the LHS and not vice versa
+# i is called the for loop variable or iterator variable
 
-update - 
+# boolean - True or False (upper case)
 
-refrain from hard code
+# print(true)
+# print(True)
 
-turtle - a library native to python to draw graphics
+# False = 0, 0.0 or ''
+# True is any other int, float or str
+# PEMDAS
+# == < <= > >=
+# not
+# and or
 
-import turtle
-window = python.Screen()
-alex = turtle.Turtle()
-alex.forward(50)
-alex.left(30)
-alex(forward(-30))
-alex.left(-30)
-
-alex.up()
-alex.down()
-alex.stamp
-
+list1 = [0]
+list2 = list1*5
+print(list2)
 
 
 
