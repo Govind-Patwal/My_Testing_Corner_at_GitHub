@@ -214,6 +214,11 @@ Number | Topic | Comments | Misc
 2.50 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` |  
 2.51 | using .split() to split a string into a list | >>> `string.split('split at')`...the default split is a whitespace, but it can be any character or combination of characters, like / - a ab in , : | 
 2.51.1 | using .join() to join a list into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') | 
+2.52 | list - deleting elements | ...deleting 1 element >>> `del list1[5]` ... deleting multiple elements >>> `del list1[0:3]` |
+2.52.1 | list - deleting using slicing | ....deleting multiple items >>>> `list1[1:5] = []` | 
+2.53.2 | list - adding multiple items at an index | ... `list1[0:0] = [element1, elment2, elementn]` ... | 
+2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
+2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`, this will create a clone with a new address and independent of the original list |
 
 Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |

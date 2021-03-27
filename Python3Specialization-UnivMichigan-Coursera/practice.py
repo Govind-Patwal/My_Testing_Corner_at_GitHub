@@ -66,9 +66,12 @@
 # adding and deleting elements in a list
 
 list1 = [1,2,3,3,4,5,56,6,5,6]
+list2 = [1,2,3,3,4,5,56,6,5,6]
 
-del list1[0:3]
-print(list1)
+print(list2 is list1)
+list2 = list1
+
+print(list2 is list1)
 
 
 
