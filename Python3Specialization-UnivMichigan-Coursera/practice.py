@@ -65,14 +65,14 @@
 
 # adding and deleting elements in a list
 
-list1 = [1,2,3,3,4,5,56,6,5,6]
-list1_alias = list1
-list1_clone1 = list1[:]
-list1_clone2 = list1 * 1 
+mylist = []
+mylist.append(5)
+mylist.append(27)
+mylist.append(3)
+mylist.append(12)
+print(mylist)
 
-print(list1_alias is list1)
-print(list1_clone1 is list1)
-print(list1_clone2 is list1)
+
 
 
 

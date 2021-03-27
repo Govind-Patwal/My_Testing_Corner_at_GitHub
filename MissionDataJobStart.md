@@ -82,6 +82,7 @@ Wk | Dates | Planned | Executed | Evaluation
 Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.0 | Python Interview | https://www.youtube.com/watch?v=DEwgZNC-KyE&t=67s | 
+0.o.1 | chekcing the id of an object | >>> `id(object)` | 
 0.0.1 | Debugging | when faced with an error in python, make sure you also check the line above the line w/ error, many times a missed `)` might show up as an error on the next line ... second if it is related to a missed bracket, if you miss the first one, the next one will be highlighted, if you  miss you the second one, then the one right after it will be highlighted|
 1 | Checking the version of Python in Windows | windows cmd -> `python --version` |
 1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
@@ -214,10 +215,26 @@ Number | Topic | Comments | Misc
 2.50 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` |  
 2.51 | using .split() to split a string into a list | >>> `string.split('split at')`...the default split is a whitespace, but it can be any character or combination of characters, like / - a ab in , : | 
 2.51.1 | using .join() to join a list into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') | 
-2.52 | list - deleting elements using index | ...deleting 1 element >>> `del list1[5]` ... deleting multiple elements >>> `del list1[0:3]` |
-2.52.1 | list - deleting elements using value | ...deleting 1 element >>> `list1.remove['item value']`  |
-2.52.1 | list - deleting using slicing | ....deleting multiple items >>>> `list1[1:5] = []` | 
-2.53.2 | list - adding multiple items at an index | ... `list1[0:0] = [element1, elment2, elementn]` ... | 
+2.52 | ***LIST METHODS*** | |
+2.52.1 | LIST - adding a element at the end of the list | >>> `list1.append(value)`
+2.52.2 | LIST - adding an element at an index | >>> `list1.insert(<index>, value)` |
+2.53.3 | LIST - adding multiple items at an index | ... >>> `list1[0:0] = [element1, elment2, elementn]` ... | 
+2.53.4 | LIST - deleting the last element | >>> list1.pop() |
+2.53.4.1 | LIST - using POP to return element at an index | >>> `list.pop(3)` |
+2.53.5 | LIST - deleting elements using index | ...deleting 1 element >>> `del list1[5]` ... deleting multiple elements >>> `del list1[0:3]` |
+2.52.6 | LIST - deleting elements using value | ...deleting 1st element >>> `list1.remove('item value')`  |
+2.52.7 | LIST - sorting in ascending | >>> `list1.sort()` |
+2.52.8 | LIST - reversing | >>> `list1.reverse()` |
+2.52.9 | LIST - finding the index of the 1st occurance of an element | >>> `list1.index(value)` |
+2.52.10 | LIST - finding the count of elements | >>> `list1.count(value)` | 
+2.53 | ***STRING METHODS*** | |
+2.53.1 | STRING - .upper() and .lower() | string1.upper() changes to all upercase, string1.lower() changes to all uppercase | 
+2.53.2 | STRING: .count('char') | >>> `string.count('character(s)')`, counts the number of times a character appeared | 
+2.53.3 | STRING: .strip() | string.strip() removes any white spaces before and after the actual characters, for example '   this is a string   ' will be changed to 'this is a string'
+2.53.4 | STRING: .replace(, ) | >>> `string.replace('char(s)', 'repalcement')`  | 
+2.53.5 | STRING: index('char(s)') | >>> `string.index('boy')` ... will return the first occurance of the variable | 
+2.53.6 | STRING: format string ...format(var1, var2) | >>> print("This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) )
+
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
 2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
 
