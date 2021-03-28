@@ -80,11 +80,11 @@ Wk | Dates | Planned | Executed | Evaluation
 - https://www.kaggle.com/learn/overview
 
 ---
-***Univeristy of Michigan - Python Specialization***
+***Univeristy of Michigan - Python 3 Specialization***
 Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.1 | Univeristy of Michigan - Python Specialization | |
-1 | 1/5 - Python Basics | https://www.coursera.org/specializations/python-3-programming |
+1 | **1/5 - Python Basics** | https://www.coursera.org/specializations/python-3-programming |
 2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
 2.44.1 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
 2.44.2 | runtime error or exception | An error that does not occur until the program has started to execute but that prevents the program from continuing. | 
@@ -123,11 +123,10 @@ Number | Topic | Comments | Misc
 2.53.3 | STRING: .strip() | string.strip() removes any white spaces before and after the actual characters, for example '   this is a string   ' will be changed to 'this is a string'
 2.53.4 | STRING: .replace(, ) | >>> `string.replace('char(s)', 'repalcement')`  | 
 2.53.5 | STRING: index('char(s)') | >>> `string.index('boy')` ... will return the first occurance of the variable | 
-2.53.6 | STRING: format string ...string.format(var1, var2) | >>> string1 = "This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) |
-
+2.53.6 | STRING: format string ...string.format(var1, var2) | >>> string1 = "This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) | 
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
 2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
-2 | 2/5 - Python Functions, Files, and Dictionaries | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
+2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
 
 
 Number | Topic | Comments | Misc
