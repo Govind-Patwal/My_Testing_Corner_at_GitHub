@@ -79,12 +79,55 @@ Wk | Dates | Planned | Executed | Evaluation
 **Credits**
 - https://www.kaggle.com/learn/overview
 
-
+---
+***Univeristy of Michigan - Python Specialization***
 Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.1 | Univeristy of Michigan - Python Specialization | |
-1 | 1/5 - Python Basics | |
-2 | 2/5 - Python Functions, Files, and Dictionaries | | 
+1 | 1/5 - Python Basics | https://www.coursera.org/specializations/python-3-programming |
+2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
+2.44.1 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
+2.44.2 | runtime error or exception | An error that does not occur until the program has started to execute but that prevents the program from continuing. | 
+2.44.3 | semantic error | An error in a program that makes it do something other than what the programmer intended. |
+2.44.4 | values and value types | int = integer, float = floating point number, strings ...to find the type >>> type(23) >>> type('Hello World) >>> type(3.14) |
+2.44.5 | strings can be enclosed in | single quotes OR double quotes OR three single/double quotes ...triple quotes strings can span multiple lines | 
+2.44.6 | Type conversion functions | str(), float(), int(), list() | 
+2.44.6.1 | common usage of str conversion str() | in print statement to print integers >>>`print('this is the result' + str(10) + 'and then ..')`
+2.45 | operators and operands | Operators are + - * / (division) % (modulus/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
+2.45.1 | % (mod/moudulus) operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
+2.46 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
+2.47 | reassignment | python variables can be reassigned | data1 = 12, data1 = 13 |
+2.48 | updating a variable | x = x+1, x += 1, incremening/decrementing...bumping is increasing by 1 | 
+2.49 | concatenating and repeating - strings, lists, tuples | concatenating using + >>> `new_string/list/tuple = string1/list1/tuple1 + string2/list2/tuple2` ...repetition using * >>> `new_string/list/tuple = string/list/tuple*5`
+2.50 | .count() with string, list, tuple | counts the number of occurance in a string or list... >>> `string.count('alphabet(s)')` ... >>> `list.count(element)` ... >>> `tuple.count(element)`|
+2.50 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` |  
+2.51 | using .split() to split a string into a list | >>> `string.split('split at')`...the default split is a whitespace, but it can be any character or combination of characters, like / - a ab in , : | 
+2.51.1 | using .join() to join a list into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') | 
+2.52 | ***LIST METHODS*** | |
+2.52.1 | LIST - adding a element at the end of the list | >>> `list1.append(value)`
+2.52.2 | LIST - adding an element at an index | >>> `list1.insert(<index>, value)` |
+2.53.3 | LIST - adding multiple items at an index | ... >>> `list1[0:0] = [element1, elment2, elementn]` ... | 
+2.53.4 | LIST - deleting the last element | >>> list1.pop() |
+2.53.4.1 | LIST - using POP to return element at an index | >>> `list.pop(3)` |
+2.53.5 | LIST - deleting elements using index | ...deleting 1 element >>> `del list1[5]` ... deleting multiple elements >>> `del list1[0:3]` |
+2.52.6 | LIST - deleting elements using value | ...deleting 1st element >>> `list1.remove('item value')`  |
+2.52.7 | LIST - sorting in ascending | >>> `list1.sort()` |
+2.52.8 | LIST - reversing | >>> `list1.reverse()` |
+2.52.9 | LIST - finding the index of the 1st occurance of an element | >>> `list1.index(value)` |
+2.52.10 | LIST - ACCUMULATOR | |
+2.52.10.1 | list1.append() | | 
+2.52.10 | LIST - finding the count of elements | >>> `list1.count(value)` | 
+2.53 | ***STRING METHODS*** | |
+2.53.1 | STRING - .upper() and .lower() | string1.upper() changes to all upercase, string1.lower() changes to all uppercase | 
+2.53.2 | STRING: .count('char') | >>> `string.count('character(s)')`, counts the number of times a character appeared | 
+2.53.3 | STRING: .strip() | string.strip() removes any white spaces before and after the actual characters, for example '   this is a string   ' will be changed to 'this is a string'
+2.53.4 | STRING: .replace(, ) | >>> `string.replace('char(s)', 'repalcement')`  | 
+2.53.5 | STRING: index('char(s)') | >>> `string.index('boy')` ... will return the first occurance of the variable | 
+2.53.6 | STRING: format string ...string.format(var1, var2) | >>> string1 = "This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) |
+
+2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
+2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
+2 | 2/5 - Python Functions, Files, and Dictionaries | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
 
 
 Number | Topic | Comments | Misc
