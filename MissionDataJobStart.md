@@ -96,7 +96,7 @@ Number | Topic | Comments | Misc
 2.45 | operators and operands | Operators are + - * / (division) % (modulus/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
 2.45.1 | % (mod/moudulus) operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
 2.46 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
-2.47 | reassignment | python variables can be reassigned | data1 = 12, data1 = 13 |
+2.47 | reassignment | python variables can be reassigned ...data1 = 12, data1 = 13 |
 2.48 | updating a variable | x = x+1, x += 1, incremening/decrementing...bumping is increasing by 1 | 
 2.49 | concatenating and repeating - strings, lists, tuples | concatenating using + >>> `new_string/list/tuple = string1/list1/tuple1 + string2/list2/tuple2` ...repetition using * >>> `new_string/list/tuple = string/list/tuple*5`
 2.50 | .count() with string, list, tuple | counts the number of occurance in a string or list... >>> `string.count('alphabet(s)')` ... >>> `list.count(element)` ... >>> `tuple.count(element)`|
@@ -127,6 +127,8 @@ Number | Topic | Comments | Misc
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
 2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
 2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
+2.1 | Reading a file | | 
+
 
 
 Number | Topic | Comments | Misc
