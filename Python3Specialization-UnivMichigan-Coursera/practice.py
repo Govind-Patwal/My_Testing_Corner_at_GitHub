@@ -64,11 +64,20 @@
 # given list
 
 # adding and deleting elements in a list
-s = "ball"
-r = ""
-for item in s:
-   r = item.upper() + r
-print(r)
+# GOAL: checking a string for palindrome
+
+# Step1: enter a sentence
+p_phrase = "was it a car or a cat I saw"
+
+# Step2: reverse the sentence by converting to a list and then reversing the list
+# Step 2a: convert the sentence to a list of words
+p_phrase_to_list = list(p_phrase)
+print(p_phrase_to_list)
+# Step 2b: reverse the list
+p_phrase_to_list.reverse()
+# Step 2c: join the reversed list to form a sentence
+r_phrase = ''.join(p_phrase_to_list)
+print(r_phrase)
 
 
 

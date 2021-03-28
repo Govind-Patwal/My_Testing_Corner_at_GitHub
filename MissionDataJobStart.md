@@ -82,7 +82,7 @@ Wk | Dates | Planned | Executed | Evaluation
 Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.0 | Python Interview | https://www.youtube.com/watch?v=DEwgZNC-KyE&t=67s | 
-0.o.1 | chekcing the id of an object | >>> `id(object)` | 
+0.o.1 | checking the id of an object | >>> `id(object)` | 
 0.0.1 | Debugging | look for the line number and the type of error, comment out that line and run the program, if the issue goes away, it was on that line, if it is new error, than fix the line above it, or worst case - comment the error line and all lines below it and run |
 1 | Checking the version of Python in Windows | windows cmd -> `python --version` |
 1.1 | Running a python file | windows cmd -> cd to the root where file is placed >>> `python <filename>` OR if coding on VS code, open the file in the integrted terminal, check the terminal should be cmd, and run the file >>> `python <file_name>` |
