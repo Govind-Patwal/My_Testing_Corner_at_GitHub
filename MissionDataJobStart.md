@@ -79,6 +79,14 @@ Wk | Dates | Planned | Executed | Evaluation
 **Credits**
 - https://www.kaggle.com/learn/overview
 
+
+Number | Topic | Comments | Misc
+|---|---|---|--- |
+0.1 | Univeristy of Michigan - Python Specialization | |
+1 | 1/5 - Python Basics | |
+2 | 2/5 - Python Functions, Files, and Dictionaries | | 
+
+
 Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.0 | Python Interview | https://www.youtube.com/watch?v=DEwgZNC-KyE&t=67s | 
@@ -370,13 +378,6 @@ z.0 | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and http
 4.7 | all Django main commands| >>> `django-admin` |
 4.8 | help while working on Django | >>>`python manage.py help` | ...to return after the Canvas course
 **5.0**| 
-
-
- 
-
-
-
-
 ---
 
 Video tutorials can also break things down when I am stuck - https://www.youtube.com/watch?v=7HN-4Df8ZpA
