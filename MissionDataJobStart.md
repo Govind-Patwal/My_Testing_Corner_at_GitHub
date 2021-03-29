@@ -127,9 +127,13 @@ Number | Topic | Comments | Misc
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
 2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
 2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
-2.1 | loading the reference of a file | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference` |
-2.2 | reading a file as a single string | \n >>> `file_as_1_string = file_reference.read()` ....can be used the select chars by indexing/slicing | 
-2.3 | reading a file as a lines  | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by indexing/slicing ... `header_line = line[0]` | 
+2.1 | READING AND WRITING FILES NATIVELY (w/o any library) | |
+2.1.1 | loading the reference of a file | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` |
+2.1.2 | reading a file as 1 single string | \n >>> `file_as_1_string = file_reference.read()` ....can be used to select chars by indexing/slicing | 
+2.1.3 | reading a file as 1 list of strings/lines  | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by looping and indexing/slicing ... `header_line = line[0]` | 
+2.1.4 | looping over lines without loading the file twice | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` \n >>> `for lines in file_reference:` ... disadvantage (cannot refer to the lines using index, so cannot take off the header row), ADVANTAGE - faster, as it loads the file once | 
+2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only strings can be written>)`, and (3) add a `\n` at the end of every line |
+
 
 ---
 
