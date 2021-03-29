@@ -108,14 +108,14 @@ Number | Topic | Comments | Misc
 2.52.2 | LIST - adding an element at an index | >>> `list1.insert(<index>, value)` |
 2.53.3 | LIST - adding multiple items at an index | ... >>> `list1[0:0] = [element1, elment2, elementn]` ... | 
 2.53.4 | LIST - deleting the last element | >>> list1.pop() |
-2.53.4.1 | LIST - using POP to return element at an index | >>> `list.pop(3)` |
+2.53.4.1 | LIST - using POP to delete element at an index | >>> `list.pop(3)` |
 2.53.5 | LIST - deleting elements using index | ...deleting 1 element >>> `del list1[5]` ... deleting multiple elements >>> `del list1[0:3]` |
-2.52.6 | LIST - deleting elements using value | ...deleting 1st element >>> `list1.remove('item value')`  |
+2.52.6 | LIST - deleting elements using value | ...deleting 1st occurance of a value  >>> `list1.remove('item value')`  |
 2.52.7 | LIST - sorting in ascending | >>> `list1.sort()` |
 2.52.8 | LIST - reversing | >>> `list1.reverse()` |
 2.52.9 | LIST - finding the index of the 1st occurance of an element | >>> `list1.index(value)` |
 2.52.10 | LIST - ACCUMULATOR | |
-2.52.10.1 | list1.append() | | 
+2.52.10.1 | list1.reverse() | | 
 2.52.10 | LIST - finding the count of elements | >>> `list1.count(value)` | 
 2.53 | ***STRING METHODS*** | |
 2.53.1 | STRING - .upper() and .lower() | string1.upper() changes to all upercase, string1.lower() changes to all uppercase | 
@@ -127,7 +127,9 @@ Number | Topic | Comments | Misc
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
 2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
 2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
-2.1 | Reading a file | | 
+2.1 | loading the reference of a file | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference` |
+2.2 | reading a file as a single string | \n >>> `file_as_1_string = file_reference.read()` ....can be used the select chars by indexing/slicing | 
+2.3 | reading a file as a lines  | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by indexing/slicing ... `header_line = line[0]` | 
 
 ---
 
