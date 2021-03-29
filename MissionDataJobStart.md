@@ -133,6 +133,16 @@ Number | Topic | Comments | Misc
 2.1.3 | reading a file as 1 list of strings/lines  | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by looping and indexing/slicing ... `header_line = line[0]` | 
 2.1.4 | looping over lines without loading the file twice | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` \n >>> `for lines in file_reference:` ... disadvantage (cannot refer to the lines using index, so cannot take off the header row), ADVANTAGE - faster, as it loads the file once | 
 2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only strings can be written>)`, and (3) add a `\n` at the end of every line |
+2.2 | DICTIONARY | |
+2.2.1 | unordered key-value pair | notation {}, can be initilaized as an empty dict OR as a fully/partially filled dict |
+2.2.2 | DICTIONARY OPERATIONS |  |
+2.2.2.1 | access value using a key | >>> `dict_name['key_name']` | 
+2.2.2.1.1 | key cannot be accessed using a value | | 
+2.2.2.2 | add a key-value pair | >>> `dict_name['new_key_name'] = new_value` | 
+2.2.2.3 | delete a key-value pair | >>> `del dict_name['key_name']`
+2.2.2.4 | update a key-value pair | >>> `dict_name['key_name'] = new_value` | 
+2.2.2.5 | update a key-value pair ... special case | >>> `dict_name['key_name'] += addition_value` | 
+2.2.2.6 | checking the number of key-value pairs | >>> `len(dict_name)` | 
 
 
 ---
