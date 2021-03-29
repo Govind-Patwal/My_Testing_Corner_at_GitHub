@@ -71,8 +71,8 @@ Wk | Dates | Planned | Executed | Evaluation
 11 | 2021/02/22 - 2021/02/28 | | ## CanEx Week 4: classes + assignments  ## Feb 24, Careeer Services session ## Feb 25 - talked to Career Director ## Wkend - started Pandas (Bootcamp)  |     
 12 | 2021/03/01 - 2021/03/07 | | ## CanEx Week 5: classes + assignments ## Finished kaggle Pandas |
 13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1:  ## Finished CheaprEats assignment ## Finished Bootcamp's - Module 4-Pandas, started Module 5 - Matplotlib |
-14 | 2021/03/15 - 2021/03/21 | | ## CanEx Week 7: No classes + No assignments ## Realized that CheaprEats is a waste of time and efforts ## stressed out on Friday during CanEx class ## Weekend - Took time out to plan the direction of life - have to finish a Python course from Univeristy of Michigan https://www.coursera.org/specializations/python-3-programming , work on projects and then apply for Python projects -> Current Job (become the top ISR) ## wrote email to CALC ## First day out w/ family in Spring 2021 |
-15 | 2021/03/22 - 2021/03/28 | |    |
+14 | 2021/03/15 - 2021/03/21 | | ## CanEx Week 7: No classes + No assignments ## Realized that 1st Co-op placement was a waste of time and efforts ## stressed out on Friday during CanEx class ## Weekend - Took time out to plan the direction of life - have to finish a Python course from Univeristy of Michigan https://www.coursera.org/specializations/python-3-programming , work on projects and then apply for Python projects -> Current Job (become the top ISR) ## wrote email to CALC ## First day out w/ family in Spring 2021 |
+15 | 2021/03/22 - 2021/03/28 | | ## CanEx Week 7 ## Dropped 1st Co-op placement ## Started Python 3 specialization - Univ of Michigan @ Coursera - finished 'Python Basics' and chapter 1/5 of second course 'Python Functions, Files, and Dictionaries'  |
 ---
 
 ### Cheat_Sheet
@@ -129,7 +129,7 @@ Number | Topic | Comments | Misc
 2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
 2.1 | Reading a file | | 
 
-
+---
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
