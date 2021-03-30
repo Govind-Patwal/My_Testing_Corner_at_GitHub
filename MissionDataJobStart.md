@@ -135,7 +135,7 @@ Number | Topic | Comments | Misc
 2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only strings can be written>)`, and (3) add a `\n` at the end of every line |
 2.2 | DICTIONARY | |
 2.2.1 | unordered items (key-value pairs) | notation {}, can be initilaized as an empty dict OR as a fully/partially filled dict |
-2.2.2 | DICTIONARY OPERATIONS |  |
+2.2.2 | DICTIONARY OPERATIONS | ...almost all operations happen using keys  |
 2.2.2.1 | access value using a key | >>> `dict_name['key_name']` | 
 2.2.2.1.1 | key cannot be accessed using a value | | 
 2.2.2.2 | add a key-value pair | >>> `dict_name['new_key_name'] = new_value` | 
@@ -143,6 +143,19 @@ Number | Topic | Comments | Misc
 2.2.2.4 | update a key-value pair | >>> `dict_name['key_name'] = new_value` | 
 2.2.2.5 | update a key-value pair ... special case | >>> `dict_name['key_name'] += addition_value` | 
 2.2.2.6 | checking the number of keys (items/key-value pairs) | >>> `len(dict_name)` | 
+2.2.3 | DICTIONARY METHODS | ...almost all operations happen using keys  |
+2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` |
+2.2.3.2 | returning the values as a list | >>> `list(dict_name.values())` |
+2.2.3.3 | returning the key-value pairss as a list of tuples | >>> `list(dict_name.items())` |
+2.3.3.4 | Looping over a dict | |
+2.2.3.4.1 | retrieving keys | >>> `for key in dict_name:` '\n' >>> `print(key)`  |
+2.2.3.4.2 | retrieving values | >>> `for key in dict_name:` '\n' >>> `print(dict_name[key])`  |
+2.2.3.4.3 | retrieving keys and values | >>> `for key in dict_name:` '\n' >>> `print(key, dict_name[key])`  |
+2.2.3.5 | checking if a key is in a dict | >>> `print(key in dict_name)` ... prints True or False | 
+2.2.3.6 | trying to retrieve a key that is not is dict | get a run time error - KeyError | 
+2.2.3.6.1 | Soltution to above - dict_name.get('key', value=<default>) | return none if key is not in the dict, can return a default value if key is not in the dict |
+
+
 
 
 ---

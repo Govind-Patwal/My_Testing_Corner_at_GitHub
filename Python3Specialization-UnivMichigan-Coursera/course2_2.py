@@ -6,18 +6,17 @@ This is a follow-up to the "Python Basics" course (course 1 of the Python 3 Prog
 '''
 # DICTIONARIES
 
-# eng_to_hindi = {}
-# eng_to_hindi[1] = 1
-# eng_to_hindi['one'] = 'ek'
-# eng_to_hindi[2.2] = 2.2
-# eng_to_hindi['two'] = 'do'
-# eng_to_hindi[(23,23,34)] = (23,23,34)
+eng_to_hindi = {}
+eng_to_hindi[1] = 1
+eng_to_hindi['one'] = 'ek'
+eng_to_hindi[2.2] = 2.2
+eng_to_hindi['two'] = 'do'
+eng_to_hindi[(23,23,34)] = (23,23,34)
 
-# print(eng_to_hindi[1])
+for key in eng_to_hindi:
+    print('The key {} corresponds to the value {}.'.format(key,eng_to_hindi[key]))
+
+print(eng_to_hindi['thisis a book'])
 
 
-var1 = {'Gold': 'Paint'}
 
-medals = {var1: 33, 'Silver': 17, 'Bronze': 12}
-
-print(medals)
