@@ -125,7 +125,7 @@ Number | Topic | Comments | Misc
 2.53.5 | STRING: index('char(s)') | >>> `string.index('boy')` ... will return the first occurance of the variable | 
 2.53.6 | STRING: format string ...string.format(var1, var2) | >>> string1 = "This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) | 
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
-2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
+2.54.1 | LIST - copying/cloning | ... >>> `list2 = list1.copy()` >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
 2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
 2.1 | READING AND WRITING FILES NATIVELY (w/o any library) | |
 2.1.1 | loading the reference of a file | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` |
@@ -151,9 +151,11 @@ Number | Topic | Comments | Misc
 2.2.3.4.1 | retrieving keys | >>> `for key in dict_name:` '\n' >>> `print(key)`  |
 2.2.3.4.2 | retrieving values | >>> `for key in dict_name:` '\n' >>> `print(dict_name[key])`  |
 2.2.3.4.3 | retrieving keys and values | >>> `for key in dict_name:` '\n' >>> `print(key, dict_name[key])`  |
-2.2.3.5 | checking if a key is in a dict | >>> `print(key in dict_name)` ... prints True or False | 
-2.2.3.6 | trying to retrieve a key that is not is dict | get a run time error - KeyError | 
-2.2.3.6.1 | Soltution to above - dict_name.get('key', value=<default>) | return none if key is not in the dict, can return a default value if key is not in the dict |
+2.2.3.5 | checking if a key is in a dict | >>> `print(key in dict_name)` ... prints True or False ... vakues can't ad won't be checked using this method | 
+2.2.3.6 | trying to retrieve a key that is not is dict | results in a run time error - KeyError | 
+2.2.3.6.1 | Soltution to above - dict_name.get('key', alt) | return none if key is not in the dict, can return a alternate if key is not in the dict |
+2.2.3.7 | DICTIONARY - Aliasing and copying | |
+2.2.3.7.1 | cloning/copying a dict | >>> `new_dict = existing_dic.copy()` | 
 
 
 
