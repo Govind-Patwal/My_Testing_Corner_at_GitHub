@@ -22,14 +22,8 @@ This is a follow-up to the "Python Basics" course (course 1 of the Python 3 Prog
 # new_dict = eng_to_hindi.copy()
 # print(eng_to_hindi)
 
-string1 = 'the quick brown fox jumped over the lazy dog'
-print('Original String is: {}'.format(string1))
-list1 = string1.split()
-print('String convered to list using .split() : {}'.format(list1))
-list2=list(string1)
-print('String convered to list using list(string) is : {}'.format(list2))
-list3=string1.tolist()
-print('String convered to list using string.tolist()) is : {}'.format(list3))
+
+
 
 
 

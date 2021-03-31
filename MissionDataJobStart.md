@@ -91,10 +91,11 @@ Number | Topic | Comments | Misc
 2.44.3 | semantic error | An error in a program that makes it do something other than what the programmer intended. |
 2.44.4 | values and value types | int = integer, float = floating point number, strings ...to find the type >>> type(23) >>> type('Hello World) >>> type(3.14) |
 2.44.5 | strings can be enclosed in | single quotes OR double quotes OR three single/double quotes ...triple quotes strings can span multiple lines | 
-2.44.6 | Type conversion functions | str(), float(), int(), list() | 
+2.44.6 | Type conversion functions | str(), float(), int(), list(), tuple(dict) return a tuple of keys, list(tuple) returns a list of keys | 
 2.44.6.1 | common usage of str conversion str() | in print statement to print integers >>>`print('this is the result' + str(10) + 'and then ..')`
 2.45 | operators and operands | Operators are + - * / (division) % (modulus/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
 2.45.1 | % (mod/moudulus) operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
+2.45.2 | // operator uses | to check integer division - num // 10 will return the tenth place number for example 2 for 20; num // 100 will return the hundredth place number, eg 3 for 300 | 
 2.46 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
 2.47 | reassignment | python variables can be reassigned ...data1 = 12, data1 = 13 |
 2.48 | updating a variable | x = x+1, x += 1, incremening/decrementing...bumping is increasing by 1 | 
@@ -135,7 +136,7 @@ Number | Topic | Comments | Misc
 2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only strings can be written>)`, and (3) add a `\n` at the end of every line |
 2.2 | DICTIONARY | |
 2.2.1 | unordered items (key-value pairs) | notation {}, can be initilaized as an empty dict OR as a fully/partially filled dict |
-2.2.2 | DICTIONARY OPERATIONS | ...almost all operations happen using keys  |
+2.2.2 | DICTIONARY OPERATIONS | ...almost all operations happen using keys, except for dict.values() and dict.items()  |
 2.2.2.1 | access value using a key | >>> `dict_name['key_name']` | 
 2.2.2.1.1 | key cannot be accessed using a value | | 
 2.2.2.2 | add a key-value pair | >>> `dict_name['new_key_name'] = new_value` | 
@@ -144,18 +145,20 @@ Number | Topic | Comments | Misc
 2.2.2.5 | update a key-value pair ... special case | >>> `dict_name['key_name'] += addition_value` | 
 2.2.2.6 | checking the number of keys (items/key-value pairs) | >>> `len(dict_name)` | 
 2.2.3 | DICTIONARY METHODS | ...almost all operations happen using keys  |
-2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` |
+2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` ...this is useful as dictionaties cannot be indexed, but keys are unique, so this list adds indexing to keys and values |
 2.2.3.2 | returning the values as a list | >>> `list(dict_name.values())` |
 2.2.3.3 | returning the key-value pairss as a list of tuples | >>> `list(dict_name.items())` |
 2.3.3.4 | Looping over a dict | |
 2.2.3.4.1 | retrieving keys | >>> `for key in dict_name:` '\n' >>> `print(key)`  |
 2.2.3.4.2 | retrieving values | >>> `for key in dict_name:` '\n' >>> `print(dict_name[key])`  |
 2.2.3.4.3 | retrieving keys and values | >>> `for key in dict_name:` '\n' >>> `print(key, dict_name[key])`  |
-2.2.3.5 | checking if a key is in a dict | >>> `print(key in dict_name)` ... prints True or False ... vakues can't ad won't be checked using this method | 
+2.2.3.5 | checking if a key is in a dict | >>> `print(key in dict_name)` ... prints True or False ... values can't be checked using this method | 
 2.2.3.6 | trying to retrieve a key that is not is dict | results in a run time error - KeyError | 
-2.2.3.6.1 | Soltution to above - dict_name.get('key', alt) | return none if key is not in the dict, can return a alternate if key is not in the dict |
+2.2.3.6.1 | Solution to above - dict_name.get('key', alt) | return none if key is not in the dict, can return a alternate if key is not in the dict |
 2.2.3.7 | DICTIONARY - Aliasing and copying | |
 2.2.3.7.1 | cloning/copying a dict | >>> `new_dict = existing_dic.copy()` | 
+2.2.3.8 | find char/words in a text and their frequencies | initiate empty dict, keys = chars/words, values = frequency, loop over the text, each new char/word is checked using not in operator and stored as a key, its value is incremented using +=1 | 
+2.2.3.9 | finding the max value or corresponding key in a dict | after the step above convert the keys of the dict into a list using >>> `list_of_keys = list(dict_name.keys())` , initialize first key to 0 -> >>> `list_of_keys[0] = 0`, initialize first value to 0 -> `dict_name[list_of_keys[0]] = 0`|
 
 
 
