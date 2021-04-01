@@ -61,6 +61,15 @@ Functions
 
 # print(i)
 # print(j)
-b = 12, 23,34
-print(b[0:2])
+def square(x):
+    # global y   # bad practice
+    y = z**2   # z is a global variable, but this is confusing
+    return y
+
+z= 10
+print(square(2))  
+
+for i in range(30):
+    print(i)
+
 

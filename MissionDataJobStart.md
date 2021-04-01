@@ -170,6 +170,12 @@ Number | Topic | Comments | Misc
 2.3.5.3 | parameters 3 | if the actual parameter (arguments / parameter passed) is a immutable object (num, str, tuple), then its value is not changed because of any operation inside the function; however for mutable objects it can changed if the object is changed at the id level...eg list.append('a') will change the list in the acutal parameter | 
 2.3.5.4 | return | assigns the output to a variable ...default is None ... return terminates the funtion, and takes the code out of the current fn | 
 2.3.5.5 | Decoding a Function | whenever enountered with a fn, try to find out (1) how many params does it have (2) what are the types (3) what is the type of return |
+2.3.4 | Spaces in Python Universe | Name/Variable Space and Object space ... name/variable space are are variables for the objects| 
+2.3.5 | Name/Variable Scope | Built-in variables (like print(), len()) are available in ANY .py file; Global can be referenced ONLY in the current file, Local can be referenced ONLY inside the current function - https://youtu.be/HdFujZpLFVg |
+2.3.5.1 | variable referencing | inside out: local -> global -> built-in | 
+2.3.5.2 | lifetime of local variable | A local variable only exists while the function is being executed — we call this its lifetime. When the execution of the function terminates (returns), the local variables are destroyed ... unless it is defined as Global inside the fn|
+2.3.5.3 | lifetime of global variable | A global variable only exists while the .py file is being executed — we call this its lifetime. When the execution of the file terminates, the global variables are destroyed |
+
 
 
 
