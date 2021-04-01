@@ -61,15 +61,27 @@ Functions
 
 # print(i)
 # print(j)
-def square(x):
-    # global y   # bad practice
-    y = z**2   # z is a global variable, but this is confusing
-    return y
 
-z= 10
-print(square(2))  
 
-for i in range(30):
-    print(i)
+
+
+def changeit(lst):
+    # lst = lst.copy()
+    lst[0] = "Michigan"
+    lst[1] = "Wolverines"
+    print(lst)
+
+
+mylst = ['our', 'students', 'are', 'awesome']
+changeit(mylst.copy())
+print(mylst)
+
+
+
+
+
+
+
+    
 
 

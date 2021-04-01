@@ -172,9 +172,18 @@ Number | Topic | Comments | Misc
 2.3.5.5 | Decoding a Function | whenever enountered with a fn, try to find out (1) how many params does it have (2) what are the types (3) what is the type of return |
 2.3.4 | Spaces in Python Universe | Name/Variable Space and Object space ... name/variable space are are variables for the objects| 
 2.3.5 | Name/Variable Scope | Built-in variables (like print(), len()) are available in ANY .py file; Global can be referenced ONLY in the current file, Local can be referenced ONLY inside the current function - https://youtu.be/HdFujZpLFVg |
+2.3.5.0.1 | Stack frame | when ever a new function is called and parameters are passed, a new stack frame is called that all the local variables | 
 2.3.5.1 | variable referencing | inside out: local -> global -> built-in | 
 2.3.5.2 | lifetime of local variable | A local variable only exists while the function is being executed — we call this its lifetime. When the execution of the function terminates (returns), the local variables are destroyed ... unless it is defined as Global inside the fn|
 2.3.5.3 | lifetime of global variable | A global variable only exists while the .py file is being executed — we call this its lifetime. When the execution of the file terminates, the global variables are destroyed |
+2.3.5.4 | Good programming tips | Avoid referencing Global variables inside a fn and a local out a fn, if one has to DON'T name them the same, avoid initiating a GLOBAL variable inside a fn, If you must initiate global variables  inside fn (also generally bad form) make sure they have unique names | 
+2.3.5.5 | Functional decompisition | breaking a function problems into smaller function problems |
+2.3.5.5.1 | Global variable before or after defining a fn | a Global variable (including a function) can be initiated after a function is defined, but BEFORE the function is called |
+2.3.3.6 | Print vs Return | Print is only for humams it does not store the computation of the function; Return is the ONLY valid way to store the computation of a fn in a global variable (since local variable can't be accessed outside) | 
+2.3.3.7 | Function side effects | when function can change the values of Global variables - (1) by initialing a GLOBAL variable in funstion (2) by mutating a mutaing variable (list or dict) - mutation does not change the id/refernce but mutates the same object |
+2.3.3.8 | Functional programming | programming that avoids functional side effects - way in python (1) rather than the list/dict, pass a copy of the list/dict to the function by >>> `fn(list_name.copy())` or >>> `fn(dict_name.copy())` or (2) create a copy inside the function by >>> `list_or_dict_var = list_or_dict_var.copy()` | 
+
+
 
 
 
