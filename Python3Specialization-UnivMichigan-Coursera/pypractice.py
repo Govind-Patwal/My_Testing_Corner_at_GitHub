@@ -61,5 +61,6 @@ Functions
 
 # print(i)
 # print(j)
-b = input('****************** \nEnter the text below:\n')
+b = 12, 23,34
+print(b[0:2])
 

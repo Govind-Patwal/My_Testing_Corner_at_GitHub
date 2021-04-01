@@ -80,7 +80,8 @@ Wk | Dates | Planned | Executed | Evaluation
 - https://www.kaggle.com/learn/overview
 
 ---
-***Univeristy of Michigan - Python 3 Specialization***
+### COURSE - Univeristy of Michigan - Python 3 Specialization
+
 Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.1 | Univeristy of Michigan - Python Specialization | |
@@ -169,6 +170,8 @@ Number | Topic | Comments | Misc
 Actual parameters or arguments or param values |
 2.3.5.3 | parameters 3 | if the actual parameter is a immutable object (num, str, tuple), then its value is not changed because of any operation inside the function; however for mutable objects it can changed if the object is changed at the id level...eg list.append('a') will change the list in the acutal parameter | 
 2.3.5.4 | return | assigns the output to a variable ...default is None ... return terminates the funtion, and takes the code out of the current fn | 
+2.3.5.5 | Decoding a Function | whenever enountered with a fn, try to find out (1) how many params does it have (2) what are the types (3) what is the type of return |
+
 
 
 
@@ -180,6 +183,8 @@ Actual parameters or arguments or param values |
 
 
 ---
+
+### KAGGLE, UOFT BOOTCAMP
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
