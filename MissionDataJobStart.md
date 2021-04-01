@@ -161,14 +161,13 @@ Number | Topic | Comments | Misc
 2.2.3.8 | find char/words in a text and their frequencies | initiate empty dict, keys = chars/words, values = frequency, loop over the text, each new char/word is checked using not in operator and stored as a key, its value is incremented using +=1 | 
 2.2.3.9 | finding the max value or corresponding key in a dict | after the step above convert the keys of the dict into a list using >>> `list_of_keys = list(dict_name.keys())` , initialize first key to 0 -> >>> `list_of_keys[0] = 0`, initialize first value to 0 -> `dict_name[list_of_keys[0]] = 0`|
 2.3 | **FUNCTIONS** |  |
-2.3.1 | used to reduce redundancy, decrease time and efforts, decrease errors, easier debugging | 
+2.3.1 | Why? | used to reduce redundancy, decrease time and efforts, decrease errors, easier debugging | 
 2.3.2 | defined using def | |
-2.3.3 | good practice to describe the funtion using ''' this is the funtion ''' ...can the retrieved using >>> `help(function_name)` | |
-2.3.4 | def mandatory, name is mandatory, parameters optional, return optional | | 
+2.3.3 | Docstrings | good practice to describe the funtion using ''' this is the funtion ''' ...can the retrieved using >>> `help(function_name)` | 
+2.3.4 | Requirements | def keyword mandatory, name is mandatory, parantheses, atleast one line of code, parameters optional, return optional, docstring optional | 
 2.3.5.1 | parameters 1 | names of the parameters at the time of naming the functions are called the formal parameters or param names ...not available outside the function |
-2.3.5.2 | parameters 2 | names of the parameters at the time of invoking the funcion are called 
-Actual parameters or arguments or param values |
-2.3.5.3 | parameters 3 | if the actual parameter is a immutable object (num, str, tuple), then its value is not changed because of any operation inside the function; however for mutable objects it can changed if the object is changed at the id level...eg list.append('a') will change the list in the acutal parameter | 
+2.3.5.2 | parameters 2 | names of the parameters at the time of invoking the funcion are called Actual parameters or arguments or param values |
+2.3.5.3 | parameters 3 | if the actual parameter (arguments / parameter passed) is a immutable object (num, str, tuple), then its value is not changed because of any operation inside the function; however for mutable objects it can changed if the object is changed at the id level...eg list.append('a') will change the list in the acutal parameter | 
 2.3.5.4 | return | assigns the output to a variable ...default is None ... return terminates the funtion, and takes the code out of the current fn | 
 2.3.5.5 | Decoding a Function | whenever enountered with a fn, try to find out (1) how many params does it have (2) what are the types (3) what is the type of return |
 
