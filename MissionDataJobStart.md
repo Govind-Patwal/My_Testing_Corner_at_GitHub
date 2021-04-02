@@ -191,10 +191,16 @@ Number | Topic | Comments | Misc
 2.3.3.14 | iterating over a list of tuples | the tuples need to have the same length as the # of variable in the loop... eg ....>>> for x,y,z...n in list_of_tuples: \n >>> `p = x + y + z` .....special case dict >>> `for key, value in dict_name.items():` (this is because the lengh of the tuples will always be 2) |
 2.3.3.15 | enumerate | enumerate takes a sequence as inpute and return a sequence of tuples of length 2 (first element of the tuple is an integer, second is the item) >>> `for int, item in enumerate(list):` | 
 2.3.4 | WHILE | also called indefinite loop  |
-2.3.4.1 | While loops | more flexible/versatile but more complicated than for loop ...for should be the default, if not then while should be used |
+2.3.4.1 | While loops | more flexible/versatile but more complicated than for loop ...avoid if you can |
 2.3.4.2 | syntax | initiator_variable -> while <conditional statement using the initiator variable>: code iniator to be incremented |
-2.3.4.3 | drawbacks | if initiaor is not incremented, it can be a indeifinite loop ... debugging can be difficult |
-2.3.4.4 | advantages - listener loops | the user input acts as the initiator variable changer | 
+2.3.4.3 | drawbacks | if initiaor is not incremented, it can be a indefinite loop ... debugging can be difficult |
+2.3.4.4 | USAGE 1) Listener loops | the user input acts as the initiator variable changer | 
+2.3.4.4.1 | USAGE 1.1) Sentinel Values | a loop that watches values and then decide on continuing or aborting the loop |
+2.3.4.4.2 | USAGE 1.2) Validating inputs | for CAPTCHA etc |
+2.3.4.5 | BREAK statement | breaks stops the execution of the next line in the loop AND jumps out of the loop |
+2.3.4.5 | CONTINUE statement | CONTINUE stops the execution of the next line in the loop AND jumps to the start of the loop |
+
+
 
 
 
