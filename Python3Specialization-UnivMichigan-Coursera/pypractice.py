@@ -63,22 +63,27 @@ Functions
 # print(j)
 
 
+# # while loop - 4 important parts (1) initiator (2) condition (3) code (4) incrementer
 
+# # initiator
+# num = 0
+# even_nums = []
 
-def changeit(lst):
-    # lst = lst.copy()
-    lst[0] = "Michigan"
-    lst[1] = "Wolverines"
-    print(lst)
+# # condiiton
+# while num <= 15:
+#     if num%2 ==0:
+#         even_nums.append(num)
+#     num += 1
 
+# print(even_nums)
 
-mylst = ['our', 'students', 'are', 'awesome']
-changeit(mylst.copy())
-print(mylst)
+# even_nums = []
+# for i in range(15):
+#         if i%2 ==0:
+#             even_nums.append(i)
+# print(even_nums)
 
-
-
-
+print('dummy_value' != 0)
 
 
 

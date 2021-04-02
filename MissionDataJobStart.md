@@ -182,6 +182,21 @@ Number | Topic | Comments | Misc
 2.3.3.6 | Print vs Return | Print is only for humams it does not store the computation of the function; Return is the ONLY valid way to store the computation of a fn in a global variable (since local variable can't be accessed outside) | 
 2.3.3.7 | Function side effects | when function can change the values of Global variables - (1) by initialing a GLOBAL variable in funstion (2) by mutating a mutaing variable (list or dict) - mutation does not change the id/refernce but mutates the same object |
 2.3.3.8 | Functional programming | programming that avoids functional side effects - way in python (1) rather than the list/dict, pass a copy of the list/dict to the function by >>> `fn(list_name.copy())` or >>> `fn(dict_name.copy())` or (2) create a copy inside the function by >>> `list_or_dict_var = list_or_dict_var.copy()` | 
+2.3.3.9 | TUPLES |   |
+2.3.3.10 | Python treatment of tuples | if something is not in (), {} or [], and is seperated by commas, then Python treats it as a tuple, e.g. >>> `var = a,b,c` , var is a tuple; |
+2.3.3.11 | Tuple assingment | VERY powerful - tuples can save a lot of code and lines ...a,b,c = c,a,b is the best to do the assignment in one go (doing it one by one will require many temp values and many lines of codes)    |
+2.3.3.12 | returning multiple things from a fn | return a,b,c,d will return 4 variables from a function that can be assinged to 4 variable when the fn is called >>> x,y,z = f(x)...where f(x) return 3 variables |
+2.3.3.13 | Tuple unpakcing and assignment | >>> `z = var1,4,5,var2` ... >>>`f(*z)` (f() takes 4 arguments but *z unpacks the tuple and inputs them as arguments) |
+2.3.3.13.1 | unpacking also works with lists/strings/dict | the length on the LHS and RHS should be the same ... >>> `x,y,...n = [3,4,...n]` ...for dict, the key is returned >>> `x,y,z = {11:22, 33:44, 55:66}` \n >>> `print(x)` \n 11 |
+2.3.3.14 | iterating over a list of tuples | the tuples need to have the same length as the # of variable in the loop... eg ....>>> for x,y,z...n in list_of_tuples: \n >>> `p = x + y + z` .....special case dict >>> `for key, value in dict_name.items():` (this is because the lengh of the tuples will always be 2) |
+2.3.3.15 | enumerate | enumerate takes a sequence as inpute and return a sequence of tuples of length 2 (first element of the tuple is an integer, second is the item) >>> `for int, item in enumerate(list):` | 
+2.3.4 | WHILE | also called indefinite loop  |
+2.3.4.1 | While loops | more flexible/versatile but more complicated than for loop ...for should be the default, if not then while should be used |
+2.3.4.2 | syntax | initiator_variable -> while <conditional statement using the initiator variable>: code iniator to be incremented |
+2.3.4.3 | drawbacks | if initiaor is not incremented, it can be a indeifinite loop ... debugging can be difficult |
+2.3.4.4 | advantages - listener loops | the user input acts as the initiator variable changer | 
+
+
 
 
 
