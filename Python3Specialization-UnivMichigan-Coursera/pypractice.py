@@ -129,8 +129,14 @@ Functions
 
 #### END - cool program to get a turtle move according to a coin flip  #### 
 
-len_of_string_tuple_list_dict = len()
-sort_string_tuple_list_dict = sorted()
+# len_of_string_tuple_list_dict = len()
+# sort_string_tuple_list_dict = sorted()
+
+var1 = 12, -23, 1, 78
+var2 = sorted(var1)
+print(var2)
+var3 = sorted(var1, key = lambda x : x**2)
+print(var3)
 
 
     
