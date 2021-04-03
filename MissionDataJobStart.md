@@ -145,7 +145,7 @@ Number | Topic | Comments | Misc
 2.2.2.4 | update a key-value pair | >>> `dict_name['key_name'] = new_value` | 
 2.2.2.5 | update a key-value pair ... special case | >>> `dict_name['key_name'] += addition_value` | 
 2.2.2.6 | checking the number of keys (items/key-value pairs) | >>> `len(dict_name)` | 
-2.2.3 | DICTIONARY METHODS | ...almost all operations happen using keys  |
+2.2.3 | DICTIONARY METHODS | ...almost all operations happen using keys ... eg `for key in dict_name`, `list(dict_name)`, `key in dict_name`, sorted(dict_name, key = lambda k : dict_name[k])`  |
 2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` ...this is useful as dictionaties cannot be indexed, but keys are unique, so this list adds indexing to keys and values |
 2.2.3.2 | returning the values as a list | >>> `list(dict_name.values())` |
 2.2.3.3 | returning the key-value pairss as a list of tuples | >>> `list(dict_name.items())` |
@@ -188,7 +188,8 @@ Number | Topic | Comments | Misc
 2.3.3.12 | returning multiple things from a fn | return a,b,c,d will return 4 variables from a function that can be assinged to 4 variable when the fn is called >>> x,y,z = f(x)...where f(x) return 3 variables |
 2.3.3.13 | Tuple unpakcing and assignment | >>> `z = var1,4,5,var2` ... >>>`f(*z)` (f() takes 4 arguments but *z unpacks the tuple and inputs them as arguments) |
 2.3.3.13.1 | unpacking also works with lists/strings/dict | the length on the LHS and RHS should be the same ... >>> `x,y,...n = [3,4,...n]` ...for dict, the key is returned >>> `x,y,z = {11:22, 33:44, 55:66}` \n >>> `print(x)` \n 11 |
-2.3.3.14 | iterating over a list of tuples | the tuples need to have the same length as the # of variable in the loop... eg ....>>> for x,y,z...n in list_of_tuples: \n >>> `p = x + y + z` .....special case dict >>> `for key, value in dict_name.items():` (this is because the lengh of the tuples will always be 2) |
+2.3.3.14 | iterating over a list of tuples | if only 1 iterator is used in the loop, only the 1st elements of the tuples will be looped over...special case is dict >>> if only 1 iterator it is the key; go get key and value, used `dict_name.items():`  |
+2.3.3.15 | converting a list of tuples into a list | only the first element of the tuples is converted to a list ...special case - dict ...eg list(dict_name) will return a list of the keys  | 
 2.3.3.15 | enumerate | enumerate takes a sequence as inpute and return a sequence of tuples of length 2 (first element of the tuple is an integer, second is the item) >>> `for int, item in enumerate(list):` | 
 2.3.4 | WHILE | also called indefinite loop  |
 2.3.4.1 | While loops | more flexible/versatile but more complicated than for loop ...avoid if you can |
@@ -208,6 +209,12 @@ Number | Topic | Comments | Misc
 2.4.1 | SORTING - list.sort vs sorted(iterable) | `sorted(iterable)` is preferred, works on all iterables (string/tuple/list/dict), returns a list for all iterables, does not change the original iterable, returns the sorted list for all iterables, default is ascending | 
 2.4.1.1 | Sorted(iterable) with the parameter `reverse` | >>> `sorted(iterable, reverse = True)`...since the defulat is a list with elements in ascending order, reverse=True returns a list with elements in descending order |
 2.4.1.2 | Sorted(iterable) with the parameter `key` | >>> `sorted(iterable, key=only_named_fn_or_lambda_fn_no_paranthesis)` ... eg >>> `sorted(iterable, key=absolute)`  OR >>> `sorted(iterable, key=lambda x: x**2)` OR >>> `sorted(iterable, key=lambda x: x if x >=0 else -x)` |
+2.4.1.3 | Sorting list of tuples - breaking ties | if sorted(tuple), then the result is a list that was sorted primarily on the 1st elements of the tuples, secondarily on the 2nd elements of the tuple, and so on...|
+2.4.1.4 | Special case - sorting a list of tuples | with string being sorted in ascending order and numbers in descending order, or vice versa ... by using - in front of the numbers, eg `(-num, string)` ...this will sort the number is descending and the string is ascending order  | 
+2.4.2 | Way of the Programmer - Lambda/Named function in sorting | a lambda choose one element in the list, char in the string, one key in the dict at a time, 1st element in a list of tuples.. so can be very handy, but if the there are other complications an external function can be used w/ the lambda  |
+
+
+
 
 
 

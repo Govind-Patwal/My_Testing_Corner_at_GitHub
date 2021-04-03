@@ -132,11 +132,28 @@ Functions
 # len_of_string_tuple_list_dict = len()
 # sort_string_tuple_list_dict = sorted()
 
-dict1 = {1:12, 12: 23, 13: 1, -67:78}
-list2 = sorted(dict1, key=lambda x: x if x >=0 else -x)
-print(list2)
+# Given list
+# list_of_lists = [[1,2,3,4], [1,2,3,67], [2,1,0,12], [-2,1,0,12]]
+# sorted_list = sorted(list_of_lists)
 
+# print(sorted_list)
 
+# tuple_of_tuples =  (('a',2,3,4), 
+#                     ('x',2,3,67), 
+#                     ('c',1,0,12), 
+#                     ('c',1,0,12))
+# sorted_tuple = sorted(tuple_of_tuples)
+
+# print(sorted_tuple)
+
+state_dict = { '21': [3,2,4],
+              '22': [2,4,5],
+              '34': [-1,8,9, 12, 12],
+              'seattle' : [-45,12,34]  }
+
+print(     sorted(state_dict, key = lambda k : k            )     )
+
+# 
 
     
 
