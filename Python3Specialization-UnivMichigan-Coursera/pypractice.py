@@ -129,6 +129,9 @@ Functions
 
 #### END - cool program to get a turtle move according to a coin flip  #### 
 
+len_of_string_tuple_list_dict = len()
+sort_string_tuple_list_dict = sorted()
+
 
     
 
