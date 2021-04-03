@@ -199,9 +199,13 @@ Number | Topic | Comments | Misc
 2.3.4.4.2 | USAGE 1.2) Validating inputs | for CAPTCHA etc |
 2.3.4.5 | BREAK statement | breaks stops the execution of the next line in the loop AND jumps out of the loop |
 2.3.4.5 | CONTINUE statement | CONTINUE stops the execution of the next line in the loop AND jumps to the start of the loop |
-2.3.5 | Optional/default parameters | default parametrs need to have values before they are declared, and becomes their default, even if the varaible changes later >>> int1 = 7 \n f(x, y=int1):... \n int1 = 10 ...the default value of y in the function will remain 7 |
-2.3.5.1 | Optional parameters - mutable objects | when a function that has a default list/dict, is called by a function which references the defualt list, the default list's location is referenced ...which mean the new list is mutated | 
-2.3.5.2 | keyword arguments (vs positional arguments) | keyword argumesnt are provided by specifying the formal arguments in the body when a function is invoked, eg for a defined function f(u, v=1, w=4, x, y, z=4), positional parameter would be f(1,2,3,4,5,6), parameters would be f(10,x=3, y=4, z=21)...here Python will take the value of x as 10 (positional), x, y, z as keyword, and rest 2 as default ) |
+2.3.5 | FUNCTIONS - Default parameters |  `argument = 12/[]/{}/var1`, they provide default values, if no value is given to a variable at the time of function invocation|
+2.3.5.5 | FUNCTIONS - Default parameters | if `argument = var1`, (1) var1 has to be to declared BEFORE the function is defined, (2) this value will be assigned as a defualt, irrespective the var1 changing value later |   
+2.3.5.1 | Default parameters - mutable objects | when a function that has a default list/dict, is called by a function which references the defualt list, the default list's location is referenced ...which mean the new list is mutated ...any future function call will reference the mutated list | 
+2.3.5.2.1 | positional arguments/parameters | values are assigned according to their position at the time of function declaration |
+2.3.5.2 | keyword argument/parameters | keyword argumesnt explicitely assign values to formal parameters when a function is invoked, eg for a defined function f(u, v=1, w=4, x, y, z=4), positional parameter would be f(1,2,3,4,5,6) OR f(1,2,3,4,5), usage of k/w parameters would be f(10,x=3, y=4, z=21)...here Python will take the value of x as 10 (positional), x, y, z as k/w, and rest 2 as default ) |
+2.3.5.3 | LAMBDA expressions/functions | syntax `function_name = lambda <args> : <return_value>` ..eg >>> `square = ( lambda x : x**2 )` ... calling it print(square(4))  OR print(    (lambda x : x **2)(6)    )         |
+
 
 
 
