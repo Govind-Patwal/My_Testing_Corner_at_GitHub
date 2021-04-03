@@ -132,11 +132,10 @@ Functions
 # len_of_string_tuple_list_dict = len()
 # sort_string_tuple_list_dict = sorted()
 
-var1 = 12, -23, 1, 78
-var2 = sorted(var1)
-print(var2)
-var3 = sorted(var1, key = lambda x : x**2)
-print(var3)
+dict1 = {1:12, 12: 23, 13: 1, -67:78}
+list2 = sorted(dict1, key=lambda x: x if x >=0 else -x)
+print(list2)
+
 
 
     

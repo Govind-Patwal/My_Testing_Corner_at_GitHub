@@ -205,9 +205,9 @@ Number | Topic | Comments | Misc
 2.3.5.2.1 | positional arguments/parameters | values are assigned according to their position at the time of function declaration |
 2.3.5.2 | keyword argument/parameters | keyword argumesnt explicitely assign values to formal parameters when a function is invoked, eg for a defined function f(u, v=1, w=4, x, y, z=4), positional parameter would be f(1,2,3,4,5,6) OR f(1,2,3,4,5), usage of k/w parameters would be f(10,x=3, y=4, z=21)...here Python will take the value of x as 10 (positional), x, y, z as k/w, and rest 2 as default ) |
 2.3.5.3 | LAMBDA expressions/functions | syntax `function_name = lambda <args> : <return_value>` ..eg >>> `square = ( lambda x : x**2 )` ... calling it print(square(4))  OR print(    (lambda x : x **2)(6)    )         |
-2.4.1 | SORTING - list.sort vs sorted(iterable) | `sorted(iterable)` is preferred, works on all iterables (string/tuple/list/dict), returns a list for all iterables, does not change the original iterable, returns the sorted list for all iterables | 
-2.4.1.1 | Sorted(iterable) with the parameter `reverse` | >>> `sorted(iterable, reverse = True)` |
-2.4.1.2 | Sorted(iterable) with the parameter `key` | >>> `sorted(iterable, key=<function w/o the opening and closing paranthesis>)` ... eg >>> `sorted(iterable, key=absolute)`  OR >>> `sorted(iterable, key=lambda x: x**2)` |
+2.4.1 | SORTING - list.sort vs sorted(iterable) | `sorted(iterable)` is preferred, works on all iterables (string/tuple/list/dict), returns a list for all iterables, does not change the original iterable, returns the sorted list for all iterables, default is ascending | 
+2.4.1.1 | Sorted(iterable) with the parameter `reverse` | >>> `sorted(iterable, reverse = True)`...since the defulat is a list with elements in ascending order, reverse=True returns a list with elements in descending order |
+2.4.1.2 | Sorted(iterable) with the parameter `key` | >>> `sorted(iterable, key=only_named_fn_or_lambda_fn_no_paranthesis)` ... eg >>> `sorted(iterable, key=absolute)`  OR >>> `sorted(iterable, key=lambda x: x**2)` OR >>> `sorted(iterable, key=lambda x: x if x >=0 else -x)` |
 
 
 
