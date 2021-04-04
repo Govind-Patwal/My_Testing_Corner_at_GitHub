@@ -134,7 +134,7 @@ Number | Topic | Comments | Misc
 2.1.2 | reading a file as 1 single string | \n >>> `file_as_1_string = file_reference.read()` ....can be used to select chars by indexing/slicing | 
 2.1.3 | reading a file as 1 list of strings/lines  | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by looping and indexing/slicing ... `header_line = line[0]` | 
 2.1.4 | looping over lines without loading the file twice | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` \n >>> `for lines in file_reference:` ... disadvantage (cannot refer to the lines using index, so cannot take off the header row), ADVANTAGE - faster, as it loads the file once | 
-2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only strings can be written>)`, and (3) add a `\n` at the end of every line |
+2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only 1 single string can be written>)`, and (3) add a `\n` at the end of every line |
 2.2 | **DICTIONARY** | |
 2.2.1 | unordered items (key-value pairs) | notation {}, can be initilaized as an empty dict OR as a fully/partially filled dict |
 2.2.2 | DICTIONARY OPERATIONS | ...almost all operations happen using keys, except for dict.values() and dict.items()  |
@@ -145,7 +145,7 @@ Number | Topic | Comments | Misc
 2.2.2.4 | update a key-value pair | >>> `dict_name['key_name'] = new_value` | 
 2.2.2.5 | update a key-value pair ... special case | >>> `dict_name['key_name'] += addition_value` | 
 2.2.2.6 | checking the number of keys (items/key-value pairs) | >>> `len(dict_name)` | 
-2.2.3 | DICTIONARY METHODS | ...almost all operations happen using keys ... eg `for key in dict_name`, `list(dict_name)`, `key in dict_name`, sorted(dict_name, key = lambda k : dict_name[k])`  |
+2.2.3 | DICTIONARY METHODS | ...almost all operations happen using keys ... eg `for key in dict_name`, `list(dict_name)`, `key in dict_name`, `sorted(dict_name, key = lambda dict_key : dict_name[dict_key])`  |
 2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` ...this is useful as dictionaties cannot be indexed, but keys are unique, so this list adds indexing to keys and values |
 2.2.3.2 | returning the values as a list | >>> `list(dict_name.values())` |
 2.2.3.3 | returning the key-value pairss as a list of tuples | >>> `list(dict_name.items())` |
