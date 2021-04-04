@@ -6,3 +6,7 @@ Data Collection and Processing with Python
 '''
 
 
+
+
+print(dict)
+print(type(print))
