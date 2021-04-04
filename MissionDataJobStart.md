@@ -86,7 +86,7 @@ Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.1 | Univeristy of Michigan - Python Specialization | |
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
-0.1.1 | Coding good practicce | use print statement regulary to keep checking output |
+0.1.2 | Coding good practicce | use print statement regulary to keep checking output |
 1 | **1/5 - Python Basics** | https://www.coursera.org/specializations/python-3-programming |
 2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
 2.44.1 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
