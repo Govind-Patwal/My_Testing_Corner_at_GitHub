@@ -132,11 +132,12 @@ Number | Topic | Comments | Misc
 2.54.1 | LIST - copying/cloning | ... >>> `list2 = list1.copy()` >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
 2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
 2.1 | **READING AND WRITING FILES NATIVELY** (w/o any library) | |
+2.1.1 | CSV\TXT files are string files | data is stored as 1 single string, \n used for newline but it is still part of the 1 string | 
 2.1.1 | loading the reference of a file | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` |
-2.1.2 | reading a file as 1 single string | \n >>> `file_as_1_string = file_reference.read()` ....can be used to select chars by indexing/slicing | 
-2.1.3 | reading a file as 1 list of strings/lines  | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by looping and indexing/slicing ... `header_line = line[0]` | 
+2.1.2 | reading a file as 1 single string | \n >>> `file_as_1_string = file_reference.read()` ....can be used to select chars by indexing/slicing, eg >>> `char9 = file_reference.read()[9]` | 
+2.1.3 | reading a file as 1 list of strings/lines  | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by looping and indexing/slicing ... `header_line = lines[0]` ...accessing character of a line lines[0|[10] ...to acces the comma seperated values, we will need to break a line into a list of strings split at commas after stripping \n at the end...lines[0].strip().split(',') |
 2.1.4 | looping over lines without loading the file twice | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` \n >>> `for lines in file_reference:` ... disadvantage (cannot refer to the lines using index, so cannot take off the header row), ADVANTAGE - faster, as it loads the file once | 
-2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only 1 single string can be written>)`, and (3) add a `\n` at the end of every line |
+2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only 1 single string can be written>)`, and (3) add a `\n` at the end of every line ...will have to reverse engineer reading of a file ...eg joining stings of a line, adding \n and then joining all string together with \n |
 2.2 | **DICTIONARY** | |
 2.2.1 | unordered items (key-value pairs) | notation {}, can be initilaized as an empty dict OR as a fully/partially filled dict |
 2.2.2 | DICTIONARY OPERATIONS | ...almost all operations happen using keys, except for dict.values() and dict.items()  |
@@ -214,6 +215,9 @@ Number | Topic | Comments | Misc
 2.4.1.3 | Sorting list of tuples - breaking ties | if sorted(tuple), then the result is a list that was sorted primarily on the 1st elements of the tuples, secondarily on the 2nd elements of the tuple, and so on...|
 2.4.1.4 | Special case - sorting a list of tuples | with string being sorted in ascending order and numbers in descending order, or vice versa ... by using - in front of the numbers, eg `(-num, string)` ...this will sort the number is descending and the string is ascending order  | 
 2.4.2 | Way of the Programmer - Lambda/Named function in sorting | a lambda choose one element in the list, char in the string, one key in the dict at a time, 1st element in a list of tuples.. so can be very handy, but if the there are other complications an external function can be used w/ the lambda  |
+3.0.0 | Data Collection and Processing with Python | Course 3/5 - https://www.coursera.org/learn/data-collection-processing-python?specialization=python-3-programming | 
+
+
 
 
 
