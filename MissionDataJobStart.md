@@ -230,6 +230,12 @@ Number | Topic | Comments | Misc
 3.4 | Deep copies | completely independent of the original - any change in original is not reflected on the copied one | 
 3.3.1 | Deep copies - way 1 | for lists that are uniform structes of nesting | appending using nested iteration will give the result - when the child_list has no more lists inside it, shallow copying can be used |
 3.3.2 | Deep copies  way 2 | >>> `new_copy = copy.deepcopy(original_object)` | 
+3.3.3 | online JSON editor | https://jsoneditoronline.org/ | 
+3.3.4 | Understand...Extract...Repeat | to extract data from complex nested structures |
+3.3.4.1 | Understand | JSON structure using Online JSON Editor |
+3.3.4.2 | Extract one step a time | print to see the results |
+3.3..4.3 | Repeat | understand, extract and print | 
+
 
 
 
