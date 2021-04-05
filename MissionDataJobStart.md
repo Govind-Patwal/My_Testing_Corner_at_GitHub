@@ -86,7 +86,9 @@ Number | Topic | Comments | Misc
 |---|---|---|--- |
 0.1 | Univeristy of Michigan - Python Specialization | |
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
+0.1.1.1 | type(), dir(), help() |  |
 0.1.2 | Coding good practicce | use print statement regulary to keep checking output |
+0.1.3 | some libraries | import turtle (for turtle graphics), import random (tos create random numbers),  import json (to convert py_objects to/from JSON strings), import copy (to deepcopy) | 
 1 | **1/5 - Python Basics** | https://www.coursera.org/specializations/python-3-programming |
 2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
 2.44.1 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
@@ -223,6 +225,11 @@ Number | Topic | Comments | Misc
 3.1.3 | converting a JSON formatted string to a python object | >>> `py_obj = json.loads(json_formatted_string)` |
 3.1.3.1 | converting a python object to a JSON formatted string | >>> `json_formatted_string = json.dumps(py_object, sort_keys=True, indent =2, )` ...sort_keys is used to sort the keys in the dictionaty  |
 3.2 | Nested Iteration | | 
+3.2.1 | Way of the programmer | nest the same type of objects inside lists/dicts ...if you are given something else, use a if else statement, eg >>> if type(x) == type([]):  |
+3.3 | Shallow copies vs Deep copies | Copying using [:], *1, .copy(), creates shallow copies  - ONLY copying at the highest/outermost level ...for any level inside, aliasing comes a picture - if the original list is mutated at 2nd layer, the copies are also changed  |
+3.4 | Deep copies | completely independent of the original - any change in original is not reflected on the copied one | 
+3.3.1 | Deep copies - way 1 | for lists that are uniform structes of nesting | appending using nested iteration will give the result - when the child_list has no more lists inside it, shallow copying can be used |
+3.3.2 | Deep copies  way 2 | >>> `new_copy = copy.deepcopy(original_object)` | 
 
 
 

@@ -7,9 +7,21 @@ Data Collection and Processing with Python
 
 
 
-d = {'key1': {'c': True, 'a': 90, '5': 50}, 'key2':{'b': 3, 'c': "yes"}}
+lst = [100, [169, 196, 1], 289, 324, 361]
+copied_lst1 = lst[:]
+copied_lst2 = lst*1
+copied_lst3 = lst.copy()
 
-import json
+print('original_lst: {}'.format(lst))
+print('copied_lst1 using lst[:] : {}'.format(copied_lst1))
+print('copied_lst1 using lst*1 : {}'.format(copied_lst2))
+print('copied_lst1 using lst.copy() : {}'.format(copied_lst3))
 
-string1 = json.dumps(d, indent=True)
-print(string1)
+lst[1].append('new element')
+
+print('=======after adding a new element to the original list =============')
+print('original_lst: {}'.format(lst))
+print('copied_lst1 using lst[:] : {}'.format(copied_lst1))
+print('copied_lst1 using lst*1 : {}'.format(copied_lst2))
+print('copied_lst1 using lst.copy() : {}'.format(copied_lst3))
+
