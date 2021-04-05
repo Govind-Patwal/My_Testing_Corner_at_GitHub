@@ -215,7 +215,15 @@ Number | Topic | Comments | Misc
 2.4.1.3 | Sorting list of tuples - breaking ties | if sorted(tuple), then the result is a list that was sorted primarily on the 1st elements of the tuples, secondarily on the 2nd elements of the tuple, and so on...|
 2.4.1.4 | Special case - sorting a list of tuples | with string being sorted in ascending order and numbers in descending order, or vice versa ... by using - in front of the numbers, eg `(-num, string)` ...this will sort the number is descending and the string is ascending order  | 
 2.4.2 | Way of the Programmer - Lambda/Named function in sorting | a lambda choose one element in the list, char in the string, one key in the dict at a time, 1st element in a list of tuples.. so can be very handy, but if the there are other complications an external function can be used w/ the lambda  |
-3.0.0 | Data Collection and Processing with Python | Course 3/5 - https://www.coursera.org/learn/data-collection-processing-python?specialization=python-3-programming | 
+3.0.0 | **Data Collection and Processing with Python** | Course 3/5 - https://www.coursera.org/learn/data-collection-processing-python?specialization=python-3-programming | 
+3.1 | Nested Data and Nested Iteration |  |
+3.1.1 | reading nested lists and dictionaries | they have to be unpacked using [] repetedly ... for lists use [index_number], for dictionaries, use ['key_value'] | 
+3.1.1.1 | can also access functions using [][] | if y=obj[][] is a funtion then print(y) will print info about the funtion; function can also be invoked using [] |
+3.1.2 | JSON | stands for java script object notation; it is string format of dictionaries and lists ... at the end it is a special STRING format |
+3.1.3 | converting a JSON formatted string to a python object | >>> `py_obj = json.loads(json_formatted_string)` |
+3.1.3.1 | converting a python object to a JSON formatted string | >>> `json_formatted_string = json.dumps(py_object, sort_keys=True, indent =2, )` ...sort_keys is used to sort the keys in the dictionaty  |
+3.2 | Nested Iteration | | 
+
 
 
 
