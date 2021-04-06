@@ -213,7 +213,7 @@ Number | Topic | Comments | Misc
 2.3.5.3 | LAMBDA expressions/functions | syntax `function_name = lambda <args> : <return_value>` ..eg >>> `square = ( lambda x : x**2 )` ... calling it print(square(4))  OR print(    (lambda x : x **2)(6)    )         |
 2.4.1 | SORTING - list.sort vs sorted(iterable) | `sorted(iterable)` is preferred, works on all iterables (string/tuple/list/dict), returns a list for all iterables, does not change the original iterable, returns the sorted list for all iterables, default is ascending | 
 2.4.1.1 | Sorted(iterable) with the parameter `reverse` | >>> `sorted(iterable, reverse = True)`...since the defulat is a list with elements in ascending order, reverse=True returns a list with elements in descending order |
-2.4.1.2 | Sorted(iterable) with the parameter `key` | >>> `sorted(iterable, key=only_named_fn_or_lambda_fn_no_paranthesis)` ... eg >>> `sorted(iterable, key=absolute)`  OR >>> `sorted(iterable, key=lambda x: x**2)` OR >>> `sorted(iterable, key=lambda x: x if x >=0 else -x)` |
+2.4.1.2 | Sorted(iterable) with the parameter `key` | >>> `sorted(iterable, key=only_named_fn_or_lambda_fn_no_paranthesis)` ... eg >>> `sorted(iterable, key=absolute)`  OR >>> `sorted(iterable, key=lambda x: x**2)` OR >>> `sorted(iterable, key=lambda x: x if x >=0 else -x)` ...the funciton will pick each individual element do the transformation and rank then transformed elements, and display the corresponding elements |
 2.4.1.3 | Sorting list of tuples - breaking ties | if sorted(tuple), then the result is a list that was sorted primarily on the 1st elements of the tuples, secondarily on the 2nd elements of the tuple, and so on...|
 2.4.1.4 | Special case - sorting a list of tuples | with string being sorted in ascending order and numbers in descending order, or vice versa ... by using - in front of the numbers, eg `(-num, string)` ...this will sort the number is descending and the string is ascending order  | 
 2.4.2 | Way of the Programmer - Lambda/Named function in sorting | a lambda choose one element in the list, char in the string, one key in the dict at a time, 1st element in a list of tuples.. so can be very handy, but if the there are other complications an external function can be used w/ the lambda  |
@@ -231,9 +231,9 @@ Number | Topic | Comments | Misc
 3.3.1 | Deep copies - way 1 | for lists that are uniform structes of nesting | appending using nested iteration will give the result - when the child_list has no more lists inside it, shallow copying can be used |
 3.3.2 | Deep copies  way 2 | >>> `new_copy = copy.deepcopy(original_object)` | 
 3.3.3 | online JSON editor | https://jsoneditoronline.org/ | 
-3.3.4 | Understand...Extract...Repeat | to extract data from complex nested structures |
-3.3.4.1 | Understand | JSON structure using Online JSON Editor |
-3.3.4.2 | Extract one step a time | print to see the results |
+3.3.4 | Working with very complex nested python objects | use Understand...Extract (and print)...Repeat | 
+3.3.4.1 | Understand the nested data structure| (1) for dictionaries, check the keys using dict.keys(), for lists, check the length of the lists (2) view the complex structure in a prettier format using `print(json.dumps(object, indent =2))` (3) convert to a JSON string (step 2) and view using https://jsoneditoronline.org |
+3.3.4.2 | Extract one step a time | always print to see the results at each step |
 3.3..4.3 | Repeat | understand, extract and print | 
 
 
