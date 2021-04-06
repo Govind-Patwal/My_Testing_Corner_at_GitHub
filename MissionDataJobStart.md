@@ -235,6 +235,11 @@ Number | Topic | Comments | Misc
 3.3.4.1 | Understand the nested data structure| (1) for dictionaries, check the keys using dict.keys(), for lists, check the length of the lists (2) view the complex structure in a prettier format using `print(json.dumps(object, indent =2))` (3) convert to a JSON string (step 2) and view using https://jsoneditoronline.org |
 3.3.4.2 | Extract one step a time | always print to see the results at each step |
 3.3..4.3 | Repeat | understand, extract and print | 
+3.3.2 | Map and Filter | remember type(map), dir(map) and help(map) |
+3.3.2.1 | Map function | takes an iterator and returns a list with the sane length after doing some transformations |
+3.3.2.2 | Map syntax | map (function, iterator) ...funciton could be a named function or a lambda, eg >>> `map (lambda item: item *2, list1)` ...map DOES not return a list, it has to be converted to a list using >>> `list(map())` ... the length of the returned list is the same as the original list |
+3.3.2.3 | Filter | filters a list based on a condition and return a sublist of elements meeting the condition|
+3.3.2.4 | Filter syntx | filter (function, iterator) ...function could be named or lambda but SHOULD return True/False based on which the sublist will be created eg >>> `filter(lambda item : item >5, list1)`......filter DOES not return a list, it has to be converted to a list using >>> `list(filter())` ... the length of the returned list is usually shorter than the original list  |
 
 
 
