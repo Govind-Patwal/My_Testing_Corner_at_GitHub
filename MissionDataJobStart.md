@@ -232,14 +232,20 @@ Number | Topic | Comments | Misc
 3.3.2 | Deep copies  way 2 | >>> `new_copy = copy.deepcopy(original_object)` | 
 3.3.3 | online JSON editor | https://jsoneditoronline.org/ | 
 3.3.4 | Working with very complex nested python objects | use Understand...Extract (and print)...Repeat | 
-3.3.4.1 | Understand the nested data structure| (1) for dictionaries, check the keys using dict.keys(), for lists, check the length of the lists (2) view the complex structure in a prettier format using `print(json.dumps(object, indent =2))` (3) convert to a JSON string (step 2) and view using https://jsoneditoronline.org |
+3.3.4.1 | Understand/ work-on nested data structure | (1) view the complex structure in a prettier format using `print(json.dumps(object, indent =2))` (2) for dictionaries, check the keys using dict.keys(), for lists, check the length of the lists (3) convert to a JSON string (step 2) and view using https://jsoneditoronline.org |
 3.3.4.2 | Extract one step a time | always print to see the results at each step |
 3.3..4.3 | Repeat | understand, extract and print | 
 3.3.2 | Map and Filter | remember type(map), dir(map) and help(map) |
 3.3.2.1 | Map function | takes an iterator and returns a list with the sane length after doing some transformations |
-3.3.2.2 | Map syntax | map (function, iterator) ...funciton could be a named function or a lambda, eg >>> `map (lambda item: item *2, list1)` ...map DOES not return a list, it has to be converted to a list using >>> `list(map())` ... the length of the returned list is the same as the original list |
+3.3.2.2 | Map syntax | map (function, iterator) ...funciton could be a named function or a lambda (it takes 1 input, the individual element, end returns something), eg >>> `map (lambda item: item *2, list1)` ...map DOES not return a list, it has to be converted to a list using >>> `list(map())` ... the length of the returned list is the same as the original list |
 3.3.2.3 | Filter | filters a list based on a condition and return a sublist of elements meeting the condition|
-3.3.2.4 | Filter syntx | filter (function, iterator) ...function could be named or lambda but SHOULD return True/False based on which the sublist will be created eg >>> `filter(lambda item : item >5, list1)`......filter DOES not return a list, it has to be converted to a list using >>> `list(filter())` ... the length of the returned list is usually shorter than the original list  |
+3.3.2.4 | Filter syntax | filter (function, iterator) ...function could be named or lambda (taking one argument) but SHOULD return True/False based on which the sublist will be created eg >>> `filter(lambda item : item >5, list1)`......filter DOES not return a list, it has to be converted to a list using >>> `list(filter())` ... the length of the returned list is usually shorter than the original list  |
+3.3.3 | List Comprehensions | Pythonic way to do map and filter in one statement | 
+3.3.33.1 | List syntax | `[ <do_this_with_each_element> for <element> in <list> if <condition> else <do_this>]` ... results are appended automatically to a list in the order they appear in the original list| 
+3.3.33.2 | Advantages of list | compact, no need to define empty list, can do transformation, looping and condition checking in one line of code ...both map and filter functions done together, without the need to changing to list at the end | 
+
+
+
 
 
 
