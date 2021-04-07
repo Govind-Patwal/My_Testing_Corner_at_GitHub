@@ -243,6 +243,9 @@ Number | Topic | Comments | Misc
 3.3.3 | List Comprehensions | Pythonic way to do map and filter in one statement | 
 3.3.33.1 | List syntax | `[ <do_this_with_each_element> for <element> in <list> if <condition> else <do_this>]` ... results are appended automatically to a list in the order they appear in the original list| 
 3.3.33.2 | Advantages of list | compact, no need to define empty list, can do transformation, looping and condition checking in one line of code ...both map and filter functions done together, without the need to changing to list at the end | 
+3.3.33 | ZIP function | for pairwise operation amongst elements of lists - given two/multiple lists of equal lengths, zip creates a new list of tuples (the lenght of the new list is the same as the previous lists), the tuples have 1 element from each list respectively ... has to be changed to a list using list(zip(list1, list2 ... list_n)) ...[  (1st_element_list1, 1st_element_list2, ...1st_element_list_n), (2nd_element_list1, 2nd_element_list2, ...2nd_element_list_n) ..... ] | 
+3.3.34 | Working on the output from ZIP | since the output is a list of tuples, it can be iterated over easily ... `for x,y,z in list(zip(list1, list2,list3)):` |
+3.3.335 | working on the output from ZIP | list comprehension can also be used ... the elements of the tuples can be added/subtracted..or transformed |
 
 
 
