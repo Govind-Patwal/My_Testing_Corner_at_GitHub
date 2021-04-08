@@ -3,10 +3,19 @@
 import requests 
 import json
 
-page = requests.get('https://www.google.com/search?q=govind+patwal')
-# print(page)  # get the server response
-# print(page.text[:100])  # get the text of the page (first 100 characters) as it will be in string format
-print(json.loads(page.text))
+Base_URL = 'https://api.datamuse.com/words'  # Base URL before ?
+search_parameter_dict = {'rel_rhy':'sun'} 
+page = requests.get(Base_URL, params=search_parameter_dict)
+
+py_object1 = page.json()
+# print(py_object)
+
+py_object2 = json.loads(page.text)
+
+print(py_object1 is py_object2)
+print(py_object1 == py_object2)
+
+
 
 
 '''

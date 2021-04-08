@@ -252,7 +252,7 @@ Number | Topic | Comments | Misc
 3.3.1.2 | API | Application Programming Interface - speficies how an external program (an application program) can request that a program perform certain computations |
 3.3.1.3 | REST APIs | specifies how client program can call a REST website using APIs to get information | 
 3.3.1.4 | URL Structue for REST APIs | 3 parts of the URL (1) the base URL (2)the question mark: (3) the query (key/value pair(s) seperated by a &), for example (1) https://www.google.com/search  (2) ? (3) q=linkedin .... or (1) https://www.linkedin.com/search/results/all/  (2) ?  (3) keywords=google&origin=GLOBAL_SEARCH_HEADER  | 
-3.3.1.5 | Encoding URL Parameters like + : " | scace is encoded as `+`; `"` is encoded as `%22`; `:` is encoded as `%3A` ... | 
+3.3.1.5 | Encoding URL (or search) Parameters like + : " | scace is encoded as `+`; `"` is encoded as `%22`; `:` is encoded as `%3A` ... | 
 
 
 
