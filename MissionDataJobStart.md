@@ -248,6 +248,9 @@ Number | Topic | Comments | Misc
 3.3.335 | working on the output from ZIP ...list comprehension | list comprehension can also be used ... the elements of the tuples can be added/subtracted..or transformed |
 3.3.36 | Working on the output from ZIP ...dict comprehension | Dictionary comprehension can be used to create dictionary when data is coming from two diferent lists and there is a positional corelation between the data >>> `dict1 = { x:y for x,y in list_of_tuples_of_length_2}` |
 3.3.1 |  --- Internet APIs  ---  | |
+3.3.1.1 | Using REST | REST = REpresentational State Transfer = website that take inputs in the form of python dictionay (key, value pairs) and return an output as a text string  | 
+3.3.1.2 | API | Application Programming Interface - speficies how an external program (an application program) can request that a program perform certain computations |
+
 
 
 
