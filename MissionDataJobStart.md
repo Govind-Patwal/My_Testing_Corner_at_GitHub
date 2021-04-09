@@ -253,6 +253,7 @@ Number | Topic | Comments | Misc
 3.3.1.3 | REST APIs | specifies how client program can call a REST website using APIs to get information | 
 3.3.1.4 | URL Structue for REST APIs | 3 parts of the URL (1) the base URL (2)the question mark: (3) the query (key/value pair(s) seperated by a &), for example (1) https://www.google.com/search  (2) ? (3) q=linkedin .... or (1) https://www.linkedin.com/search/results/all/  (2) ?  (3) keywords=google&origin=GLOBAL_SEARCH_HEADER  | 
 3.3.1.5 | Encoding URL (or search) Parameters like + : " | scace is encoded as `+`; `"` is encoded as `%22`; `:` is encoded as `%3A` ... | 
+3.3.2 | How to use a REST API | answer these Q... (1) Is as authentication required to access the API, if yes how to authenticate yourself (2) what is the baseurl/endpoint (3) what is the query_param_dict (keys and values) that you need to pass to params (4) check the URL that was formed after adding the query_param_dict (5) what is structure of data that is returned by the API, how can you extract what you want | 
 
 
 
