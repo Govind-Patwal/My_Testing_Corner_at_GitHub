@@ -88,7 +88,7 @@ Number | Topic | Comments | Misc
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
 0.1.1.1 | type(), dir(), help() |  |
 0.1.2 | Coding good practicce | use print statement regulary to keep checking output |
-0.1.3 | some libraries | import turtle (for turtle graphics), import random (tos create random numbers),  import json (to convert py_objects to/from JSON strings), import copy (to deepcopy) | 
+0.1.3 | some libraries | import turtle (for turtle graphics), import random (tos create random numbers),  import json (to convert py_objects to/from JSON strings), import copy (to deepcopy) , import requests (to work with APIs) ... not python native ...user after win cmd -> pip3 install requests| 
 1 | **1/5 - Python Basics** | https://www.coursera.org/specializations/python-3-programming |
 2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
 2.44.1 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
@@ -251,8 +251,9 @@ Number | Topic | Comments | Misc
 3.3.1.1 | Using REST | REST = REpresentational State Transfer = website that take inputs in the form of python dictionay (key, value pairs) and return an output as a text string  | 
 3.3.1.2 | API | Application Programming Interface - speficies how an external program (an application program) can request that a program perform certain computations |
 3.3.1.3 | REST APIs | specifies how client program can call a REST website using APIs to get information | 
-3.3.1.4 | URL Structue for REST APIs | 3 parts of the URL (1) the base URL (2)the question mark: (3) the query (key/value pair(s) seperated by a &), for example (1) https://www.google.com/search  (2) ? (3) q=linkedin .... or (1) https://www.linkedin.com/search/results/all/  (2) ?  (3) keywords=google&origin=GLOBAL_SEARCH_HEADER  | 
-3.3.1.5 | Encoding URL (or search) Parameters like + : " | scace is encoded as `+`; `"` is encoded as `%22`; `:` is encoded as `%3A` ... | 
+3.3.1.4 | module required - requests and json |   |
+3.3.1.5 | URL Structue for REST APIs | 3 parts of the URL (1) the base URL (2)the question mark: (3) the query (key/value pair(s) seperated by a &), for example (1) https://www.google.com/search  (2) ? (3) q=linkedin .... or (1) https://www.linkedin.com/search/results/all/  (2) ?  (3) keywords=google&origin=GLOBAL_SEARCH_HEADER  | 
+3.3.1.5 | Encoding URL (or search) Parameters like + : " | space is encoded as `+`; `"` is encoded as `%22`; `:` is encoded as `%3A` ... | 
 3.3.2 | How to use a REST API | answer these Q... (1) Is as authentication required to access the API, if yes how to authenticate yourself (2) what is the baseurl/endpoint (3) what is the query_param_dict (keys and values) that you need to pass to params (4) check the URL that was formed after adding the query_param_dict (5) what is structure of data that is returned by the API, how can you extract what you want | 
 
 
