@@ -209,64 +209,129 @@ the output of this can be see on the python screen on on a python editor
 # print(names_of_podcast)
 
 
+# import json
+# import requests
+# import requests_cache
+# import webbrowser
+
+# requests_cache.install_cache('flickr_cache')
+
+# def flickr_photo_retrival ():
+
+#     tags_as_CSV = input('\nEnter the tags as CSV: ')
+#     desired_number_of_results = int(input('Enter the number of results required: '))
+
+#     base_url = 'https://api.flickr.com/services/rest/'
+
+#     # adding query params to a dict
+#     query_params = {}
+#     query_params['api_key'] = '7f62e659a47c2ddd0c2631d012eb8119'
+#     # query_params['per_page'] = desired_number_of_results
+#     query_params["tag_mode"] = "all"
+#     query_params["method"] = "flickr.photos.search"
+#     query_params['tags'] = tags_as_CSV
+#     query_params["media"] = "photos"
+#     query_params['format'] = 'json'
+#     query_params['nojsoncallback'] = 1
+
+#     # sorting the dictionary - will result in efficient caching and retrieval
+#     sorted_params = { key:query_params[key] for key in sorted(query_params) }
+
+#     # getting the page response
+#     page_response = requests.get(base_url, params=sorted_params)
+
+#     # printing the page response and URL
+#     # print(page_response)
+#     # print(page_response.url)
+
+#     # converting to a python object
+#     py_obj = page_response.json()
+#     # print(type(py_obj))
+
+#     # # pretty printing the py object
+#     # print(json.dumps(py_obj, indent =2))
+
+#     if page_response.from_cache:
+#         print('\n*** We found the results in the Cache ... ***\n')
+#     else:
+#         print('\n*** We did NOT find the results in the Cache ... ***\n')
+
+#     # results
+#     for idx, item in enumerate( py_obj['photos']['photo'][:desired_number_of_results] ) :
+#         print('Matching URL # {} is https://www.flickr.com/photos/{}/{}'.format((idx+1), item['owner'], item['id']   )  )
+
+#     # displaying the first 5 images in browser
+#     print('\n *** Opening the first 5 images in the brower ***\n')
+#     for item in py_obj['photos']['photo'][:5]  :
+#         url = 'https://www.flickr.com/photos/{}/{}'.format(item['owner'], item['id']   )  
+#         webbrowser.open(url)
+
+# flickr_photo_retrival()
+
+
 import json
-import requests
-import requests_cache
-import webbrowser
+import requests_with_caching as requests
 
-requests_cache.install_cache('flickr_cache')
-
-def flickr_photo_retrival ():
-
-    tags_as_CSV = input('\nEnter the tags as CSV: ')
-    desired_number_of_results = int(input('Enter the number of results required: '))
-
-    base_url = 'https://api.flickr.com/services/rest/'
-
-    # adding query params to a dict
+def get_movies_from_tastedive(movie_name): # takes a movie name as input
+    base_url = 'https://tastedive.com/api/similar'
     query_params = {}
-    query_params['api_key'] = '7f62e659a47c2ddd0c2631d012eb8119'
-    # query_params['per_page'] = desired_number_of_results
-    query_params["tag_mode"] = "all"
-    query_params["method"] = "flickr.photos.search"
-    query_params['tags'] = tags_as_CSV
-    query_params["media"] = "photos"
-    query_params['format'] = 'json'
-    query_params['nojsoncallback'] = 1
+    query_params['limit'] = 5
+    query_params['q'] = movie_name
+    query_params['type'] = 'movies'
+    sorted_params = query_params
+    page_response = requests.get(base_url, params=sorted_params )
+    py_object = page_response.json()
+    return py_object  # dictionary that has all info about 5 related movies
 
-    # sorting the dictionary - will result in efficient caching and retrieval
-    sorted_params = { key:query_params[key] for key in sorted(query_params) }
+def extract_movie_titles(movie_dict):  # dictionary that has all info about 5 related movies
+    movie_title_list = [ title['Name'] for title in movie_dict['Similar']['Results'] ]
+    return movie_title_list  # list of the movie titles
 
-    # getting the page response
-    page_response = requests.get(base_url, params=sorted_params)
+def get_related_titles(list_of_movie_titles): # list of the movie titles
+    big_list_of_related_movies = []
+    for item in list_of_movie_titles:
+        movie_py_dict = get_movies_from_tastedive(item)
+        movie_list = extract_movie_titles(movie_py_dict)
+        for movie1 in movie_list:
+            if movie1 not in big_list_of_related_movies:
+                big_list_of_related_movies.append(movie1)
+    return (big_list_of_related_movies) # 1 big list of movie titles, non duplicate
 
-    # printing the page response and URL
-    # print(page_response)
-    # print(page_response.url)
+################################################
 
-    # converting to a python object
-    py_obj = page_response.json()
-    # print(type(py_obj))
+def get_movie_data(movie_title): # movie name
+    baseurl = 'http://www.omdbapi.com/'
+    query_params = {}
+    query_params['t'] = movie_title
+    query_params['r'] = 'json'
+    # sorted_params = {key:query_params[key] for key in sorted(query_params) }
+    sorted_params = query_params
+    page_response = requests.get(baseurl, params=sorted_params)
+    page_py_object = page_response.json()
+    return page_py_object # dict with related info
 
-    # # pretty printing the py object
-    # print(json.dumps(py_obj, indent =2))
+def get_movie_rating(OMDB_dict): # OMDB movie list
+    movie_ratings = OMDB_dict['Ratings']
+    for rating in movie_ratings:
+        if rating['Source'] == 'Rotten Tomatoes':
+            desired_rating = int(rating['Value'].split('%')[0]   )
+        else:
+            desired_rating = 0
+        print(desired_rating)
+    return desired_rating # Rotten tomatoes rating of the movie
 
-    if page_response.from_cache:
-        print('\n*** We found the results in the Cache ... ***\n')
-    else:
-        print('\n*** We did NOT find the results in the Cache ... ***\n')
+def get_sorted_recommendations(list_of_movie_titles):
+    combined_list_of_5_titles_per_movie = get_related_titles(list_of_movie_titles)
+    movies_with_ratings = {}
+    for title in combined_list_of_5_titles_per_movie:
+        OMDB_title1 = get_movie_data(title)
+        Movie_Rotten_rating = get_movie_rating(OMDB_dict1)
+        movies_with_ratings[title] = Movie_Rotten_rating
+        
+    return movies_with_ratings
+        
+print(get_sorted_recommendations(   ['Venom']    ))
 
-    # results
-    for idx, item in enumerate( py_obj['photos']['photo'][:desired_number_of_results] ) :
-        print('Matching URL # {} is https://www.flickr.com/photos/{}/{}'.format((idx+1), item['owner'], item['id']   )  )
-
-    # displaying the first 5 images in browser
-    print('\n *** Opening the first 5 images in the brower ***\n')
-    for item in py_obj['photos']['photo'][:5]  :
-        url = 'https://www.flickr.com/photos/{}/{}'.format(item['owner'], item['id']   )  
-        webbrowser.open(url)
-
-flickr_photo_retrival()
 
 
 
