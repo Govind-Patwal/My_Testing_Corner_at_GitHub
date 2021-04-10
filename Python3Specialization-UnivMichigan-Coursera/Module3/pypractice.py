@@ -152,7 +152,7 @@ requests_cache.install_cache()
 
 def caching_check ():
     
-    input_word = input('Enter the lookup word: ')
+    input_word = input('\nEnter the lookup word: ')
     input_number_of_results = int(input('Enter the number of desired results: '))
     query_parameters = {'ml':input_word}
     # sorted the dict with keys, this will lead to less get requests from the page, in case the keys are not in the right sequence
@@ -162,12 +162,12 @@ def caching_check ():
     page_response = requests.get(base_url, params=sorted_query_parameters)
 
     if page_response.from_cache:
-        print('Great!!! The page was in Cache...')
+        print('\nGreat!!! The page was in Cache...')
         py_obj = page_response.json()
         word_list = [  dict_level1['word'] for dict_level1 in py_obj[:input_number_of_results]  ]
         return word_list
     else:
-        print('We could NOT find the page in Cache...')
+        print('\nWe could NOT find the page in Cache...')
         py_obj = page_response.json()
         # Alternatively: py_obj = json.loads(page_response.text)
         word_list = [  dict_level1['word'] for dict_level1 in py_obj[:input_number_of_results]  ]
