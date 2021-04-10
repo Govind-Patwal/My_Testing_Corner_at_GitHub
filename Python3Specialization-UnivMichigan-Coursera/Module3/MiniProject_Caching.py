@@ -7,11 +7,12 @@ requests_cache.install_cache()
 OTHER ARGUMENTS: requests_cache.install_cache(<file_name>, location = <>, expiration = <>)
 # EXAMPLE
 >>> requests_cache.install_cache(dict_in_py_memory, location = memory, expiration = 600)
-# name = dict_in_py_memory
+# name = cache(default), dict_in_py_memory
 # location = sqlite (default), memory, redis, mongodb   
-# expiration = 600 seconds
+# expiration = indefinitely(default), 600 seconds
 1) https://geektechstuff.com/2020/06/28/caching-requests-python/
 2) https://medium.com/@jasonrigden/requests-cache-library-tutorial-bceb400f1a01
+3) https://requests-cache.readthedocs.io/en/latest/api.html
 '''
 
 def caching_check ():
@@ -21,9 +22,8 @@ def caching_check ():
     >>> Enter the number of desired results: 4
     Great!!! The page was in Cache...
     ['jump', 'walk', 'progress', 'fast walk']
-
     '''
-    
+     
     input_word = input('\nEnter the lookup word: ')
     input_number_of_results = int(input('Enter the number of desired results: '))
     query_parameters = {'ml':input_word}

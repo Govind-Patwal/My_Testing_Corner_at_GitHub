@@ -143,18 +143,19 @@ import requests # not native to python: win cmd -> pip3 install requests
 import requests_cache # not native to python: win cmd -> pip3 install requests_cache
 
 requests_cache.install_cache()
+# in the above, the default file name is cache, the default backend is sqlite
 
 # using some more parameters
-# initiating cache: name = dict_in_py_memory
-# location = python memory
-# expiration = 600 seconds
+# name = default is 'cache'
+# location = default is 'sqlite'
+# expiration = default is indefinitely, 
 # requests_cache.install_cache("dict_in_py_memory", backend="sqlite", expire_after=600)
 
 def caching_check ():
     
     input_word = input('\nEnter the lookup word: ')
     input_number_of_results = int(input('Enter the number of desired results: '))
-    query_parameters = {'ml':input_word}
+    query_params = {'ml':input_word}
     # sorted the dict with keys, this will lead to less get requests from the page, in case the keys are not in the right sequence
     sorted_query_parameters = { key:query_parameters[key] for key in sorted(query_parameters) }
 
@@ -174,4 +175,11 @@ def caching_check ():
         return word_list
 
 print(caching_check())
+
+
+
+
+
+
+
 
