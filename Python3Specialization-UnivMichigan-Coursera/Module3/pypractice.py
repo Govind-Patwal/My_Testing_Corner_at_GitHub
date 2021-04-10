@@ -138,43 +138,140 @@ the output of this can be see on the python screen on on a python editor
 
 # print('New Paragraph: {}'.format(   paragraph_translator() )  )
 
-import json
-import requests # not native to python: win cmd -> pip3 install requests
-import requests_cache # not native to python: win cmd -> pip3 install requests_cache
+# import json
+# import requests # not native to python: win cmd -> pip3 install requests
+# import requests_cache # not native to python: win cmd -> pip3 install requests_cache
 
-requests_cache.install_cache()
-# in the above, the default file name is cache, the default backend is sqlite
+# requests_cache.install_cache()
+# # in the above, the default file name is cache, the default backend is sqlite
 
-# using some more parameters
-# name = default is 'cache'
-# location = default is 'sqlite'
-# expiration = default is indefinitely, 
-# requests_cache.install_cache("dict_in_py_memory", backend="sqlite", expire_after=600)
+# # using some more parameters
+# # name = default is 'cache'
+# # location = default is 'sqlite'
+# # expiration = default is indefinitely, 
+# # requests_cache.install_cache("dict_in_py_memory", backend="sqlite", expire_after=600)
 
-def caching_check ():
+# def caching_check ():
     
-    input_word = input('\nEnter the lookup word: ')
-    input_number_of_results = int(input('Enter the number of desired results: '))
-    query_params = {'ml':input_word}
-    # sorted the dict with keys, this will lead to less get requests from the page, in case the keys are not in the right sequence
-    sorted_query_parameters = { key:query_parameters[key] for key in sorted(query_parameters) }
+#     input_word = input('\nEnter the lookup word: ')
+#     input_number_of_results = int(input('Enter the number of desired results: '))
+#     query_params = {'ml':input_word}
+#     # sorted the dict with keys, this will lead to less get requests from the page, in case the keys are not in the right sequence
+#     sorted_query_parameters = { key:query_parameters[key] for key in sorted(query_parameters) }
 
-    base_url = 'https://api.datamuse.com/words'
-    page_response = requests.get(base_url, params=sorted_query_parameters)
+#     base_url = 'https://api.datamuse.com/words'
+#     page_response = requests.get(base_url, params=sorted_query_parameters)
+
+#     if page_response.from_cache:
+#         print('\nGreat!!! The page was in Cache...')
+#         py_obj = page_response.json()
+#         word_list = [  dict_level1['word'] for dict_level1 in py_obj[:input_number_of_results]  ]
+#         return word_list
+#     else:
+#         print('\nWe could NOT find the page in Cache...')
+#         py_obj = page_response.json()
+#         # Alternatively: py_obj = json.loads(page_response.text)
+#         word_list = [  dict_level1['word'] for dict_level1 in py_obj[:input_number_of_results]  ]
+#         return word_list
+
+# print(caching_check())
+
+# # importing modules
+# import json
+# import requests
+# import requests_cache
+
+# # installing cache and naming it
+# requests_cache.install_cache('apple_cache')
+
+# # creating the base url and query params
+# base_url = 'https://itunes.apple.com/search'
+# query_params = {'term': 'Ann Arbor', 'entity':'podcast'}
+# sorted_query_params = {  key:query_params[key] for key in sorted(query_params)  }
+
+# # getting the page response and converting to a py object
+# page_response = requests.get(base_url, sorted_query_params)
+# py_object = page_response.json()
+
+# # checking if the page was retrieved from Cache
+# if page_response.from_cache:
+#     print('\n*** Was result in Cache? : YES ***\n')
+# else:
+#     print('\n*** Was result in Cache? : NO ***\n')
+
+# ## viewing the py object in a prettier way
+# # pretty_format = json.dumps(py_object, indent = 2)
+# # print(pretty_format)
+
+# ## print out the names of all the podcasts returned
+
+# names_of_podcast = [dict1['trackName'] for dict1 in py_object['results'] ]
+# print(names_of_podcast)
+
+
+import json
+import requests
+import requests_cache
+import webbrowser
+
+requests_cache.install_cache('flickr_cache')
+
+def flickr_photo_retrival ():
+
+    tags_as_CSV = input('\nEnter the tags as CSV: ')
+    desired_number_of_results = int(input('Enter the number of results required: '))
+
+    base_url = 'https://api.flickr.com/services/rest/'
+
+    # adding query params to a dict
+    query_params = {}
+    query_params['api_key'] = '7f62e659a47c2ddd0c2631d012eb8119'
+    # query_params['per_page'] = desired_number_of_results
+    query_params["tag_mode"] = "all"
+    query_params["method"] = "flickr.photos.search"
+    query_params['tags'] = tags_as_CSV
+    query_params["media"] = "photos"
+    query_params['format'] = 'json'
+    query_params['nojsoncallback'] = 1
+
+    # sorting the dictionary - will result in efficient caching and retrieval
+    sorted_params = { key:query_params[key] for key in sorted(query_params) }
+
+    # getting the page response
+    page_response = requests.get(base_url, params=sorted_params)
+
+    # printing the page response and URL
+    # print(page_response)
+    # print(page_response.url)
+
+    # converting to a python object
+    py_obj = page_response.json()
+    # print(type(py_obj))
+
+    # # pretty printing the py object
+    # print(json.dumps(py_obj, indent =2))
 
     if page_response.from_cache:
-        print('\nGreat!!! The page was in Cache...')
-        py_obj = page_response.json()
-        word_list = [  dict_level1['word'] for dict_level1 in py_obj[:input_number_of_results]  ]
-        return word_list
+        print('\n*** We found the results in the Cache ... ***\n')
     else:
-        print('\nWe could NOT find the page in Cache...')
-        py_obj = page_response.json()
-        # Alternatively: py_obj = json.loads(page_response.text)
-        word_list = [  dict_level1['word'] for dict_level1 in py_obj[:input_number_of_results]  ]
-        return word_list
+        print('\n*** We did NOT find the results in the Cache ... ***\n')
 
-print(caching_check())
+    # results
+    for idx, item in enumerate( py_obj['photos']['photo'][:desired_number_of_results] ) :
+        print('Matching URL # {} is https://www.flickr.com/photos/{}/{}'.format((idx+1), item['owner'], item['id']   )  )
+
+    # displaying the first 5 images in browser
+    print('\n *** Opening the first 5 images in the brower ***\n')
+    for item in py_obj['photos']['photo'][:5]  :
+        url = 'https://www.flickr.com/photos/{}/{}'.format(item['owner'], item['id']   )  
+        webbrowser.open(url)
+
+flickr_photo_retrival()
+
+
+
+
+
 
 
 

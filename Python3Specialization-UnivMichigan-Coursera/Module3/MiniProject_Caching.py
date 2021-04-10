@@ -2,7 +2,7 @@ import json
 import requests # not native to python: win cmd -> pip3 install requests
 import requests_cache # not native to python: win cmd -> pip3 install requests_cache
 
-requests_cache.install_cache()
+requests_cache.install_cache('cache_similar_meaning_words')
 '''
 OTHER ARGUMENTS: requests_cache.install_cache(<file_name>, location = <>, expiration = <>)
 # EXAMPLE
