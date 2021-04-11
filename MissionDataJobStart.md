@@ -81,8 +81,8 @@ Wk starts on a Monday and ends on a Sunday
 ### PYTHON COURSE - Univeristy of Michigan - Python 3 Specialization
 - https://www.coursera.org/specializations/python-3-programming
 
-Number | Topic | Comments | Misc
-|---|---|---|--- |
+| Number | Topic | Comments | Misc | 
+| :--- | :--- | : --- | :--- |
 0.1 | Univeristy of Michigan - Python Specialization | |
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
 0.1.1.1 | type(), dir(), help() |  |
@@ -254,7 +254,14 @@ Number | Topic | Comments | Misc
 3.3.1.5 | URL Structue for REST APIs | 3 parts of the URL (1) the base URL (2)the question mark: (3) the query (key/value pair(s) seperated by a &), for example (1) https://www.google.com/search  (2) ? (3) q=linkedin .... or (1) https://www.linkedin.com/search/results/all/  (2) ?  (3) keywords=google&origin=GLOBAL_SEARCH_HEADER  | 
 3.3.1.5 | Encoding URL (or search) Parameters like + : " | space is encoded as `+`; `"` is encoded as `%22`; `:` is encoded as `%3A` ... | 
 3.3.2 | How to use a REST API | answer these Q... (1) Is as authentication required to access the API, if yes how to authenticate yourself (2) what is the baseurl/endpoint (3) what is the query_param_dict (keys and values) that you need to pass to params (4) check the URL that was formed after adding the query_param_dict (5) what is structure of data that is returned by the API, how can you extract what you want ...for this convert the python object to a JSON string (>>> `json.dumps(py_object, indent=4)`) and print and/or view is https://jsoneditoronline.org  | 
-3.3.3 | Caching | this allows the program to fetch the results locally rather than getting it from the server/page | 
+3.3.3 | Caching | this allows the program to fetch the results locally rather than getting it from the server/page ...increases speed, decreases API calls, works even if the host page is down | 
+3.3.4 | syntax | `import requests_cache` (newline) `requests_cache.install_cache('cache_name')` ...this will create a cache cache_name.sqlite at the same level as the file ... NOTE - the import_requests module is not native to python, so one might need go to `win cmd -> pip3 install requests_cache` |
+3.3.5 | checking if a page was found in cache | `print(page_respose.from_cache)` .. this return True if the page_response (= requests(base_url, params=params1)) was found/pulled in/from the cache | 
+3.3.6 | opening a page in browser | this opens a url in the default browser | 
+| 3.3.7 | syntax | `import webbrowser` (newline) `webbrowser.open(   <url_to_be_opened>   )` | |
+| 4.0 | Classes | | |
+| Number | Topic | Comments | Misc | 
+
 
 
 
