@@ -227,7 +227,7 @@ Number | Topic | Comments | Misc
 3.2.1 | Way of the programmer | nest the same type of objects inside lists/dicts ...if you are given something else, use a if else statement, eg >>> if type(x) == type([]):  |
 3.3 | Shallow copies vs Deep copies | Copying using [:], *1, .copy(), creates shallow copies  - ONLY copying at the highest/outermost level ...for any level inside, aliasing comes a picture - if the original list is mutated at 2nd layer, the copies are also changed  |
 3.4 | Deep copies | completely independent of the original - any change in original is not reflected on the copied one | 
-3.3.1 | Deep copies - way 1 | for lists that are uniform structes of nesting | appending using nested iteration will give the result - when the child_list has no more lists inside it, shallow copying can be used |
+3.3.1 | Deep copies - way 1 | for lists that are uniform structes of nesting ... appending using nested iteration will give the result - when the child_list has no more lists inside it, shallow copying can be used |
 3.3.2 | Deep copies  way 2 | >>> `new_copy = copy.deepcopy(original_object)` | 
 3.3.3 | online JSON editor | https://jsoneditoronline.org/ | 
 3.3.4 | Working with very complex nested python objects | use Understand...Extract (and print)...Repeat | 
