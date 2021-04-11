@@ -3,6 +3,8 @@ This Course is one of the main reason I joined this specialization.
 It provides an intro to Classes and Inheretance.
 '''
 
-import pypracticeCopy as outside_file_1
+def print2():
+    return '\nThis code is being run from pypracticeCopy'
 
-print(   outside_file_1.print2()   ) 
+# print('this is a default print statement.')    
+    
