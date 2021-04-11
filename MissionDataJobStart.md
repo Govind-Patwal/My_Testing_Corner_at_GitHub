@@ -55,8 +55,8 @@ Kaggle(python + pandas) + Django + Canvas (in class + GitLab...while doing this 
 ### Daily_Activity
 Wk starts on a Monday and ends on a Sunday
 
-Wk | Dates | Planned | Executed | Evaluation
-| --- | --- | --- | --- | --- |
+| Wk | Dates | Planned | Executed | Evaluation |
+| :--- | :--- | :--- | :--- | :--- |
 0 | 2020/12/07 - 2020/12/13 | This Wk: Demo day + Relaxation | Bootcamp finished last Sunday (12/06) ## 1st 4 days of this week spent on Practicing for Demo day on Dec/10/2020. ## Sat/Sun spent relaxing | 
 1 | 2020/12/14 - 2020/12/20  | Google's Python Class + laptop setup | New Laptop delivered on 12/14, Setting up new Laptop, partitioning (created D: for non-OS), Installing Git, Python, Anaconda - checking for opening .ipynb files from outside D:, copying files from oustside. ## Started Google Python class, found it was Python 2, so dropped this plan - found more courses on python.org, and W3 schools, but decided to go through UofT Bootcamp modules again ## 12/19 - Spent time on ways to create Video with Green backgound so that I could create educational videos and put on GitHub - tried Zoom, Logitech Capture, Logitech Gaming, OBS, Chroma Cam , Personify. ## 12/20 - Started with Bootcamp Python, moved to working on Career Service tasks - finished the intro, now working on others parts, decided to use the next 2 Wks to complete all tasks related to becoming Employee Ready and Employee Competitive and then revisit Hard/Soft Skills| Plan changed mid-wk
 2 | 2020/12/21 - 2020/12/27  | Complete tasks to become Employer-Ready | Change of plans - to Exercise everyday, am willing to push the Job start date by 2-4 months to achieve this. ##talked to career director (1st time) ## Completed first draft of brand statement, resume and LinkedIn | 100% completed 
@@ -72,15 +72,14 @@ Wk | Dates | Planned | Executed | Evaluation
 12 | 2021/03/01 - 2021/03/07 | | ## CanEx Week 5: classes + assignments ## Finished kaggle Pandas |
 13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1:  ## Finished CheaprEats assignment ## Finished Bootcamp's - Module 4-Pandas, started Module 5 - Matplotlib |
 14 | 2021/03/15 - 2021/03/21 | | ## CanEx Week 7: No classes + No assignments ## Realized that 1st Co-op placement was a waste of time and efforts ## stressed out on Friday during CanEx class ## Weekend - Took time out to plan the direction of life - have to finish a Python course from Univeristy of Michigan https://www.coursera.org/specializations/python-3-programming , work on projects and then apply for Python projects -> Current Job (become the top ISR) ## wrote email to CALC ## First day out w/ family in Spring 2021 |
-15 | 2021/03/22 - 2021/03/28 | | ## CanEx Week 7 ## Dropped 1st Co-op placement ## Started Python 3 specialization - Univ of Michigan @ Coursera - finished 'Python Basics' and chapter 1/5 of second course 'Python Functions, Files, and Dictionaries'  |
----
+15 | 2021/03/22 - 2021/03/28 | | ## CanEx Week 8 ## Dropped 1st Co-op placement ## Started Python 3 specialization - Univ of Michigan @ Coursera - finished 'Python Basics' and chapter 1/5 of second course 'Python Functions, Files, and Dictionaries'  |
+16 | 2021/03/29 - 2021/04/04 | | ## CanEx Week 9 ## Finished Course 2/5 of Python 3 specialization | 
+17 | 2021/04/05 - 2021/04/11 | | ## CanEx Week 10 ## Finished Course 3/5 of Python 3 specialization |
 
-### Cheat_Sheet
-**Credits**
-- https://www.kaggle.com/learn/overview
 
 ---
-### COURSE - Univeristy of Michigan - Python 3 Specialization
+### PYTHON COURSE - Univeristy of Michigan - Python 3 Specialization
+- https://www.coursera.org/specializations/python-3-programming
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
@@ -254,7 +253,9 @@ Number | Topic | Comments | Misc
 3.3.1.4 | module required - requests and json |   |
 3.3.1.5 | URL Structue for REST APIs | 3 parts of the URL (1) the base URL (2)the question mark: (3) the query (key/value pair(s) seperated by a &), for example (1) https://www.google.com/search  (2) ? (3) q=linkedin .... or (1) https://www.linkedin.com/search/results/all/  (2) ?  (3) keywords=google&origin=GLOBAL_SEARCH_HEADER  | 
 3.3.1.5 | Encoding URL (or search) Parameters like + : " | space is encoded as `+`; `"` is encoded as `%22`; `:` is encoded as `%3A` ... | 
-3.3.2 | How to use a REST API | answer these Q... (1) Is as authentication required to access the API, if yes how to authenticate yourself (2) what is the baseurl/endpoint (3) what is the query_param_dict (keys and values) that you need to pass to params (4) check the URL that was formed after adding the query_param_dict (5) what is structure of data that is returned by the API, how can you extract what you want | 
+3.3.2 | How to use a REST API | answer these Q... (1) Is as authentication required to access the API, if yes how to authenticate yourself (2) what is the baseurl/endpoint (3) what is the query_param_dict (keys and values) that you need to pass to params (4) check the URL that was formed after adding the query_param_dict (5) what is structure of data that is returned by the API, how can you extract what you want ...for this convert the python object to a JSON string (>>> `json.dumps(py_object, indent=4)`) and print and/or view is https://jsoneditoronline.org  | 
+3.3.3 | Caching | this allows the program to fetch the results locally rather than getting it from the server/page | 
+
 
 
 
@@ -290,6 +291,12 @@ Number | Topic | Comments | Misc
 
 
 ---
+
+---
+
+### Cheat_Sheet
+**Credits**
+- https://www.kaggle.com/learn/overview
 
 ### KAGGLE, UOFT BOOTCAMP
 
