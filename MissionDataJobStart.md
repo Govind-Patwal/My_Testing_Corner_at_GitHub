@@ -258,9 +258,9 @@ Wk starts on a Monday and ends on a Sunday
 3.3.4 | syntax | `import requests_cache` (newline) `requests_cache.install_cache('cache_name')` ...this will create a cache cache_name.sqlite at the same level as the file ... NOTE - the import_requests module is not native to python, so one might need go to `win cmd -> pip3 install requests_cache` |
 3.3.5 | checking if a page was found in cache | `print(page_respose.from_cache)` .. this return True if the page_response (= requests(base_url, params=params1)) was found/pulled in/from the cache | 
 3.3.6 | opening a page in browser | this opens a url in the default browser | 
-| 3.3.7 | syntax | `import webbrowser` (newline) `webbrowser.open(   <url_to_be_opened>   )` | |
-| 4.0 | Classes | | |
-| Number | Topic | Comments | Misc | 
+3.3.7 | syntax | `import webbrowser` (newline) `webbrowser.open(   <url_to_be_opened>   )` | |
+4.0 | Classes | | |
+Number | Topic | Comments | Misc | 
 
 
 
