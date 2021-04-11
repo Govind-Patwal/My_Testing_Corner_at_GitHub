@@ -258,9 +258,9 @@ Number | Topic | Comments | Misc
 3.3.4 | syntax | `import requests_cache` (newline) `requests_cache.install_cache('cache_name')` ...this will create a cache cache_name.sqlite at the same level as the file ... NOTE - the import_requests module is not native to python, so one might need go to `win cmd -> pip3 install requests_cache` |
 3.3.5 | checking if a page was found in cache | `print(page_respose.from_cache)` .. this return True if the page_response (= requests(base_url, params=params1)) was found/pulled in/from the cache | 
 3.3.6 | opening a page in browser | this opens a url in the default browser | 
-3.3.7 | syntax | `import webbrowser` (newline) `webbrowser.open(   <url_to_be_opened>   )` | |
-4.0 | Classes | | |
-Number | Topic | Comments | Misc | 
+3.3.7 | syntax | `import webbrowser` (newline) `webbrowser.open(   <url_to_be_opened>   )` |
+4.0 | **Python Classes and Inheritance** | https://www.coursera.org/learn/python-classes-inheritance?specialization=python-3-programming |
+
 
 
 
@@ -464,11 +464,9 @@ Number | Topic | Comments | Misc
 2.53.4 | STRING: .replace(, ) | >>> `string.replace('char(s)', 'repalcement')`  | 
 2.53.5 | STRING: index('char(s)') | >>> `string.index('boy')` ... will return the first occurance of the variable | 
 2.53.6 | STRING: format string ...string.format(var1, var2) | >>> string1 = "This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) |
-
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
 2.54.1 | LIST - cloning | ... >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
-
-Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
+....Corey....2.43 | ** **Classes** ** | https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc | 
 2.43.1 | Classes - what/why? | Class is an object constructor - can be used to create user defined objects that are used to logically group our data and functions in way that is easy to use/reuse and also easy to build upong if need be, can be used as a 'blueprint' so that we don't have to do it manually for each time |
 2.43.2 | Instances | The class (blueprint) is used to create an instance of the class...each unique employee/student record that we create is an instance of the class  |
 2.43.3 | Class variables and Instance variables | one way is to create an empty class and then instantiate an instance and create individual instance variable and give them values >>>`class Employee:` (nextline) `pass`  ... instantiating - >>>> `emp_1 = Employee()` ...giving values >>> `emp_1.first = 'Govind'` | 
