@@ -81,8 +81,8 @@ Wk starts on a Monday and ends on a Sunday
 ### PYTHON COURSE - Univeristy of Michigan - Python 3 Specialization
 - https://www.coursera.org/specializations/python-3-programming
 
-| Number | Topic | Comments | Misc | 
-| :--- | :--- | : --- | :--- |
+Number | Topic | Comments | Misc 
+:--- | :--- | : --- | :--- 
 0.1 | Univeristy of Michigan - Python Specialization | |
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
 0.1.1.1 | type(), dir(), help() |  |
