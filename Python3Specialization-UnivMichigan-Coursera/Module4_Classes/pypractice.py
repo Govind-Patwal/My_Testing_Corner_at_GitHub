@@ -149,34 +149,30 @@ class Point():
         self.x = x 
         self.y = y 
 
-    # # __str__ makes the display of the object pretty, it gets returned when print(instance) is executed
-    # def __str__ (self):
-    #     return 'Point at ({}. {}) .. {}'.format(self.x, self.y, 'gibberesh')
+    # __str__ makes the display of the object pretty, it gets returned when print(instance) is executed
+    def __str__ (self):
+        return 'Point at ({}, {}) .. {}'.format(self.x, self.y, 'gibberesh')
 
     # defining the distance function as a method
-    def distance_between_points(self, instance1, instance2):
-        distance_x = instance1.x**2 - instance2.x**2
-        distance_y = instance1.y**2 - instance2.y**2
-        return distance_x + distance_y
+    def half_of_points(self, instance2):
+        new_x = (self.x + instance2.x)/2
+        new_y = (self.y + instance2.y)/2
+        new_point = Point(new_x, new_y)
+        return new_point
 
-
-
-# defining the distance function NOT as a method
-def distance_between_points(instance1, instance2):
-    distance_x = instance1.x**2 - instance2.x**2
-    distance_y = instance1.y**2 - instance2.y**2
-    return distance_x + distance_y
+    def __add__ (self, instance2):
+        point3 = Point(self.x + instance2.x, self.y + instance2.y)
+        return point3
 
 # instantiating
 point1 = Point(12,23)
 point2 = Point(78,34)
+point4 = Point(5567,23232)
 
-# instances being objects can be passed in functions
-print(  distance_between_points(point1, point2)  )
+print(point1.half_of_points(point2))
 
-# instances being objects can be passed in mehods
-print(   point2.distance_between_points(point1, point2)  )
+print(  point1 + point2)  
 
-print(point1)
-print(point2)
+
+
 
