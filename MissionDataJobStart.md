@@ -262,7 +262,7 @@ Number | Topic | Comments | Misc
 3.3.7 | syntax | `import webbrowser` (newline) `webbrowser.open(   <url_to_be_opened>   )` |
 4.0 | **Python Classes and Inheritance** | https://www.coursera.org/learn/python-classes-inheritance?specialization=python-3-programming |
 4.1 | Object Oriented Programming (OOP) | *** use objects, that contain both data and functionality together | 
-4.1.2 | Objects in Python ? | In Python, every value is an object. integer, string, float, list, dicts, tuples...objects have attributes (state) and methods (functions)...each object is stored in an instance variable..for example, the different turtles are instances of turtles | 
+4.1.2 | Objects in Python ? | In Python, every value is an object. integer, string, float, list, dicts, tuples...objects have attributes/state (What is the position/color/shape) and methods/functions (what can it it do))...each object is stored in an instance variable..for example, the different turtles are instances of turtles | 
 
 
 

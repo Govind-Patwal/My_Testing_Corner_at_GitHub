@@ -75,9 +75,9 @@ def flickr_photo_retrival ():
         url = 'https://www.flickr.com/photos/{}/{}'.format(item['owner'], item['id']   )  
         webbrowser.open(url)
 
-flickr_photo_retrival()
 
-print(help(flickr_photo_retrival))
+
+
 
 
 
