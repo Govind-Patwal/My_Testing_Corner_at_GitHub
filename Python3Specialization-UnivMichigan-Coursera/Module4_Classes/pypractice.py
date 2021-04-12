@@ -157,21 +157,24 @@ class Point():
     def half_of_points(self, instance2):
         new_x = (self.x + instance2.x)/2
         new_y = (self.y + instance2.y)/2
-        new_point = Point(new_x, new_y)
-        return new_point
-
+        return Point(new_x, new_y)
+ 
     def __add__ (self, instance2):
-        point3 = Point(self.x + instance2.x, self.y + instance2.y)
-        return point3
+        return Point(self.x + instance2.x, self.y + instance2.y)
 
 # instantiating
 point1 = Point(12,23)
 point2 = Point(78,34)
-point4 = Point(5567,23232)
 
-print(point1.half_of_points(point2))
+point3 = point1 + point2
+print(point3)
 
-print(  point1 + point2)  
+point4 = point1.half_of_points(point2)
+
+print(point4)  
+
+print(point4.x)
+print(point4.y)
 
 
 
