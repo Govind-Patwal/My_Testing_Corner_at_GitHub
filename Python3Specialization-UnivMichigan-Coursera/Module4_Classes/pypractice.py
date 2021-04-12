@@ -85,16 +85,98 @@ It provides an intro to Classes and Inheretance.
 
 # print(point1.var2)
 
+# class Point():
+#     ''' Point is a class that has the variables as x and y and methods to display
+#     them '''
+#     def __init__ (self, x, y):
+#         ''' constructor method or initializer.
+#         as with all methods (functions within classes), it always at least 1
+#         argument, self, which refers to the instance
+
+#         x, y are the constructors arguments 
+
+#         since there are 2 constructor arguments, any instantition of this class 
+#         will require 2 variables
+#         '''
+
+#         self.var_x = x  # var_x is an instance variable
+#         self.var_y = y  # var_x is another instance variable
+
+#     def display_x(self):  # this is a method so at least the self arguments is required
+#         print(self.var_x) # to display the current instance varaible self has to be used
+
+#     def display_y(self, z):  # this is a method so at least the self arguments is required
+#         print(z)
+#         print(self.var_y) # to display the current instance varaible self has to be used
+#         print(self.var_y * z)
+
+#     def distanceFromOrigin(self):
+#         self.sum = self.var_x**2 + self.var_y**2
+#         return self.sum
+
+# point1 = Point(12,34)
+# point2 = Point(23,45)
+
+# print(  point1.var_x )
+# print(  point1.distanceFromOrigin()  )
+
+
+# class City():
+#     '''class to represent and manipulate citi variables '''
+
+#     def __init__ (self, x, y, z):
+#         self.name = x
+#         self.population = y
+#         self.province = z
+
+# cityName = ['Toronto', ' Calgary', 'Hamilton', 'Ottawa']
+# population = [234567, 800909, 80808080, 8080080]
+# province = ['ON', 'AB', 'ON', 'ON']
+
+# city_tuple = zip(cityName, population, province)
+
+# list_of_city_instances = [City(x,y,z) for x,y, z in city_tuple ]
+
+# print(list_of_city_instances)
+
+
+# we can pass class instances as arguments
+
 class Point():
-    ''' Point is a class that has the variables as x and y and methods to display
-    them '''
+    ''' class to represent and manipulate x,y coordinates of a point '''
+    # constrctor method or initializor
     def __init__ (self, x, y):
-        ''' constructor method or initializer.
-        as with all methods (functions within classes), it always at least 1
-        argument, self, which refers to the instance
+        self.x = x 
+        self.y = y 
 
-        x, y are the constructors arguments
+    # # __str__ makes the display of the object pretty, it gets returned when print(instance) is executed
+    # def __str__ (self):
+    #     return 'Point at ({}. {}) .. {}'.format(self.x, self.y, 'gibberesh')
 
-        
+    # defining the distance function as a method
+    def distance_between_points(self, instance1, instance2):
+        distance_x = instance1.x**2 - instance2.x**2
+        distance_y = instance1.y**2 - instance2.y**2
+        return distance_x + distance_y
 
+
+
+# defining the distance function NOT as a method
+def distance_between_points(instance1, instance2):
+    distance_x = instance1.x**2 - instance2.x**2
+    distance_y = instance1.y**2 - instance2.y**2
+    return distance_x + distance_y
+
+# instantiating
+point1 = Point(12,23)
+point2 = Point(78,34)
+
+# instances being objects can be passed in functions
+print(  distance_between_points(point1, point2)  )
+
+# instances being objects can be passed in mehods
+print(   point2.distance_between_points(point1, point2)  )
+
+print(point1)
+print(point2)
 
