@@ -268,14 +268,16 @@ Number | Topic | Comments | Misc
 4.1.4 | methods of a class | >>> def method_name (self) ...similar to functions in ways that they can take arguments, do things, and return objects ... difference, (1) they belong to the class ...are always called/invoked using an instance e.g. instance_name.method_name() (2) the minimum number of arguments can be 1 (i.e. self), self points to the instance that is calling the method, this means when callin a method one less argument is taken, the 'self' is understood ... so a method_name(self, x,y,z) will be called like >> `instance_name.method(x,y,z)` ...example list_name.append(7) is actually calling the method append(self, 7) in the class list of which list_name is an instance |
 4.1.5 | constructor | special method used to either (1) give default values to instance variables, or (2) accept values at the time of instantiation for instance variables |
 4.1.6 | constructor ... syntax | >>> `def __init__ (self, parameter(s)):` \n `self.x = x` \n `self.y=y` ...__, two underscores is also called dunderscore | 
-4.2.1 | instances stored in a list | instances (being objects) can be stored in a list, and referenced using >>> `list[index]` , e.g. list1 = [instance1, instance2, instance3, ... instance_n ...to reference instance1 >>> list1[0]  | 
-4.2.2 | creating instances from data | for loops (also list/dict comprehension) can be used for instantiation .... iterator could be strng, tuple, range, dict, or list ( of numbers, strings, lists, dict, tuples generated using zip(a,b,c ...)  ) in which case a,b,c can be passed to the constructor |
+4.2.1 | instances stored in a list | instances (being objects) can be stored in a list, and referenced using >>> `list[index]` , e.g. list1 = [instance1, instance2, instance3, ... instance_n ...to reference instance1 >>> `list1[0]  `| 
+4.2.2 | creating instances from data | `for` loops (also list/dict comprehension) can be used for instantiation .... iterator could be strng, tuple, range, dict, or list ( of numbers, strings, lists, dict, tuples generated using zip(a,b,c ...)  ) in which case a,b,c can be passed to the constructor |
 4.2.3 | instances can be passed as arguments to functions and methods | function_name(instance1, instance2) ... instance_name.method_name(instance1) ...PLEASE note: in the method way, the instance calling the method will automatically be passed as 'self'| 
 4.2.3.1 | special methods | constructor (def __init__ (self,...) ) | 
 4.2.3.2 | __str__ | `def __str__ (self):` \n  `return <how to represent the instance as a string>` ...WHY use it? for legibility.. print(instance1) only tells that the object is an instance of a class, __str__ allows for more human-readable information | 
 4.2.3.3 | __add__ | `def __add__ (self, instance_name):` \n `return self.variable_name + instance_name.variable_name` ...calling the method >>> `print(instance1 + instance2)`| 
 4.2.3.3 | __sub__ | `def __sub__ (self, instance_name):` \n `return self.variable_name - instance_name.variable_name` ...calling the method >>> `print(instance1 - instance2)`| 
 4.2.3.1 | methods can return new instances | >>> def new_instance (self, other_instance): return Class_name(self.variable1 + other_instance.variable1 + 45) ... calling the method >>> `instance_new = instance.new_instance(other_instance)` | 
+4.2.3.2 | Sorting list of instances | >>> `sorted_instance_list = sorted(list_of_instances, key=lambda self: self.<instance_variable_name> )`   ...the list of instances can be created using list comprehension, zip(list, list2), or other list methods ...since the result will be displayed as addresses, for proper display, vaiarables will need to be retrieved using `list comprehension` or `for` loop |
+
 
 
 
