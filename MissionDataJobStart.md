@@ -163,8 +163,8 @@ Number | Topic | Comments | Misc
 2.2.3.6.1 | Solution to above - dict_name.get('key', alt) | return none if key is not in the dict, can return a alternate if key is not in the dict |
 2.2.3.7 | DICTIONARY - Aliasing and copying | |
 2.2.3.7.1 | cloning/copying a dict | >>> `new_dict = existing_dic.copy()` | 
-2.2.3.8 | find char/words in a text and their frequencies | initiate empty dict, keys = chars/words, values = frequency, loop over the text, each new char/word is checked using not in operator and stored as a key, its value is incremented using +=1 | 
-2.2.3.9 | finding the max value or corresponding key in a dict | after the step above convert the keys of the dict into a list using >>> `list_of_keys = list(dict_name.keys())` , initialize first key to 0 -> >>> `list_of_keys[0] = 0`, initialize first value to 0 -> `dict_name[list_of_keys[0]] = 0`|
+2.2.3.8 | find char/words in a text and their frequencies | initiate empty dict, keys = chars/words, values = frequency, loop over the text, each new char/word is checked using not in operator and stored as a key, its value is incremented using +=1 ... >>> `dict1 = {} \n for char/word in string/sentence: \n if char/word not in dict1: \n dict1[char/word] = 1 \n else: dict1[char/word] += 1` | 
+2.2.3.9 | finding the max value or corresponding key in a dict | after the step above convert the keys of the dict into a list using >>> `list_of_keys = list(dict_name)` , initialize first key to 0 -> >>> `list_of_keys[0] = 0`, initialize first value to 0 -> `dict_name[list_of_keys[0]] = 0` ...then check each individual key's value for max value ... alternatively use sorted(dict, key = lambda x : dict[x]  )  |
 2.3 | **FUNCTIONS** |  |
 2.3.1 | Why? | used to reduce redundancy, decrease time and efforts, decrease errors, easier debugging | 
 2.3.2 | defined using def | |
@@ -229,7 +229,7 @@ Number | Topic | Comments | Misc
 3.3 | Shallow copies vs Deep copies | Copying using [:], *1, .copy(), creates shallow copies  - ONLY copying at the highest/outermost level ...for any level inside, aliasing comes a picture - if the original list is mutated at 2nd layer, the copies are also changed  |
 3.4 | Deep copies | completely independent of the original - any change in original is not reflected on the copied one | 
 3.3.1 | Deep copies - way 1 | for lists that are uniform structes of nesting ... appending using nested iteration will give the result - when the child_list has no more lists inside it, shallow copying can be used |
-3.3.2 | Deep copies  way 2 | >>> `new_copy = copy.deepcopy(original_object)` | 
+3.3.2 | Deep copies  way 2 | >>> `new_copy = copy.deepcopy(original_object)` ...this requires the import of copy module >>>> `import copy` | 
 3.3.3 | online JSON editor | https://jsoneditoronline.org/ | 
 3.3.4 | Working with very complex nested python objects | use Understand...Extract (and print)...Repeat | 
 3.3.4.1 | Understand/ work-on nested data structure | (1) view the complex structure in a prettier format using `print(json.dumps(object, indent =2))` (2) for dictionaries, check the keys using dict.keys(), for lists, check the length of the lists (3) convert to a JSON string (step 2) and view using https://jsoneditoronline.org |
@@ -255,14 +255,19 @@ Number | Topic | Comments | Misc
 3.3.1.5 | URL Structue for REST APIs | 3 parts of the URL (1) the base URL (2)the question mark: (3) the query (key/value pair(s) seperated by a &), for example (1) https://www.google.com/search  (2) ? (3) q=linkedin .... or (1) https://www.linkedin.com/search/results/all/  (2) ?  (3) keywords=google&origin=GLOBAL_SEARCH_HEADER  | 
 3.3.1.5 | Encoding URL (or search) Parameters like + : " | space is encoded as `+`; `"` is encoded as `%22`; `:` is encoded as `%3A` ... | 
 3.3.2 | How to use a REST API | answer these Q... (1) Is as authentication required to access the API, if yes how to authenticate yourself (2) what is the baseurl/endpoint (3) what is the query_param_dict (keys and values) that you need to pass to params (4) check the URL that was formed after adding the query_param_dict (5) what is structure of data that is returned by the API, how can you extract what you want ...for this convert the python object to a JSON string (>>> `json.dumps(py_object, indent=4)`) and print and/or view is https://jsoneditoronline.org  | 
-3.3.3 | Caching | this allows the program to fetch the results locally rather than getting it from the server/page ...increases speed, decreases API calls, works even if the host page is down | 
-3.3.4 | syntax | `import requests_cache` (newline) `requests_cache.install_cache('cache_name')` ...this will create a cache cache_name.sqlite at the same level as the file ... NOTE - the import_requests module is not native to python, so one might need go to `win cmd -> pip3 install requests_cache` |
+3.3.3 | Caching - intro | this allows the program to fetch the results locally rather than getting it from the server/page ...increases speed, decreases API calls, works even if the host page is down | 
+3.3.4 | Caching - syntax | `import requests_cache` (newline) `requests_cache.install_cache('cache_name')` ...this will create a 'cache cache_name.sqlite' at the same level as the file with no expiration time set ... NOTE - the import_requests module is not native to python, so one might need go to `win cmd -> pip3 install requests_cache` |
 3.3.5 | checking if a page was found in cache | `print(page_respose.from_cache)` .. this return True if the page_response (= requests(base_url, params=params1)) was found/pulled in/from the cache | 
 3.3.6 | opening a page in browser | this opens a url in the default browser | 
-3.3.7 | syntax | `import webbrowser` (newline) `webbrowser.open(   <url_to_be_opened>   )` |
+3.3.7 | opening a page in browser - syntax | `import webbrowser` (newline) `webbrowser.open(   <url_to_be_opened>   )` |
 4.0 | **Python Classes and Inheritance** | https://www.coursera.org/learn/python-classes-inheritance?specialization=python-3-programming |
-4.1 | Object Oriented Programming (OOP) | *** use objects, that contain both data and functionality together | 
-4.1.2 | Objects in Python ? | In Python, every value is an object. integer, string, float, list, dicts, tuples...objects have attributes/state (What is the position/color/shape) and methods/functions (what can it it do))...each object is stored in an instance variable..for example, the different turtles are instances of turtles | 
+4.1 | Object Oriented Programming (OOP) | *** use objects, that contain both data and functions | 
+4.1.2 | Objects in Python ? | In Python, every value is an object. integer, string, float, list, dicts, tuples...objects have attributes/state (What is the position/color/shape) and methods/functions (what can it it do))...each object is stored in an instance variable..for example, the different turtles are instances of turtles ... or different players in a game ... or different cars in a game (they have attributes - names/colors/value; they have methods to do something - turn left/right, do tail up/dows, go forward/backward, leave prints) ) | 
+4.1.3 | class syntax | >> `class Class_name():` ...the convention is to have the Class name start with upper case, e.g. Point, School, Country | 
+4.1.3.1 | instance of a class | called instantiating ... >>> `instance_name = Class_name()` | 
+4.1.4 | methods of a class | >>> def method_name (self) ...similar to functions in ways that they can take arguments, do things, and return objects ... difference, (1) they belong to the class ...are always called/invoked using an instance e.g. instance_name.method_name() (2) the minimum number of arguments can be 1 (i.e. self), self points to the instance that is calling the method, this means when callin a method one less argument is taken, the 'self' is understood ... so a method_name(self, x,y,z) will be called like >> `instance_name.method(x,y,z)` |
+4.1.5 | constructor | special method used to either (1) give default values to instance variables, or (2) accept values at the time of instantiation for instance variables |
+4.1.6 | constructor ... syntax | >>> `def __init__ (self, parameter(s)):` \n `self.x = x` \n `self.y=y` ...__, two underscores is also called dunderscore | 
 
 
 

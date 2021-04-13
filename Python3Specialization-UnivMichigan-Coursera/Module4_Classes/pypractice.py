@@ -176,6 +176,7 @@ It provides an intro to Classes and Inheretance.
 # print(point4.x)
 # print(point4.y)
 
-print(tuple)
-
+# help(filter)
+for x,y in zip ( ['ND', 'CH', 'MU'] , [123, 345, 345]     ):
+    print(x)
 
