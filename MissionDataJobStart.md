@@ -151,7 +151,7 @@ Number | Topic | Comments | Misc
 2.2.2.5 | update a key-value pair ... special case | >>> `dict_name['key_name'] += addition_value` | 
 2.2.2.6 | checking the number of keys (items/key-value pairs) | >>> `len(dict_name)` | 
 2.2.3 | DICTIONARY METHODS | ...almost all operations happen using keys ... eg `for key in dict_name`, `list(dict_name)`, `key in dict_name`, `sorted(dict_name, key = lambda dict_key : dict_name[dict_key])`  |
-2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` ...this is useful as dictionaties cannot be indexed, but keys are unique, so this list adds indexing to keys and values |
+2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` ...this is useful as dictionaties cannot be indexed, but keys are unique, so this list adds indexing to keys and values ... better way is >>> `list(dict_name)` |
 2.2.3.2 | returning the values as a list | >>> `list(dict_name.values())` |
 2.2.3.3 | returning the key-value pairss as a list of tuples | >>> `list(dict_name.items())` |
 2.3.3.4 | Looping over a dict | |

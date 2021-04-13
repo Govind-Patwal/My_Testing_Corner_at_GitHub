@@ -142,40 +142,40 @@ It provides an intro to Classes and Inheretance.
 
 # we can pass class instances as arguments
 
-class Point():
-    ''' class to represent and manipulate x,y coordinates of a point '''
-    # constrctor method or initializor
-    def __init__ (self, x, y):
-        self.x = x 
-        self.y = y 
+# class Point():
+#     ''' class to represent and manipulate x,y coordinates of a point '''
+#     # constrctor method or initializor
+#     def __init__ (self, x, y):
+#         self.x = x 
+#         self.y = y 
 
-    # __str__ makes the display of the object pretty, it gets returned when print(instance) is executed
-    def __str__ (self):
-        return 'Point at ({}, {}) .. {}'.format(self.x, self.y, 'gibberesh')
+#     # __str__ makes the display of the object pretty, it gets returned when print(instance) is executed
+#     def __str__ (self):
+#         return 'Point at ({}, {}) .. {}'.format(self.x, self.y, 'gibberesh')
 
-    # defining the distance function as a method
-    def half_of_points(self, instance2):
-        new_x = (self.x + instance2.x)/2
-        new_y = (self.y + instance2.y)/2
-        return Point(new_x, new_y)
+#     # defining the distance function as a method
+#     def half_of_points(self, instance2):
+#         new_x = (self.x + instance2.x)/2
+#         new_y = (self.y + instance2.y)/2
+#         return Point(new_x, new_y)
  
-    def __add__ (self, instance2):
-        return Point(self.x + instance2.x, self.y + instance2.y)
+#     def __add__ (self, instance2):
+#         return Point(self.x + instance2.x, self.y + instance2.y)
 
-# instantiating
-point1 = Point(12,23)
-point2 = Point(78,34)
+# # instantiating
+# point1 = Point(12,23)
+# point2 = Point(78,34)
 
-point3 = point1 + point2
-print(point3)
+# point3 = point1 + point2
+# print(point3)
 
-point4 = point1.half_of_points(point2)
+# point4 = point1.half_of_points(point2)
 
-print(point4)  
+# print(point4)  
 
-print(point4.x)
-print(point4.y)
+# print(point4.x)
+# print(point4.y)
 
-
+print(tuple)
 
 
