@@ -177,6 +177,19 @@ It provides an intro to Classes and Inheretance.
 # print(point4.y)
 
 # help(filter)
-for x,y in zip ( ['ND', 'CH', 'MU'] , [123, 345, 345]     ):
-    print(x)
 
+
+
+class City():
+    def __init__ (self, city,state,popu):
+        self.city = city
+        self.state = state
+        self.population = popu
+
+cities = ['a', 'b', 'c']
+states = ['x', 'y', 'z']
+populations = [1,2,3]
+
+city_instances = [ City(c,s,p) for c,s,p in zip(cities, states, populations) ]
+
+print(city_instances[0])
