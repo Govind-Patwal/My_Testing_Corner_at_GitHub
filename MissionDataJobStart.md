@@ -87,7 +87,7 @@ Number | Topic | Comments | Misc
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
 0.1.2 | Coding good practicce | use print statement regulary to keep checking output |
 0.1.1.1 | type(), dir(), help() |  |
-0.1.3 | some libraries | `import turtle` (for turtle graphics), `import random` (tos create random numbers),  `import json` (to convert py_objects to/from JSON strings), `import` copy (to deepcopy) , `import requests` (to work with APIs) ... not python native ...user after win cmd -> pip3 install requests, `import requests_cache` (to cache files), `import webbrowser` (to open webpages) | 
+0.1.3 | some libraries | `import turtle` (for turtle graphics), `import random` (for floats from 0 to 1 >>> random.random() ... for integers >>> `random.randrange(start, end, step)`, very similar to range()  ),  `import json` (to convert py_objects to/from JSON strings), `import` copy (to deepcopy) , `import requests` (to work with APIs) ... not python native ...user after win cmd -> pip3 install requests, `import requests_cache` (to cache files), `import webbrowser` (to open webpages) | 
 0.1.1.1.1 | importing user_created files | same steps as external modules >>> `import external_file` ...NOTE: (1) the outside file needs to be at the same level (2) do not use the .py extension (3) the whole file will be executed, any print statement will be executed, good idea to have ONLY functions in the external file. Functions can be called using the `.` operator ...eg, >>> `external_file.function()` | 
 1 | **1/5 - Python Basics** | https://www.coursera.org/specializations/python-3-programming |
 2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
