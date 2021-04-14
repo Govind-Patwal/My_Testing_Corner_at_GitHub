@@ -243,18 +243,7 @@
 # print('*** this is printing the values as tuples of the sorted list ***')
 # print( [ (instance1.fruit, instance1.quantity, instance1.price) for f in sorted(instance_list, key=lambda self: self.fruit)     ] )
 
-
 import random
 
-
-print('--------------------')
-print(random.random())
-print(random.random())
-print('--------------------')
-print(random.randrange(5,20,3))
-print(random.randrange(5,20,3))
-print('--------------------')
-for i in range(5,20,3):
-    print(i)
-
-    
+for i in range(90, 100, 2):
+    print( random.randrange(0,500), end= ' ' )
