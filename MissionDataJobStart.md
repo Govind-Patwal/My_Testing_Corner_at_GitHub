@@ -286,6 +286,10 @@ Number | Topic | Comments | Misc
 4.2.4 | looking up methods | if methods have the same name in a sub-class and the super class, the sub-class methods are called, not the super-class's | 
 4.2.5 | invoking the parent class's method | WHY ? (1) you want to use a method from the super class (it has important and long code) and (2) you want to make modifications to it and (3) you want to retain the name ...most commonly in the case of a constuctor __init__ |
 4.2.6 | invoking a parent class's method - syntax | >>>`super().<method_name>()` ... the code goes after the declaration of the method of the subclass ...most commom usage: constructor ...eg. >>> `def __init__ (self, new_variable1, new_variable2):` \n `super().__init__()` | 
+MISC | __name__ and '__main__' | the file runnign the code gets the value of '__main__' for the variable __name__ ... this can be used to made sure that the code of the current file is getting executed ... eg, >>> `if __name__ == '__main__':` \n `<do this>`  |
+4.3 | TESTING in python | `import unittest` is the main module in python for testing | 
+4.3.1 | syntax | `unittest` is of type `<class 'module'>`, it has further subclasses, one of the most widely used for testing is the class `TestCase` ... for TestCase to be used, it has to be inherited in a user-defined class, eg `class Class_name(unittest.TestCase):` ...the next step is defining method(s) inside the class, the user-defined methods than call methods (that are in the class unittest.TestCase) ...`class Class_name(unittest.TestCase):` \n `def my_method(self):` \n `self.assertTrue(fn, value)` ...to run the tests >>> `unittests.main()` |
+  
 
 
 

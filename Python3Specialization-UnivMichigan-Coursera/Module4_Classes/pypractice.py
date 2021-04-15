@@ -520,3 +520,22 @@
 # p1.attack_up()    
 
 
+
+# import unittest
+
+# class GovindTestCases (unittest.TestCase):
+#     def test_upper(self):
+#         self.assertEqual('foo'.upper(), 'FOO')
+
+#     def test_lower(self):
+#         self.assertEqual('foo'.lower(), 'Foo')
+  
+# if __name__ == '__main__':
+#     unittest.main()
+
+# print('print me, I am after the __name__ == "main" ')
+
+
+import unittest
+
+print(dir(unittest.TestCase))
