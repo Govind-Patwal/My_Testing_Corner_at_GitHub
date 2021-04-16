@@ -80,6 +80,7 @@ Wk starts on a Monday and ends on a Sunday
 ---
 ### PYTHON COURSE - Univeristy of Michigan - Python 3 Specialization
 - https://www.coursera.org/specializations/python-3-programming
+- https://runestone.academy/runestone/books/published/thinkcspy/index.html
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 
@@ -285,10 +286,15 @@ Number | Topic | Comments | Misc
 4.2.3 | Howe does the PY attributor look up attributes names | (1) determine if it is a method or an attribute... a method will have a parenthesis while an attribute will not ....if it is an attribute (2) look up the name in instance variables, if found use it, if not (3) look up in class variables, if found use it, else (4) go to the parent class and lookup in instance variables and then class variables  ...repeat the process till attribute found or last ancestor looked up ...if still not found, return an error | 
 4.2.4 | looking up methods | if methods have the same name in a sub-class and the super class, the sub-class methods are called, not the super-class's | 
 4.2.5 | invoking the parent class's method | WHY ? (1) you want to use a method from the super class (it has important and long code) and (2) you want to make modifications to it and (3) you want to retain the name ...most commonly in the case of a constuctor __init__ |
-4.2.6 | invoking a parent class's method - syntax | >>>`super().<method_name>()` ... the code goes after the declaration of the method of the subclass ...most commom usage: constructor ...eg. >>> `def __init__ (self, new_variable1, new_variable2):` \n `super().__init__()` | 
-MISC | __name__ and '__main__' | the file runnign the code gets the value of '__main__' for the variable __name__ ... this can be used to made sure that the code of the current file is getting executed ... eg, >>> `if __name__ == '__main__':` \n `<do this>`  |
-4.3 | TESTING in python | `import unittest` is the main module in python for testing | 
-4.3.1 | syntax | a testcase is created by subclassing `unittest.TestCase`. Inside the class the individual tests need to defined as methods, the method name must start with the letters `test_`. To choose the type of test, a call need to be made to assertEqual(), or any other method, finally, the tests are run with the code `unittest.main()` ...`class Class_name(unittest.TestCase):` \n `def test_method(self):` \n `self.assertTrue(fn, value)` ...to run the tests >>> `unittests.main()` |
+4.2.6 | invoking a parent class's method (SINGLE parent) - syntax | >>>`super().<method_name>()` ... the code goes after the declaration of the method of the subclass ...most commom usage: constructor ...eg. >>> `def __init__ (self, new_variable1, new_variable2):` \n `super().__init__()` | 
+4.2.6.1 | invoking a parent class's method (**MULTIPLE parents**) - syntax | >>>`Parent1.<method_name>(self, all_arguments)` ... the code goes after the declaration of the method of the subclass ...most commom usage: constructor ...eg. >>> `def __init__ (self, new_variable1, new_variable2):` \n `Parent1.__init__(self, all_arguments) | 
+MISC | __name__ and '__main__' | the file runnign the code gets the value of '__main__' for the variable __name__ ... this can be used to made sure that the code of the current file is getting executed ... eg, >>> `if __name__ == '__main__':` \n `<do this>` ...NOTE, the codes after the statement above are exexuted normally. |
+4.3 | TESTING in python |  | 
+4.3.1 | assert statement | >>> `assert <code1> == <code2> ` ...it checks code1 against code2, in case they are same, does nothing, else return a runtime error | 
+4.3.2 | module unittest | `import unittest` is the main module in python for testing | 
+4.3.2.1 | unittest syntax | a testcase is created by subclassing `unittest.TestCase`. Inside the class the individual tests need to defined as methods, the method name must start with the letters `test_`. To choose the type of test, a call need to be made to a function in `dir(TestCase)`, eg `assertEqual()`, finally, the tests are run with the code `unittest.main()` ...`class Class_name(unittest.TestCase):` \n `def test_method_name(self):` \n `self.assertTrue(fn, value)` ...to run the tests >>> `unittest.main()` NOTE: assertTrue will compare the return value of the function againt the next argument...no code will be run after unittest.main() |
+| types to tests | return test and side-effect test | 
+edge cases, | 
   
 
 
