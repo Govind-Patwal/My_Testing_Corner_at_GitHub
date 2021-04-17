@@ -81,6 +81,8 @@ Wk starts on a Monday and ends on a Sunday
 ### PYTHON COURSE - Univeristy of Michigan - Python 3 Specialization
 - https://www.coursera.org/specializations/python-3-programming
 - https://runestone.academy/runestone/books/published/thinkcspy/index.html
+- https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
+- https://wiki.python.org/moin/BeginnersGuide/Programmers
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 
@@ -291,10 +293,13 @@ Number | Topic | Comments | Misc
 MISC | __name__ and '__main__' | the file runnign the code gets the value of '__main__' for the variable __name__ ... this can be used to made sure that the code of the current file is getting executed ... eg, >>> `if __name__ == '__main__':` \n `<do this>` ...NOTE, the codes after the statement above are exexuted normally. |
 4.3 | TESTING in python |  | 
 4.3.1 | assert statement | >>> `assert <code1> == <code2> ` ...it checks code1 against code2, in case they are same, does nothing, else return a runtime error | 
-4.3.2 | module unittest | `import unittest` is the main module in python for testing | 
-4.3.2.1 | unittest syntax | a testcase is created by subclassing `unittest.TestCase`. Inside the class the individual tests need to defined as methods, the method name must start with the letters `test_`. To choose the type of test, a call need to be made to a function in `dir(TestCase)`, eg `assertEqual()`, finally, the tests are run with the code `unittest.main()` ...`class Class_name(unittest.TestCase):` \n `def test_method_name(self):` \n `self.assertTrue(fn, value)` ...to run the tests >>> `unittest.main()` NOTE: assertTrue will compare the return value of the function againt the next argument...no code will be run after unittest.main() |
-| types to tests | return test and side-effect test | 
-edge cases, | 
+4.3.2 | module unittest...CONFUSING, BETTER ALTERNATIVE is pytest (below) | `import unittest` is the main module in python for testing | 
+4.3.2.1 | unittest syntax ...CONFUSING, BETTER ALTERNATIVE is pytest (below) | a testcase is created by subclassing `unittest.TestCase`. Inside the class the individual tests need to defined as methods, the method name must start with the letters `test_`. To choose the type of test, a call need to be made to a function in `dir(TestCase)`, eg `assertEqual()`, finally, the tests are run with the code `unittest.main()` ...`class Class_name(unittest.TestCase):` \n `def test_method_name(self):` \n `self.assertTrue(fn, value)` ...to run the tests >>> `unittest.main()` NOTE: assertTrue will compare the return value of the function againt the next argument...no code will be run after unittest.main() |
+4.3.2.2 | pytest | EASIER than unittest...not native to python, install from the command prompt >>> pip install pytest ...https://runestone.academy/runestone/books/published/thinkcspy/UnitTesting/TestingWithpytest.html#organizing-pytest-functions | 
+4.3.3.3 | pytest - cleaner alternative to unittest | uses easy `assert` statements, we can have testing a part of the program, all tests should be as functions starting with 'test_', good idea to have `test_<name_of_function_being_tested>` | 
+4.2.3.4 | running pytest | >>> `pytest <name_of_the_python_file>`, this will run all the functions starting with `test_` ... this allows a coder to run and test his code easily ... `python file_name.py` to run and `pytest file_name.py` to test | 
+MISC | types to tests | return test and side-effect test | 
+MISC | edge cases, |  | 
   
 
 
