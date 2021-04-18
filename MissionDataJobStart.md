@@ -83,6 +83,7 @@ Wk starts on a Monday and ends on a Sunday
 - https://runestone.academy/runestone/books/published/thinkcspy/index.html
 - https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
 - https://wiki.python.org/moin/BeginnersGuide/Programmers
+- https://www.dj4e.com/lessons 
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 
@@ -298,8 +299,12 @@ MISC | __name__ and '__main__' | the file runnign the code gets the value of '__
 4.3.2.2 | pytest | EASIER than unittest...not native to python, install from the command prompt >>> pip install pytest ...https://runestone.academy/runestone/books/published/thinkcspy/UnitTesting/TestingWithpytest.html#organizing-pytest-functions | 
 4.3.3.3 | pytest - cleaner alternative to unittest | uses easy `assert` statements, we can have testing a part of the program, all tests should be as functions starting with 'test_', good idea to have `test_<name_of_function_being_tested>` | 
 4.2.3.4 | running pytest | >>> `pytest <name_of_the_python_file>`, this will run all the functions starting with `test_` ... this allows a coder to run and test his code easily ... `python file_name.py` to run and `pytest file_name.py` to test | 
-MISC | types to tests | return test and side-effect test | 
+MISC | types to tests | return test and side-effect test ...`return test` checks if a function is returning the desired value, a `side-effect test` checks if a function is mutating a list/dictionary as planned.| 
 MISC | edge cases, |  | 
+4.3 | try/except | the try/except block is a very helpful code, that allows a program to stop the block of code when an exception(run time error) is ecountered, and then jump to the `except` block of code ...this will allow the program to work | 
+4.3.1 | try: except parameters | `try:` \n `<block of code>` \n `except Exception as e:` \n `print(e)` \n `<block of code>`  | 
+
+
   
 
 

@@ -562,22 +562,128 @@
 
 # print('this is after the assert')
 
-import pytest
+# import pytest
 
-def round6(num):
-    return int(num + .6)
+# def round6(num):
+#     return int(num + .6)
 
-# ---- automated unit test ----
+# # ---- automated unit test ----
 
-def test_round6():
-    assert round6(9.7) == 10
-    assert round6(8.5) == 8
+# def test_round6():
+#     assert round6(9.7) == 10
+#     assert round6(8.5) == 8
 
-# ----- main program follows -----
+# # ----- main program follows -----
 
-if __name__ == '__main__':
-    num = float(input('Enter a decimal: '))
-    print('The value rounded is: ' + str(round6(num)))
+# if __name__ == '__main__':
+#     num = float(input('Enter a decimal: '))
+#     print('The value rounded is: ' + str(round6(num)))
+
+
+# import pygame
+
+# import time
+
+# for x in range(2, 6):
+#     print('Sleep {} seconds..'.format(x))
+#     time.sleep(x) # "Sleep" for x seconds
+# print('Done!')
+
+# import random
+
+# alphabets = 'ABCDEFGHIJKLMNOPQUSTUVWXYZ'
+# letters = [i for i in 'ABCDEFGHIJKLMNOPQUSTUVWXYZ']
+# # print(len(letters))
+
+# print('Random letter between 1 and 10: {}'.format( random.randrange(1,11) )  )
+
+# random_letter1 = random.choice(letters)
+# random_letter2 = letters [ random.randrange(  len(letters) ) + 1   ] 
+
+# print('Random letter from the Alphabet (method 1): {}'.format(random_letter1) )
+# print('Random letter from the Alphabet (method 2): {}'.format(random_letter2) )
+
+# print( alphabets.count('A'))
+
+# class WOFPlayer():
+#     '''
+#     This class is to represent and manipulate Wheel of Fortune Players
+#     '''
+#     def __init__ (self, name):
+#         self.name = name
+#         self.prizeMoney = 0
+#         self.prizes = []
+
+#     def addMoney(self, amt):
+#         self.prizeMoney += amt
+
+#     def goBankrupt(self):
+#         self.prizeMoney = 0
+
+#     def addPrize(self, prize):
+#         self.prizes.append(prize)
+
+#     def __str__ (self):
+#         ''' this returns the text form of an instance'''
+#         return '{} (${})'.format(self.name, self.prizeMoney)
+
+# class WOFHumanPlayer(WOFPlayer):
+#     '''
+#     this class represents a human player and inherits from WOFPlayer
+#     '''
+#     def getMove(self, category, obscuredPhrase, guessed):
+#         return input("{} has ${}\n\nCategory: {}\nPhrase: {}\nGuesssed: {}\n\nGuess a letter, phrase, or type 'exit' or 'pass':".format(self.name, self.prizeMoney, self.category, self.obscuredPhrase, self.guessed) )
+
+class WOFComputerPlayer(WOFPlayer):
+    SORTED_FREQUENCIES = 'ZQXJKVBPYGFWMUCLDRHSNIOATE'
+
+    def __init__(self, name, difficulty):
+        WOFPlayer.__init__(self, name)
+        self.difficulty = difficulty
+
+    def smartCoinFlip(self):
+        rand_num = random.randrange(1,11)
+        if rand_num > self.difficulty:
+            return True
+        else:
+            return False
+
+    def getPossibleLetters(self, guessed):
+        self.letter_left_to_be_guessed = [].copy()
+        self.letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        for self.letter in self.letters:
+            if self.letter not in self.guessed:
+                self.letter_left_to_be_guessed.append(letter)
+
+        if self.prizeMoney < 250:
+            self.letter_left_to_be_guessed = [letter for letter in self.letter_left_to_be_guessed if letter not in 'AEIOU']
+
+        return self.letter_left_to_be_guessed
+
+    def getMove(self, category, obscuredPhrase, guessed):
+        self.getPossibleLetters(self.guessed)
+        if (self.prizeMoney < 250) and (letter_left_to_be_guessed not in 'BCDFGHJKLMNPQRSTVWXYZ)':
+            return pass
+        
+    def smartCoinFlip(self):
+        coin_flip_result = self.smartCoinFlip()
+        if coin_flip_result == True:
+            SORTED_FREQUENCIES_2 = SORTED_FREQUENCIES.copy()
+            SORTED_FREQUENCIES_2.reverse()
+            for letter in SORTED_FREQUENCIES_2:
+                if letter in letter_left_to_be_guessed:
+                    return letter
+        else:
+            return self.random.choice(letter_left_to_be_guessed)
+
+
+
+
+
+
+
+
+
 
 
 
