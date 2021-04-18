@@ -681,18 +681,13 @@
 import turtle
 
 window = turtle.Screen()
-window.bgcolor('green')
+window.bgcolor('lightgreen')
 
 alex = turtle.Turtle()
 
-alex.forward(50)
-alex.left(90)
-alex.forward(50)
-alex.left(90)
-alex.forward(50)
-alex.left(90)
-alex.forward(50)
-alex.left(90)
+for i in range(4):
+    alex.forward(50)
+    alex.left(90)
 
 window.exitonclick()
 

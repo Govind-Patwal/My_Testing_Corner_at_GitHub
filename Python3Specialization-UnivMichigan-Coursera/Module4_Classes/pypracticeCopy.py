@@ -6,7 +6,7 @@ It provides an intro to Classes and Inheretance.
 import turtle
 
 window = turtle.Screen()
-window.bgcolor('blue')
+window.bgcolor('pink')
 
 alex = turtle.Turtle()
 
