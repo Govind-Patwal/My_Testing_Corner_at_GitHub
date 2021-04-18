@@ -3,10 +3,21 @@ This Course is one of the main reason I joined this specialization.
 It provides an intro to Classes and Inheretance.
 '''
 
-p = []
-q = [].copy
+import turtle
 
-print(id(p))
-print(id(q))
+window = turtle.Screen()
+window.bgcolor('blue')
 
+alex = turtle.Turtle()
+
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+
+window.exitonclick()
     
