@@ -677,19 +677,30 @@
 #             return self.random.choice(letter_left_to_be_guessed)
 
 
+# import modules
+import turtle  
 
-import turtle
+# define function
+def drawsquare(alex):   
+    side_len = 50
 
-window = turtle.Screen()
-window.bgcolor('lightgreen')
+    for i in range(4):
+        alex.forward(side_len)
+        alex.left(90)
 
-alex = turtle.Turtle()
+# sentences to run the porgram -- (main)
+def main():
+    window = turtle.Screen()
+    window.bgcolor('lightgreen')
 
-for i in range(4):
-    alex.forward(50)
-    alex.left(90)
+    alex = turtle.Turtle()
+    drawsquare(alex)
+    
+    window.exitonclick()
 
-window.exitonclick()
+if __name__ == '__main__':
+    main()
+
 
 
 
