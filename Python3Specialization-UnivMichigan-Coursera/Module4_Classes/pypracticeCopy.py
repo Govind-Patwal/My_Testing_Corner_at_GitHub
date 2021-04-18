@@ -9,6 +9,11 @@ It provides an intro to Classes and Inheretance.
 
 # define the main function that has the variables to be run for this program
 def main ():
+    print("n", '\t', "2**n")     #table column headings
+    print("---", '\t', "-----")
+
+    for x in range(13):        # generate values for columns
+        print(x, '\t', 2 ** x)
 
 
 # include a statement that makes sure that any file that imported this does not

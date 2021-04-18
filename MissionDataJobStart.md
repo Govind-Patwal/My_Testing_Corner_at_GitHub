@@ -85,6 +85,7 @@ Wk starts on a Monday and ends on a Sunday
 - https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
 - https://wiki.python.org/moin/BeginnersGuide/Programmers
 - https://www.dj4e.com/lessons 
+- STRING METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 

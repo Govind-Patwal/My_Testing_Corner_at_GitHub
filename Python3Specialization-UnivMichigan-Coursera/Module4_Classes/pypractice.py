@@ -679,6 +679,7 @@
 
 # import modules
 import turtle  
+import pypracticeCopy
 
 # define function
 def drawsquare(alex):   
@@ -695,11 +696,13 @@ def main():
 
     alex = turtle.Turtle()
     drawsquare(alex)
-    
+
     window.exitonclick()
 
 if __name__ == '__main__':
     main()
+
+
 
 
 
