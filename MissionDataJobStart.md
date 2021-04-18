@@ -86,6 +86,9 @@ Wk starts on a Monday and ends on a Sunday
 - https://wiki.python.org/moin/BeginnersGuide/Programmers
 - https://www.dj4e.com/lessons 
 - STRING METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html
+ - LIST METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListMethods.html
+  - DICT METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Dictionaries/Dictionarymethods.html
+   - STANDARD EXCEPTIONS: https://runestone.academy/runestone/books/published/thinkcspy/Exceptions/02_standard_exceptions.html
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 
