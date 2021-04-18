@@ -81,6 +81,7 @@ Wk starts on a Monday and ends on a Sunday
 ### PYTHON COURSE - Univeristy of Michigan - Python 3 Specialization
 - https://www.coursera.org/specializations/python-3-programming
 - https://runestone.academy/runestone/books/published/thinkcspy/index.html
+- https://docs.python.org/3/tutorial/index.html
 - https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
 - https://wiki.python.org/moin/BeginnersGuide/Programmers
 - https://www.dj4e.com/lessons 
