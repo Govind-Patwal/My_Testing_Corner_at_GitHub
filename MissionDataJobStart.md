@@ -396,7 +396,8 @@ Number | Topic | Comments | Misc
 2.11.1 | return | it will break out of the current function, can be used to return if all other options have been exausted wihtout any outcome |
 2.12 | : and indentation | very important in python |
 2.13 | commenting a line | # |
-2.14 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function has been named. When we call help() on that function, it shows the docstring. eg  `""" This is a description of the function above >>> """` |
+2.14 | ***Docstrings*** Good Programming practice | It is a triple-quoted string (can span multiple lines) and it comes right below after a function/class has been declared. When we call help() on that function, it shows the docstring. eg  `""" This is a description of the function above >>> """` |
+2.14.1 | doctstring ... | good example: def fn_name(param1, param2): \n ''' Modifies.... \n :param param1: A list \n :param param2: a dict \n :return x: modified list \n >>> example of implementation \n result | 
 2.15 | Higher order functions | functions that operate inside other functions |
 2.16 | 'pass' is a placeholder code  | it can be used inside a function when there is no code, when only the function name is known and zero code has been written  def function_name(): pass |
 2.17 | rounding a float | round (number, ndigits) ... default digits = 0, if it is postitive it will round number after the decimal >>> `round(1222123.123345, 2)` -> 1222123.12 ... if it is negative, it will round to 10, 100, 1000 >>> `round(1222123.123345, -2)` -> 1222100 |
