@@ -76,7 +76,7 @@ Wk starts on a Monday and ends on a Sunday
 | 16 | 2021/03/29 - 2021/04/04 | | ## CanEx Week 9 ## Finished Course 2/5 of Python 3 specialization | |
 | 17 | 2021/04/05 - 2021/04/11 | | ## CanEx Week 10 ## Finished Course 3/5 of Python 3 specialization | | 
 | 18 | 2021/04/12 - 2021/04/18 | | ## CanEx - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
-| 19 | 2021/04/19 - 2121/04/25 | ## CanEx Week 12 |         |   |
+| 19 | 2021/04/19 - 2121/04/25 | ## CanEx Week 12 ## Finished Course 4/5 of Python 3 specialization |         |   |
 
 
 ---
