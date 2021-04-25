@@ -246,11 +246,12 @@ Number | Topic | Comments | Misc
 3.3.4.1 | Understand/ work-on nested data structure | (1) view the complex structure in a prettier format using `print(json.dumps(object, indent =2))` (2) for dictionaries, check the keys using dict.keys(), for lists, check the length of the lists (3) convert to a JSON string (step 2) and view using https://jsoneditoronline.org |
 3.3.4.2 | Extract one step a time | always print to see the results at each step |
 3.3..4.3 | Repeat | understand, extract and print | 
-3.3.2 | Map and Filter | remember type(map), dir(map) and help(map) |
+3.3.2 | Map, Filter, Reduce | remember type(map), dir(map) and help(map) |
 3.3.2.1 | Map function | takes an iterator and returns a list with the sane length after doing some transformations |
 3.3.2.2 | Map syntax | map (function, iterator) ...funciton could be a named function or a lambda (it takes 1 input, the individual element, end returns something), eg >>> `map (lambda item: item *2, list1)` ...map DOES not return a list, it has to be converted to a list using >>> `list(map())` ... the length of the returned list is the same as the original list |
 3.3.2.3 | Filter | filters a list based on a condition and return a sublist of elements meeting the condition|
 3.3.2.4 | Filter syntax | filter (function, iterator) ...function could be named or lambda (taking one argument) but SHOULD return True/False based on which the sublist will be created eg >>> `filter(lambda item : item >5, list1)`......filter DOES not return a list, it has to be converted to a list using >>> `list(filter())` ... the length of the returned list is usually shorter than the original list  |
+3.3.2.5 | reduce (needs `import functools`) | reduce the list to 1 value | can be used for product/sum/concatenation of the entire list ... reduce(fn, list_name)...eg `import functools` \n `var1 = reduce(lambda x,y: x+ y, [12,12,23,23,34,34,89])` \n `print(var1)`...  | 
 3.3.3 | List Comprehensions | Pythonic way to do map and filter in one statement | 
 3.3.33.1 | List syntax | `[ <do_this_with_each_element> for <element> in <list> if <condition> else <do_this>]` ... results are appended automatically to a list in the order they appear in the original list| 
 3.3.33.2 | Advantages of list | compact, no need to define empty list, can do transformation, looping and condition checking in one line of code ...both map and filter functions done together, without the need to changing to list at the end | 

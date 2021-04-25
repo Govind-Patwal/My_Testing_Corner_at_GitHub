@@ -1,9 +1,5 @@
-'''
-Module 5 - practice
-'''
+# learning decorators in python
 
-import PIL
-print(dir(PIL))
-
-print('--------------------------------')
-print(PIL.__spec__)
+import functools
+result = functools.reduce( (lambda x,y : x + y), [ 12, 65, 2324, 78989])
+print(result)
