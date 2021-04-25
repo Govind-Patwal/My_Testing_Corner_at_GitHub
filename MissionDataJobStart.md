@@ -72,7 +72,7 @@ Wk starts on a Monday and ends on a Sunday
 | 12 | 2021/03/01 - 2021/03/07 | | ## CanEx Week 5: classes + assignments ## Finished kaggle Pandas | | 
 | 13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1:  ## Finished CheaprEats assignment ## Finished Bootcamp's - Module 4-Pandas, started Module 5 - Matplotlib | | 
 | 14 | 2021/03/15 - 2021/03/21 | | ## CanEx Week 7: No classes + No assignments ## Realized that 1st Co-op placement was a waste of time and efforts ## stressed out on Friday during CanEx class ## Weekend - Took time out to plan the direction of life - have to finish a Python course from Univeristy of Michigan https://www.coursera.org/specializations/python-3-programming , work on projects and then apply for Python projects -> Current Job (become the top ISR) ## wrote email to CALC ## First day out w/ family in Spring 2021 | |
-| 15 | 2021/03/22 - 2021/03/28 | | ## CanEx Week 8 ## Dropped 1st Co-op placement ## Started Python 3 specialization - Univ of Michigan @ Coursera - finished 'Python Basics' and chapter 1/5 of second course 'Python Functions, Files, and Dictionaries'  | |
+| 15 | 2021/03/22 - 2021/03/28 | | ## CanEx Week 8 ## Dropped 1st Co-op placement ## Started Python 3 specialization - Univ of Michigan @ Coursera (has 5 courses) - finished course 1/5  | |
 | 16 | 2021/03/29 - 2021/04/04 | | ## CanEx Week 9 ## Finished Course 2/5 of Python 3 specialization | |
 | 17 | 2021/04/05 - 2021/04/11 | | ## CanEx Week 10 ## Finished Course 3/5 of Python 3 specialization | | 
 | 18 | 2021/04/12 - 2021/04/18 | | ## CanEx - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
