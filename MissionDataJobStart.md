@@ -91,6 +91,7 @@ Wk starts on a Monday and ends on a Sunday
  - LIST METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListMethods.html
   - DICT METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Dictionaries/Dictionarymethods.html
    - STANDARD EXCEPTIONS: https://runestone.academy/runestone/books/published/thinkcspy/Exceptions/02_standard_exceptions.html
+   - intermediate python - https://book.pythontips.com/en/latest/index.html
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 
@@ -317,9 +318,10 @@ MISC | edge cases, |  |
 4.3 | try/except | the try/except block is a very helpful code, that allows a program to stop the block of code when an exception(run time error) is ecountered, and then jump to the `except` block of code ...this will allow the program to work | 
 4.3.1 | try: except parameters | `try:` \n `<block of code>` \n `except Exception as e:` \n `print(e)` \n `<block of code>`  | 
 4.3.2 | DECORATORS | https://www.youtube.com/watch?v=r7Dtus7N4pI https://www.youtube.com/watch?v=FsAPt_9Bf3U | 
-4.3.3 | syntax for decorator function | `def decorator_function(fn_to_be_decorated):` \n `def wrapper(*args, **kwargs):` \n `return fn_to_be_decorated(*args, **kwargs)` \n `return wrapper` (same indentation as def wrapper) ...`@decorator_function` \n `def fn_to_be_decorated(*args, **kwargs):` \n `code` \n `return <something>`...calling decorator >>> `fn_to_be_decorated(a,b,c,d, a="pepsi, b='coca_cola)` |
+4.3.3 | syntax for decorator function | `def decorator_function(fn_to_be_decorated):` \n `def wrapper(*args, **kwargs):` \n `return fn_to_be_decorated(*args, **kwargs)` \n `return wrapper` (same indentation as def wrapper) ...`@decorator_function` \n `def fn_to_be_decorated(*args, **kwargs):` \n `code` \n `return <something>`...calling decorator >>> `fn_to_be_decorated(a,b,c,d, a="pepsi, b='coca_cola)` ....this is the same as `decorator_function(fn_to_be_decorated(a,b,c,d, a="pepsi, b='coca_cola))` |
 4.3.3 | syntax for decorator class | `class decorator_class(object):` \n `def__init__(self, fn_to_be_decorated):` \n `self.fn_to_be_decorated = fn_to_be_decorated` ....`def __call__(self, *args, **kwargs):` \n `code_here` \n `return self.fn_to_be_decorated(*args, **kwargs)` ...write the fn_to_be_decorated as above, call the same way |
-4.3.4 | use case of DECORATORS | logging ...timing how long something ran | 
+4.3.4 | use case of DECORATORS | logging ...timing how long something ran ... | 
+4.3.5 | wrappers can be stacked | @wrapper_fn1 \n @wrapper_fn2 \n wrapper_fn3 \n def function_to_be_decoreated() ...it is the same as >>> `wrapper_fn1(wrapper_fn2)(wrapper_fn3)(function_to_be_decoreated()` |
 
   
 

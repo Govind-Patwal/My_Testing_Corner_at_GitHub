@@ -1,50 +1,15 @@
-# An inner_function can be called with the syntax `outer_function()()` if
-# it returns its name at the same indentation as its definition ...def inner_f(): 
-# \n code... \n return inner_f (at the same indention as def inner_f()) 
+def my_logger(fn_to_be_decorated):
+    import logging
+    logging.basicConfig(filename='{}.log'.format(fn_to_be_decorated.__name__), level=logging.INFO)
 
+    def wrapper(*args, **kwargs):
+        logging.info('Ran with args: {}, and kwargs: {}'.format(args,kwargs))
+        return fn_to_be_decorated(*args, **kwargs)
 
-# def outer_f(fn_to_be_decorated):
-#     def wrapper(*args):
-#         return fn_to_be_decorated(*args)
-#     return wrapper
-
-
-# '''
-# def external_function():
-#     print('I am the external fn')
-# # outer_f(external_function)()
-# external_function = outer_f(external_function)
-# '''
-
-# @outer_f
-# def add_2(*args):   #same as outer_f(add_2)(*args)
-#     return sum(args)
-
-# var1 = add_2(23, 23, 23)
-# print(var1)
-
-# print(outer_f(add_2)(23, 23, 23))
-
-
-
-
-##############################################################################
-##############################################################################
-##############################################################################
-##############################################################################
-##############################################################################
-
-
-def decorator_function(fn_to_be_decorated):
-    def wrapper(*args):
-        return fn_to_be_decorated(*args)
     return wrapper
 
-@decorator_function 
-def fn_to_be_decorated(*args): 
-    sum1 = sum(args)
-    print(sum1)
+@my_logger
+def display_info(*args, **kwargs):
+    print('display_info ran with arguments ({}, {})'.format(args[0], args[1]))
 
-decorator_function(fn_to_be_decorated)(12, 34, -1234)  # w/o decorator
-fn_to_be_decorated(12, 34, -1234)  # usage of decorator
-
+display_info('John', 25)
