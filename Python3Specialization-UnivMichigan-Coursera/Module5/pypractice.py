@@ -13,3 +13,5 @@ def display_info(*args, **kwargs):
     print('display_info ran with arguments ({}, {})'.format(args[0], args[1]))
 
 display_info('John', 25)
+
+@mylogger is a decorator function
