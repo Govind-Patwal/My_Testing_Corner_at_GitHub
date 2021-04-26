@@ -316,7 +316,10 @@ MISC | types to tests | return test and side-effect test ...`return test` checks
 MISC | edge cases, |  | 
 4.3 | try/except | the try/except block is a very helpful code, that allows a program to stop the block of code when an exception(run time error) is ecountered, and then jump to the `except` block of code ...this will allow the program to work | 
 4.3.1 | try: except parameters | `try:` \n `<block of code>` \n `except Exception as e:` \n `print(e)` \n `<block of code>`  | 
-
+4.3.2 | DECORATORS | https://www.youtube.com/watch?v=r7Dtus7N4pI https://www.youtube.com/watch?v=FsAPt_9Bf3U | 
+4.3.3 | syntax for decorator function | `def decorator_function(fn_to_be_decorated):` \n `def wrapper(*args, **kwargs):` \n `return fn_to_be_decorated(*args, **kwargs)` \n `return wrapper` (same indentation as def wrapper) ...`@decorator_function` \n `def fn_to_be_decorated(*args, **kwargs):` \n `code` \n `return <something>`...calling decorator >>> `fn_to_be_decorated(a,b,c,d, a="pepsi, b='coca_cola)` |
+4.3.3 | syntax for decorator class | `class decorator_class(object):` \n `def__init__(self, fn_to_be_decorated):` \n `self.fn_to_be_decorated = fn_to_be_decorated` ....`def __call__(self, *args, **kwargs):` \n `code_here` \n `return self.fn_to_be_decorated(*args, **kwargs)` ...write the fn_to_be_decorated as above, call the same way |
+4.3.4 | use case of DECORATORS | logging ...timing how long something ran | 
 
   
 
