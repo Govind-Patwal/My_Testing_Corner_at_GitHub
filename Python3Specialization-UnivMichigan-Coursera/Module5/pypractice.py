@@ -15,3 +15,5 @@ def display_info(*args, **kwargs):
 display_info('John', 25)
 
 @mylogger is a decorator function
+
+decorator can be implemented as a function or a class 
