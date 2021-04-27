@@ -106,6 +106,10 @@
 - TEXTBOOK: https://runestone.academy/runestone/books/published/thinkcspy/index.html
 - TOPICS COVERED: 
 - LIBRARIES COVERED: 
+    - import <user_created_file>: to import user_created_file.py
+        - it should be at the same level as the calling file, else have to use some additional code
+        - the whole file will be executed, any print statement will be executed, good idea to have ONLY functions/classes in the external file
+        - use the . operator to access its variables/methods
     - import turtle : for turtle graphics
     - import random: for random numbers
         - random.random() : for random float from 0 and 1
@@ -138,24 +142,30 @@ Number | Topic | Comments | Misc
 --- | --- |  --- | --- 
 0.1 | Univeristy of Michigan - Python Specialization | |
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
-0.1.2 | Coding good practicce | use print statement regulary to keep checking output |
-0.1.1.1 | type(), dir(), help() |  |
-0.1.1.1.1 | importing user_created files | same steps as external modules >>> `import external_file` ...NOTE: (1) the outside file needs to be at the same level (2) do not use the .py extension (3) the whole file will be executed, any print statement will be executed, good idea to have ONLY functions in the external file. Functions can be called using the `.` operator ...eg, >>> `external_file.function()` | 
-1 | **1/5 - Python Basics** | https://www.coursera.org/specializations/python-3-programming |
-2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
-2.44.1 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
-2.44.2 | runtime error or exception | An error that does not occur until the program has started to execute but that prevents the program from continuing. | 
-2.44.3 | semantic error | An error in a program that makes it do something other than what the programmer intended. |
-2.44.4 | values and value types | int = integer, float = floating point number, strings ...to find the type >>> type(23) >>> type('Hello World) >>> type(3.14) |
-2.44.5 | strings can be enclosed in | single quotes OR double quotes OR three single/double quotes ...triple quotes strings can span multiple lines | 
-2.44.6 | Type conversion functions | str(), float(), int(), list(), tuple(dict) return a tuple of keys, list(tuple) returns a list of keys | 
-2.44.6.1 | common usage of str conversion str() | in print statement to print integers >>>`print('this is the result' + str(10) + 'and then ..')`
-2.45 | operators and operands | Operators are + - * / (division) % (modulus/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
-2.45.1 | % (mod/moudulus) operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
-2.45.2 | // operator uses | to check integer division - num // 10 will return the tenth place number for example 2 for 20; num // 100 will return the hundredth place number, eg 3 for 300 | 
-2.46 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
-2.47 | reassignment | python variables can be reassigned ...data1 = 12, data1 = 13 |
-2.48 | updating a variable | x = x+1, x += 1, incremening/decrementing...bumping is increasing by 1 | 
+0.1.2 | Coding good practicce | use print statement regulary to keep checking output ...all print statements inside functions/classes|
+0.1.1.1 | type(), dir(), help(), id() | good way to check the working of python objects |
+1 | **1/5 - Python Basics** | https://www.coursera.org/learn/python-basics?specialization=python-3-programming |
+1.1.1 | literals  | 0, 3.14, 'Hello World |
+1.1.2 | operators and operands | Operators are + - * / (division) % (modulus/mod/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
+1.1.2.1 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
+1.1.2.2 | % (mod/moudulus) operator uses | to check divisibility if a num% other_number ==0, then it is divisible, cheking even/odd, if num % 2 == 0 even else odd, extracting the right most digits from a number, eg 1 right-most digit, do num%10, 2 right most digits num%100 | 
+1.1.2.3 | // operator uses | to check integer division - num // 10 will return the tenth place number for example 20 // 10 equals 2 num // 100 will return the hundredth place number, eg 300 //3 equals 3 | 
+1.1.3 | function calls | function are objects...called with the paranthesis...if called w/o the paranthesis they will return their type/id | 
+1.1.4 | Data Types | int = integer, float = floating point number, strings .. strings can be enclosed in single quotes OR double quotes OR three single/double quotes ...triple quotes strings can span multiple lines | 
+1.1.5 | Finding the type of a data | >>> type(23) >>> type('Hello World') >>> type(3.14) |
+1.1.3 | Type conversion functions | int(), float(), str(), list(), tuple(dict) return a tuple of keys, list(dict) returns a list of keys | 
+1.1.4 | common usage of conversion fn | (1) in print statement to print integers >>>`print('this is the result' + str(10) + 'and then ..')` (2) in input statement ...to take user input as integer >>> `int (input('Please enter something: '))` |
+1.1.5 | Variables | a name that refers to a literal value ...created using assignment statements |
+1.1.6 | assignment operator = | >>> name = 'James Bond' >>> pi = 3.14 ...read it as `I have a literal/variable/expression on the RHS and I am assigning its value to the variable on the LHS` ...in case of any Value error check the RHS first |
+1.1.7 | Variable names | (1) cannot contain spaces (3) cannot be a python keyword https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/VariableNamesandKeywords.html (3) no special characters, except for _ (4) cannot start with a number (5) convention is to start with a lowercase alphabet (except Class names)
+1.1.8 | choosing good variable names | meaningful variables are easier to read/understand/document/debug | 
+1.1.9 | reassignment | python variables can be reassigned ...data1 = 12, data1 = 13 |
+1.1.10 | statements and expressions | statements are instuctions athat python can execute, eg. assignment statement, while, for, if, import ... expressions are a combination of literals, variables, operators and calls to functions. They need to be evaluated - the result of the evaluation is a value or object | 
+1.1.11 | updating a variable | incremening/decrementing ... x += n is the same as x = x +n , x -= n is the same as x = x -n ...bumping is increasing by 1 | 
+1.1.12 | hard-coding | using literals...make program less flexible...try to avoid | 
+1.1.13 | Input | prompts the user to enter something, when pressed return it is interpreted by python...it can be assigned to a variable ...input only returns strings...to change to int, use the int type conversion >>> `int (input ('Enter something: '))`  | 
+
+
 2.49 | concatenating and repeating - strings, lists, tuples | concatenating using + >>> `new_string/list/tuple = string1/list1/tuple1 + string2/list2/tuple2` ...repetition using * >>> `new_string/list/tuple = string/list/tuple*5`
 2.50 | .count() with string, list, tuple | counts the number of occurance in a string or list... >>> `string.count('alphabet(s)')` ... >>> `list.count(element)` ... >>> `tuple.count(element)`|
 2.50 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` |  
@@ -347,6 +357,10 @@ Number | Topic | Comments | Misc
 4.2.6.1 | invoking a parent class's method (**MULTIPLE parents**) - syntax | >>>`Parent1.<method_name>(self, all_arguments)` ... the code goes after the declaration of the method of the subclass ...most commom usage: constructor ...eg. >>> `def __init__ (self, new_variable1, new_variable2):` \n `Parent1.__init__(self, all_arguments) | 
 MISC | __name__ and '__main__' | the file runnign the code gets the value of '__main__' for the variable __name__ ... this can be used to made sure that the code of the current file is getting executed ... eg, >>> `if __name__ == '__main__':` \n `<do this>` ...NOTE, the codes after the statement above are exexuted normally. |
 4.3 | TESTING in python |  | 
+2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
+2.44.1 | syntax error | An error in a program that makes it impossible to parse — and therefore impossible to interpret. | 
+2.44.2 | runtime error or exception | An error that does not occur until the program has started to execute but that prevents the program from continuing. | 
+2.44.3 | semantic error | An error in a program that makes it do something other than what the programmer intended. |
 4.3.1 | assert statement | >>> `assert <code1> == <code2> ` ...it checks code1 against code2, in case they are same, does nothing, else return a runtime error | 
 4.3.2 | module unittest...CONFUSING, BETTER ALTERNATIVE is pytest (below) | `import unittest` is the main module in python for testing | 
 4.3.2.1 | unittest syntax ...CONFUSING, BETTER ALTERNATIVE is pytest (below) | a testcase is created by subclassing `unittest.TestCase`. Inside the class the individual tests need to defined as methods, the method name must start with the letters `test_`. To choose the type of test, a call need to be made to a function in `dir(TestCase)`, eg `assertEqual()`, finally, the tests are run with the code `unittest.main()` ...`class Class_name(unittest.TestCase):` \n `def test_method_name(self):` \n `self.assertTrue(fn, value)` ...to run the tests >>> `unittest.main()` NOTE: assertTrue will compare the return value of the function againt the next argument...no code will be run after unittest.main() |
