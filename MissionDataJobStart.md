@@ -712,6 +712,9 @@ Glassdooor
 
 ## Good_Links
 
+<details>
+<summary>Click to Expand/Collapse</summary>
+
 ### Links to Courses / Credits
 - https://www.kaggle.com/learn/overview
 - https://www.kaggle.com/learn/python 
@@ -753,9 +756,14 @@ Glassdooor
 - Python on AWS - Mount the EFS to your Lambda function, intall dependencies on the EFS - https://www.youtube.com/watch?v=4cquiuAQBco
 - Group Project - ML model on AWS - https://github.com/asadca4u/Final_Project_Group_Five 
 - Group Project - Good Tableau - https://public.tableau.com/profile/kassie.lu#!/vizhome/AmesHousingSalesPricesDashboard/Dashboard?publish=yes
+
+</details>
+
 ---
 
 ## Project_Ideas
+<details>
+<summary>Click to Expand/Collapse</summary>
 
 ***Banking*** - some very useful projects that are good for the resume and portfolio:
 - Credit Fraud Detection: https://www.kaggle.com/mlg-ulb/creditcardfraud
@@ -767,12 +775,16 @@ Glassdooor
 - Financial Machine Learning and Data Science: https://github.com/firmai/financial-machine-learning
 - https://www.kaggle.com/arjunjoshua/predicting-fraud-in-financial-payment-services
 
+</details>
 ---
 Misc
-- https://cloud.google.com/blog/topics/training-certifications/kick-off-2021-with-skill-badges-and-free-training
+<details>
+<summary>Click to Expand/Collapse</summary>
 
+- https://cloud.google.com/blog/topics/training-certifications/kick-off-2021-with-skill-badges-and-free-training
 
 - https://towardsdatascience.com/6-data-science-certificates-to-level-up-your-career-275daed7e5df 
 
+</details>
 
 ---
