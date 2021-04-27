@@ -25,7 +25,7 @@
 
 ### POA
 <details>
-<summary>Click to Open</summary>
+<summary>Click to Expand/Collapse</summary>
 
 | Part 1 | Part 2 | 
 | :--- | :--- |
@@ -39,7 +39,7 @@
 
 ### Study Plan
 <details>
-<summary>Click to Expand</summary>
+<summary>Click to Expand/Collapse</summary>
 
 1. Python
     - Google Python Class - https://developers.google.com/edu/python
@@ -65,6 +65,9 @@
 ---
 
 ### Daily_Activity
+<details>
+<summary>Click to Expand/Collapse</summary>
+
 Wk starts on a Monday and ends on a Sunday
 
 | Wk | Dates | Planned | Executed | Evaluation |
@@ -90,6 +93,7 @@ Wk starts on a Monday and ends on a Sunday
 | 18 | 2021/04/12 - 2021/04/18 | | ## CanEx - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
 | 19 | 2021/04/19 - 2121/04/25 |  |  ## CanEx Week 12 ## Finished Course 5/5 of Python 3 specialization ...this finished the Specialization       |   |
 
+</details>  
 
 ---
 ### PYTHON COURSE - Univeristy of Michigan - Python 3 Specialization
