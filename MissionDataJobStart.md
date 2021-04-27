@@ -9,15 +9,18 @@
 
 ---
 
+### TABLE OF CONTENTS
+<details>
+<summary>Click to Expand/Collapse</summary>
+
 ### [POA](#POA) - My Plan of Action
 ### [Daily Activities](#Daily_Activity) - WBS - breaking POA into daily activities
-
 ### [Cheat Sheet](#Cheat_Sheet) - Learning during this journey
-
 ### [Job Search Keywords](#Job_search_keywords) - Job Search Keywords
 ### [Good Links](#Good_Links) - Good links for reference
-
 ### [Project Ideas](#Project_Ideas) - Project Ideas
+
+</details>
 
 ---
 
