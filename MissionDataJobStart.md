@@ -24,8 +24,6 @@
 
 ---
 
-
-
 ### POA
 <details>
 <summary>Click to Expand/Collapse</summary>
@@ -96,21 +94,16 @@
 | 18 | 2021/04/12 - 2021/04/18 | | ## CanEx - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
 | 19 | 2021/04/19 - 2121/04/25 |  |  ## CanEx Week 12 ## Finished Course 5/5 of Python 3 specialization ...this finished the Specialization       |   |
 
-</details>  
 
 ---
-### PYTHON COURSE - Univeristy of Michigan - Python 3 Specialization
-- https://www.coursera.org/specializations/python-3-programming
-- https://runestone.academy/runestone/books/published/thinkcspy/index.html
-- https://docs.python.org/3/tutorial/index.html
-- https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
-- https://wiki.python.org/moin/BeginnersGuide/Programmers
-- https://www.dj4e.com/lessons 
+
+### PYTHON COURSE 1 - Univeristy of Michigan - Python 3 Specialization
+- URL: https://www.coursera.org/specializations/python-3-programming
+- BOOK: https://runestone.academy/runestone/books/published/thinkcspy/index.html
 - STRING METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html
- - LIST METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListMethods.html
-  - DICT METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Dictionaries/Dictionarymethods.html
-   - STANDARD EXCEPTIONS: https://runestone.academy/runestone/books/published/thinkcspy/Exceptions/02_standard_exceptions.html
-   - intermediate python - https://book.pythontips.com/en/latest/index.html
+- LIST METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListMethods.html
+- DICT METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Dictionaries/Dictionarymethods.html
+- STANDARD EXCEPTIONS: https://runestone.academy/runestone/books/published/thinkcspy/Exceptions/02_standard_exceptions.html
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 
@@ -345,7 +338,20 @@ MISC | edge cases, |  |
   
 
 
+---
 
+### SOME MORE PYTHON COURSES
+
+<details>
+<summary>Click to Expand/Collapse</summary>
+
+- https://docs.python.org/3/tutorial/index.html
+- https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
+- https://wiki.python.org/moin/BeginnersGuide/Programmers
+- https://www.dj4e.com/lessons 
+- intermediate python - https://book.pythontips.com/en/latest/index.html
+
+</details>  
 
 
 
