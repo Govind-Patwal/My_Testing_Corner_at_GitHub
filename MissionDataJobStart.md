@@ -22,20 +22,12 @@
 
 ### POA
 
-<details>
-<summary>My POA</summar>
-<p>
-
-```
 | Part 1 | Part 2 | 
 | :--- | :--- |
 | Hard Skills: Product (I am the Product) improvment | Soft Skills: Marketing and Sales | 
 | After inital setup: Full Weekends + try to find time on weekdays | After inital setup: ONLY on Weekdays |
 | Kaggle(python + pandas) + Django + Canvas (in class + GitLab...while doing this course also go through Mongo https://www.youtube.com/watch?v=E-1xI85Zog8 and Flask https://www.youtube.com/watch?v=Z1RJmh_OqeA + Tablaue https://www.youtube.com/watch?v=TPMlZxRRaBQ + SQLite + SQLAlchemy) + Django again + AllKaggleCourses + AWS + (Kaggle Competitions...will also give you project ideas) + resources (text+video on my portfolio website) | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn + LeetCode/other platforms | 
-```
 
-<p>
-</details>
 
 ---
 
