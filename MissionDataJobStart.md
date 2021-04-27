@@ -21,7 +21,11 @@
 
 ---
 
+
+
 ### POA
+<details>
+<summary>Click to Open</summary>
 
 | Part 1 | Part 2 | 
 | :--- | :--- |
@@ -29,13 +33,14 @@
 | After inital setup: Full Weekends + try to find time on weekdays | After inital setup: ONLY on Weekdays |
 | Kaggle(python + pandas) + Django + Canvas (in class + GitLab...while doing this course also go through Mongo https://www.youtube.com/watch?v=E-1xI85Zog8 and Flask https://www.youtube.com/watch?v=Z1RJmh_OqeA + Tablaue https://www.youtube.com/watch?v=TPMlZxRRaBQ + SQLite + SQLAlchemy) + Django again + AllKaggleCourses + AWS + (Kaggle Competitions...will also give you project ideas) + resources (text+video on my portfolio website) | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn + LeetCode/other platforms | 
 
+</details>  
+
 ---
 
+### Study Plan
 <details>
-<summary>Study Plan</summary>
-<p>
+<summary>Click to Expand</summary>
 
-```
 1. Python
     - Google Python Class - https://developers.google.com/edu/python
     - UofT Bootcamp exercises
@@ -54,9 +59,7 @@
 6. Machine Learning + Deep Learning
 
 7. Tableau 
-```
 
-</p>
 </details>  
 
 ---
