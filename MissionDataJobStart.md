@@ -2,6 +2,7 @@
 - Don't take anything for granted
 - A small plan, executed strongly (0% Stress, and 100% focus on inputs) is better than A Grand plan, executed weakly
 ---
+
 ## Mission Data Job Start 
 ### Target (Initial) - Job in 24 Wks (by June 17, 2021)
 ### Target (Revision 1) - Job in 32 Wks (by Aug 17, 2021)
@@ -28,12 +29,13 @@
 | After inital setup: Full Weekends + try to find time on weekdays | After inital setup: ONLY on Weekdays |
 | Kaggle(python + pandas) + Django + Canvas (in class + GitLab...while doing this course also go through Mongo https://www.youtube.com/watch?v=E-1xI85Zog8 and Flask https://www.youtube.com/watch?v=Z1RJmh_OqeA + Tablaue https://www.youtube.com/watch?v=TPMlZxRRaBQ + SQLite + SQLAlchemy) + Django again + AllKaggleCourses + AWS + (Kaggle Competitions...will also give you project ideas) + resources (text+video on my portfolio website) | Part 1: (Finding new ones) and Part 2: (Retaining) - RecruitmentAgencies + JobSupportGroups (Govt) + JobPortals + DirectCompanies + Internships + Notifications + Sharing on LinkedIn + LeetCode/other platforms | 
 
-
 ---
 
+<details>
+<summary>Study Plan</summary>
+<p>
 
-
-
+```
 1. Python
     - Google Python Class - https://developers.google.com/edu/python
     - UofT Bootcamp exercises
@@ -52,7 +54,13 @@
 6. Machine Learning + Deep Learning
 
 7. Tableau 
+```
+
+</p>
+</details>  
+
 ---
+
 ### Daily_Activity
 Wk starts on a Monday and ends on a Sunday
 
