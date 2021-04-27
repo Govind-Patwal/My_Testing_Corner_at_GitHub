@@ -94,10 +94,14 @@
 | 18 | 2021/04/12 - 2021/04/18 | | ## CanEx - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
 | 19 | 2021/04/19 - 2121/04/25 |  |  ## CanEx Week 12 ## Finished Course 5/5 of Python 3 specialization ...this finished the Specialization       |   |
 
+</details>
 
 ---
 
 ### PYTHON COURSE 1 - Univeristy of Michigan - Python 3 Specialization
+<details>
+<summary>Click to Expand/Collapse</summary>
+
 - URL: https://www.coursera.org/specializations/python-3-programming
 - BOOK: https://runestone.academy/runestone/books/published/thinkcspy/index.html
 - STRING METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html
@@ -335,13 +339,11 @@ MISC | edge cases, |  |
 4.3.4 | use case of DECORATORS | logging ...timing how long something ran ... | 
 4.3.5 | wrappers can be stacked | @wrapper_fn1 \n @wrapper_fn2 \n wrapper_fn3 \n def function_to_be_decoreated() ...it is the same as >>> `wrapper_fn1(wrapper_fn2)(wrapper_fn3)(function_to_be_decoreated()` |
 
-  
-
+</details>  
 
 ---
 
 ### SOME MORE PYTHON COURSES
-
 <details>
 <summary>Click to Expand/Collapse</summary>
 
@@ -352,47 +354,6 @@ MISC | edge cases, |  |
 - intermediate python - https://book.pythontips.com/en/latest/index.html
 
 </details>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
 
 ---
 
