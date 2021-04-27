@@ -1,4 +1,4 @@
-# North Star
+# My North Star
 - Don't take anything for granted
 - A small plan, executed strongly (0% Stress, and 100% focus on inputs) is better than A Grand plan, executed weakly
 ---
@@ -102,8 +102,33 @@
 <details>
 <summary>Click to Expand/Collapse</summary>
 
-- URL: https://www.coursera.org/specializations/python-3-programming
-- BOOK: https://runestone.academy/runestone/books/published/thinkcspy/index.html
+- COURSE URL: https://www.coursera.org/specializations/python-3-programming
+- TEXTBOOK: https://runestone.academy/runestone/books/published/thinkcspy/index.html
+- TOPICS COVERED: 
+- LIBRARIES COVERED: 
+    - import turtle : for turtle graphics
+    - import random: for random numbers
+        - random.random() : for random float from 0 and 1
+        - radom.randrange(optional_start_default_0, mandatory_end, optional_step_default_1)
+        - radom.choice(iterable): chose random element from a iterable
+    - import json: convert to and from json
+        - loads(string): loads a string as a python_object
+        - dumps(py_object, indent = 4): dumps a py_object to JSON 
+    - import copy: to deepcopy(py_object)
+    - import requests: to get the contents of a page using API 
+        - page_response = requests.get(page_endpoint, params = my_params_as_dict)
+        - py_obj = page_response.json()
+    - import requests_cache: to cache page contents (which are in JSON, and were called used an API call)
+        - to start caching: requests_cache.install_cache('my_cache_name')
+        - to check if a page was retrieved from cache: page_response.from_cache
+    - import webbrowser: (to open web pages)
+        - webbrowser.open(url)
+    - import PIL: Python image library
+    - import pytesseract: image to text
+    - import kraken: advanced image to text
+    - import cv2: to detect faces
+    - import pytest: to run tests using `assert`
+
 - STRING METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html
 - LIST METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListMethods.html
 - DICT METHODS: https://runestone.academy/runestone/books/published/thinkcspy/Dictionaries/Dictionarymethods.html
@@ -115,7 +140,6 @@ Number | Topic | Comments | Misc
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
 0.1.2 | Coding good practicce | use print statement regulary to keep checking output |
 0.1.1.1 | type(), dir(), help() |  |
-0.1.3 | some libraries | ### `import turtle` (for turtle graphics), ### `import random` (for floats from 0 to 1 >>> random.random() ... for floats x.y to a.b >>> `random.uniform(x.y, a.b)` ....for integers >>> `random.randrange(start, end, step)` ...similar to range(), the only difference is while range() returns all the numbers in the series, randrange() returns only 1 random number  ...return one element from a list >>> `random.choice(list_name))`, ###  `import json` (to convert py_objects to/from JSON strings), ### `import` copy (to deepcopy) , ### `import requests` (to work with APIs) ... not python native ...user after win cmd -> pip3 install requests, ### `import requests_cache` (to cache files), `import webbrowser` (to open webpages) | 
 0.1.1.1.1 | importing user_created files | same steps as external modules >>> `import external_file` ...NOTE: (1) the outside file needs to be at the same level (2) do not use the .py extension (3) the whole file will be executed, any print statement will be executed, good idea to have ONLY functions in the external file. Functions can be called using the `.` operator ...eg, >>> `external_file.function()` | 
 1 | **1/5 - Python Basics** | https://www.coursera.org/specializations/python-3-programming |
 2.44 | 3 types of programming error types | Syntax errors, runtime errors/exception, symantic errors | 
