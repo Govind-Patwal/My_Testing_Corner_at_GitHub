@@ -142,8 +142,9 @@ Number | Topic | Comments | Misc
 --- | --- |  --- | --- 
 0.1 | Univeristy of Michigan - Python Specialization | |
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
-0.1.2 | Coding good practicce | use print statement regulary to keep checking output ...all print statements inside functions/classes|
 0.1.1.1 | type(), dir(), help(), id() | good way to check the working of python objects |
+0.1.2 | Coding good practicce | use print statement regulary to keep checking output ...all print statements inside functions/classes|
+0.1.3 | compound statements | statements that have their own indentations, like for-loop, with, def, class, while | 
 1 | **1/5 - Python Basics** | https://www.coursera.org/learn/python-basics?specialization=python-3-programming |
 1.1.1 | literals  | 0, 3.14, 'Hello World |
 1.1.2 | operators and operands | Operators are + - * / (division) % (modulus/mod/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
@@ -164,30 +165,40 @@ Number | Topic | Comments | Misc
 1.1.11 | updating a variable | incremening/decrementing ... x += n is the same as x = x +n , x -= n is the same as x = x -n ...bumping is increasing by 1 | 
 1.1.12 | hard-coding | using literals...make program less flexible...try to avoid | 
 1.1.13 | Input | prompts the user to enter something, when pressed return it is interpreted by python...it can be assigned to a variable ...input only returns strings...to change to int, use the int type conversion >>> `int (input ('Enter something: '))`  | 
+1.2.1 | Intro to Sequences/Collections |  ... collection data types are data types that can be broken down into smaller pieces (unlike integers and floats) ...collection data types can treated as a single entity or its individual parts may be referenced | 
+1.2.2 | Strings | ordered collection of characters ...string with no characters is called an empty string and represented as '' OR "" | 
+1.2.3 | Lists | ordered collection of data objects ...a list could have a mixture of ANY python data object - int, float, string, tuple, list, class, function ... it is recommended that a list have only one kind of data type, this ensures easier operation, understanding and debugging ...empty list = [] |  
+1.2.4 | Tuples | Similar to lists that they are an ordered sequence and can have any python data type ...difference (1) use of curly braces (2) they are immutable ...to create a tuple with one value we have to include a comma after the value else the data is not treated as tuple...eg `type(5)` is `<class int>` `type(5,)` is `<class tuple>` |
+1.2.5 | Indexing operator | from left to right: starts at 0, ends at ( len(sequence) -1 ) ... right to left: starts at -1 and ends at -len(sequence) ...representation, also called SUB ...list_name[2], string_name[2], tuple_name[2] |
+1.2.6 | Lenght of a sequence | len () function | 
+1.2.6 | The slice operator [:] | creates a new sequence >>> `sequence[x:y] ` will create a new sequence sliced out of the original sequence ...it will start at index x and go till index y ...if x is not mentioned, it starts at start of the list, if y is not mentioned it ends at the end of the list...if neither is mentioned, the entire original list is copied | 
+1.2.7 | Concatenation and Repetition - strings, lists, tuples | concatenating using + >>> `new_single_string/list/tuple = string1/list1/tuple1 + string2/list2/tuple2` ...repetition using * >>> `new_single_string/list/tuple = string/list/tuple*5` ...NOTE: the new sequence will be a list will NOT have the original lists as sublists, but will have all the elements of the original listss as its elements.. for example a contac of 2 lists with 5 elements will be a new list with 10 elements | 
+1.2.8 | .count() with string, list, tuple | counts the number of occurance in a string or list... >>> `string.count('string1')` ... >>> `list.count(element)` ... >>> `tuple.count(element)`|
+1.2.9 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` | 
+1.2.10 | .split() to split a string into a list of words | 'this is' to ['this', 'is'] ...>>> `string.split('split at')`...the default split is a whitespace, but it can be any character or combination of characters, like / - a ab , : ...eg >>> `'this,is,a,book'.split(',' )` ...common use case: splitting on , after reading from csv | 
+1.2.11 | using .join() to join a list of strings into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') ...common use case: joining using , before writing as a csv | 
+1.2.12 | Iteration |  |
+1.2.13 | the for loop | syntax `for <loop_variable> in <iterable>:` ...it will iterate ONLY over the 1st level elements of the iterable and not inner level elements | 
+1.2.14 | iternation can be confusing in iterables that have nested data in lists/dict/tuples ...for example >>> `for element in [ [ [1, 2], [3,4] ], [ [5,6], [7,8] ], [ [9,10], [11, 12]] ]` ...the elements are [ [1, 2], [3,4] ] and not [1,2] or 1 ...to reach 1 we will have to use multiple iterations/for loops | 
+1.2.14 | using the range function to create an iterable | >>> `for i in range(20)` will create an iterable starting with i as 0 and ending at 20-1 ...if using range to run a code x number of times, can use _ as the loop_variable ...range is very important when the length of iterable is not know but we want to access elements using the index ...>>> `for i in range(len(list)):` \n list[i] | 
+1.2.15 | Booleans | True and False ... they are not strings  ...True is not equal to 'True' | 
+1.2.16 | boolean expression, equality check, comparison/realational operators | equality check == ...returns True or False ... comparison != > < >= <= |
+1.2.17 | logical operators | and or not |
+1.2.18 | `in` and `not in` | returns True or False | 
+1.2.19 | Precedence of operators | parentheses > exponent > multi > Divi > add > sub > relational (==, !=, >, <... ) > not  > and  > or  |
+1.2.20 | Conditional: if-else | if catches a condition, else catches everythin else .... variations only 1 if, multiple ifs: if if if, one if one else, chained if elif elif elif |
+1.2.21 | Sequence mutation | methods ...concatenate, index, slice, in/not in, find, append, join, split ... list are mutable, strings and tuples are immutable |
+1.2.22 | ***LIST METHODS*** | https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListMethods.html |
+1.2.23 | some list methods | list_name.count(element), list_name.index(element), len(list_name), sum(list_name), min(list_name), max(list_name), random.choice(list_name), list_name.append(), list_name.pop(), list_name.pop(index), list_name[index] = replacement, list_name[x:y] = [...replacement elements], list_name[x:y] =[] (will delete between indexes x and y), del list_name[index], del list_name[x:y], `list_name.insert(index, value)` , list_name[x:x] = [...list to be inserted at index x] , list_name.remove(element) removes 1st occurance, list_name.sort(), list_name.reverse() ...also in and not in |
+1.2.24 | LIST - ACCUMULATOR | list =[], list.append(element); for unique elements, >>> `if element not in list_name:` `list.append(element)` |
+1.2.25 | Aliasing | Aliasing `list_new = list_original` does NOT generate a new copy, it keeps list_new pointed to list_original ...any chnages to list_original are reflected on the list_new |
+1.2.26 | Copying | creating a new copy - for lists with no nesting, copy using list.copy() OR list[:] | 
+2.53 | ***STRING METHODS*** | https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html |
+2.53.1 | some string methods | len(string_name), string_name.split(string), string.join(list_of_strings), string_name.upper(), string_name.lower(), string_name.count(substring), string_name.index(substring)...index of 1st occurance, string_name.replace(old_string, new_string)...replaces all occurances, string_name.format() , string_name.strip()| 
 
 
-2.49 | concatenating and repeating - strings, lists, tuples | concatenating using + >>> `new_string/list/tuple = string1/list1/tuple1 + string2/list2/tuple2` ...repetition using * >>> `new_string/list/tuple = string/list/tuple*5`
-2.50 | .count() with string, list, tuple | counts the number of occurance in a string or list... >>> `string.count('alphabet(s)')` ... >>> `list.count(element)` ... >>> `tuple.count(element)`|
-2.50 | .index() with string, list, tuple | returns the index of the 1st occurance in a string or list... >>> `string.index('alphabet(s)')` ... >>> `list.index(element)` ... >>> `tuple.index(element)` |  
-2.51 | using .split() to split a string into a list | >>> `string.split('split at')`...the default split is a whitespace, but it can be any character or combination of characters, like / - a ab in , : | 
-2.51.1 | using .join() to join a list into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') | 
-2.52 | ***LIST METHODS*** | |
-2.52.1 | LIST - adding a element at the end of the list | >>> `list1.append(value)`
-2.52.2 | LIST - adding an element at an index | >>> `list1.insert(<index>, value)` |
-2.53.3 | LIST - adding multiple items at an index | ... >>> `list1[0:0] = [element1, elment2, elementn]` ... | 
-2.53.4 | LIST - deleting the last element | >>> list1.pop() |
-2.53.4.1 | LIST - using POP to delete element at an index | >>> `list.pop(3)` |
-2.53.5 | LIST - deleting elements using index | ...deleting 1 element >>> `del list1[5]` ... deleting multiple elements >>> `del list1[0:3]` |
-2.52.6 | LIST - deleting elements using value | ...deleting 1st occurance of a value  >>> `list1.remove('item value')`  |
-2.52.7 | LIST - sorting in ascending | >>> `list1.sort()` |
-2.52.8 | LIST - reversing | >>> `list1.reverse()` |
-2.52.9 | LIST - finding the index of the 1st occurance of an element | >>> `list1.index(value)` |
-2.52.10 | LIST - ACCUMULATOR | |
-2.52.10.1 | list1.reverse() | | 
-2.52.10 | LIST - finding the count of elements | >>> `list1.count(value)` | 
-2.53 | ***STRING METHODS*** | |
-2.53.1 | STRING - .upper() and .lower() | string1.upper() changes to all upercase, string1.lower() changes to all uppercase | 
-2.53.2 | STRING: .count('char') | >>> `string.count('character(s)')`, counts the number of times a character appeared | 
+
+
 2.53.3 | STRING: .strip() | string.strip() removes any white spaces before and after the actual characters, for example '   this is a string   ' will be changed to 'this is a string'
 2.53.4 | STRING: .replace(, ) | >>> `string.replace('char(s)', 'repalcement')`  | 
 2.53.5 | STRING: index('char(s)') | >>> `string.index('boy')` ... will return the first occurance of the variable | 
