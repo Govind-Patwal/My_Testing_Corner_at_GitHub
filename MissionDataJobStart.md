@@ -192,17 +192,12 @@ Number | Topic | Comments | Misc
 1.2.23 | some list methods | list_name.count(element), list_name.index(element), len(list_name), sum(list_name), min(list_name), max(list_name), random.choice(list_name), list_name.append(), list_name.pop(), list_name.pop(index), list_name[index] = replacement, list_name[x:y] = [...replacement elements], list_name[x:y] =[] (will delete between indexes x and y), del list_name[index], del list_name[x:y], `list_name.insert(index, value)` , list_name[x:x] = [...list to be inserted at index x] , list_name.remove(element) removes 1st occurance, list_name.sort(), list_name.reverse() ...also in and not in |
 1.2.24 | LIST - ACCUMULATOR | list =[], list.append(element); for unique elements, >>> `if element not in list_name:` `list.append(element)` |
 1.2.25 | Aliasing | Aliasing `list_new = list_original` does NOT generate a new copy, it keeps list_new pointed to list_original ...any chnages to list_original are reflected on the list_new |
-1.2.26 | Copying | creating a new copy - for lists with no nesting, copy using list.copy() OR list[:] | 
-2.53 | ***STRING METHODS*** | https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html |
-2.53.1 | some string methods | len(string_name), string_name.split(string), string.join(list_of_strings), string_name.upper(), string_name.lower(), string_name.count(substring), string_name.index(substring)...index of 1st occurance, string_name.replace(old_string, new_string)...replaces all occurances, string_name.format() , string_name.strip()| 
+1.2.26 | Copying | creating a new copy - for lists with no nesting, copy using list_name.copy() OR list_name[:] Or list_name*1| 
+1.2.27 | ***STRING METHODS*** | https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html |
+1.2.28 | some string methods | len(string_name), string_name.split(string), string.join(list_of_strings), string_name.upper(), string_name.lower(), string_name.count(substring), string_name.index(substring)...index of 1st occurance, string_name.replace(old_string, new_string)...replaces all occurances, string_name.strip(), string_name.format() , | 
+1.2.29 | STRING: format string ...string.format(var1, var2) | >>> string1 = "This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) | 
 
 
-
-
-2.53.3 | STRING: .strip() | string.strip() removes any white spaces before and after the actual characters, for example '   this is a string   ' will be changed to 'this is a string'
-2.53.4 | STRING: .replace(, ) | >>> `string.replace('char(s)', 'repalcement')`  | 
-2.53.5 | STRING: index('char(s)') | >>> `string.index('boy')` ... will return the first occurance of the variable | 
-2.53.6 | STRING: format string ...string.format(var1, var2) | >>> string1 = "This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) | 
 2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
 2.54.1 | LIST - copying/cloning | ... >>> `list2 = list1.copy()` >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
 2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
