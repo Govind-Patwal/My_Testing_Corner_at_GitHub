@@ -140,12 +140,12 @@
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 
-0.1 | Univeristy of Michigan - Python Specialization | |
+0.0 | Univeristy of Michigan - Python Specialization | |
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
 0.1.1.1 | type(), dir(), help(), id() | good way to check the working of python objects |
 0.1.2 | Coding good practicce | use print statement regulary to keep checking output ...all print statements inside functions/classes|
 0.1.3 | compound statements | statements that have their own indentations, like for-loop, with, def, class, while | 
-1 | **1/5 - Python Basics** | https://www.coursera.org/learn/python-basics?specialization=python-3-programming |
+1.0 | **1/5 - Python Basics** | https://www.coursera.org/learn/python-basics?specialization=python-3-programming |
 1.1.1 | literals  | 0, 3.14, 'Hello World |
 1.1.2 | operators and operands | Operators are + - * / (division) % (modulus/mod/reminder/integer reminder) // (int division OR truncated div operator; does not round) ** (exponentiation) ...// also works for floats, it returns a float |
 1.1.2.1 | order of operands | evaluated left to right (exception exponents...2**3**2 = 2**9 NOT 8**2)....Parenthesis, Exponentiation, Multication, Division, Addiiton and Subtraction - PEMDAS |
@@ -179,7 +179,7 @@ Number | Topic | Comments | Misc
 1.2.11 | using .join() to join a list of strings into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') ...common use case: joining using , before writing as a csv | 
 1.2.12 | Iteration |  |
 1.2.13 | the for loop | syntax `for <loop_variable> in <iterable>:` ...it will iterate ONLY over the 1st level elements of the iterable and not inner level elements | 
-1.2.14 | iternation can be confusing in iterables that have nested data in lists/dict/tuples ...for example >>> `for element in [ [ [1, 2], [3,4] ], [ [5,6], [7,8] ], [ [9,10], [11, 12]] ]` ...the elements are [ [1, 2], [3,4] ] and not [1,2] or 1 ...to reach 1 we will have to use multiple iterations/for loops | 
+1.2.14 | for loop in nested lists/dicts | iternation can be confusing in iterables that have nested data in lists/dict/tuples ...for example >>> `for element in [ [ [1, 2], [3,4] ], [ [5,6], [7,8] ], [ [9,10], [11, 12]] ]` ...the elements are [ [1, 2], [3,4] ] and not [1,2] or 1 ...to reach 1 we will have to use multiple iterations/for loops | 
 1.2.14 | using the range function to create an iterable | >>> `for i in range(20)` will create an iterable starting with i as 0 and ending at 20-1 ...if using range to run a code x number of times, can use _ as the loop_variable ...range is very important when the length of iterable is not know but we want to access elements using the index ...>>> `for i in range(len(list)):` \n list[i] | 
 1.2.15 | Booleans | True and False ... they are not strings  ...True is not equal to 'True' | 
 1.2.16 | boolean expression, equality check, comparison/realational operators | equality check == ...returns True or False ... comparison != > < >= <= |
@@ -189,25 +189,21 @@ Number | Topic | Comments | Misc
 1.2.20 | Conditional: if-else | if catches a condition, else catches everythin else .... variations only 1 if, multiple ifs: if if if, one if one else, chained if elif elif elif |
 1.2.21 | Sequence mutation | methods ...concatenate, index, slice, in/not in, find, append, join, split ... list are mutable, strings and tuples are immutable |
 1.2.22 | ***LIST METHODS*** | https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListMethods.html |
-1.2.23 | some list methods | list_name.count(element), list_name.index(element), len(list_name), sum(list_name), min(list_name), max(list_name), random.choice(list_name), list_name.append(), list_name.pop(), list_name.pop(index), list_name[index] = replacement, list_name[x:y] = [...replacement elements], list_name[x:y] =[] (will delete between indexes x and y), del list_name[index], del list_name[x:y], `list_name.insert(index, value)` , list_name[x:x] = [...list to be inserted at index x] , list_name.remove(element) removes 1st occurance, list_name.sort(), list_name.reverse() ...also in and not in |
+1.2.23 | some list methods | list_name.count(element), list_name.index(element), len(list_name), sum(list_name), min(list_name), max(list_name), random.choice(list_name), list_name.append(), list_name.pop(), list_name.pop(index), list_name[index] = replacement, list_name[x:y] = [...replacement elements], list_name[x:y] =[] (will delete between indexes x and y), del list_name[index], del list_name[x:y], `list_name.insert(index, value)` , list_name[x:x] = [...list to be inserted at index x] , list_name.remove(element) removes 1st occurance, list_name.sort(), sorted(list, key =function, reverse = True/False), list_name.reverse() ...also in and not in |
 1.2.24 | LIST - ACCUMULATOR | list =[], list.append(element); for unique elements, >>> `if element not in list_name:` `list.append(element)` |
 1.2.25 | Aliasing | Aliasing `list_new = list_original` does NOT generate a new copy, it keeps list_new pointed to list_original ...any chnages to list_original are reflected on the list_new |
 1.2.26 | Copying | creating a new copy - for lists with no nesting, copy using list_name.copy() OR list_name[:] Or list_name*1| 
 1.2.27 | ***STRING METHODS*** | https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html |
 1.2.28 | some string methods | len(string_name), string_name.split(string), string.join(list_of_strings), string_name.upper(), string_name.lower(), string_name.count(substring), string_name.index(substring)...index of 1st occurance, string_name.replace(old_string, new_string)...replaces all occurances, string_name.strip(), string_name.format() , | 
 1.2.29 | STRING: format string ...string.format(var1, var2) | >>> string1 = "This is part 1 of the string {:,.2f} This is part 2 of the string {,.2f} - This is part 3 of the string".format(var1, var2) | 
-
-
-2.54 | LIST - alias vs cloning | alias will not create a new copy, just give it a new name, any change in the central will lead to a change in all aliases, eg list2 = list1 ... any change in list1 will be automatically reflected in list2 |
-2.54.1 | LIST - copying/cloning | ... >>> `list2 = list1.copy()` >>> `list2 = list1[:]`  OR `list2 = list1 * 1` , this will create a clone with a new address and independent of the original list |
-2 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
+2.0 | **2/5 - Python Functions, Files, and Dictionaries** | https://www.coursera.org/learn/python-functions-files-dictionaries/home/welcome |
 2.1 | **READING AND WRITING FILES NATIVELY** (w/o any library) | |
 2.1.1 | CSV\TXT files are string files | data is stored as 1 single string, \n used for newline but it is still part of the 1 string | 
 2.1.1 | loading the reference of a file | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` |
-2.1.2 | reading a file as 1 single string | \n >>> `file_as_1_string = file_reference.read()` ....can be used to select chars by indexing/slicing, eg >>> `char9 = file_reference.read()[9]` | 
-2.1.3 | reading a file as 1 list of strings/lines  | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by looping and indexing/slicing ... `header_line = lines[0]` ...accessing character of a line lines[0][10] ...to acces the comma seperated values, we will need to break a line into a list of strings split at commas after stripping \n at the end...lines[0].strip().split(',') |
+2.1.2 | reading a file as 1 single string | \n >>> `file_as_1_string = file_reference.read()` ....can be used to select chars by indexing/slicing, eg >>> `char9 = file_reference.read()[8]` | 
+2.1.3 | reading a file as lines (each line will be a string) | \n >>> `lines = file_reference.readlines()` ...can be used the access lines by looping and indexing/slicing ... `header_line = lines[0]` ...accessing character of a line lines[0][10] ...to acces the comma seperated values, break a line into a list of strings split at commas after stripping \n at the end...>>> `for line in lines:` \n `list_of_words = line.strip().split(',')` \n `for word in list_of_words:`|
 2.1.4 | looping over lines without loading the file twice | >>> `filepath = 'path of file'` \n >>> `with open(filepath, 'r') as file_reference:` \n >>> `for lines in file_reference:` ... disadvantage (cannot refer to the lines using index, so cannot take off the header row), ADVANTAGE - faster, as it loads the file once | 
-2.1.6 | writing to a file | same as above, (1) change 'r' to 'w', (2) write to the file_reference >>> `file_reference.write(<only 1 single string can be written>)`, and (3) add a `\n` at the end of every line ...will have to reverse engineer reading of a file ...eg joining stings of a line, adding \n and then joining all string together with \n |
+2.1.5 | writing to a file | same as above, (1) change 'r' to 'w', (2) writing to the file_reference >>> `file_reference.write(<only 1 single string can be written>)`, and (3) add a `\n` at the end of every line ...will have to reverse engineer reading of a file ...viz. creating lines - joining words into a string using ','.join(words) and adding \n at the end of every line, joining lines together into one single string at \n ...'\n'.join(list of lines) |
 2.2 | **DICTIONARY** | |
 2.2.1 | unordered items (key-value pairs) | notation {}, can be initilaized as an empty dict OR as a fully/partially filled dict |
 2.2.2 | DICTIONARY OPERATIONS | ...almost all operations happen using keys, except for dict.values() and dict.items()  |
@@ -219,28 +215,28 @@ Number | Topic | Comments | Misc
 2.2.2.5 | update a key-value pair ... special case | >>> `dict_name['key_name'] += addition_value` | 
 2.2.2.6 | checking the number of keys (items/key-value pairs) | >>> `len(dict_name)` | 
 2.2.3 | DICTIONARY METHODS | ...almost all operations happen using keys ... eg `for key in dict_name`, `list(dict_name)`, `key in dict_name`, `sorted(dict_name, key = lambda dict_key : dict_name[dict_key])`  |
-2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` ...this is useful as dictionaties cannot be indexed, but keys are unique, so this list adds indexing to keys and values ... better way is >>> `list(dict_name)` |
+2.2.3.1 | returning the keys as a list | >>> `list(dict_name.keys())` ...this is useful as dictionaties cannot be indexed, but keys are unique, so this adds indexing to keys and values ... better way is >>> `list(dict_name)` |
 2.2.3.2 | returning the values as a list | >>> `list(dict_name.values())` |
 2.2.3.3 | returning the key-value pairss as a list of tuples | >>> `list(dict_name.items())` |
 2.3.3.4 | Looping over a dict | |
 2.2.3.4.1 | retrieving keys | >>> `for key in dict_name:` '\n' >>> `print(key)`  |
 2.2.3.4.2 | retrieving values | >>> `for key in dict_name:` '\n' >>> `print(dict_name[key])`  |
 2.2.3.4.3 | retrieving keys and values | >>> `for key in dict_name:` '\n' >>> `print(key, dict_name[key])`  |
-2.2.3.5 | checking if a key is in a dict | >>> `print(key in dict_name)` ... prints True or False ... values can't be checked using this method | 
+2.2.3.5 | checking if a key is in a dict | >>> `print(key in dict_name)` ... returns True or False ... values can't be checked using this method | 
 2.2.3.6 | trying to retrieve a key that is not is dict | results in a run time error - KeyError | 
 2.2.3.6.1 | Solution to above - dict_name.get('key', alt) | return none if key is not in the dict, can return a alternate if key is not in the dict |
 2.2.3.7 | DICTIONARY - Aliasing and copying | |
 2.2.3.7.1 | cloning/copying a dict | >>> `new_dict = existing_dic.copy()` | 
-2.2.3.8 | find char/words in a text and their frequencies | initiate empty dict, keys = chars/words, values = frequency, loop over the text, each new char/word is checked using not in operator and stored as a key, its value is incremented using +=1 ... >>> `dict1 = {} \n for char/word in string/sentence: \n if char/word not in dict1: \n dict1[char/word] = 1 \n else: dict1[char/word] += 1` | 
-2.2.3.9 | finding the max value or corresponding key in a dict | after the step above convert the keys of the dict into a list using >>> `list_of_keys = list(dict_name)` , initialize first key to 0 -> >>> `list_of_keys[0] = 0`, initialize first value to 0 -> `dict_name[list_of_keys[0]] = 0` ...then check each individual key's value for max value ... alternatively use sorted(dict, key = lambda x : dict[x]  )  |
+2.2.3.8 | find char/words in a text and their frequencies | initiate empty dict, keys = chars/words, values = frequency, loop over the text, each new char/word is checked using not in operator and stored as a key, its value is incremented using +=1 ... >>> `dict1 = {} \n for char/word in string/sentence: \n if char/word in dict1: \n dict1[char/word] += 1 \n else: dict1[char/word] = 1` | 
+2.2.3.9 | finding the max value or corresponding key in a dict | use sorted(dict, key = lambda x : dict[x]  )  |
 2.3 | **FUNCTIONS** |  |
 2.3.1 | Why? | used to reduce redundancy, decrease time and efforts, decrease errors, easier debugging | 
 2.3.2 | defined using def | |
-2.3.3 | Docstrings | good practice to describe the funtion using ''' this is the funtion ''' ...can the retrieved using >>> `help(function_name)` | 
+2.3.3 | Docstrings | good practice to describe the funtion using ''' this is the funtion :parmams: return: ...''' can the retrieved using >>> `help(function_name)` | 
 2.3.4 | Requirements | def keyword mandatory, name is mandatory, parantheses, atleast one line of code, parameters optional, return optional, docstring optional | 
-2.3.5.1 | parameters 1 | names of the parameters at the time of naming the functions are called the formal parameters or param names ...not available outside the function |
+2.3.5.1 | parameters 1 | names of the parameters at the time of defining the functions are called the formal parameters or param names ...not available outside the function |
 2.3.5.2 | parameters 2 | names of the parameters at the time of invoking the funcion are called Actual parameters or arguments or param values |
-2.3.5.3 | parameters 3 | if the actual parameter (arguments / parameter passed) is a immutable object (num, str, tuple), then its value is not changed because of any operation inside the function; however for mutable objects it can changed if the object is changed at the id level...eg list.append('a') will change the list in the acutal parameter | 
+2.3.5.3 | parameters 3 | if the actual parameter (arguments / parameter passed) is a immutable object (num, str, tuple), then its value is not changed because of any operation inside the function; however for mutable objects it can changed if the object is changed at the id level...eg list.append('a') will change the list in the acutal parameter...it is a good idea to create a copy when using the parameter | 
 2.3.5.4 | return | assigns the output to a variable ...default is None ... return terminates the funtion, and takes the code out of the current fn | 
 2.3.5.5 | Decoding a Function | whenever enountered with a fn, try to find out (1) how many params does it have (2) what are the types (3) what is the type of return |
 2.3.4 | Spaces in Python Universe | Name/Variable Space and Object space ... name/variable space are are variables for the objects| 
@@ -249,14 +245,14 @@ Number | Topic | Comments | Misc
 2.3.5.1 | variable referencing | inside out: local -> global -> built-in | 
 2.3.5.2 | lifetime of local variable | A local variable only exists while the function is being executed — we call this its lifetime. When the execution of the function terminates (returns), the local variables are destroyed ... unless it is defined as Global inside the fn|
 2.3.5.3 | lifetime of global variable | A global variable only exists while the .py file is being executed — we call this its lifetime. When the execution of the file terminates, the global variables are destroyed |
-2.3.5.4 | Good programming tips | Avoid referencing Global variables inside a fn and a local out a fn, if one has to DON'T name them the same, avoid initiating a GLOBAL variable inside a fn, If you must initiate global variables  inside fn (also generally bad form) make sure they have unique names | 
+2.3.5.4 | Good programming tips | Avoid referencing Global variables inside a fn and a local out a fn, if one has to DON'T name them the same, avoid initiating a GLOBAL variable inside a fn, If you must initiate global variables  inside fn (also generally bad form) make sure they have unique names like >>> `global_book_name = 'Book1'` | 
 2.3.5.5 | Functional decompisition | breaking a function problems into smaller function problems |
 2.3.5.5.1 | Global variable before or after defining a fn | a Global variable (including a function) can be initiated after a function is defined, but BEFORE the function is called |
 2.3.3.6 | Print vs Return | Print is only for humams it does not store the computation of the function; Return is the ONLY valid way to store the computation of a fn in a global variable (since local variable can't be accessed outside) | 
-2.3.3.7 | Function side effects | when function can change the values of Global variables - (1) by initialing a GLOBAL variable in funstion (2) by mutating a mutaing variable (list or dict) - mutation does not change the id/refernce but mutates the same object |
+2.3.3.7 | Function side effects | when function can change the values of Global variables - (1) by initialing a GLOBAL variable in function (2) by mutating a mutaing variable (list or dict) - mutation does not change the id/refernce but mutates the same object |
 2.3.3.8 | Functional programming | programming that avoids functional side effects - way in python (1) rather than the list/dict, pass a copy of the list/dict to the function by >>> `fn(list_name.copy())` or >>> `fn(dict_name.copy())` or (2) create a copy inside the function by >>> `list_or_dict_var = list_or_dict_var.copy()` |
 2.3.3.8.3 | unpacking operator * for lists/tuples and dictionaries| `*iterable` unpacks all the elements of the object as standalone objects/values/variables WITHOUT any enclosure of list/tuple/dict...can be used to perfom actions on lists/tuples/strings ...>>> `list_final = [*list1 + *list2]` ...mostly used when calling functions - for a function >>> `fn(var1, var2, var3)`, we could call the function using >>> f_name(var1, var2, var3), alternatively if we have a list/tuple/string with 3 elements, one could call the function using >>> `f_name(*list_name/tuple_name/string_name)` |
-2.3.3.8.3 | unpacking operator ** for dictionaries | `*dict_iterable` unpacks all the elements of the dictionary as standalone objects/values/variables WITHOUT any dictionary enclosure ...dict1 = {'a': 1, 'b': c}, dict2 = {'c':3, 'd':4}, `dict3 = {*dict+**dict2}`...can be used for calling functions as well | 
+2.3.3.8.3 | unpacking operator * for non-dict ** for dictionaries | `*dict_iterable` unpacks all the elements of the dictionary as standalone objects/values/variables WITHOUT any dictionary enclosure ...dict1 = {'a': 1, 'b': c}, dict2 = {'c':3, 'd':4}, `dict3 = {**dict+**dict2}`...can be used for calling functions as well | 
 2.3.3.8.1 | *args and **kwargs | can be passed as parameters in a function ...advantages, when the coder ancipates the number of arguments passed to a function to change at run time ... *args and **kwargs are iterables and should be treated as tuples and dictionaries inside the function | 
 2.3.3.8.2 | syntax: *args and **kwargs | >>> `def f_name(positional_var1, positional_var2, *args, **kwargs)` ... calling the function >>> f_name(positional_var1, positional_var1, args_1, args_2...args_n, kwargs_1 = val_1, kwargs_2 = val_2, kwargs_n = val_n) | 
 2.3.3.8.3 | using var1, *args and **kwargs together | correct order >>> `def foo(x, y=3, *args, **kwargs):` ...default value of y can ONLY be used if there is no ambiguity, for eexample if fn is called like `foo(x) `or `foo(x, p=var1, q=var2)`, NO way to bypass the second variable to *args... if there is any variable after x, it will be assinged to y...there is no way to assgine default to y and variables to args |
