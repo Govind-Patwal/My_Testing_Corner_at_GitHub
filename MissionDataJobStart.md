@@ -179,8 +179,8 @@ Number | Topic | Comments | Misc
 1.2.11 | using .join() to join a list of strings into a string | >>> `'join with'.join(list)`...eg. '-'.join('Feb 12 2019') ...common use case: joining using , before writing as a csv | 
 1.2.12 | Iteration |  |
 1.2.13 | the for loop | syntax `for <loop_variable> in <iterable>:` ...it will iterate ONLY over the 1st level elements of the iterable and not inner level elements | 
-1.2.14 | for loop in nested lists/dicts | iternation can be confusing in iterables that have nested data in lists/dict/tuples ...for example >>> `for element in [ [ [1, 2], [3,4] ], [ [5,6], [7,8] ], [ [9,10], [11, 12]] ]` ...the elements are [ [1, 2], [3,4] ] and not [1,2] or 1 ...to reach 1 we will have to use multiple iterations/for loops | 
-1.2.14 | using the range function to create an iterable | >>> `for i in range(20)` will create an iterable starting with i as 0 and ending at 20-1 ...if using range to run a code x number of times, can use _ as the loop_variable ...range is very important when the length of iterable is not know but we want to access elements using the index ...>>> `for i in range(len(list)):` \n list[i] | 
+1.2.14.1 | for loop in nested lists/dicts | iternation can be confusing in iterables that have nested data in lists/dict/tuples ...for example >>> `for element in [ [ [1, 2], [3,4] ], [ [5,6], [7,8] ], [ [9,10], [11, 12]] ]` ...the elements are [ [1, 2], [3,4] ] and not [1,2] or 1 ...to reach 1 we will have to use multiple iterations/for loops | 
+1.2.14.2 | for loop - using the range function to create an iterable | >>> `for i in range(20)` will create an iterable starting with i as 0 and ending at 20-1 ...if using range to run a code x number of times, can use _ as the loop_variable ...range is very important when the length of iterable is not know but we want to access elements using the index ...>>> `for i in range(len(list)):` \n list[i] | 
 1.2.15 | Booleans | True and False ... they are not strings  ...True is not equal to 'True' | 
 1.2.16 | boolean expression, equality check, comparison/realational operators | equality check == ...returns True or False ... comparison != > < >= <= |
 1.2.17 | logical operators | and or not |
@@ -402,6 +402,9 @@ MISC | edge cases, |  |
 - https://www.kaggle.com/learn/overview
 
 ### KAGGLE, UOFT BOOTCAMP
+<details>
+<summary>Click to Expand/Collapse</summary>
+
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
@@ -693,6 +696,9 @@ z.0 | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and http
 4.7 | all Django main commands| >>> `django-admin` |
 4.8 | help while working on Django | >>>`python manage.py help` | ...to return after the Canvas course
 **5.0**| 
+
+</details>
+
 ---
 
 Video tutorials can also break things down when I am stuck - https://www.youtube.com/watch?v=7HN-4Df8ZpA
