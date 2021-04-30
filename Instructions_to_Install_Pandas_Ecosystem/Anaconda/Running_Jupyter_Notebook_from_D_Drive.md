@@ -1,4 +1,4 @@
-# Running Jupyter notebook from D drive (or any drive except D) on Windows
+## Running Jupyter notebook from D drive (or any drive except D) on Windows
 
 ### Why?
 - By default Jupyter Notebook opens the files on C drive and does not give the option to access files on any non-C drive drive
@@ -30,3 +30,5 @@ The steps above will open the desired folder and a person will be able to naviga
 
 ## Resource:
 https://www.youtube.com/watch?v=1edPJiA0_38
+
+---
