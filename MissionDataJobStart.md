@@ -387,26 +387,12 @@ MISC.3 | Generators | |
 
 ---
 
-### SOME MORE PYTHON COURSES
+### PYTHON COURSE 2 and 3 - KAGGLE, UOFT BOOTCAMP
 <details>
 <summary>Click to Expand/Collapse</summary>
 
-- https://docs.python.org/3/tutorial/index.html
-- https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
-- https://wiki.python.org/moin/BeginnersGuide/Programmers
-- https://www.dj4e.com/lessons 
-- intermediate python - https://book.pythontips.com/en/latest/index.html
-
-</details>  
-
----
-
-### PYTHON COURSE 2 - KAGGLE, UOFT BOOTCAMP
-<details>
-<summary>Click to Expand/Collapse</summary>
-
-- COURSE URL - - https://www.kaggle.com/learn/overview
-
+- Kaggle Course URL: https://www.kaggle.com/learn/overview
+- UofT Course URL: https://bootcamp.learn.utoronto.ca/data/
 
 Number | Topic | Comments | Misc
 |---|---|---|--- |
@@ -703,14 +689,24 @@ z.0 | **Django** | Credits: https://www.youtube.com/watch?v=OTmQOjsl0eg and http
 
 ---
 
+### SOME MORE PYTHON COURSES
+<details>
+<summary>Click to Expand/Collapse</summary>
+
+- https://docs.python.org/3/tutorial/index.html
+- https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
+- https://wiki.python.org/moin/BeginnersGuide/Programmers
+- https://www.dj4e.com/lessons 
+- intermediate python - https://book.pythontips.com/en/latest/index.html
+
+</details>  
+
+---
+
 Video tutorials can also break things down when I am stuck - https://www.youtube.com/watch?v=7HN-4Df8ZpA
 
 
 - Clone of good apps - https://www.sparkouttech.com/grubhub-clone/
-
-
-
-
 
 ---
 ## Job_search_keywords (for best result - use in combination)
