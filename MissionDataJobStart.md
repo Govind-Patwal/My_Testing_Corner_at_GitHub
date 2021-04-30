@@ -3,9 +3,9 @@
 - A small plan, executed strongly (0% Stress, and 100% focus on inputs) is better than A Grand plan, executed weakly
 ---
 
-## Mission Data Job Start 
-### Target (Initial) - Job in 24 Wks (by June 17, 2021)
-### Target (Revision 1) - Job in 32 Wks (by Aug 17, 2021)
+### Mission Data Job Start 
+#### Target (Initial) - Job in 24 Wks (by June 17, 2021)
+#### Target (Revision 1) - Job in 32 Wks (by Aug 17, 2021)
 
 ---
 
