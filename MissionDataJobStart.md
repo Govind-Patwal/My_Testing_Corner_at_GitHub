@@ -709,7 +709,7 @@ Video tutorials can also break things down when I am stuck - https://www.youtube
 - Clone of good apps - https://www.sparkouttech.com/grubhub-clone/
 
 ---
-## Job_search_keywords (for best result - use in combination)
+### Job_search_keywords (for best result - use in combination)
 - Very Good article - ***https://www.kdnuggets.com/2018/01/feizpour-becoming-data-scientist.html***
 
 intern, internship
@@ -721,7 +721,7 @@ Indeed
 LinkedIn
 Glassdooor
 
-## Good_Links
+### Good_Links
 
 <details>
 <summary>Click to Expand/Collapse</summary>
@@ -772,7 +772,7 @@ Glassdooor
 
 ---
 
-## Project_Ideas
+### Project_Ideas
 <details>
 <summary>Click to Expand/Collapse</summary>
 
@@ -790,7 +790,7 @@ Glassdooor
 
 ---
 
-Misc
+### Misc
 <details>
 <summary>Click to Expand/Collapse</summary>
 
