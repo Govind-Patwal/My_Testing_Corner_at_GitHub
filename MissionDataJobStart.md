@@ -140,7 +140,7 @@
 
 Number | Topic | Comments | Misc 
 --- | --- |  --- | --- 
-0.0 | Univeristy of Michigan - Python Specialization | |
+0.0 | Univeristy of Michigan | Python 3 Specialization |
 0.1.1 | Way of the programmer | incremental programming - small and steady imporvements |
 0.1.1.1 | type(), dir(), help(), id() | good way to check the working of python objects |
 0.1.2 | Coding good practicce | use print statement regulary to keep checking output ...all print statements inside functions/classes|
