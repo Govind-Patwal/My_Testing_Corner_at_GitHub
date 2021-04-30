@@ -401,13 +401,11 @@ MISC.3 | Generators | |
 
 ---
 
-### Cheat_Sheet
-**Credits**
-- https://www.kaggle.com/learn/overview
-
-### KAGGLE, UOFT BOOTCAMP
+### PYTHON COURSE 2 - KAGGLE, UOFT BOOTCAMP
 <details>
 <summary>Click to Expand/Collapse</summary>
+
+- COURSE URL - - https://www.kaggle.com/learn/overview
 
 
 Number | Topic | Comments | Misc
