@@ -91,8 +91,9 @@
 | 15 | 2021/03/22 - 2021/03/28 | | ## CanEx Week 8 ## Dropped 1st Co-op placement ## Started Python 3 specialization - Univ of Michigan @ Coursera (has 5 courses) - finished course 1/5  | |
 | 16 | 2021/03/29 - 2021/04/04 | | ## CanEx Week 9 ## Finished Course 2/5 of Python 3 specialization | |
 | 17 | 2021/04/05 - 2021/04/11 | | ## CanEx Week 10 ## Finished Course 3/5 of Python 3 specialization | | 
-| 18 | 2021/04/12 - 2021/04/18 | | ## CanEx - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
-| 19 | 2021/04/19 - 2121/04/25 |  |  ## CanEx Week 12 ## Finished Course 5/5 of Python 3 specialization ...this finished the Specialization       |   |
+| 18 | 2021/04/12 - 2021/04/18 | | ## CanEx Week 11 - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
+| 19 | 2021/04/19 - 2021/04/25 | | ## CanEx Week 12 ## Finished Course 5/5 of Python 3 specialization ...this finished the Specialization       |   |
+| 20 | 2021/04/26 - 2021/04/30 | | ## CanEx Week 13       |   |
 
 </details>
 
