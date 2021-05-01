@@ -93,7 +93,7 @@
 | 17 | 2021/04/05 - 2021/04/11 | | ## CanEx Week 10 ## Finished Course 3/5 of Python 3 specialization | | 
 | 18 | 2021/04/12 - 2021/04/18 | | ## CanEx Week 11 - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
 | 19 | 2021/04/19 - 2021/04/25 | | ## CanEx Week 12 ## Finished Course 5/5 of Python 3 specialization ...this finished the Specialization       |   |
-| 20 | 2021/04/26 - 2021/04/30 | | ## CanEx Week 13       |   |
+| 20 | 2021/04/26 - 2021/04/30 | | ## CanEx Week 13 ## Revised the Python 3 course, organized folders, downloded the Projects and created repo ## Office - created a PPT for a stretch assignment      |   |
 
 </details>
 
