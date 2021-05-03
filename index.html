@@ -1,0 +1,322 @@
+
+<!-- saved from url=(0055)file:///D:/DesktopFolderForQuickAccess/intern_0503.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> intern_app </title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./intern_app_files/bootstrap.min.css">
+    <script src="./intern_app_files/jquery.min.js.download"></script>
+    <script src="./intern_app_files/bootstrap.min.js.download"></script>
+    <link rel="stylesheet" href="./intern_app_files/w3.css">
+</head>
+
+<body onload="readyfn(this)">
+
+    <div style="background-color: #202D30; min-height: 45px;padding-left: 10px; padding-right: 10px;">
+        <div style="float: left; width: 50%;">
+            <img alt="Braintoy Logo" border="0" class="float: left;" src="./intern_app_files/1a4da9_cd056aab6d754dae98dc60083c4317a8_mv2.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 150px; display: block;" title="Braintoy Logo" width="200">
+        </div>
+        <div style="float: right; width: 50%; ">
+            <span style="color: white; float: right; font-size: 30px;"> intern_app </span>
+        </div>
+    </div>
+    <div class="w3-bar" style=" padding: 20px;">
+        <div class="w3-half" style="min-height: 880px;padding: 10px;">
+            <div class="w3-bar">
+                <h3>Input(s) to the model</h3>
+            </div>
+            <div class="w3-bar" style="border: 1px solid lightblue ; padding: 10px; border-radius: 10px; ">
+                <div class="w3-bar" style="min-height: 800px;max-height: 800px; overflow-y: auto;">
+                    <div id="id_mlos_prediction">
+                        <div class="form-group"><label for="sepal_length">sepal_length:</label> <input type="text" value="4.9" id="input_feature_1" class="form-control" name="sepal_length" style="border-bottom:2px solid red;line-height: 50px;"></div><div class="form-group"><label for="sepal_width">sepal_width:</label> <input type="text" value="3.0" id="input_feature_2" class="form-control" name="sepal_width" style="border-bottom:2px solid red;line-height: 50px;"></div><div class="form-group"><label for="petal_length">petal_length:</label> <input type="text" value="1.4" id="input_feature_3" class="form-control" name="petal_length" style="border-bottom:2px solid green;line-height: 50px;"></div><div class="form-group"><label for="petal_width">petal_width:</label> <input type="text" value="0.2" id="input_feature_4" class="form-control" name="petal_width" style="border-bottom:2px solid green;line-height: 50px;"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-half" style="min-height: 880px;padding: 10px;">
+            <div id="id_hide_if_api_key_embedded" class="w3-bar w3-show">
+                <div class="w3-bar">
+                    <h3>API Key</h3>
+                </div>
+                <div class="w3-bar" style="border: 1px solid lightblue ; padding: 10px; border-radius: 10px; ">
+                    <div class="w3-bar" style="min-height: 100px;max-height: 800px; overflow-y: auto;">
+                        <div id="id_mlos_prediction">
+                            <div class="form-group">
+                                <label for="apikey">apikey:</label>
+                                <input type="password" value="_apikey_" id="apikey" class="form-control" name="apikey">
+                            </div>
+                            <div class="form-group">
+                                <label for="accesstoken">accesstoken:</label>
+                                <input type="password" value="_accesstoken_" id="accesstoken" class="form-control" name="accesstoken">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-bar">
+                <h3>Model Output</h3>
+            </div>
+            <div class="w3-bar" style="border: 1px solid lightblue ; padding: 10px; border-radius: 10px;">
+                <div id="id_warning_val" class="w3-bar w3-hide">
+                    <span id="id_msg_container" style="color: orange;font-size: 14px; "> Invalid APIkey or Access Token,
+                        Please change APIkey.
+                    </span>
+                </div>
+                <div class="w3-bar" style="padding-left: 350px;padding-right: 150px;">
+                    <button onclick="btn_click_predict(this)" class="btn btn-default w3-left">Predict</button>
+                </div>
+                <div class="w3-bar" style="padding-top: 30px;padding-left: 100px;padding-right: 100px;">
+                    <div class="w3-half" style="padding: 15px;">
+                        <span style="font-size: 18px;">Response From Model</span>
+                        <div class="w3-bar " style="border: 1px solid lightblue; border-radius: 10px; padding: 20px;">
+                            <span id="id_response_1" style="font-size: 18px;">2</span>
+                        </div>
+                    </div>
+                    <div class="w3-half" style="padding: 15px;">
+                        <span style="font-size: 18px;"> Transformed Response</span>
+                        <div class="w3-bar " style="border: 1px solid lightblue; border-radius: 10px;padding: 20px;">
+                            <span id="id_response_2" style="font-size: 18px;">virginica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-bar">
+                <div class="w3-half" style="padding: 3px;">
+                    <div class="w3-bar">
+                        <h3>Model Response Log</h3>
+                    </div>
+                    <div class="w3-bar" style="border: 1px solid lightblue ; padding: 10px; border-radius: 10px; margin-top: 10px; max-height: 300px; min-height: 300px; overflow-y: auto;">
+                        <div id="id_mlos_predict_log"><div class="w3-bar">[7]MODEL RESPONSE virginica</div><div class="w3-bar">[6]MODEL RESPONSE virginica</div><div class="w3-bar">[5]MODEL RESPONSE virginica</div><div class="w3-bar">[4]MODEL RESPONSE setosa</div><div class="w3-bar">[3]MODEL RESPONSE setosa</div><div class="w3-bar">[2]MODEL RESPONSE setosa</div><div class="w3-bar">[1] - Unauthorized </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-half" style="padding: 3px;">
+                    <div class="w3-bar">
+                        <h3>Why ?</h3>
+                    </div>
+                    <div class="w3-bar" style="border: 1px solid lightblue ; padding: 10px; border-radius: 10px; margin-top: 10px; max-height: 300px; min-height: 300px; overflow-y: auto;">
+                        <div class="w3-bar">
+                            <span> Probabilistic Prediction  </span>
+                        </div>
+                        <div class="w3-bar">
+                            <div class="w3-bar" id="id_model_explain_prob"><span class="w3-block win-act-color" style="color:green;">setosa [ 0 ] </span><span class="w3-block win-act-color" style="color:green;">versicolor [ 0 ] </span><span class="w3-block win-act-color" style="color:green;">virginica [ 1 ] </span></div>
+                        </div>
+                        <div class="w3-bar">
+                            <div class="w3-bar">
+                                <div class="w3-bar" style="border-bottom: 1px solid green;">
+                                    <span>Influential Inputs</span>
+                                </div>
+                                <div class="w3-bar" id="id_model_explain_response_good"><span class="w3-block " style="color:green;">petal_width [ 0.5 ] </span><span class="w3-block " style="color:green;">petal_length [ 0.5 ] </span></div>
+                            </div>
+                            <div class="w3-bar">
+                                <div class="w3-bar " style="border-bottom: 1px solid red;">
+                                    <span>Noninfluential Inputs</span>
+                                </div>
+                                <div class="w3-bar" id="id_model_explain_response_bad"><span style="color:red;" class="w3-block">sepal_width [ 0 ] </span><span style="color:red;" class="w3-block">sepal_length [ 0 ] </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div style="background-color: #202D30; min-height: 30px;padding-left: 10px; padding-right: 10px;top: 100%;">
+        &nbsp;
+    </div>
+
+<script>
+    var feature_list = {"columns": ["sepal_length", "sepal_width", "petal_length", "petal_width"], "index": [0, 1, 2], "data": [[5.1, 3.5, 1.4, 0.2], [4.9, 3.0, 1.4, 0.2], [4.7, 3.2, 1.3, 0.2]]}
+    var data_domain = "table"
+    var apikey = "_apikey_"
+    var accesstoken = "_accesstoken_"
+    if (apikey == "_apikey_" && accesstoken == "_accesstoken_") {
+        itm = document.getElementById("id_hide_if_api_key_embedded")
+        itm.className = itm.className.replace("w3-hide", "w3-show")
+    }
+    else {
+        itm = document.getElementById("id_hide_if_api_key_embedded")
+        itm.className = itm.className.replace("w3-show", "w3-hide")
+    }
+    document.getElementById("apikey").value = apikey
+    document.getElementById("accesstoken").value = accesstoken
+    var req_count = 1
+    function readyfn() {
+    }
+    function show() {
+        itm = document.getElementById("id_warning_val")
+        itm.className = itm.className.replace("w3-hide", "w3-show")
+    }
+    function hide() {
+        itm = document.getElementById("id_warning_val")
+        itm.className = itm.className.replace("w3-show", "w3-hide")
+    }
+    function btn_click_predict(e) {
+        apikey = document.getElementById("apikey").value
+        accesstoken = document.getElementById("accesstoken").value
+        if (apikey == "_apikey_") {
+            show()
+            itm = document.getElementById("id_mlos_predict_log")
+            spn = document.createElement("div")
+            spn.setAttribute("class", "w3-bar")
+            spn.innerHTML = "[" + req_count + "]" + " - Unauthorized "
+            itm.insertBefore(spn, itm.childNodes[0]);
+            req_count = req_count + 1
+            return
+        }
+        else {
+            hide()
+        }
+
+        var num_features = feature_list["columns"].length
+        var data = {
+            "data": []
+        };
+        var feature_important_list = []
+        inc = 1
+dtx = []
+feature_list["columns"].forEach(element => {
+tmp = {
+"feature": element,
+"id": "input_feature_" + inc,
+"weight": 0,
+"target": 0
+}
+feature_important_list.push(tmp)
+itmv = document.getElementById("input_feature_" + inc).value
+dtx.push(itmv)
+inc = inc + 1
+});
+data["data"].push(dtx)
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                resp = []
+                try {
+                    resp = JSON.parse(this.responseText)
+
+                } catch (error) {
+                    itm = document.getElementById("id_mlos_predict_log")
+                    spn = document.createElement("div")
+                    spn.setAttribute("class", "w3-bar")
+                    spn.innerHTML = "[" + req_count + "]" + " - Unauthorized "
+                    itm.insertBefore(spn, itm.childNodes[0]);
+                }
+                if (resp.success == true) {
+                    mresp = resp.results.results
+                    console.log(mresp)
+                    sample_response = mresp.prediction[0]
+                    document.getElementById("id_response_1").innerHTML = mresp.prediction[0]
+                    document.getElementById("id_response_2").innerHTML = mresp.prediction_transformed[0]
+                    itm = document.getElementById("id_mlos_predict_log")
+                    spn = document.createElement("div")
+                    spn.setAttribute("class", "w3-bar")
+                    spn.innerHTML = "[" + req_count + "]" + "MODEL RESPONSE " + mresp.prediction_transformed[0]
+                    itm.insertBefore(spn, itm.childNodes[0]);
+
+                    response_explanation = mresp.explanation
+
+                    itm = document.getElementById("id_model_explain_response_bad")
+                    itm.innerHTML = ""
+                    itm = document.getElementById("id_model_explain_response_good")
+                    itm.innerHTML = ""
+
+
+                    feature_important_list.forEach(element => {
+                        response_explanation.forEach(expln => {
+                            if (element.feature == expln.feature) {
+                                element.weight = expln.weight
+                                element.target = expln.target
+                                if (expln.normweight > 0.2) {
+                                    moditem = document.getElementById(element.id)
+                                    moditem.setAttribute("style", "border-bottom:2px solid green;line-height: 50px;")
+                                    itm = document.getElementById("id_model_explain_response_good")
+                                    spn = document.createElement("span")
+                                    spn.setAttribute("class", "w3-block ")
+                                    spn.setAttribute("style", "color:green;")
+                                    spn.innerHTML = element.feature + " [ " +  expln.weight +   " ] "
+                                    itm.insertBefore(spn, itm.childNodes[0]);
+                                }
+                                else {
+                                    moditem = document.getElementById(element.id)
+                                    moditem.setAttribute("style", "border-bottom:2px solid red;line-height: 50px;")
+                                    itm = document.getElementById("id_model_explain_response_bad")
+                                    spn = document.createElement("span")
+                                    spn.setAttribute("style", "color:red;")
+                                    spn.setAttribute("class", "w3-block")
+                                    spn.innerHTML = element.feature + " [ " +  expln.weight +   " ] "
+                                    itm.insertBefore(spn, itm.childNodes[0]);
+                                }
+                            }
+                        })
+                    })
+
+
+                    class_label = mresp["class_label"]
+                        probability = mresp["probability"][0]
+                        if (class_label.length > 0 && probability.length > 0) {
+                            inc = 0
+                            min = Math.min(probability)
+                            max = Math.max(probability)
+                            // valx= probability.map(this.normalize(min, max))
+                            // // valx= probability-min
+                            // console.log(valx)
+                            itm = document.getElementById ("id_model_explain_prob")
+                            itm.innerHTML = ""
+                            class_label.forEach(elm => {
+
+                                spn = document.createElement("span")
+                                spn.setAttribute("class", "w3-block win-act-color")
+                                spn.setAttribute("style", "color:green;")
+                                spn.innerHTML = elm + " [ " + probability[inc] + " ] "
+                                itm.appendChild(spn);
+                                inc = inc + 1
+                            })
+                        }
+                        else {
+                            itm = document.getElementById ("id_model_explain_prob")
+                            itm.innerHTML = "No class probability available."
+                        }
+
+
+
+                }
+                else {
+                    itm = document.getElementById("id_mlos_predict_log")
+                    spn = document.createElement("div")
+                    spn.setAttribute("class", "w3-bar")
+                    spn.innerHTML = "[" + req_count + "]" + " - ERROR IN MODEL RESPONSE "
+                    itm.insertBefore(spn, itm.childNodes[0]);
+                }
+                req_count = req_count + 1
+
+            }
+
+
+        });
+        xhr.open("POST", "https://www.console.mlos.io/api/v1/mlasaservice");
+        xhr.setRequestHeader("content-type", "application/json");
+        xhr.setRequestHeader("authorization", accesstoken);
+        xhr.setRequestHeader("apikey", apikey);
+        xhr.setRequestHeader("api", "predict");
+        xhr.setRequestHeader("cache-control", "no-cache");
+        xhr.setRequestHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");
+        // xhr.setRequestHeader("Access-Control-Content-Type", "*");
+        // xhr.setRequestHeader("Access-Control-Allow-Credentials", true);
+
+
+        xhr.setRequestHeader("app-token", "asdasda-asdasd-c8fd-da41-dd36d45914fc");
+        data = JSON.stringify(data)
+        xhr.send(data);
+    }
+    
+
+</script>
+
+</body></html>
