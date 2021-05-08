@@ -85,16 +85,16 @@
 | 9 | 2021/02/08 - 2021/02/14 |  | ## CanEx Week 2: classes + assignments ## HackerRank python exercises ## started Kaggle - python again (finished lessons 1 and 2) | |
 | 10 | 2021/02/15 - 2021/02/21 | | ## CanEx Week 3: classes + assignments  ## Mon, Feb 15 (Family Day) - Python(kaggle) + Python(Bootcamp) ## February 16th - CareerService - Resume/GitHub/LinkedIn/Brand-Statement, all became employer-competitive ### Feb 16th - xCS call - 8 PM, Feb 17th - xCS call @ 5 PM ## Wkend - a little Python classes 'Corey Schafer' + misc(RRSP + transfers + online shopping) + relaxation (snow mountain on Feb/20/2021) | |
 | 11 | 2021/02/22 - 2021/02/28 | | ## CanEx Week 4: classes + assignments  ## Feb 24, Careeer Services session ## Feb 25 - talked to Career Director ## Wkend - started Pandas (Bootcamp)  | |    
-| 12 | 2021/03/01 - 2021/03/07 | | ## CanEx Week 5: classes + assignments ## Finished kaggle Pandas | | 
-| 13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + placement Week 1:  ## Finished CheaprEats assignment ## Finished Bootcamp's - Module 4-Pandas, started Module 5 - Matplotlib | | 
-| 14 | 2021/03/15 - 2021/03/21 | | ## CanEx Week 7: No classes + No assignments ## Realized that 1st Co-op placement was a waste of time and efforts ## stressed out on Friday during CanEx class ## Weekend - Took time out to plan the direction of life - have to finish a Python course from Univeristy of Michigan https://www.coursera.org/specializations/python-3-programming , work on projects and then apply for Python projects -> Current Job (become the top ISR) ## wrote email to CALC ## First day out w/ family in Spring 2021 | |
+| 12 | 2021/03/01 - 2021/03/07 | | ## CanEx Week 5: classes + assignments (1st placement to start next week) ## Finished kaggle Pandas | | 
+| 13 | 2021/03/08 - 2021/03/14 | | ## CanEx Week 6: classes + assignments + 1st placement Week# 1:  ## Finished *Cheapr* assignment ## Finished Bootcamp's - Module 4-Pandas, started Module 5 - Matplotlib | | 
+| 14 | 2021/03/15 - 2021/03/21 | | ## CanEx Week 7: No classes + No assignments ## Realized that 1st Co-op placement was aligning with my career goals ## stressed out on Friday during CanEx class ## Weekend - Took time out to plan the direction of life - have to finish a Python course from Univeristy of Michigan https://www.coursera.org/specializations/python-3-programming , work on projects and then apply for Python projects -> Current Job (become the top ISR) ## wrote email to CALC ## First day out w/ family in Spring 2021 | |
 | 15 | 2021/03/22 - 2021/03/28 | | ## CanEx Week 8 ## Dropped 1st Co-op placement ## Started Python 3 specialization - Univ of Michigan @ Coursera (has 5 courses) - finished course 1/5  | |
 | 16 | 2021/03/29 - 2021/04/04 | | ## CanEx Week 9 ## Finished Course 2/5 of Python 3 specialization | |
 | 17 | 2021/04/05 - 2021/04/11 | | ## CanEx Week 10 ## Finished Course 3/5 of Python 3 specialization | | 
 | 18 | 2021/04/12 - 2021/04/18 | | ## CanEx Week 11 - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
 | 19 | 2021/04/19 - 2021/04/25 | | ## CanEx Week 12 ## Finished Course 5/5 of Python 3 specialization ...this finished the Specialization       |   |
 | 20 | 2021/04/26 - 2021/05/02 | | ## CanEx Week 13 ## Revised the Python 3 course, organized folders, downloded the Projects and created repo ## Office - created a PPT for a stretch assignment  ## Covid-19 1st shot # Monitor Arm search    |   |
-| 21 | 2021/05/03 - 2021/05/09 | | ## CanEx Week 14 # 3 Co-op interviews *brain*, *RT*, *ISee* # to fill out Spotify Internship application   |   |
+| 21 | 2021/05/03 - 2021/05/09 | | ## CanEx Week 14 # 3 Co-op interviews *brain*, *RT*, *ISee* # to fill out Spotify Internship application # chromecast search/ bike search (other got puntured)  |   |
 
 </details>
 
