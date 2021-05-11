@@ -383,7 +383,9 @@ MISC.2.1 | syntax for decorator function | `def decorator_function(fn_to_be_deco
 MISC.2.3 | syntax for decorator class | `class decorator_class(object):` \n `def__init__(self, fn_to_be_decorated):` \n `self.fn_to_be_decorated = fn_to_be_decorated` ....`def __call__(self, *args, **kwargs):` \n `code_here` \n `return self.fn_to_be_decorated(*args, **kwargs)` ...write the fn_to_be_decorated as above, call the same way |
 MISC.2.4 | use case of DECORATORS | logging ...timing how long something ran ... | 
 MISC.2.5 | decorators can be stacked | @decorator_fn1 \n @decorator_fn2 \n @decorator_fn3 \n def function_to_be_decoreated() ...it is the same as >>> `decorator_fn1(decorator_fn2)(decorator_fn3)(function_to_be_decoreated()` |
-MISC.3 | Generators | | 
+MISC.2.5 | Decorators | https://www.youtube.com/watch?v=FsAPt_9Bf3U | 
+MISC.3 | Generators | https://www.youtube.com/watch?v=bD05uGo_sVI | 
+MISC.4 | Sorting algos in Python | https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889 https://stackabuse.com/sorting-algorithms-in-python/ https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm |
 
 </details>  
 
