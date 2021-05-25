@@ -1,4 +1,4 @@
-### https://developers.sap.com/tutorials/hana-clients-python.html
+### Source: https://developers.sap.com/tutorials/hana-clients-python.html
 
 #Import your dependencies
 import platform
