@@ -1,4 +1,7 @@
 # Installing SAP HANA 2.0 express edition on a precongigured VM - https://developers.sap.com/group.hxe-install-vm-xsa.html
+
+# GOOD VIDEO : https://youtu.be/71Z4F5eKR-g
+
 # https://saphanajourney.com/hana-cloud/learning-article/using-jupyter-notebooks-with-sap-hana-cloud/#step-1
 
 ### Source: https://developers.sap.com/tutorials/hana-clients-python.html
