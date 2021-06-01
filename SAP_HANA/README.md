@@ -1,5 +1,8 @@
 # Important links
 
+## Installation video link: https://youtu.be/71Z4F5eKR-g
+## Installation text link: https://developers.sap.com/group.hxe-install-vm-xsa.html
+
 - Jupyter notebook and SAP HANA - https://saphanajourney.com/hana-cloud/learning-article/using-jupyter-notebooks-with-sap-hana-cloud/
 - http://www.hanaexam.com/p/power-of-python-integrated-with-sap-hana.html?m=1
 - https://pypi.org/project/hdbcli/
