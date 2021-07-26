@@ -94,12 +94,14 @@
 | 18 | 2021/04/12 - 2021/04/18 | | ## CanEx Week 11 - April holiday week ## Finished Course 4/5 of Python 3 specialization | | 
 | 19 | 2021/04/19 - 2021/04/25 | | ## CanEx Week 12 ## Finished Course 5/5 of Python 3 specialization ...this finished the Specialization       |   |
 | 20 | 2021/04/26 - 2021/05/02 | | ## CanEx Week 13 ## Revised the Python 3 course, organized folders, downloded the Projects and created repo ## Apr 27 - got to know about the automation internship ## Office - created a PPT for a stretch assignment  ## Covid-19 1st shot # Monitor Arm search    |   |
-| 21 | 2021/05/03 - 2021/05/09 | | ## CanEx Week 14 # 3 Co-op interviews *brain*, *RT*, *ISee* # filled out Spotify Internship application # chromecast search/ bike search (exising one got flat)  |   |
+| 21 | 2021/05/03 - 2021/05/09 | | ## CanEx Week 14 # 3 Co-op interviews *brain*, *RT*, *ISee* # filled out Spotify Internship application # chromecast search/ bike search (existing one got flat)  |   |
 | 22 | 2021/05/10 - 2021/05/16 | | ## CanEx Week 15 # finalized *** Automation internship, paperwork, discussions ## Bike puncture fix ## | | 
 | 23 | 2021/05/17 - 2021/05/23 | | ## CanEx Week 16 # discussion regarding internship ## long weekend - worked on portfolio/resume/notifications (Linkedin/Google/Indeed) | |
-| 24 | 2021/05/24 - 2021/05/30 | | ## CanEx Week 17 # Internship Wk 1 - worked on the assignment | 
-| 25 | 2021/05/31 - 2021/06/06 | | ## CanEx Week 18 # Internship Wk 2 - shared the work of assignment 1 | 
-| 26 | 2021/06/07 - 2021/06/13 | | 
+| 24 | 2021/05/24 - 2021/05/30 | | ## CanEx Week 17 # Internship Wk 1 - worked on Deliverable 1 | 
+| 25 | 2021/05/31 - 2021/06/06 | | ## CanEx Week 18 # Internship Wk 2 - worked on & shared Deliverable 1 | 
+| 26 | 2021/06/07 - 2021/06/13 | | ## CanEx Week 19 # Internship Wk 3 - worked on Deliverable 2 | 
+| 27 | 2021/06/14 - 2021/06/20 | | ## CanEx Week 20 # Internship Wk 4 - worked on & shared Deliverable 2 | 
+| 28 | 2021/06/21 - 2021/06/27 | | ## CanEx Week 21 (Last date: Jun 25) # Internship Wk 5 - worked on Deliverable 3 # meet team at JobStart and Randstad | 
 
 </details>
 
@@ -646,8 +648,8 @@ misc | if __name == main | https://www.youtube.com/watch?v=sugvnHA7ElY |
 3.43 | resetting the index from 0...-1 | >>> `df.reset_index()` |
 3.44 | renaming index values | changing the first and second index names, ie. index[0] and index[1] >>> `df.rename(index={0:'FirstEntry', 1:'SecondEntry'})` |
 3.45 | renaming both x and y axis | >>> `df.rename_axis('row_axis_name', axis ='rows').rename_axis('column_axis_name', axis='columns')` |
-3.45.1 | Dropping columns | >>> `df.drop('column name', axis=0, inplace = True)` OR >>> `df.drop(columns = 'column name', inplace=True) ` | 
-3.45.2 | Dropping rows | >>> `df.drop('row index', axis=1, inplace = True)`  | 
+3.45.1 | Dropping columns | >>> `df.drop('column name', axis=1, inplace = True)` OR >>> `df.drop(columns = 'column name', inplace=True) ` | 
+3.45.2 | Dropping rows | >>> `df.drop('row index', axis=0, inplace = True)`  | 
 3.46 | Combining dataframes | used to combine 2 or more dataframes into 1 |
 3.46.1 | concat()...used when the columns are exactly the same | >>> `pd.concat(['df1','df2'])` |
 3.46.2 | join()...have 1 or more common columns | >>>`left_df.set_index(['common_column(s)']).join(right_df.set_index(['same_common_column(s)']))` |
