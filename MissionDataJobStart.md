@@ -103,10 +103,16 @@
 | 27 | 2021/06/14 - 2021/06/20 | | ## CanEx Week 20 # Internship Wk 4 - worked on & shared Deliverable 2 | 
 | 28 | 2021/06/21 - 2021/06/27 | | ## CanEx Week 21 (Last date: Jun 25) # Internship Wk 5 - worked on Deliverable 3 # meet team at JobStart and Randstad | 
 | 29 | 2021/06/28 - 2021/07/04 | | # Internship Wk 6 - worked on Deliverable 3 # meet team at JobStart and Randstad | 
-| 30 | 2021/07/05 - 2021/07/11 | | # Internship Wk 7 - Jul 5 - showed demo of Deliverable 3 to N, Jul 9 - showed demo to V (1st meetgn) | 
-| 31 | 2021/07/12 - 2021/07/18 | | # Internship Wk 8 - # Jul 12 - 1st meeting with L, TRIEC mentor coach #Jul 15 - MscAc Infosession # Jul 16 - 1st meeting with TRIEC mentor | 
-| 32 | 2021/07/19 - 2021/07/25 | | # Internship Wk 9 - RTS meeting w/ V (2nd meeting) # 2nd meeting with L, TRIEC mentor coach | 
-| 33 | 2021/07/26 - 2021/08/01 | | # Internship Wk 10 -  | 
+| 30 | 2021/07/05 - 2021/07/11 | | # Internship Wk 7 - Jul 5 - showed demo of Deliverable 3 to N, Jul 9 - showed demo to V (1st meetng) | 
+| 31 | 2021/07/12 - 2021/07/18 | | # Internship Wk 8 - # Jul 12 - 1st meeting with Lucy @ TRIEC mentor coach #Jul 15 - MscAc Infosession  # Jul 16 - 1st meeting with TRIEC mentor - Jag J # researched on MSc information # 7/18 - Bhupi news| 
+| 32 | 2021/07/19 - 2021/07/25 | | # Internship Wk 9 - RTS meeting w/ V (2nd meeting, 1x1) # 2nd meeting with Lucy, TRIEC mentor coach | 
+| 33 | 2021/07/26 - 2021/08/01 | | # Internship Wk 10 -  # 07/26 - MScAC: 1x1 with Course Counsellor # 7/28 - Jobstart session @ 7 PM # 7/29 - talked to Lucy @ TRIEC  # 7/30 - meeting with Sw @ RTS| 
+| 34 | 2021/08/02 - 2021/08/08 | | # Internship Wk 11 - # 8/4 - my solution demo to Vi and Sw # Dell - New Qtr|
+| 35 | 2021/08/09 - 2021/08/15 | | # Internship Wk 12 - # 8/11 @ 8, 1x1 w/ Sw # 8/13 - meeting with ChemTech about AI/ML # GOUT week (+ 8/7 + 8/8) | 
+| 36 | 2021/08/16 - 2021/08/22 | | # Internship Wk 13 - | 
+| 36 | 2021/08/23 - 2021/08/29 | | # Internship Wk 14 - | 
+| 36 | 2021/08/30 - 2021/09/05 | | # Internship Wk 15 - | 
+
 
 </details>
 
