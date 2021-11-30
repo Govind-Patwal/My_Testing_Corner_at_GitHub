@@ -110,7 +110,7 @@
 | 33 | 2021/07/26 - 2021/08/01 | | # Internship Wk 10 -  # 07/26 - MScAC: 1x1 with Course Counsellor # 7/28 - Jobstart session @ 7 PM # 7/29 - talked to Lucy @ TRIEC  # 7/30 - meeting with Sw @ RTS| 
 | 34 | 2021/08/02 - 2021/08/08 | | # Internship Wk 11 - # 8/4 - my solution demo to Vi and Sw # Dell - New Qtr|
 | 35 | 2021/08/09 - 2021/08/15 | | # Internship Wk 12 - # 8/11 @ 8, 1x1 w/ Sw # 8/13 - meeting with ChemTech about AI/ML # GOUT week (+ 8/7 + 8/8) | 
-| 36 | 2021/08/16 - 2021/08/22 | | # Internship Wk 13 - | 
+| 36 | 2021/08/16 - 2021/08/22 | | # Internship Wk 13 # Aug 20 - 1st talks of a Job in Data | 
 | 36 | 2021/08/23 - 2021/08/29 | | # Internship Wk 14 - | 
 | 36 | 2021/08/30 - 2021/09/05 | | # Internship Wk 15 - | 
 
