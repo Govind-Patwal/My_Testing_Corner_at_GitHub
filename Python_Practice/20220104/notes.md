@@ -19,5 +19,8 @@ Natural and Formal/Computer language
 
 1.12 First Program - Hello World
 
+1.13. Comments - only for humans, ignored by interpreter/complier
+- in python # starts a comment
+
 
 

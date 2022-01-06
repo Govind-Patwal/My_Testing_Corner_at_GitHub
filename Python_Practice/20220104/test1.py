@@ -1,1 +1,1 @@
-print("asansayman mahabaho mano dunigraham chalam, abhaysem tu kauntaye, vairegyan griheyete")
+print("Hello, World!")
