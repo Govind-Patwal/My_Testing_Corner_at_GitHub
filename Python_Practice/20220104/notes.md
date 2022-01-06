@@ -43,8 +43,9 @@ Natural and Formal/Computer language
 - in python # starts a comment
 
 ########################################
-1. Simple Python Data
+2. Simple Python Data
 ########################################
 
+2.1. Variables, Expressions and Statements
 
 
