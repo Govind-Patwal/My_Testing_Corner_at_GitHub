@@ -339,12 +339,12 @@ Number | Topic | Comments | Misc
 3.3.335 | working on the output from ZIP ...list comprehension | list comprehension can also be used ... the elements of the tuples can be added/subtracted..or transformed |
 3.3.36 | Working on the output from ZIP ...dict comprehension | Dictionary comprehension can be used to create dictionary when data is coming from two diferent lists and there is a positional corelation between the data >>> `dict1 = { x:y for x,y in list_of_tuples_of_length_2}` |
 3.3.1 |  --- Internet APIs  ---  | |
-3.3.1.1 |  YOU CAN ONLY USE REST API if the end page has the data in JSON format ..eg https://api.datamuse.com/words?rel_rhy=funny | |
+3.3.1.1 |  YOU CAN ONLY USE REST API ONLY | if the end page has the data in JSON format ..eg https://api.datamuse.com/words?rel_rhy=funny | 
 3.3.1.1 | Using REST | REST = REpresentational State Transfer = website that take inputs in the form of python dictionay (key, value pairs) and return an output as a text string  | 
 3.3.1.2 | API | Application Programming Interface - speficies how an external program (an application program) can request that a program perform certain computations |
 3.3.1.3 | REST APIs | specifies how client program can call a REST website using APIs to get information | 
 3.3.1.4 | module required - requests and json |   |
-3.3.1.4.1 |  YOU CAN ONLY USE REST API if the end page has the data in JSON format ..eg https://api.datamuse.com/words?rel_rhy=funny | |
+3.3.1.1 |  YOU CAN ONLY USE REST API ONLY | if the end page has the data in JSON format ..eg https://api.datamuse.com/words?rel_rhy=funny | 
 3.3.1.5 | URL Structue for REST APIs - check the end point, it should be a JSON string | 3 parts of the URL (1) the endpoint_URL (2)the question mark: ? (3) the query (key/value pair(s) seperated by a &), for example: https://api.datamuse.com/words?rel_rhy=funny (1) https://api.datamuse.com/words  (2) ? (3) rel_rhy=funny |
 3.3.1.5 | -- Calling APIs and getting information -- | >>> `page_response = requests.get(endpoint_URL, params = params_dict)` \n `page_py_object = page_response.json()` ...params_dict is a dictionary of parameters like >>> `params_dict = {`KEY`: `my_API_key`, 'keywords': 'google', 'origin': 'GLOBAL_SEARCH_HEADER'}` | 
 3.3.2 | How to use a REST API | answer these Q... (1) Is as authentication required to access the API, if yes how to authenticate yourself (2) what is the endpoint_URL (3) what is the query_param_dict (keys and values) that you need to pass to params (4) check the URL that was formed after adding the query_param_dict (5) what is structure of data that is returned by the API, how can you extract what you want ...for this, convert the python object to a JSON string (>>> `json.dumps(py_object, indent=4)`) and print and/or view in https://jsoneditoronline.org  | 
