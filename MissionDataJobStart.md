@@ -1,6 +1,6 @@
 # My North Star
-- No stress despite any situation
-- Don't take anything for granted
+- No stress despite any situation...
+- Don't take anything for granted...
 - A small plan, executed strongly (0% Stress, and 100% focus on inputs) is better than A Grand plan, executed weakly
 ---
 
